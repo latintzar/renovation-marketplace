@@ -1,8 +1,8 @@
-# Renovation marketplace
+# Leo.casa
 
-Chat, editable quotes, project messages and milestone payment review for homeowners and contractors.
+Leo.casa is a renovation marketplace for homeowners and contractors, with quotes, project chat and milestone payments.
 
-Originally **Leo.casa / Scope**. This source release preserves the React product, its shared UI and business packages, the FastAPI backend and the original five scripted walkthroughs. The full original quote document has been restored from its April source revision, with the type names adapted to the current code.
+[Website](https://atelierneyra.com/renovation-marketplace) · [Documentation](https://docs.atelierneyra.com/renovation-marketplace/overview/)
 
 ![The original quote conversation and document](docs/images/quote.png)
 
@@ -11,6 +11,8 @@ Originally **Leo.casa / Scope**. This source release preserves the React product
 Use Node 22.12+ and Python 3.12+:
 
 ```sh
+git clone https://github.com/latintzar/renovation-marketplace.git
+cd renovation-marketplace
 make install
 make doctor
 make build
@@ -47,3 +49,5 @@ make schema-check           # PostgreSQL 16 tools, unprivileged local user
 [Contributing](docs/contributing.md)
 
 Original code and authored samples use the [MIT licence](LICENSE). Optional dependencies, fonts and integration marks retain their [own terms](THIRD_PARTY.md). Historical operating records, customer uploads, credential-bearing notes and unverified photo/video assets remain outside this release.
+
+[made by atelier neyra](https://atelierneyra.com)

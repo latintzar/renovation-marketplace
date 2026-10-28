@@ -1,0 +1,1343 @@
+{
+  "009ed110badf": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "0188999be434": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "0193a15e6dae": {
+    "parent": "p",
+    "type": "text"
+  },
+  "0310056c84c5": {
+    "parent": "td",
+    "type": "text"
+  },
+  "03b1a83bc79e": {
+    "parent": "div",
+    "type": "text"
+  },
+  "04a5c23a6756": {
+    "parent": "span",
+    "type": "text"
+  },
+  "051b703a4ab7": {
+    "parent": "td",
+    "type": "text"
+  },
+  "0695b563acde": {
+    "parent": "p",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "07309bec2c40": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "0945e01e15d3": {
+    "parent": "span",
+    "type": "text"
+  },
+  "0ad4bc7e2cca": {
+    "parent": "td",
+    "type": "text"
+  },
+  "0b01751b0b15": {
+    "parent": "a",
+    "type": "text"
+  },
+  "0d94af8d7e69": {
+    "parent": "td",
+    "type": "text"
+  },
+  "0de59d3f373b": {
+    "parent": "th",
+    "type": "text"
+  },
+  "0ea32eac0db8": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "101ea3fae639": {
+    "parent": "p",
+    "sentence": "We'll message you on WhatsApp with a matched tradesperson shortly. Want to tell us more about the job?",
+    "type": "text"
+  },
+  "10807ea9bba1": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "10bad195cb19": {
+    "parent": "td",
+    "type": "text"
+  },
+  "115e410f01dc": {
+    "parent": "a",
+    "type": "text"
+  },
+  "11a6767d5674": {
+    "parent": "button",
+    "type": "text"
+  },
+  "130349442ea8": {
+    "parent": "p",
+    "type": "text"
+  },
+  "15330ef9b381": {
+    "parent": "div",
+    "type": "text"
+  },
+  "153d2849d910": {
+    "parent": "p",
+    "sentence": "For labor and overhead, money sits in secure escrow tied directly to what you've agreed. They don't get paid until you've seen the work and said yes. Any changes in the project have to be approved first; otherwise money doesn't move. And if there's ever a dispute, every payment decision is part of a timestamped evidence file — not a he-said-she-said. See how disputes work →",
+    "type": "text"
+  },
+  "158aa43ca64e": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "16af28794c10": {
+    "parent": "span",
+    "type": "text"
+  },
+  "173f5f9f26b4": {
+    "parent": "a",
+    "type": "text"
+  },
+  "18bf11b74081": {
+    "parent": "button",
+    "type": "text"
+  },
+  "191b8e33cdcc": {
+    "parent": "div",
+    "type": "text"
+  },
+  "1a7af0845f0a": {
+    "parent": "div",
+    "type": "text"
+  },
+  "1b0308fe1cf1": {
+    "parent": "p",
+    "type": "text"
+  },
+  "1b94ce23c543": {
+    "parent": "span",
+    "type": "text"
+  },
+  "1c4ee0201b3a": {
+    "parent": "li",
+    "type": "text"
+  },
+  "1c89bec45c88": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "1d36d78123e1": {
+    "parent": "span",
+    "type": "text"
+  },
+  "1d3e25ce6b3c": {
+    "parent": "p",
+    "type": "text"
+  },
+  "20e9f5e2177c": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "21d10cd340fe": {
+    "parent": "h2",
+    "sentence": "¿Cuál es tu número de WhatsApp ?",
+    "type": "text"
+  },
+  "2249d0c4db49": {
+    "parent": "span",
+    "type": "text"
+  },
+  "224cd80e3d4c": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "229e7cea1437": {
+    "attr": "alt",
+    "tag": "img",
+    "type": "attr:alt"
+  },
+  "23732f401dd8": {
+    "parent": "p",
+    "type": "text"
+  },
+  "24161a303857": {
+    "parent": "p",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "250c46fc962b": {
+    "parent": "div",
+    "sentence": "Megaflo cylinder & fittings ordered from your scope · Paid from escrow · 12 Mar",
+    "type": "text"
+  },
+  "25ec72169a6e": {
+    "parent": "span",
+    "sentence": "For labor and overheads",
+    "type": "text"
+  },
+  "26689c6eee9c": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "2717819f3c37": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "274b9d1fa93b": {
+    "parent": "a",
+    "type": "text"
+  },
+  "283bf30f8624": {
+    "parent": "span",
+    "type": "text"
+  },
+  "286275abd184": {
+    "parent": "div",
+    "type": "text"
+  },
+  "289401a44a7f": {
+    "attr": "placeholder",
+    "tag": "textarea",
+    "type": "attr:placeholder"
+  },
+  "2906f4560f4a": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "292dab89925a": {
+    "parent": "span",
+    "type": "text"
+  },
+  "2a8b22834aa2": {
+    "attr": "alt",
+    "tag": "img",
+    "type": "attr:alt"
+  },
+  "2ab62ae94c17": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "2ac741e6203a": {
+    "parent": "button",
+    "type": "text"
+  },
+  "2b5c3d26721a": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "2b8fd8b75d84": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "2ba6b330a3fa": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "2c42e2e93e11": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "2cba4b90e7c1": {
+    "parent": "span",
+    "type": "text"
+  },
+  "2d0cd062cfea": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "2d74686b3f8a": {
+    "parent": "span",
+    "sentence": "El Rosario, Marbella · approximate",
+    "type": "text"
+  },
+  "306f1bb20677": {
+    "attr": "aria-label",
+    "tag": "input",
+    "type": "attr:aria-label"
+  },
+  "30a5df11cb41": {
+    "parent": "td",
+    "type": "text"
+  },
+  "310015c66230": {
+    "parent": "p",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "3110f5469161": {
+    "parent": "td",
+    "type": "text"
+  },
+  "3155d41b5a69": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "31c1c5a9dc88": {
+    "parent": "td",
+    "type": "text"
+  },
+  "31d2ea4b8a85": {
+    "parent": "div",
+    "type": "text"
+  },
+  "32197ab2ad8c": {
+    "parent": "a",
+    "type": "text"
+  },
+  "321d74d11f1f": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "33e2827719c7": {
+    "parent": "span",
+    "type": "text"
+  },
+  "347ef7f247d7": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "34abf1594af2": {
+    "parent": "button",
+    "type": "text"
+  },
+  "359a7318c8ec": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "36106d6960c7": {
+    "attr": "aria-label",
+    "tag": "a",
+    "type": "attr:aria-label"
+  },
+  "361e18e2569c": {
+    "attr": "title",
+    "tag": "div",
+    "type": "attr:title"
+  },
+  "3646bb5e7d31": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "3756c5c66d94": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "385e885fcbb7": {
+    "parent": "div",
+    "type": "text"
+  },
+  "39bbb719fa2b": {
+    "parent": "span",
+    "type": "text"
+  },
+  "3a78695388b3": {
+    "parent": "span",
+    "type": "text"
+  },
+  "3a7a1bd457f3": {
+    "parent": "p",
+    "type": "text"
+  },
+  "3c00f23367bd": {
+    "parent": "div",
+    "type": "text"
+  },
+  "3c080b85b195": {
+    "parent": "span",
+    "type": "text"
+  },
+  "3c09b24e80a1": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "3c40dfbabaf6": {
+    "attr": "aria-label",
+    "tag": "input",
+    "type": "attr:aria-label"
+  },
+  "3c80be021cba": {
+    "parent": "title",
+    "type": "text"
+  },
+  "3e7bc52e1a23": {
+    "parent": "div",
+    "type": "text"
+  },
+  "3ef7f628c824": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "3fbf41e7ab82": {
+    "parent": "div",
+    "type": "text"
+  },
+  "3fe02a548e90": {
+    "parent": "span",
+    "type": "text"
+  },
+  "4028fde31ed0": {
+    "parent": "h1",
+    "sentence": "Describe any home job. Get it done.",
+    "type": "text"
+  },
+  "4094ce516d09": {
+    "parent": "a",
+    "type": "text"
+  },
+  "40d0facc9e27": {
+    "parent": "td",
+    "type": "text"
+  },
+  "41e75ba3dc1a": {
+    "parent": "div",
+    "sentence": "job total · €295 still held until you approve",
+    "type": "text"
+  },
+  "4382f20926ca": {
+    "parent": "div",
+    "sentence": "job total · €295 still held until you approve",
+    "type": "text"
+  },
+  "45278194f83c": {
+    "parent": "span",
+    "type": "text"
+  },
+  "45ac7d73bce2": {
+    "parent": "p",
+    "type": "text"
+  },
+  "45dd38ec8f29": {
+    "parent": "p",
+    "type": "text"
+  },
+  "463799166a6a": {
+    "parent": "div",
+    "type": "text"
+  },
+  "46c9895fa994": {
+    "attr": "placeholder",
+    "tag": "input",
+    "type": "attr:placeholder"
+  },
+  "4786553622c5": {
+    "parent": "a",
+    "type": "text"
+  },
+  "4787eaf7c938": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "47cf2ae7e6dd": {
+    "parent": "a",
+    "type": "text"
+  },
+  "4b65d020d86a": {
+    "parent": "div",
+    "type": "text"
+  },
+  "4bf548455528": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "4ef9719d2a49": {
+    "parent": "p",
+    "type": "text"
+  },
+  "4f39ebadfe9e": {
+    "parent": "p",
+    "type": "text"
+  },
+  "4f769b9f7bb9": {
+    "parent": "span",
+    "type": "text"
+  },
+  "5038762bb0d3": {
+    "parent": "td",
+    "type": "text"
+  },
+  "506ff3946215": {
+    "parent": "a",
+    "type": "text"
+  },
+  "51998e5a25cf": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "5236a0fe48d3": {
+    "parent": "div",
+    "type": "text"
+  },
+  "54a35734b10f": {
+    "parent": "div",
+    "type": "text"
+  },
+  "54cd9c97d312": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "55f1b89a0557": {
+    "parent": "span",
+    "sentence": "James Mitchell · Escrow protected",
+    "type": "text"
+  },
+  "5723587a09d2": {
+    "parent": "strong",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "579204dc94a3": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "59e459668339": {
+    "parent": "div",
+    "type": "text"
+  },
+  "5a446af58247": {
+    "parent": "div",
+    "type": "text"
+  },
+  "5a7d4e8b69f5": {
+    "parent": "span",
+    "type": "text"
+  },
+  "5bb4b838770b": {
+    "parent": "td",
+    "type": "text"
+  },
+  "5bc426e8d81e": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "5d9c1d5035c4": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "5e2b8e96503d": {
+    "parent": "a",
+    "type": "text"
+  },
+  "5ec9c2b52014": {
+    "parent": "div",
+    "type": "text"
+  },
+  "5f2fabdd0d83": {
+    "parent": "span",
+    "type": "text"
+  },
+  "5f3404d8b730": {
+    "parent": "span",
+    "type": "text"
+  },
+  "5f7fdd8f465d": {
+    "parent": "div",
+    "type": "text"
+  },
+  "6007acbe30b2": {
+    "parent": "button",
+    "type": "text"
+  },
+  "60dc56dce0dd": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "62d1172a74ac": {
+    "parent": "a",
+    "type": "text"
+  },
+  "637cd552448f": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "654d980c3754": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "65a00c9807d2": {
+    "parent": "span",
+    "sentence": "60% on completion €620.55",
+    "type": "text"
+  },
+  "65d45123f8f4": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "66001653b228": {
+    "parent": "p",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "660246ec6f6b": {
+    "parent": "div",
+    "type": "text"
+  },
+  "661673092916": {
+    "parent": "span",
+    "type": "text"
+  },
+  "6623b326160d": {
+    "parent": "div",
+    "type": "text"
+  },
+  "664cc1b8fc60": {
+    "parent": "p",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "66c214116ee7": {
+    "parent": "span",
+    "sentence": "Megaflo cylinder & fittings ordered from your scope · Paid from escrow · 12 Mar",
+    "type": "text"
+  },
+  "66f53417d3b7": {
+    "parent": "span",
+    "type": "text"
+  },
+  "67af699b9ca0": {
+    "parent": "span",
+    "type": "text"
+  },
+  "67e5a3025bc0": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "68267ae1a2be": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "6962d089d69f": {
+    "parent": "li",
+    "type": "text"
+  },
+  "6a40edf1fc87": {
+    "parent": "a",
+    "type": "text"
+  },
+  "6b4759a4a2c9": {
+    "parent": "div",
+    "type": "text"
+  },
+  "6d5fc457ff53": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "705be7f92699": {
+    "parent": "a",
+    "type": "text"
+  },
+  "7117fff2d0fd": {
+    "parent": "em",
+    "sentence": "Only known tradespeople.",
+    "type": "text"
+  },
+  "715a91aa77f0": {
+    "attr": "alt",
+    "tag": "img",
+    "type": "attr:alt"
+  },
+  "723afa394dae": {
+    "parent": "span",
+    "type": "text"
+  },
+  "72b0e3927830": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "72e3889e00f8": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "74385a85175d": {
+    "parent": "span",
+    "sentence": "For materials purchases",
+    "type": "text"
+  },
+  "747a8f398395": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "772d30c58150": {
+    "parent": "div",
+    "type": "text"
+  },
+  "77d95c4b048e": {
+    "parent": "div",
+    "type": "text"
+  },
+  "7a2c44890967": {
+    "parent": "a",
+    "type": "text"
+  },
+  "7a7da3b8d81c": {
+    "parent": "p",
+    "type": "text"
+  },
+  "7abf41c6cd40": {
+    "parent": "div",
+    "type": "text"
+  },
+  "7adca5c871e3": {
+    "parent": "strong",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "7b0a3d74494a": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "7b81ad5ac295": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "7ba1d1299748": {
+    "parent": "td",
+    "type": "text"
+  },
+  "7bacc7ef8f66": {
+    "parent": "p",
+    "type": "text"
+  },
+  "7d9eb7acb13e": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "7df50dd72168": {
+    "parent": "strong",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "7e51c04a08d4": {
+    "parent": "span",
+    "type": "text"
+  },
+  "7f1ee16aaadd": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "7fa615cd93bd": {
+    "parent": "div",
+    "type": "text"
+  },
+  "8041b7f6baed": {
+    "parent": "p",
+    "type": "text"
+  },
+  "818f512b2536": {
+    "parent": "span",
+    "type": "text"
+  },
+  "84cb7871b741": {
+    "parent": "span",
+    "type": "text"
+  },
+  "85ddabbacc7b": {
+    "parent": "td",
+    "type": "text"
+  },
+  "879d8fb64f88": {
+    "parent": "h2",
+    "sentence": "Only known tradespeople.",
+    "type": "text"
+  },
+  "87f17fa30f45": {
+    "attr": "alt",
+    "tag": "img",
+    "type": "attr:alt"
+  },
+  "892c0bd30c1c": {
+    "parent": "div",
+    "type": "text"
+  },
+  "8aadde75a00c": {
+    "attr": "alt",
+    "tag": "img",
+    "type": "attr:alt"
+  },
+  "8ab6dd4d7504": {
+    "parent": "button",
+    "type": "text"
+  },
+  "8b1690bec17c": {
+    "parent": "span",
+    "type": "text"
+  },
+  "8e5395c43a2e": {
+    "parent": "div",
+    "type": "text"
+  },
+  "8eea44f39833": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "8f1e5549230f": {
+    "parent": "a",
+    "sentence": "For labor and overhead, money sits in secure escrow tied directly to what you've agreed. They don't get paid until you've seen the work and said yes. Any changes in the project have to be approved first; otherwise money doesn't move. And if there's ever a dispute, every payment decision is part of a timestamped evidence file — not a he-said-she-said. See how disputes work →",
+    "type": "text"
+  },
+  "8f9b77e6e0b4": {
+    "parent": "td",
+    "type": "text"
+  },
+  "8fdc31ff70ef": {
+    "parent": "span",
+    "sentence": "40% upfront €413.70",
+    "type": "text"
+  },
+  "90e25d135b41": {
+    "parent": "td",
+    "type": "text"
+  },
+  "920e413c7d41": {
+    "parent": "div",
+    "type": "text"
+  },
+  "9249ada757e9": {
+    "parent": "td",
+    "type": "text"
+  },
+  "9571b0cfee9e": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "96099b68b53e": {
+    "parent": "a",
+    "type": "text"
+  },
+  "96c610a17f21": {
+    "parent": "p",
+    "type": "text"
+  },
+  "97c6d1995f50": {
+    "parent": "td",
+    "type": "text"
+  },
+  "97dac2901631": {
+    "parent": "span",
+    "type": "text"
+  },
+  "990a2ddb3d39": {
+    "parent": "span",
+    "type": "text"
+  },
+  "9b08463eda54": {
+    "parent": "span",
+    "type": "text"
+  },
+  "9b2f4c2ed52b": {
+    "parent": "div",
+    "type": "text"
+  },
+  "9b78fa689b8f": {
+    "attr": "title",
+    "tag": "div",
+    "type": "attr:title"
+  },
+  "9b9a8d05a7ec": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "9bb3a91fbff8": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "9c6bb8159cd7": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "9c7d77ba8961": {
+    "parent": "h1",
+    "sentence": "Describe any home job. Get it done.",
+    "type": "text"
+  },
+  "9d142855397b": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "9f0948847f19": {
+    "parent": "span",
+    "type": "text"
+  },
+  "a03c447b6015": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "a0af26f513ab": {
+    "parent": "div",
+    "sentence": "Labour completed per scope · Photos submitted · Awaiting approval",
+    "type": "text"
+  },
+  "a10fdc36d605": {
+    "parent": "div",
+    "sentence": "James Mitchell · Escrow protected",
+    "type": "text"
+  },
+  "a1adefc66491": {
+    "parent": "p",
+    "type": "text"
+  },
+  "a228d8ba6162": {
+    "parent": "span",
+    "type": "text"
+  },
+  "a2e16d35bb5b": {
+    "parent": "p",
+    "type": "text"
+  },
+  "a2eefbcb6bbe": {
+    "parent": "span",
+    "type": "text"
+  },
+  "a35e8db02488": {
+    "parent": "div",
+    "type": "text"
+  },
+  "a47680e93d38": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "a5150fd33afb": {
+    "parent": "p",
+    "type": "text"
+  },
+  "a59318c810d2": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "a5b1bf4b9cca": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "a6bcbeb923cd": {
+    "parent": "span",
+    "type": "text"
+  },
+  "a7925ad2749a": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "a7c6392c10b7": {
+    "parent": "div",
+    "type": "text"
+  },
+  "a9266fdc05d8": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "a97a2e755189": {
+    "parent": "p",
+    "type": "text"
+  },
+  "a99dfd6ae8ff": {
+    "parent": "p",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "abf8af2da6c7": {
+    "parent": "td",
+    "type": "text"
+  },
+  "ae183c824075": {
+    "parent": "div",
+    "type": "text"
+  },
+  "ae48b972c6db": {
+    "parent": "span",
+    "type": "text"
+  },
+  "b106e8021be0": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "b1f3dc9640bf": {
+    "parent": "div",
+    "type": "text"
+  },
+  "b2ff338c666f": {
+    "parent": "div",
+    "type": "text"
+  },
+  "b325c10d36ca": {
+    "parent": "div",
+    "type": "text"
+  },
+  "b6b52c0e41dd": {
+    "parent": "div",
+    "type": "text"
+  },
+  "b731a1457154": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "b7b7d3eb63d1": {
+    "parent": "span",
+    "sentence": "Labour completed per scope · Photos submitted · Awaiting approval",
+    "type": "text"
+  },
+  "bc25d7e1a7a2": {
+    "parent": "p",
+    "type": "text"
+  },
+  "bcfece8679e7": {
+    "parent": "span",
+    "type": "text"
+  },
+  "bd59a9515568": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "be5a107d1274": {
+    "parent": "span",
+    "type": "text"
+  },
+  "c0aa40069341": {
+    "parent": "div",
+    "type": "text"
+  },
+  "c140bc4eace1": {
+    "parent": "span",
+    "type": "text"
+  },
+  "c189840cf7e2": {
+    "parent": "a",
+    "type": "text"
+  },
+  "c25a82af20b1": {
+    "parent": "td",
+    "type": "text"
+  },
+  "c3daddeecfad": {
+    "parent": "p",
+    "type": "text"
+  },
+  "c4030be32636": {
+    "parent": "div",
+    "type": "text"
+  },
+  "c45d306afebe": {
+    "parent": "em",
+    "sentence": "Describe any home job. Get it done.",
+    "type": "text"
+  },
+  "c6948396024b": {
+    "parent": "p",
+    "sentence": "We'll message you on WhatsApp with a matched tradesperson shortly. Want to tell us more about the job?",
+    "type": "text"
+  },
+  "c78e59233827": {
+    "parent": "span",
+    "type": "text"
+  },
+  "c7e3e34948f7": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "c9aebca00e0f": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "c9b3c38247f7": {
+    "parent": "span",
+    "type": "text"
+  },
+  "cac16921405d": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "cb2b34bcb19c": {
+    "parent": "div",
+    "type": "text"
+  },
+  "cc7bf7db333a": {
+    "parent": "li",
+    "type": "text"
+  },
+  "ce2d846e89d0": {
+    "parent": "div",
+    "type": "text"
+  },
+  "cfe1ae6e7f3a": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "cffa014c614c": {
+    "parent": "button",
+    "type": "text"
+  },
+  "cx:12f56624227b": {
+    "parent": "div",
+    "sentence": "James Mitchell · Escrow protected",
+    "type": "composite"
+  },
+  "cx:1f81b4a25eb4": {
+    "parent": "div",
+    "sentence": "Megaflo cylinder & fittings ordered from your scope · Paid from escrow · 12 Mar",
+    "type": "composite"
+  },
+  "cx:4acdae711251": {
+    "parent": "div",
+    "sentence": "Labour completed per scope · Photos submitted · Awaiting approval",
+    "type": "composite"
+  },
+  "cx:934811dbe532": {
+    "parent": "p",
+    "sentence": "We'll message you on WhatsApp with a matched tradesperson shortly. Want to tell us more about the job?",
+    "type": "composite"
+  },
+  "cx:ae1ec932aa8b": {
+    "parent": "span",
+    "sentence": "60% on completion €620.55",
+    "type": "composite"
+  },
+  "cx:ba05c3b2525b": {
+    "parent": "h1",
+    "sentence": "Describe any home job. Get it done.",
+    "type": "composite"
+  },
+  "cx:bf6eb965d863": {
+    "parent": "h2",
+    "sentence": "Only known tradespeople.",
+    "type": "composite"
+  },
+  "cx:c5a92d371d99": {
+    "parent": "div",
+    "sentence": "job total · €295 still held until you approve",
+    "type": "composite"
+  },
+  "cx:cd15f0a2b197": {
+    "parent": "h2",
+    "sentence": "¿Cuál es tu número de WhatsApp ?",
+    "type": "composite"
+  },
+  "cx:e3a6facd962c": {
+    "parent": "span",
+    "sentence": "40% upfront €413.70",
+    "type": "composite"
+  },
+  "d01912f59463": {
+    "parent": "p",
+    "type": "text"
+  },
+  "d1d145502387": {
+    "parent": "h1",
+    "type": "text"
+  },
+  "d1e4a3476ad1": {
+    "parent": "a",
+    "type": "text"
+  },
+  "d1ee49c042a7": {
+    "parent": "strong",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "d258fc3e23b2": {
+    "parent": "p",
+    "type": "text"
+  },
+  "d2db969737bf": {
+    "parent": "span",
+    "type": "text"
+  },
+  "d41f5b4977ee": {
+    "parent": "span",
+    "type": "text"
+  },
+  "d742b9c7f548": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "d83ab68f7428": {
+    "parent": "div",
+    "type": "text"
+  },
+  "d84c355f0f76": {
+    "parent": "div",
+    "type": "text"
+  },
+  "d913a207b943": {
+    "parent": "span",
+    "type": "text"
+  },
+  "d95d7f0bb400": {
+    "parent": "p",
+    "type": "text"
+  },
+  "da0b99f6c00a": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "da225645583f": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "dad1c8de5505": {
+    "parent": "td",
+    "type": "text"
+  },
+  "dbc9f985bd43": {
+    "parent": "div",
+    "type": "text"
+  },
+  "dbccd3f4687d": {
+    "parent": "p",
+    "type": "text"
+  },
+  "ddca60da6407": {
+    "parent": "p",
+    "type": "text"
+  },
+  "de254b769591": {
+    "parent": "div",
+    "type": "text"
+  },
+  "e0c4cbfda995": {
+    "parent": "span",
+    "type": "text"
+  },
+  "e17f442235bd": {
+    "parent": "td",
+    "type": "text"
+  },
+  "e4c9839e2905": {
+    "parent": "div",
+    "type": "text"
+  },
+  "e6cd84fc2ee1": {
+    "parent": "span",
+    "type": "text"
+  },
+  "e787159ac1df": {
+    "parent": "div",
+    "type": "text"
+  },
+  "e81dd633583a": {
+    "parent": "div",
+    "type": "text"
+  },
+  "e88dfdc0d720": {
+    "parent": "p",
+    "type": "text"
+  },
+  "e8a8a1677dc8": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "e978b00de465": {
+    "attr": "aria-label",
+    "tag": "div",
+    "type": "attr:aria-label"
+  },
+  "ea46599a2386": {
+    "parent": "div",
+    "type": "text"
+  },
+  "ea85389ab9b7": {
+    "parent": "a",
+    "type": "text"
+  },
+  "ede548996483": {
+    "parent": "div",
+    "type": "text"
+  },
+  "f00a5a687990": {
+    "parent": "div",
+    "type": "text"
+  },
+  "f1e1d4375d14": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "f31e7043acde": {
+    "parent": "div",
+    "sentence": "El Rosario, Marbella · approximate",
+    "type": "text"
+  },
+  "f3d03207617d": {
+    "parent": "p",
+    "type": "text"
+  },
+  "f3d879707bd4": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "f4369608593e": {
+    "parent": "span",
+    "type": "text"
+  },
+  "f562e475177f": {
+    "parent": "div",
+    "type": "text"
+  },
+  "f5db58d022a0": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "f6725f3af08a": {
+    "parent": "div",
+    "type": "text"
+  },
+  "f6e396f8fe1b": {
+    "parent": "p",
+    "type": "text"
+  },
+  "f6f4688ff23d": {
+    "parent": "button",
+    "type": "text"
+  },
+  "f8428c87c5f8": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "f93387c03d5a": {
+    "parent": "h2",
+    "sentence": "Only known tradespeople.",
+    "type": "text"
+  },
+  "f9d99b5a9c02": {
+    "parent": "button",
+    "type": "text"
+  },
+  "fb172283fb09": {
+    "parent": "div",
+    "type": "text"
+  },
+  "fd64e81bf74d": {
+    "parent": "button",
+    "type": "text"
+  },
+  "fde67435ef74": {
+    "parent": "div",
+    "type": "text"
+  }
+}

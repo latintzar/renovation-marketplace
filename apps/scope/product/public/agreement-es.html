@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<link href="/brand-vars.css" rel="stylesheet"/>
+<title>Leo — El Contrato Estándar de Obra Leo</title>
+<meta content="Cómo funcionan los contratos de obra en Leo: presupuesto detallado, fases, pagos, órdenes de variación, la tarjeta de materiales y resolución de disputas. Basado en el derecho español de la construcción y en la gestión profesional de obras." name="description"/>
+<link href="https://leo.casa/agreement" rel="canonical"/>
+<link href="https://leo.casa/agreement" hreflang="en" rel="alternate"/>
+<link href="https://leo.casa/contrato" hreflang="es" rel="alternate"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/leo-glass-frame.css" rel="stylesheet"/>
+<link href="/brand-effects.css" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px;-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.7}
+
+/* Header */
+.header{padding:20px 28px;border-bottom:1px solid var(--border);background:var(--cream);position:sticky;top:0;z-index:10}
+.header-inner{max-width:860px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--serif);font-size:1.2rem;font-weight:600;letter-spacing:-.03em;color:var(--ink);text-decoration:none}
+.lang-switch{position:relative;z-index:2}
+.lang-btn{display:flex;align-items:center;gap:3px;background:none;border:1px solid var(--border);border-radius:var(--r-pill);padding:5px 10px;font-family:var(--sans);font-size:.72rem;font-weight:600;color:var(--ink);cursor:pointer;white-space:nowrap;transition:border-color .15s}
+.lang-btn:hover{border-color:var(--stone)}
+.lang-flag{font-size:14px;line-height:1}
+.lang-code{letter-spacing:.03em}
+.lang-chevron{width:8px;height:8px;opacity:.7;color:var(--ink)}
+.lang-dropdown{position:absolute;right:0;top:calc(100% + 6px);background:#fff;border-radius:var(--r-md);box-shadow:0 4px 20px rgba(0,0,0,.12);padding:4px;display:none;min-width:120px;z-index:200}
+.lang-switch.open .lang-dropdown{display:block}
+.lang-option{display:flex;align-items:center;gap:6px;padding:7px 12px;border-radius:var(--r);text-decoration:none;font-family:var(--sans);font-size:.78rem;color:var(--ink);white-space:nowrap}
+.lang-option:hover{background:rgba(0,0,0,.04)}
+.lang-option.active{font-weight:700;color:var(--teal)}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,var(--ink) 0%,var(--ink-dark) 50%,var(--ink) 100%);color:#fff;padding:80px 28px 60px;text-align:center}
+.hero h1{font-family:var(--serif);font-size:clamp(2rem,6vw,3rem);font-weight:600;line-height:1.1;letter-spacing:-.03em;margin-bottom:16px}
+.hero h1 em{font-style:italic;color:var(--terra)}
+.hero .subtitle{font-size:1.05rem;color:var(--muted);max-width:600px;margin:0 auto 32px;line-height:1.6}
+.hero .note{display:inline-block;font-size:.82rem;color:var(--muted);border:1px solid #3F3B37;border-radius:var(--r);padding:8px 16px;margin-top:8px}
+
+/* Content */
+.content{max-width:860px;margin:0 auto;padding:48px 28px 80px}
+
+/* TOC */
+.toc{background:var(--cream-dk);border:1px solid var(--border);border-radius:var(--r);padding:28px 32px;margin-bottom:48px}
+.toc h2{font-family:var(--serif);font-size:1.1rem;font-weight:600;margin-bottom:16px;letter-spacing:-.01em}
+.toc ol{margin:0 0 0 20px;padding:0}
+.toc li{margin-bottom:8px}
+.toc a{font-size:.9rem;color:var(--teal);text-decoration:none;font-weight:500}
+.toc a:hover{text-decoration:underline}
+
+/* Sections */
+.section{margin-bottom:56px;scroll-margin-top:80px}
+.section h2{font-family:var(--serif);font-size:clamp(1.3rem,3vw,1.6rem);font-weight:600;letter-spacing:-.02em;margin-bottom:8px;padding-top:24px;border-top:1px solid var(--border)}
+.section h2:first-child{border-top:none;padding-top:0}
+.section .section-sub{font-size:.88rem;color:var(--muted);margin-bottom:24px}
+.section h3{font-family:var(--serif);font-size:1.05rem;font-weight:600;margin:28px 0 10px;letter-spacing:-.01em}
+.section p{font-size:.92rem;color:var(--stone);margin-bottom:14px;line-height:1.7}
+.section strong{color:var(--ink);font-weight:600}
+
+/* Info cards */
+.info-card{background:var(--cream-dk);border:1px solid var(--border);border-radius:var(--r);padding:20px 24px;margin:20px 0}
+.info-card.teal{background:var(--teal-lt);border-color:#A7F3D0}
+.info-card.terra{background:var(--terra-lt);border-color:#FECACA}
+.info-card p{margin-bottom:8px}
+.info-card p:last-child{margin-bottom:0}
+
+/* Tier table */
+.tier-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.88rem}
+.tier-table th{background:var(--ink);color:#fff;padding:10px 14px;text-align:left;font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.04em}
+.tier-table td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--stone);vertical-align:top}
+.tier-table tr:nth-child(even) td{background:var(--cream-dk)}
+.tier-table .label{color:var(--ink);font-weight:600}
+
+/* FAQ */
+.faq{margin-top:48px}
+.faq-item{border-bottom:1px solid var(--border);padding:0}
+.faq-q{font-family:var(--sans);font-size:.98rem;font-weight:600;padding:18px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:var(--ink);user-select:none}
+.faq-q::after{content:'+';font-size:1.2rem;color:var(--muted);transition:transform .2s ease}
+.faq-item.open .faq-q::after{content:'\2212'}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-item.open .faq-a{max-height:600px}
+.faq-a-inner{padding:0 0 18px;font-size:.9rem;color:var(--stone);line-height:1.7}
+
+/* Flow diagram */
+.flow{display:flex;flex-direction:column;gap:0;margin:24px 0}
+.flow-step{display:flex;align-items:flex-start;gap:16px;position:relative}
+.flow-dot{width:32px;height:32px;min-width:32px;border-radius:50%;background:var(--teal);color:#fff;font-size:.78rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+.flow-dot.terra{background:var(--terra)}
+.flow-dot.amber{background:var(--amber)}
+.flow-line{width:2px;background:var(--border);margin:4px 0 4px 15px;height:20px}
+.flow-text h4{font-size:.92rem;font-weight:600;color:var(--ink);margin-bottom:2px}
+.flow-text p{font-size:.85rem;color:var(--stone);margin:0;line-height:1.5}
+
+ul.checklist{list-style:none;margin:12px 0;padding:0}
+ul.checklist li{font-size:.9rem;color:var(--stone);padding:4px 0 4px 24px;position:relative;line-height:1.6}
+ul.checklist li::before{content:'✓';position:absolute;left:0;color:var(--teal);font-weight:700}
+
+/* Editorial figure */
+.editorial-fig{margin:32px auto;max-width:400px}
+.editorial-fig-caption{font-family:var(--sans);font-size:.82rem;font-style:italic;color:var(--muted);text-align:center;margin-top:10px}
+.editorial-fig-inner{transform:scale(.92);transform-origin:top center}
+
+/* CTA section */
+.cta-section{background:linear-gradient(135deg,var(--ink) 0%,var(--ink-dark) 50%,var(--ink) 100%);padding:64px 28px;text-align:center;color:#fff;position:relative;overflow:hidden}
+.cta-section::before{content:'';position:absolute;inset:0;background-image:none;background-size:128px;opacity:.03;pointer-events:none}
+.cta-section h2{font-family:var(--serif);font-size:clamp(1.5rem,4vw,2rem);font-weight:600;letter-spacing:-.03em;margin-bottom:12px;position:relative}
+.cta-section h2 em{font-style:italic;color:var(--terra)}
+.cta-section .cta-sub{font-size:.95rem;color:var(--muted);max-width:500px;margin:0 auto 32px;line-height:1.6;position:relative}
+.cta-role-group{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:24px;position:relative}
+.cta-role-btn{font-family:var(--sans);font-size:.92rem;font-weight:600;padding:14px 28px;border-radius:var(--r);cursor:pointer;transition:all .2s ease;border:2px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:#fff;display:flex;align-items:center;gap:10px;min-width:180px;justify-content:center}
+.cta-role-btn:hover{border-color:var(--terra);background:rgba(218,101,77,.08)}
+.cta-role-btn.selected{border-color:var(--terra);background:rgba(218,101,77,.15);box-shadow:0 0 0 1px var(--terra)}
+.cta-role-btn svg{width:18px;height:18px;opacity:.7}
+.cta-action{max-height:0;overflow:hidden;transition:max-height .4s ease,opacity .3s ease;opacity:0;position:relative}
+.cta-action.visible{max-height:200px;opacity:1}
+.cta-action-inner{padding-top:8px;display:flex;flex-direction:column;align-items:center;gap:12px}
+.cta-wa-btn{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#fff;font-size:.95rem;font-weight:600;padding:14px 28px;border-radius:var(--r);text-decoration:none;transition:background .15s,transform .15s;box-shadow:0 4px 16px rgba(37,211,102,.25)}
+.cta-wa-btn:hover{background:#1EB853;transform:translateY(-1px)}
+.cta-wa-btn svg{width:20px;height:20px;fill:#fff}
+.cta-action-note{font-size:.82rem;color:var(--muted)}
+
+/* Footer */
+.footer{border-top:1px solid var(--border);padding:24px 28px;text-align:center}
+.footer p{font-size:.78rem;color:var(--muted);margin:0}
+.footer a{color:var(--teal);text-decoration:none}
+@media(max-width:640px){.content{padding:32px 20px 60px}.toc{padding:20px}.hero{padding:60px 20px 40px}.cta-section{padding:48px 20px}.cta-role-btn{min-width:0;flex:1;padding:12px 16px;font-size:.85rem}}
+</style>
+<!-- Google Analytics 4 -->
+
+
+
+</head>
+<body>
+<div class="header">
+<div class="header-inner">
+<a class="logo" href="/"><img alt="Leo" draggable="false" height="18" src="/brand/leo-charcoal.svg" style="display:block;width:auto"/></a>
+<div class="lang-switch" id="langSwitch">
+<button aria-label="Cambiar idioma" class="lang-btn">
+<span class="lang-flag">🇪🇸</span><span class="lang-code">ES</span>
+<svg class="lang-chevron" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 12 12"><path d="M3 4.5l3 3 3-3"></path></svg>
+</button>
+<div class="lang-dropdown">
+<a class="lang-option" href="/agreement">🇬🇧 English</a>
+<a class="lang-option active" href="/contrato">🇪🇸 Español</a>
+</div>
+</div>
+</div>
+</div>
+<div class="hero">
+<h1>El Contrato Estándar<br/>de Obra <em>Leo</em></h1>
+<p class="subtitle">Cuando aceptas un trabajo en Leo, ambas partes firman un contrato claro y justo, basado en el derecho español de la construcción y en las mejores prácticas de gestión de obras. Así funciona.</p>
+<span class="note">Esta página explica la estructura del contrato, no los T&amp;C de la plataforma Leo. <a href="/terms-es" style="color:var(--terra)">Leer los T&amp;C →</a></span>
+</div>
+<div class="content">
+<div class="toc">
+<h2>En esta página</h2>
+<ol>
+<li><a href="#what-agree">Qué significa "Acepto"</a></li>
+<li><a href="#anatomy">Anatomía de un contrato Leo</a></li>
+<li><a href="#tiers">Nivel de rigor según el importe</a></li>
+<li><a href="#payments">Pagos, depósito de garantía y tarjeta de materiales</a></li>
+<li><a href="#variations">Órdenes de variación — cómo se gestionan los cambios</a></li>
+<li><a href="#materials-card">La tarjeta de materiales Leo en detalle</a></li>
+<li><a href="#disputes">Resolución de disputas — aparejador, arbitraje, juzgado</a></li>
+<li><a href="#cancellations">Cancelaciones y suspensión de la tarjeta</a></li>
+<li><a href="#own-contract">Usar tu propio contrato</a></li>
+<li><a href="#faq">Preguntas frecuentes</a></li>
+</ol>
+</div>
+<!-- 1. What "I Agree" means -->
+<div class="section" id="what-agree">
+<h2>1. Qué significa "Acepto"</h2>
+<p class="section-sub">En el momento en que ambas partes pulsan "Acepto" en un presupuesto Leo, se forma un contrato de obra vinculante entre el propietario y el profesional — no con Leo.</p>
+<p>Leo no es ni el contratista ni el cliente. Somos la plataforma que estructura el acuerdo y gestiona la infraestructura de pagos. El contrato es entre<strong>tú y la persona que realiza (o encarga) el trabajo</strong>.</p>
+<p>Al pulsar "Acepto", ambas partes confirman:</p>
+<ul class="checklist">
+<li>El <strong>presupuesto detallado</strong> describe con exactitud lo que se va a construir, reparar o instalar</li>
+<li>Se acepta el <strong>desglose de precios</strong> (precios unitarios × cantidades)</li>
+<li>Se entienden el <strong>calendario de fases</strong> y las condiciones de pago</li>
+<li>Ambas partes acuerdan gestionar los cambios mediante <strong>órdenes de variación</strong>, no con acuerdos verbales</li>
+<li>Las disputas seguirán el <strong>proceso de resolución</strong> descrito a continuación, antes de cualquier acción legal</li>
+</ul>
+<div class="info-card teal">
+<p><strong>Por qué importa:</strong>Un acuerdo claro y por escrito protege a ambas partes. El propietario sabe exactamente por qué paga. El profesional sabe exactamente qué tiene que entregar. Sin ambigüedades, sin "yo creía que querías decir…"</p>
+</div>
+</div>
+<!-- 2. Anatomy of a Leo contract -->
+<div class="section" id="anatomy">
+<h2>2. Anatomía de un contrato Leo</h2>
+<p class="section-sub">Todos los contratos de obra en Leo contienen los mismos elementos esenciales, basados en la contratación estándar española (<em>contrato de obra</em>) y en las mejores prácticas internacionales de gestión de obras.</p>
+<h3>Las partes</h3>
+<p>Identificación completa de ambas partes: el propietario (o titular del inmueble / representante autorizado) y el profesional (autónomo o empresa con CIF). La dirección del inmueble donde se realizarán los trabajos — la ubicación legal de la obra.<strong>dirección del inmueble</strong>donde se realizarán los trabajos — el emplazamiento legal.</p>
+<h3>El objeto — presupuesto detallado</h3>
+<p>Una descripción estructurada de <strong>qué se va a construir</strong>. No un párrafo vago — un listado detallado de partidas de obra, cada una con:</p>
+<ul class="checklist">
+<li>Descripción de la partida (p. ej., "Retirada de alicatado existente en baño principal, 12 m²")</li>
+<li>Unidad de medida (m², metro lineal, unidad, partida alzada)</li>
+<li>Cantidad</li>
+<li>Precio unitario (€/ud.)</li>
+<li>Total de línea</li>
+</ul>
+<p>Es la misma estructura que se usa en los <em>presupuestos</em> profesionales de toda España. Hace que los precios sean transparentes y las variaciones fáciles de calcular.</p>
+<h3>Precio total y fases de pago</h3>
+<p>El importe total del contrato es la suma de todas las partidas, más la comisión de la plataforma Leo (5%, a cargo del propietario). Los pagos están vinculados a<strong>las fases</strong>— no a fechas del calendario. El dinero se mueve cuando se termina el trabajo, no cuando pasa el tiempo.</p>
+<h3>Plazos</h3>
+<p>Fecha de inicio estimada, fecha de finalización estimada y duración prevista de cada fase. Son estimaciones de buena fe — en una obra siempre hay imprevistos. Lo importante es que ambas partes puedan ver el plan y detectar desviaciones a tiempo.</p>
+<h3>Condiciones generales</h3>
+<p>Ley aplicable (derecho español), proceso de órdenes de variación, resolución de disputas, fuerza mayor, requisitos de seguro, acceso a la obra y obligaciones de limpieza.</p>
+</div>
+<!-- 3. Contract rigour by price bracket -->
+<div class="section" id="tiers">
+<h2>3. Nivel de rigor según el importe</h2>
+<p class="section-sub">No todos los trabajos requieren el mismo nivel de documentación. Un cambio de grifo de 300 € y una reforma de cocina de 45.000 € son cosas muy distintas. Leo adapta la formalidad al riesgo.</p>
+<table class="tier-table">
+<thead><tr><th>Importe del trabajo</th><th>Nivel del acuerdo</th><th>Qué incluye</th></tr></thead>
+<tbody>
+<tr>
+<td class="label">Menos de 1.000 €</td>
+<td>Presupuesto simplificado</td>
+<td>Descripción detallada, precio total, pago único a la finalización. Ligero — las disputas se resuelven mediante revisión asistida por IA de Leo.</td>
+</tr>
+<tr>
+<td class="label">€1,000 – €5,000</td>
+<td>Acuerdo estándar</td>
+<td>Presupuesto completo con precios unitarios, 2–3 fases, opción de tarjeta de materiales, proceso de órdenes de variación, resolución estándar de disputas.</td>
+</tr>
+<tr>
+<td class="label">€5,000 – €20,000</td>
+<td>Acuerdo detallado</td>
+<td>Todo lo anterior, más calendario de pagos detallado, seguimiento de materiales con tarjeta Leo, requisitos de documentación fotográfica en cada fase, revisión independiente disponible para disputas.</td>
+</tr>
+<tr>
+<td class="label">Más de 20.000 €</td>
+<td>Contrato de obra completo</td>
+<td>Contrato completo con cláusula de retención, verificación de seguros, programa de trabajos detallado, penalizaciones por retrasos significativos y arbitraje independiente formal para disputas.</td>
+</tr>
+</tbody>
+</table>
+<div class="info-card">
+<p><strong>El principio:</strong>A mayor importe → más rigor. Pero incluso el nivel más básico te da un registro escrito, protección del pago y un proceso de resolución de disputas. Más de lo que la mayoría de propietarios en España tienen hoy.</p>
+</div>
+</div>
+<!-- 4. Payments, escrow & materials card -->
+<div class="section" id="payments">
+<h2>4. Pagos, depósito de garantía y tarjeta de materiales</h2>
+<p class="section-sub">El dinero es el origen de la mayoría de las disputas en reformas. La estructura de pagos de Leo está diseñada para prevenir problemas, no solo para resolverlos después.</p>
+<h3>Cómo funcionan los pagos por fases</h3>
+<div class="flow">
+<div class="flow-step">
+<div class="flow-dot">1</div>
+<div class="flow-text">
+<h4>Ambas partes aceptan el presupuesto</h4>
+<p>El pago total del propietario se procesa a través de Stripe. Los fondos quedan retenidos — no se liberan.</p>
+</div>
+</div>
+<div class="flow-line"></div>
+<div class="flow-step">
+<div class="flow-dot">2</div>
+<div class="flow-text">
+<h4>Anticipo de materiales (normalmente el 30–40 %)</h4>
+<p>Se libera al profesional o se carga en la tarjeta de materiales Leo. Cubre los costes iniciales de materiales para que el profesional no tenga que financiar tu obra de su bolsillo.</p>
+</div>
+</div>
+<div class="flow-line"></div>
+<div class="flow-step">
+<div class="flow-dot">3</div>
+<div class="flow-text">
+<h4>Finalización de fase</h4>
+<p>El profesional marca la fase como completada con fotos. El propietario revisa y aprueba. Se libera el pago correspondiente a esa fase.</p>
+</div>
+</div>
+<div class="flow-line"></div>
+<div class="flow-step">
+<div class="flow-dot terra">4</div>
+<div class="flow-text">
+<h4>Conformidad final</h4>
+<p>El propietario confirma que el trabajo está terminado. Los fondos restantes (menos la comisión del 5 % de la plataforma) se liberan al profesional.</p>
+</div>
+</div>
+</div>
+<figure class="editorial-fig">
+<div class="editorial-fig-inner">
+<div class="glass-frame" style="max-width:380px;margin:0 auto">
+<div class="glass-frame-bar">
+<div class="glass-frame-dots"><span></span><span></span><span></span></div>
+<div class="glass-frame-url"><svg height="8" style="stroke:var(--muted);fill:none;stroke-width:2.5" viewbox="0 0 24 24" width="8"><rect height="11" rx="2" width="18" x="3" y="11"></rect><path d="M7 11V7a5 5 0 0110 0v4"></path></svg>leo.casa/scope/hwc-2026</div>
+</div>
+<div class="glass-frame-body">
+<div style="background:var(--ink);padding:14px 16px;color:#fff">
+<div style="font-family:var(--sans);font-size:16px;font-weight:600;margin-bottom:2px">Sustitución de Calentador de Agua</div>
+<div style="font-size:11px;color:rgba(255,255,255,.5)">Presupuesto de James Mitchell · 21 mar 2026</div>
+</div>
+<div style="padding:14px 16px;background:#fff">
+<div style="font-size:10px;font-weight:700;text-transform:uppercase;color:var(--muted);letter-spacing:.06em;margin-bottom:6px">Desglose de costes</div>
+<table style="width:100%;border-collapse:collapse;margin-bottom:14px;font-size:12px;color:var(--stone)">
+<tr><td style="padding:5px 0;border-bottom:1px solid var(--border)">Calentador Megaflo Eco 170i</td><td style="padding:5px 0;border-bottom:1px solid var(--border);text-align:right;font-weight:600;color:var(--ink)">€620</td></tr>
+<tr><td style="padding:5px 0;border-bottom:1px solid var(--border)">Mano de obra de instalación (1 día)</td><td style="padding:5px 0;border-bottom:1px solid var(--border);text-align:right;font-weight:600;color:var(--ink)">€280</td></tr>
+<tr><td style="padding:5px 0;border-bottom:1px solid var(--border)">Válvulas de seguridad + accesorios</td><td style="padding:5px 0;border-bottom:1px solid var(--border);text-align:right;font-weight:600;color:var(--ink)">€85</td></tr>
+<tr><td style="padding:5px 0;border-bottom:1px solid var(--border);color:var(--muted)">Comisión del servicio Leo (5 %)</td><td style="padding:5px 0;border-bottom:1px solid var(--border);text-align:right;color:var(--muted)">€49.25</td></tr>
+<tr><td style="padding:5px 0;font-weight:700;color:var(--ink)">Tu total</td><td style="padding:5px 0;text-align:right;font-weight:700;color:var(--ink)">€1,034.25</td></tr>
+</table>
+<div style="font-size:10px;font-weight:700;text-transform:uppercase;color:var(--muted);letter-spacing:.06em;margin-bottom:6px">Reparto del depósito de garantía</div>
+<div style="display:grid;grid-template-columns:4fr 3px 6fr;height:10px;border-radius:var(--r-xs);overflow:hidden;border:1px solid rgba(0,0,0,.08);margin-bottom:4px"><div style="background:linear-gradient(180deg,rgba(17,94,89,.55),rgba(17,94,89,.42))"></div><div style="background:rgba(255,255,255,.85)"></div><div style="background:linear-gradient(180deg,rgba(218,101,77,.52),rgba(218,101,77,.4))"></div></div>
+<div style="display:flex;justify-content:space-between;font-size:11px;color:var(--stone)"><span>40 % por adelantado <strong>413,70 €</strong></span><span>60 % a la finalización <strong>620,55 €</strong></span></div>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="editorial-fig-caption">Un presupuesto real de Leo — cada partida, el reparto del depósito de garantía y la comisión del 5 %, todo visible antes de aceptar.</figcaption>
+</figure>
+<div class="info-card teal">
+<p><strong>La red de seguridad de 14 días:</strong>Si un profesional marca una fase como completada y el propietario no responde en 14 días, Leo revisa la evidencia y puede liberar los fondos. Esto protege a los profesionales de quedar bloqueados por clientes que no responden.</p>
+</div>
+<figure class="editorial-fig">
+<div class="editorial-fig-inner">
+<div style="max-width:380px;margin:0 auto;border-radius:var(--r);overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.1);border:1px solid var(--border)">
+<div style="background:#fff;padding:0 14px">
+<div style="display:flex;align-items:flex-start;gap:10px;padding:12px 0;border-bottom:1px solid rgba(0,0,0,.06)">
+<div style="width:20px;height:20px;border-radius:50%;background:#fff;border:2px solid var(--ink);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px"><svg height="10" viewbox="0 0 24 24" width="10"><path d="M20 6L9 17l-5-5" fill="none" stroke="var(--ink)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg></div>
+<div style="flex:1;min-width:0">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px"><span style="font-size:12px;font-weight:600;color:var(--ink)">Materiales y anticipo</span><span style="font-size:12px;font-weight:600;color:var(--ink)">€295</span></div>
+<div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.45">Calentador Megaflo y accesorios · <span style="color:var(--green);font-weight:600">Pagado del depósito de garantía · 12 mar</span></div>
+</div>
+</div>
+<div style="padding:12px 0;border-bottom:1px solid rgba(0,0,0,.06)">
+<div style="display:flex;align-items:flex-start;gap:10px">
+<div style="width:20px;height:20px;border-radius:50%;background:#fff;border:2px solid var(--terra);flex-shrink:0;margin-top:1px"></div>
+<div style="flex:1;min-width:0">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px"><span style="font-size:12px;font-weight:600;color:var(--ink)">Desmontaje e instalación</span><span style="font-size:12px;font-weight:600;color:var(--ink)">€690</span></div>
+<div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.45">Trabajo completado · <span style="color:var(--terra);font-weight:600">Fotos enviadas · Pendiente de aprobación</span></div>
+</div>
+</div>
+<div style="display:flex;gap:6px;margin-top:10px;margin-left:30px">
+<div style="width:48px;height:48px;border-radius:var(--r);background:var(--cream-dk);border:1px solid rgba(0,0,0,.08)"></div>
+<div style="width:48px;height:48px;border-radius:var(--r);background:var(--cream-dk);border:1px solid rgba(0,0,0,.08)"></div>
+<div style="width:48px;height:48px;border-radius:var(--r);background:var(--cream-dk);border:1px solid rgba(0,0,0,.08)"></div>
+<div style="width:48px;height:48px;border-radius:var(--r);background:var(--cream-dk);border:1px solid rgba(0,0,0,.08);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;color:var(--stone)">+4</div>
+</div>
+</div>
+<div style="display:flex;align-items:flex-start;gap:10px;padding:12px 0">
+<div style="width:20px;height:20px;border-radius:50%;background:var(--cream);border:2px solid rgba(218,101,77,.25);flex-shrink:0;margin-top:1px"></div>
+<div style="flex:1;min-width:0">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px"><span style="font-size:12px;font-weight:600;color:var(--ink)">Retención final (retenida)</span><span style="font-size:12px;font-weight:600;color:var(--ink)">€295</span></div>
+<div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.45">Se libera cuando apruebas la calidad del trabajo</div>
+</div>
+</div>
+<div style="display:flex;gap:8px;padding:0 0 14px">
+<div style="flex:1;padding:10px;background:var(--terra);color:#fff;border:none;border-radius:var(--r);font-weight:600;font-size:13px;font-family:var(--sans);text-align:center;display:flex;align-items:center;justify-content:center;gap:6px"><svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="14"><polyline points="20 6 9 17 4 12"></polyline></svg>Aprobar</div>
+</div>
+<div style="text-align:center;padding-bottom:14px;font-size:10px;color:var(--muted)">Al aprobar se liberan los 295 € finales a James</div>
+</div>
+</div>
+</div>
+<figcaption class="editorial-fig-caption">Aprobación de fase — fotos enviadas, trabajo verificado, un toque para liberar el pago.</figcaption>
+</figure>
+</div>
+<!-- 5. Variation orders -->
+<div class="section" id="variations">
+<h2>5. Órdenes de variación — cómo se gestionan los cambios</h2>
+<p class="section-sub">En una obra, los imprevistos son normales. Abres una pared y encuentras humedad. El cliente decide cambiar el azulejo. El presupuesto original se dejó algo sin cubrir. Lo que importa es cómo se gestionan esos cambios.</p>
+<p>En la práctica estándar de la construcción en España, una orden de variación (<em>modificado de obra</em>) es simplemente una<strong>modificación del contrato</strong>. El acuerdo original sigue en vigor — la variación añade, elimina o cambia partidas concretas.</p>
+<h3>Motivos habituales de una variación</h3>
+<ul class="checklist">
+<li><strong>Condiciones imprevistas en obra</strong> — humedades ocultas, problemas estructurales inesperados, amianto, instalación eléctrica obsoleta</li>
+<li><strong>Cambios solicitados por el cliente</strong> — acabados de mayor calidad, habitaciones adicionales, cambio de distribución</li>
+<li><strong>Exigencias normativas</strong> — el inspector de obras requiere trabajos adicionales para cumplir la normativa</li>
+<li><strong>Sustitución de materiales</strong> — producto especificado no disponible, se propone una alternativa</li>
+<li><strong>Aclaraciones del presupuesto</strong> — el presupuesto original era ambiguo, ambas partes acuerdan la interpretación</li>
+</ul>
+<h3>Cómo funciona una orden de variación en Leo</h3>
+<div class="flow">
+<div class="flow-step">
+<div class="flow-dot amber">1</div>
+<div class="flow-text">
+<h4>El profesional envía la variación</h4>
+<p>A través de Leo: qué ha cambiado, por qué, evidencia fotográfica, el impacto económico (usando el mismo formato de precios unitarios que el presupuesto original) y el impacto en los plazos.</p>
+</div>
+</div>
+<div class="flow-line"></div>
+<div class="flow-step">
+<div class="flow-dot amber">2</div>
+<div class="flow-text">
+<h4>El propietario revisa</h4>
+<p>El propietario ve exactamente qué se propone, cuánto cuesta y por qué. Puede aceptar, negociar o rechazar.</p>
+</div>
+</div>
+<div class="flow-line"></div>
+<div class="flow-step">
+<div class="flow-dot">3</div>
+<div class="flow-text">
+<h4>Ambas partes aceptan → contrato modificado</h4>
+<p>La variación pasa a formar parte del acuerdo. Se añaden nuevas fases y pagos. El registro queda preservado.</p>
+</div>
+</div>
+</div>
+<div class="info-card terra">
+<p><strong>El propietario nunca está obligado a aceptar una variación.</strong>Si la rechaza, el profesional completa el presupuesto original tal como se acordó. Sin acuerdos verbales, sin "ya lo arreglamos después". Todo queda por escrito, con fecha y trazabilidad.</p>
+</div>
+<figure class="editorial-fig">
+<div class="editorial-fig-inner">
+<div style="max-width:380px;margin:0 auto">
+<div style="background:#fff;border:1px solid var(--border);border-left:3px solid var(--amber);border-radius:var(--r);padding:12px 14px;box-shadow:0 4px 24px rgba(0,0,0,.08)">
+<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+<div style="display:flex;align-items:center;gap:6px">
+<div style="width:20px;height:20px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center"><svg height="10" style="stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round" viewbox="0 0 24 24" width="10"><path d="M12 5v14M5 12h14"></path></svg></div>
+<span style="font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--amber)">Añadido</span>
+</div>
+<span style="font-size:9px;font-weight:700;padding:2px 8px;border-radius:var(--r-xl);text-transform:uppercase;letter-spacing:.04em;background:rgba(245,158,11,.12);color:#92400E">Pendiente de tu aprobación</span>
+</div>
+<div style="font-family:var(--sans);font-size:14px;font-weight:600;color:var(--ink);margin-bottom:3px">Tubería de cobre adicional</div>
+<p style="font-size:12px;color:var(--stone);line-height:1.4;margin-bottom:8px">James encontró una tubería corroída detrás de la pared durante la instalación — hay que sustituirla por seguridad antes de continuar.</p>
+<div style="font-size:11px;margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid rgba(0,0,0,.04)"><span style="color:var(--stone)">Tubería de cobre (1,5 m)</span><span style="color:var(--ink);font-weight:600">€52.50</span></div>
+<div style="display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid rgba(0,0,0,.04)"><span style="color:var(--stone)">Mano de obra (45 min)</span><span style="color:var(--ink);font-weight:600">€45.00</span></div>
+<div style="display:flex;justify-content:space-between;padding:3px 0"><span style="color:var(--ink);font-weight:700">Total</span><span style="color:var(--ink);font-weight:700">€97.50</span></div>
+</div>
+<div style="margin-bottom:10px">
+<div style="font-size:9px;color:var(--muted);margin-bottom:3px;font-weight:700;letter-spacing:.05em;text-transform:uppercase">Rango de mercado</div>
+<div style="height:5px;background:var(--cream-dk);border-radius:var(--r-xs);position:relative">
+<div style="position:absolute;height:100%;background:rgba(17,94,89,.12);border-radius:var(--r-xs);left:10%;width:60%"></div>
+<div style="position:absolute;top:-3px;left:45%;width:11px;height:11px;border-radius:50%;background:var(--terra);border:2px solid #fff;transform:translateX(-50%);box-shadow:0 1px 4px rgba(218,101,77,.3)"></div>
+</div>
+<div style="display:flex;justify-content:space-between;font-size:10px;color:var(--muted);margin-top:2px"><span>€80</span><span>€130</span></div>
+</div>
+<div style="display:flex;align-items:center;gap:6px;padding:6px 8px;background:rgba(0,128,128,.06);border-radius:var(--r);margin-bottom:12px"><svg height="12" style="fill:var(--teal);stroke:none;flex-shrink:0" viewbox="0 0 24 24" width="12"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg><span style="font-size:10px;color:var(--teal);font-weight:600">El precio está dentro del rango de mercado</span></div>
+<div style="display:flex;gap:8px">
+<div style="flex:1;padding:10px;background:var(--teal);color:#fff;border-radius:var(--r);font-weight:600;font-size:13px;font-family:var(--sans);text-align:center;display:flex;align-items:center;justify-content:center;gap:6px"><svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="14"><polyline points="20 6 9 17 4 12"></polyline></svg>Aprobar</div>
+<div style="flex:1;padding:10px;background:#fff;color:var(--stone);border:1px solid var(--border);border-radius:var(--r);font-weight:600;font-size:13px;font-family:var(--sans);text-align:center">Ayuda</div>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="editorial-fig-caption">Una orden de variación — desglosada, contrastada con el mercado y pendiente de aprobación antes de continuar.</figcaption>
+</figure>
+</div>
+<!-- 6. The Leo materials card -->
+<div class="section" id="materials-card">
+<h2>6. La tarjeta de materiales Leo, en detalle</h2>
+<p class="section-sub">La tarjeta de materiales resuelve un problema fundamental: los profesionales no deberían tener que adelantar el dinero de tus materiales de su bolsillo, pero los propietarios tampoco deberían entregar efectivo sin saber en qué se gasta.</p>
+<h3>Cómo funciona</h3>
+<p>Cuando el contrato incluye un anticipo para materiales, el propietario puede optar por una tarjeta de materiales Leo en lugar de una transferencia bancaria directa. Se trata de una tarjeta prepago emitida al profesional, cargada con el presupuesto de materiales procedente del depósito de garantía.<strong>tarjeta de materiales Leo</strong>en lugar de una transferencia bancaria directa. Se trata de una tarjeta prepago emitida al profesional, cargada con el presupuesto de materiales procedente del depósito de garantía.</p>
+<figure class="editorial-fig">
+<div class="editorial-fig-inner">
+<div style="display:flex;flex-direction:column;gap:16px;max-width:380px;margin:0 auto">
+<div style="width:100%;height:240px;border-radius:var(--r-lg);padding:22px 26px;background:var(--cream);box-shadow:0 2px 0 rgba(0,0,0,.06),0 10px 36px rgba(0,0,0,.24),inset 0 0 0 1px rgba(0,0,0,.07);position:relative;overflow:hidden;isolation:isolate;display:flex;flex-direction:column;justify-content:space-between;box-sizing:border-box">
+<div style="position:absolute;inset:0;z-index:0;opacity:.022;background-image:none;background-size:128px;pointer-events:none"></div>
+<div style="position:absolute;top:-60px;left:-50px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(218,101,77,.08) 0%,transparent 70%);z-index:0;pointer-events:none"></div>
+<div style="position:relative;z-index:1;display:flex;align-items:flex-start;justify-content:space-between">
+<div>
+<div style="line-height:1"><img alt="Leo" draggable="false" height="22" src="/brand/leo-charcoal.svg" style="display:block;width:auto"/></div>
+<div style="font-size:9px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:4px">Tarjeta de Materiales</div>
+</div>
+<svg aria-hidden="true" fill="none" height="26" style="opacity:.5" viewbox="0 0 20 26" width="20">
+<path d="M2.5 10 A3.9 3.9 0 0 1 2.5 16" stroke="var(--ink)" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M5.5 7 A7.8 7.8 0 0 1 5.5 19" stroke="var(--ink)" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M8.5 4 A11.7 11.7 0 0 1 8.5 22" stroke="var(--ink)" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M11.5 1 A15.7 15.7 0 0 1 11.5 25" stroke="var(--ink)" stroke-linecap="round" stroke-width="2.5"></path>
+</svg>
+</div>
+<div style="position:relative;z-index:1">
+<div style="width:46px;height:34px;border-radius:var(--r);background:linear-gradient(145deg,#E8C96B 0%,#C8A020 35%,#E0B84A 55%,#B89020 80%,#D4A030 100%);box-shadow:0 1px 4px rgba(0,0,0,.2);position:relative;overflow:hidden">
+<div style="position:absolute;inset:0;border-radius:inherit;background:repeating-linear-gradient(0deg,transparent,transparent 8px,rgba(0,0,0,.04) 8px,rgba(0,0,0,.04) 9px),repeating-linear-gradient(90deg,transparent,transparent 10px,rgba(0,0,0,.04) 10px,rgba(0,0,0,.04) 11px)"></div>
+</div>
+</div>
+<div style="position:relative;z-index:1">
+<div style="font-size:15px;font-weight:500;letter-spacing:.26em;color:var(--stone);margin-bottom:12px;font-family:'Courier New',Courier,monospace">•••• •••• •••• 4821</div>
+<div style="display:flex;align-items:flex-end;justify-content:space-between;gap:10px">
+<div style="flex:1;min-width:0">
+<div style="font-size:9px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:3px">Titular</div>
+<div style="font-size:13px;font-weight:600;color:var(--ink);letter-spacing:.05em;text-transform:uppercase">J. MITCHELL</div>
+</div>
+<div>
+<div style="font-size:9px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:3px">Caduca</div>
+<div style="font-size:13px;font-weight:600;color:var(--ink);letter-spacing:.05em">03/28</div>
+</div>
+<div style="display:flex;align-items:center;flex-shrink:0">
+<div style="width:32px;height:32px;border-radius:50%;background:#EB001B;opacity:.9"></div>
+<div style="width:32px;height:32px;border-radius:50%;background:#F79E1B;opacity:.9;margin-left:-12px;mix-blend-mode:multiply"></div>
+</div>
+</div>
+</div>
+</div>
+<div style="background:var(--cream-dk);border:1px solid var(--border);border-radius:var(--r);overflow:hidden">
+<div style="padding:12px;border-bottom:1px solid var(--border)">
+<div style="font-size:10px;font-weight:700;text-transform:uppercase;color:var(--muted);letter-spacing:.06em">Últimas compras</div>
+</div>
+<div style="padding:12px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between">
+<div style="display:flex;align-items:center;gap:12px">
+<div style="width:32px;height:32px;border-radius:var(--r);background:var(--teal-lt);display:flex;align-items:center;justify-content:center">
+<svg fill="none" height="14" stroke="var(--teal)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"></path><path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"></path><path d="M12 3v6"></path></svg>
+</div>
+<div>
+<div style="font-size:11px;font-weight:600;color:var(--ink)">Leroy Merlin</div>
+<div style="font-size:9px;color:var(--muted)">Hoy, 14:23</div>
+</div>
+</div>
+<div style="font-size:11px;font-weight:600;color:var(--ink)">€84.50</div>
+</div>
+<div style="padding:12px;display:flex;align-items:center;justify-content:space-between">
+<div style="display:flex;align-items:center;gap:12px">
+<div style="width:32px;height:32px;border-radius:var(--r);background:var(--terra-lt);display:flex;align-items:center;justify-content:center">
+<svg fill="none" height="14" stroke="var(--terra)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h1"></path><path d="M16 3h1a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1"></path><path d="m7 12 5 5 5-5"></path></svg>
+</div>
+<div>
+<div style="font-size:11px;font-weight:600;color:var(--ink)">Brico Depot</div>
+<div style="font-size:9px;color:var(--muted)">Ayer, 09:15</div>
+</div>
+</div>
+<div style="font-size:11px;font-weight:600;color:var(--ink)">€156.30</div>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="editorial-fig-caption">La tarjeta de materiales Leo — cada compra registrada, visible para ambas partes.</figcaption>
+</figure>
+<ul class="checklist">
+<li>Cada transacción queda registrada: comercio, importe, fecha y categoría</li>
+<li>Las compras se contrastan con la lista de materiales acordada en el presupuesto</li>
+<li>El propietario tiene acceso de solo lectura a todas las transacciones de la tarjeta en tiempo real</li>
+<li>Los tickets y facturas de los proveedores se adjuntan a cada transacción</li>
+</ul>
+<h3>¿Dónde se pueden comprar los materiales?</h3>
+<p>En cualquier sitio donde el profesional compre habitualmente: almacenes de construcción, Leroy Merlin, Porcelanosa, proveedores especializados. Los materiales pueden entregarse en la obra, en el taller del profesional o recogerse en persona. La tarjeta funciona en cualquier establecimiento que acepte Mastercard/Visa.</p>
+<h3>Límites de gasto</h3>
+<p>La tarjeta tiene como límite el presupuesto de materiales acordado. Si el profesional necesita superarlo (por ejemplo, por una subida de precio del proveedor), presenta una orden de variación por la diferencia. El propietario la aprueba y se cargan los fondos adicionales.</p>
+<h3>¿Cuándo se puede suspender la tarjeta?</h3>
+<p>La tarjeta es una herramienta contractual, no un mecanismo de presión. Solo puede suspenderse en circunstancias concretas:</p>
+<table class="tier-table">
+<thead><tr><th>Situación</th><th>¿Puede el propietario suspender la tarjeta?</th><th>Qué ocurre</th></tr></thead>
+<tbody>
+<tr>
+<td>Spending outside the agreed scope</td>
+<td class="label">Sí</td>
+<td>El propietario señala la transacción. El profesional debe justificarla. Si no lo hace, la tarjeta queda suspendida hasta que se resuelva.</td>
+</tr>
+<tr>
+<td>Rescisión formal del contrato por cualquiera de las partes</td>
+<td class="label">Sí</td>
+<td>La tarjeta se suspende automáticamente. El saldo restante vuelve al depósito de garantía para su liquidación.</td>
+</tr>
+<tr>
+<td>El propietario está insatisfecho con el avance, pero el contrato no está incumplido</td>
+<td class="label">No</td>
+<td>La vía correcta es una conversación o, si es necesario, una reclamación. No una suspensión unilateral de la tarjeta.</td>
+</tr>
+<tr>
+<td>El profesional lleva retraso, pero dentro de un margen razonable</td>
+<td class="label">No</td>
+<td>Los retrasos son habituales en obra. El contrato permite ajustes razonables en el calendario. La tarjeta sigue activa.</td>
+</tr>
+<tr>
+<td>El profesional incumple gravemente el contrato (abandono de obra, defectos graves)</td>
+<td class="label">Sí, a través de Leo</td>
+<td>El propietario presenta una reclamación formal. Leo revisa las pruebas y puede suspender la tarjeta como medida cautelar.</td>
+</tr>
+</tbody>
+</table>
+<div class="info-card">
+<p><strong>El principio:</strong>La tarjeta de materiales se rige por el contrato, no por el estado de ánimo. Si el contrato está en vigor y el profesional está cumpliendo, la tarjeta permanece activa. Si hay un motivo legítimo de preocupación, el proceso de reclamación lo gestiona — no una cancelación sorpresa de la tarjeta.</p>
+</div>
+</div>
+<!-- 7. Dispute resolution -->
+<div class="section" id="disputes">
+<h2>7. Resolución de disputas</h2>
+<p class="section-sub">La mejor disputa es la que nunca llega a producirse. Los presupuestos detallados, los pagos por fases y las órdenes de variación escritas evitan la mayoría de los problemas. Cuando algo sale mal, el contrato Leo establece un camino estructurado y proporcionado — desde un período de reflexión de 48 horas hasta la ejecución judicial.</p>
+<h3>La escalera de resolución</h3>
+<div class="flow">
+<div class="flow-step">
+<div class="flow-dot">1</div>
+<div class="flow-text">
+<h4>Mediación en la app — automática, 48 horas</h4>
+<p>Leo genera automáticamente un expediente y abre una conversación estructurada. Ambas partes exponen su posición frente al registro documentado. La mayoría de las disputas — malentendidos sobre el alcance, plazos, fallos de comunicación — se resuelven aquí sin coste alguno.</p>
+</div>
+</div>
+<div class="flow-line"></div>
+<div class="flow-step">
+<div class="flow-dot">2</div>
+<div class="flow-text">
+<h4>Revisión remota por aparejador — 3 a 5 días</h4>
+<p>Si no se resuelve, Leo encarga a un Arquitecto Técnico (aparejador) cualificado que revise la disputa de forma remota. El aparejador examina el presupuesto, las fotos de los hitos aportadas por ambas partes, los registros de órdenes de variación y las facturas. Emite un dictamen profesional escrito — trabajo dentro del alcance, fuera del alcance o pruebas documentales insuficientes — firmado bajo su colegiación en el COAAT. Este dictamen es legalmente admisible en arbitraje y en la jurisdicción civil española.<em>Arquitecto Técnico</em>(aparejador) para revisar la disputa de forma remota. El aparejador examina el presupuesto, las fotos de los hitos aportadas por ambas partes, los registros de órdenes de variación y las facturas. Emite un dictamen profesional escrito — trabajo dentro del alcance, fuera del alcance o pruebas documentales insuficientes — firmado bajo su colegiación en el COAAT. Este dictamen es<strong>legalmente admisible</strong>en arbitraje y en la jurisdicción civil española.</p>
+</div>
+</div>
+<div class="flow-line"></div>
+<div class="flow-step">
+<div class="flow-dot amber">3</div>
+<div class="flow-text">
+<h4>Visita a obra del aparejador — cuando la revisión remota es insuficiente</h4>
+<p>Si el aparejador remoto declara que no puede determinar el hecho controvertido a partir de la documentación — por ejemplo, un defecto estructural oculto o una duda sobre los materiales realmente instalados — la disputa escala a una visita a obra. El aparejador inspecciona en persona, emite un informe pericial completo, y este se convierte en la base para la siguiente fase. Coste de la visita: aproximadamente 300–600 €, habitualmente a cargo de la parte que pierde.<em>informe pericial</em>(informe de perito), que sirve de base para la siguiente fase. Coste de la visita: aproximadamente 300–600 €, habitualmente a cargo de la parte que pierde.</p>
+</div>
+</div>
+<div class="flow-line"></div>
+<div class="flow-step">
+<div class="flow-dot">4</div>
+<div class="flow-text">
+<h4>Junta Arbitral de Consumo — arbitraje de consumo gratuito</h4>
+<p>Leo prepara una solicitud completa ante la Junta Arbitral de Consumo competente conforme al Real Decreto 713/2024: formulario cumplimentado, presupuesto firmado, informe del aparejador, registros de pagos e historial de comunicaciones. Todo profesional de Leo se compromete con este sistema de arbitraje al unirse a la plataforma. Si se niega a participar cuando la Junta le convoca, esa negativa queda documentada como incumplimiento del acuerdo de servicio de Leo y refuerza la posición del propietario en cualquier procedimiento judicial posterior. El laudo arbitral<em>Junta Arbitral de Consumo</em>conforme al Real Decreto 713/2024: formulario cumplimentado, presupuesto firmado, informe del aparejador, registros de pagos e historial de comunicaciones. Todo profesional de Leo se compromete con este sistema de arbitraje al unirse a la plataforma. Si se niega a participar cuando la Junta le convoca, esa negativa queda documentada como incumplimiento del acuerdo de servicio de Leo y refuerza la posición del propietario en cualquier procedimiento judicial posterior. El arbitraje<em>laudo</em>(resolución) tiene el mismo valor legal que una sentencia judicial y es ejecutable frente a los bienes del profesional.</p>
+</div>
+</div>
+<div class="flow-line"></div>
+<div class="flow-step">
+<div class="flow-dot amber">5</div>
+<div class="flow-text">
+<h4>Procedimiento Monitorio — orden de pago judicial (sin necesidad de abogado)</h4>
+<p>Para cantidades adeudadas que el profesional impugne o ignore, el procedimiento monitorio permite al propietario presentar una petición ante el Juzgado de Primera Instancia local sin necesidad de abogado, independientemente del importe reclamado. Si el profesional no responde en 20 días, el juzgado dicta un decreto de ejecución automático — una deuda ejecutable frente a sus cuentas bancarias y bienes. Leo prepara la petición cumplimentada a partir del expediente del caso.<em>procedimiento monitorio</em>permite al propietario presentar una petición ante el<em>Juzgado de Primera Instancia</em>local sin necesidad de abogado, independientemente del importe reclamado. Si el profesional no responde en 20 días, el juzgado dicta un<strong>decreto de ejecución automático</strong>— una deuda ejecutable frente a sus cuentas bancarias y bienes. Leo prepara la petición cumplimentada a partir del expediente del caso.</p>
+</div>
+</div>
+<div class="flow-line"></div>
+<div class="flow-step">
+<div class="flow-dot terra">6</div>
+<div class="flow-text">
+<h4>Juicio Verbal / Juicio Ordinario — litigación civil</h4>
+<p>Para reclamaciones impugnadas: Juicio Verbal para importes inferiores a 15.000 € (sin abogado obligatorio por debajo de 2.000 €, umbral elevado a 15.000 € por el RDL 6/2023); Juicio Ordinario para importes superiores a 15.000 € (abogado obligatorio). Conforme a la Ley Orgánica 1/2025, debe acreditarse un intento previo de MASC (mediación/arbitraje) antes de interponer un Juicio Ordinario — el paso de arbitraje de Leo cumple este requisito. Leo facilita el expediente completo y puede derivar a especialistas en derecho de la construcción para esta fase.<em>Juicio Verbal</em>para importes inferiores a 15.000 € (sin abogado obligatorio por debajo de 2.000 €, umbral elevado a 15.000 € por el RDL 6/2023);<em>Juicio Ordinario</em>para importes superiores a 15.000 € (abogado obligatorio). Conforme a la<em>Ley Orgánica 1/2025</em>, debe acreditarse un intento previo de MASC (mediación/arbitraje) antes de interponer un<em>Juicio Ordinario</em>— el paso de arbitraje de Leo cumple este requisito. Leo facilita el expediente completo y puede derivar a especialistas en derecho de la construcción para esta fase.</p>
+</div>
+</div>
+</div>
+<h3>La cláusula arbitral de este contrato</h3>
+<p>Al aceptar un presupuesto Leo, ambas partes acuerdan lo siguiente:</p>
+<div class="info-card" style="font-style:italic;font-size:.9rem;border-left:3px solid var(--teal)">
+<p><em>"Las partes acuerdan someter cualquier controversia derivada del presente contrato a la Junta Arbitral de Consumo competente, de conformidad con el Real Decreto 713/2024, de 23 de julio. En caso de que la controversia no pueda resolverse por vía arbitral, las partes se someten a la jurisdicción de los juzgados y tribunales del lugar de ejecución de la obra."</em></p>
+<p style="font-style:normal;font-size:.85rem;color:var(--muted);margin-top:8px">Traducción: Ambas partes acuerdan someter cualquier disputa a la Junta Arbitral de Consumo competente conforme al RD 713/2024. Si el arbitraje no prospera, las disputas se dirimen ante los juzgados del lugar de ejecución de la obra.</p>
+</div>
+<p>Todo profesional de Leo se compromete con el arbitraje como condición para unirse a la plataforma. Si se niega a participar cuando la Junta le convoca, esa negativa queda documentada como incumplimiento de este acuerdo y refuerza la posición del propietario en cualquier procedimiento judicial posterior. Leo incluye esa negativa en el expediente del caso.</p>
+<h3>Protecciones de la plataforma ante una disputa</h3>
+<p>En el momento en que se notifica una disputa, Leo actúa de inmediato en la plataforma sin esperar a ninguna resolución:</p>
+<ul class="checklist">
+<li>La tarjeta de materiales del profesional queda bloqueada — sin más compras en ningún trabajo</li>
+<li>Todos los pagos de fases pendientes quedan retenidos en todos sus proyectos activos en Leo</li>
+<li>La asignación de nuevos trabajos se pausa — no recibe nuevas consultas de propietarios</li>
+<li>El expediente del caso se genera y se entrega a ambas partes</li>
+</ul>
+<p>Estas protecciones se aplican de forma simétrica: si un propietario presenta una disputa infundada, el mismo rastro de evidencias y el proceso con el aparejador defienden al profesional. La plataforma no toma partido — hace cumplir el contrato.</p>
+<h3>Qué analiza Leo en una resolución</h3>
+<ul class="checklist">
+<li>El presupuesto detallado original y los precios unitarios aceptados</li>
+<li>Todas las órdenes de variación (aceptadas, rechazadas o pendientes)</li>
+<li>Fotos y marcas de tiempo de la finalización de cada fase</li>
+<li>Historial de comunicaciones entre ambas partes</li>
+<li>Registros de transacciones de la tarjeta de materiales (si procede)</li>
+<li>Datos de precios de mercado para el trabajo en cuestión</li>
+<li>Dictamen escrito del aparejador (remoto o presencial, si fue encargado)</li>
+</ul>
+<div class="info-card teal">
+<p><strong>El contrato es el árbitro.</strong>Porque cada trabajo en Leo tiene un presupuesto claro, precios unitarios, evidencia fotográfica y un registro escrito de variaciones, las disputas se resuelven con hechos — no con quien grita más fuerte.<a href="/como-resolver-disputas" style="color:var(--teal);font-weight:600">Ver el proceso de disputas completo →</a></p>
+</div>
+</div>
+<!-- 8. Cancellations & card suspension -->
+<div class="section" id="cancellations">
+<h2>8. Cancelaciones y suspensión de la tarjeta</h2>
+<p class="section-sub">A veces las cosas no salen como se esperaba. Esto es lo que dice el contrato sobre poner fin a la relación antes de tiempo.</p>
+<h3>El propietario quiere cancelar</h3>
+<p>Conforme a la legislación española de protección al consumidor y al contrato Leo:</p>
+<table class="tier-table">
+<thead><tr><th>Momento</th><th>Qué ocurre</th></tr></thead>
+<tbody>
+<tr>
+<td class="label">Antes de que comiencen los trabajos</td>
+<td>Reembolso íntegro de los fondos en garantía, menos los materiales no reembolsables ya adquiridos con la tarjeta Leo (con los tickets como justificante).</td>
+</tr>
+<tr>
+<td class="label">Durante los trabajos — sin incumplimiento por parte del profesional</td>
+<td>El propietario paga los trabajos realizados hasta la fecha (según los porcentajes de las fases) más los materiales ya adquiridos. El profesional tiene derecho a una compensación razonable por los costes de movilización. El resto del depósito de garantía se devuelve.</td>
+</tr>
+<tr>
+<td class="label">Durante los trabajos — el profesional ha incumplido el contrato</td>
+<td>Si el profesional ha abandonado la obra, ha realizado trabajos con defectos graves o ha incurrido en un incumplimiento material, el propietario puede resolver el contrato y reclamar los fondos proporcionales al trabajo no ejecutado. Leo facilita la determinación.</td>
+</tr>
+</tbody>
+</table>
+<h3>El profesional quiere cancelar</h3>
+<p>Los profesionales pueden retirarse de un contrato por causas legítimas (enfermedad grave, fuerza mayor, cliente que hace la obra insegura o inaccesible). En tales casos, cobran por los trabajos realizados y los materiales suministrados. El propietario recibe el resto del depósito de garantía.</p>
+<p>Un profesional que abandone un trabajo sin causa justificada pierde el derecho a los pagos de fases no liberados y puede recibir una nota de revisión en su perfil de Leo.</p>
+<h3>La tarjeta sigue al contrato</h3>
+<p>La tarjeta de materiales es un instrumento del contrato. Mientras el contrato está en vigor, la tarjeta está activa. Cuando el contrato se extingue — por finalización, acuerdo mutuo o cancelación formal — la tarjeta se suspende y el saldo se liquida como parte de la cuenta final.</p>
+</div>
+<!-- 9. Bringing your own contract -->
+<div class="section" id="own-contract">
+<h2>9. Usar tu propio contrato</h2>
+<p class="section-sub">El contrato estándar de Leo funciona para la mayoría de los trabajos. Pero si ya tienes abogados o tu proyecto requiere un contrato a medida, Leo también lo admite.</p>
+<p>Puedes importar tu propio contrato de obra a Leo. Al hacerlo:</p>
+<ul class="checklist">
+<li>Tu contrato rige la relación entre el propietario y el profesional</li>
+<li>El sistema de depósito de garantía y pagos por fases de Leo sigue aplicándose (así es como fluye el dinero)</li>
+<li>La tarjeta de materiales, si se usa, sigue las políticas de tarjeta de Leo</li>
+<li>La resolución de disputas de Leo está disponible como opción, pero la cláusula de disputas de tu propio contrato tiene prioridad si así lo especifica</li>
+</ul>
+<div class="info-card">
+<p><strong>El estándar está pensado para ser suficiente.</strong>El contrato estándar de Leo se basa en el derecho español de la construcción, las normas internacionales de contratación de obras (FIDIC adaptado a uso residencial) y nuestra experiencia en el sector. La mayoría de propietarios y profesionales nunca necesitarán sus propios abogados. Pero la opción existe.</p>
+</div>
+</div>
+<!-- 10. FAQ -->
+<div class="section faq" id="faq">
+<h2>10. Preguntas frecuentes</h2>
+<p class="section-sub">Respuestas rápidas a lo que más nos preguntan.</p>
+<div class="faq-item">
+<div class="faq-q">¿El contrato Leo es un contrato legalmente vinculante?</div>
+<div class="faq-a"><div class="faq-a-inner">Sí. Cuando ambas partes aceptan un presupuesto en Leo, se formaliza un contrato vinculante conforme al derecho español (<em>Código Civil</em>, artículos 1544–1600, sobre el<em>contrato de obra</em>). La aceptación electrónica, con marca de tiempo y vinculada a la identidad de ambas partes, tiene la misma fuerza legal que un documento firmado en papel conforme a la<em>Ley 34/2002</em>sobre comercio electrónico.</div></div>
+</div>
+<div class="faq-item">
+<div class="faq-q">¿Qué pasa si el profesional encuentra algo inesperado al abrir una pared?</div>
+<div class="faq-a"><div class="faq-a-inner">Es el motivo más habitual para una orden de variación. El profesional documenta el hallazgo con fotos, presenta una variación a través de Leo explicando qué se ha encontrado, qué trabajo adicional es necesario y cuánto cuesta. El propietario lo revisa y decide. Sin sorpresas — solo una conversación estructurada sobre un problema real.</div></div>
+</div>
+<div class="faq-item">
+<div class="faq-q">¿Puedo cambiar de opinión sobre los acabados después de firmar el contrato?</div>
+<div class="faq-a"><div class="faq-a-inner">Sí — mediante una orden de variación. El profesional presupuesta el cambio (con el mismo formato de precios unitarios), tú lo revisas y ambas partes lo aceptan. El contrato se modifica y el nuevo coste queda reflejado en las fases. Así es como se gestionan los cambios en proyectos de construcción profesionales en todo el mundo.</div></div>
+</div>
+<div class="faq-item">
+<div class="faq-q">¿Qué pasa si el profesional se retrasa?</div>
+<div class="faq-a"><div class="faq-a-inner">Los retrasos razonables están contemplados en las expectativas del calendario. La obra es por naturaleza impredecible — meteorología, cadena de suministro, disponibilidad de subcontratistas. El contrato distingue entre retrasos razonables (comunicados y justificados) y el abandono o incumplimiento grave. Para trabajos superiores a 20.000 €, el contrato incluye penalizaciones por retrasos significativos e injustificados.</div></div>
+</div>
+<div class="faq-item">
+<div class="faq-q">¿Puedo cancelar la tarjeta de materiales si no estoy satisfecho con el trabajo?</div>
+<div class="faq-a"><div class="faq-a-inner">No de forma unilateral. La tarjeta de materiales se rige por el contrato. Si el profesional está cumpliendo sus obligaciones, la tarjeta sigue activa. Si crees que el contrato está siendo incumplido, presenta una reclamación a través de Leo. Suspender la tarjeta sin causa podría constituir en sí mismo un incumplimiento del contrato, ya que estarías impidiendo al profesional cumplir con su parte.</div></div>
+</div>
+<div class="faq-item">
+<div class="faq-q">¿Qué pasa si el profesional usa la tarjeta para comprar algo para otro trabajo?</div>
+<div class="faq-a"><div class="faq-a-inner">Cada transacción de la tarjeta queda registrada y es visible para el propietario. Si una compra no corresponde al presupuesto acordado, el propietario la señala. Si el profesional no puede justificarla, la tarjeta queda suspendida hasta que se resuelva, y el importe se recupera de los pagos de fases futuros o de la cuenta del profesional.</div></div>
+</div>
+<div class="faq-item">
+<div class="faq-q">¿Necesito un abogado para usar Leo?</div>
+<div class="faq-a"><div class="faq-a-inner">No. El contrato estándar está elaborado por profesionales de la contratación de obras y revisado conforme al derecho español de la construcción. Para la mayoría de las reformas residenciales, ofrece más protección que los acuerdos de palabra que hoy son la norma en España. Si quieres asesoramiento legal adicional para proyectos de mayor envergadura, puedes traer tu propio abogado y tu propio contrato.</div></div>
+</div>
+<div class="faq-item">
+<div class="faq-q">¿En qué se diferencia esto de los Términos y Condiciones de Leo?</div>
+<div class="faq-a"><div class="faq-a-inner">Los<a href="/terms-es">T&amp;C de Leo</a>regulan tu relación con la plataforma Leo — cómo usas el sitio web, protección de datos, el papel y la responsabilidad de Leo. El contrato de obra regula la relación entre el propietario y el profesional — qué se construye, cuánto cuesta y qué ocurre si algo sale mal. Son documentos distintos que funcionan de forma conjunta.</div></div>
+</div>
+<div class="faq-item">
+<div class="faq-q">¿Dónde se entregan los materiales?</div>
+<div class="faq-a"><div class="faq-a-inner">Eso se acuerda entre el propietario y el profesional como parte del presupuesto. Las opciones más habituales son: entrega directa en la obra (la más cómoda), entrega en el taller del profesional para su preparación y posterior traslado a obra, o compra presencial por parte del profesional en un proveedor local. La tarjeta funciona para las tres opciones — lo importante es que cada compra queda registrada y vinculada al presupuesto.</div></div>
+</div>
+</div>
+</div><!-- end .content -->
+<div class="cta-section">
+<h2>¿Quieres ver Leo <em>en acción?</em></h2>
+<p class="cta-sub">Tanto si estás planificando una reforma como si buscas trabajos de mayor calidad — nos encantaría hablar contigo.</p>
+<div class="cta-role-group">
+<button class="cta-role-btn" data-role="homeowner" type="button">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5"></path><path d="M5 10v8a1 1 0 001 1h12a1 1 0 001-1v-8"></path></svg>Soy propietario</button>
+<button class="cta-role-btn" data-role="contractor" type="button">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"></path></svg>Soy profesional</button>
+</div>
+<div class="cta-action" id="ctaHomeowner">
+<div class="cta-action-inner">
+<a class="cta-wa-btn" href="https://wa.me/?text=Hi%21%20I%27m%20a%20homeowner%20and%20I%27d%20like%20to%20learn%20more%20about%20Leo%20%F0%9F%91%8B" rel="noopener" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>Escríbenos por WhatsApp</a>
+<span class="cta-action-note">Cuéntanos tu proyecto — sin compromiso.</span>
+</div>
+</div>
+<div class="cta-action" id="ctaContractor">
+<div class="cta-action-inner">
+<a class="cta-wa-btn" href="https://wa.me/?text=Hi%21%20I%27m%20a%20contractor%20and%20I%27d%20like%20to%20join%20Leo%20%F0%9F%91%8B" rel="noopener" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>Escríbenos por WhatsApp</a>
+<span class="cta-action-note">Mejores trabajos, cobro justo, herramientas profesionales — hablemos.</span>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>© 2026 Leo Casa Limited · Company No. 16259714 · Inicio · Términos y Condiciones · Contrato de Obra · Cómo verificamos a los profesionales · Cómo funcionan las disputas<a href="/">Inicio</a> · <a href="/terms-es">Términos y Condiciones</a> · <a href="/contrato">Contrato de Obra</a> · <a href="/como-verificamos">Cómo verificamos a los profesionales</a> · <a href="/como-resolver-disputas">Cómo funcionan las disputas</a></p>
+</div>
+<script>
+document.querySelectorAll('.faq-item').forEach(function(item) {
+  item.querySelector('.faq-q').addEventListener('click', function() {
+    var wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+
+document.querySelectorAll('.cta-role-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var role = btn.getAttribute('data-role');
+    var wasSelected = btn.classList.contains('selected');
+
+    document.querySelectorAll('.cta-role-btn').forEach(function(b) { b.classList.remove('selected'); });
+    document.querySelectorAll('.cta-action').forEach(function(a) { a.classList.remove('visible'); });
+
+    if (!wasSelected) {
+      btn.classList.add('selected');
+      var target = role === 'homeowner' ? document.getElementById('ctaHomeowner') : document.getElementById('ctaContractor');
+      if (target) target.classList.add('visible');
+    }
+  });
+});
+</script>
+<script>
+(function(){
+  var ls = document.getElementById('langSwitch');
+  if(!ls) return;
+  ls.querySelector('.lang-btn').addEventListener('click', function(e){
+    e.stopPropagation();
+    ls.classList.toggle('open');
+  });
+  document.addEventListener('click', function(){ ls.classList.remove('open'); });
+})();
+</script>
+</body>
+</html>

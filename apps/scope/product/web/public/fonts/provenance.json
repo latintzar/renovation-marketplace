@@ -1,0 +1,44 @@
+[
+  {
+    "file": "SourceSans3-OFL.txt",
+    "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/sourcesans3/OFL.txt",
+    "git_blob_sha": "50ee76cf00fbfe42fb7c74a9b95c9508dec5bb8f",
+    "sha256": "09746787287a289323b0ec3cff4d1a4a801331b82b7207c1e186f5d26619a392",
+    "licence": "SIL Open Font License1.1"
+  },
+  {
+    "file": "SourceSans3-Italic.ttf",
+    "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/sourcesans3/SourceSans3-Italic%5Bwght%5D.ttf",
+    "git_blob_sha": "ee54b36fd07749f63466845ae14d533be06f3c22",
+    "sha256": "39e3ab05ccd7cb94907c31005bb5bec1d5432f0b096a2b782976e217a540eb6c",
+    "licence": "SIL Open Font License1.1"
+  },
+  {
+    "file": "SourceSans3.ttf",
+    "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/sourcesans3/SourceSans3%5Bwght%5D.ttf",
+    "git_blob_sha": "d259aa494fe7117141a2752a998a52c172bbd42b",
+    "sha256": "042fe2cc0b933e328410d7acbd0aa6a1873dca5aef81875f4bc214b08825c7b9",
+    "licence": "SIL Open Font License1.1"
+  },
+  {
+    "file": "PlayfairDisplay-OFL.txt",
+    "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/playfairdisplay/OFL.txt",
+    "git_blob_sha": "13153890847ba9bde8a852596d1515261156e474",
+    "sha256": "566be814f8e96e93dfa16101331557eb6b5467e9e03f627c0910fe93ca12300e",
+    "licence": "SIL Open Font License1.1"
+  },
+  {
+    "file": "PlayfairDisplay-Italic.ttf",
+    "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/playfairdisplay/PlayfairDisplay-Italic%5Bwght%5D.ttf",
+    "git_blob_sha": "94fae1f2853dd325b1a3602370780d154ffc8c89",
+    "sha256": "a5e26dc5e2e77fb2803a0bf02fd4f81ee136ec8dea863ccdb0c59a263b21378b",
+    "licence": "SIL Open Font License1.1"
+  },
+  {
+    "file": "PlayfairDisplay.ttf",
+    "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/playfairdisplay/PlayfairDisplay%5Bwght%5D.ttf",
+    "git_blob_sha": "7a09eb71f10622fd083134ac9ed46f59b21bee18",
+    "sha256": "c40f2293766a503bc70cce9e512ef844a4ccb7cbcde792fe2ea31d191917d8d6",
+    "licence": "SIL Open Font License1.1"
+  }
+]

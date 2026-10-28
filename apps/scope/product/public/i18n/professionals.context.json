@@ -1,0 +1,1569 @@
+{
+  "009ed110badf": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "0310056c84c5": {
+    "parent": "td",
+    "type": "text"
+  },
+  "04e2a9728af7": {
+    "parent": "div",
+    "type": "text"
+  },
+  "04f2bd6a75aa": {
+    "parent": "button",
+    "type": "text"
+  },
+  "051b703a4ab7": {
+    "parent": "td",
+    "type": "text"
+  },
+  "0695b563acde": {
+    "parent": "p",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "07309bec2c40": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "07b1e32e6e63": {
+    "parent": "td",
+    "type": "text"
+  },
+  "0861902e1f41": {
+    "parent": "div",
+    "type": "text"
+  },
+  "0961372ba22b": {
+    "parent": "div",
+    "type": "text"
+  },
+  "0a26f41abd00": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "0a375da30e23": {
+    "parent": "div",
+    "type": "text"
+  },
+  "0a7bcb6d6539": {
+    "parent": "td",
+    "type": "text"
+  },
+  "0b01751b0b15": {
+    "parent": "a",
+    "type": "text"
+  },
+  "0c63419146b7": {
+    "parent": "div",
+    "type": "text"
+  },
+  "0c8209e72ec8": {
+    "parent": "button",
+    "type": "text"
+  },
+  "0de59d3f373b": {
+    "parent": "th",
+    "type": "text"
+  },
+  "0e3930aa01bb": {
+    "parent": "span",
+    "type": "text"
+  },
+  "0ea6c78b6b88": {
+    "parent": "div",
+    "type": "text"
+  },
+  "0fd3e14711b9": {
+    "parent": "span",
+    "type": "text"
+  },
+  "0feae16d5536": {
+    "parent": "em",
+    "sentence": "We need your general area",
+    "type": "text"
+  },
+  "101ea3fae639": {
+    "parent": "p",
+    "sentence": "We'll message you on WhatsApp with a matched tradesperson shortly. Want to tell us more about the job?",
+    "type": "text"
+  },
+  "105d0a54674c": {
+    "parent": "span",
+    "sentence": "Copy the URL from the address bar or use Compartir . Return here and paste below .",
+    "type": "text"
+  },
+  "10807ea9bba1": {
+    "parent": "div",
+    "type": "text"
+  },
+  "119178ddfefa": {
+    "attr": "placeholder",
+    "tag": "textarea",
+    "type": "attr:placeholder"
+  },
+  "12b6fff04f50": {
+    "parent": "div",
+    "type": "text"
+  },
+  "13288112516c": {
+    "parent": "span",
+    "type": "text"
+  },
+  "13775e6553a0": {
+    "parent": "h1",
+    "sentence": "Zero payment delays. Zero lead fees. Built for tradespeople.",
+    "type": "text"
+  },
+  "14041fdbdb47": {
+    "attr": "aria-label",
+    "tag": "textarea",
+    "type": "attr:aria-label"
+  },
+  "173f5f9f26b4": {
+    "parent": "a",
+    "type": "text"
+  },
+  "18a1d304fee3": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "18fdd549b2ed": {
+    "parent": "span",
+    "type": "text"
+  },
+  "1a7af0845f0a": {
+    "parent": "div",
+    "type": "text"
+  },
+  "1acb2e79de53": {
+    "parent": "div",
+    "type": "text"
+  },
+  "1c4ee0201b3a": {
+    "parent": "li",
+    "type": "text"
+  },
+  "1d25fd2a15fd": {
+    "parent": "td",
+    "type": "text"
+  },
+  "1d36d78123e1": {
+    "parent": "span",
+    "type": "text"
+  },
+  "1fb1ad61c352": {
+    "parent": "div",
+    "type": "text"
+  },
+  "20160bae9fe9": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "201ec41f8fdf": {
+    "parent": "span",
+    "sentence": "Open your public profile and copy the URL from the address bar .",
+    "type": "text"
+  },
+  "2249d0c4db49": {
+    "parent": "span",
+    "type": "text"
+  },
+  "22844d2575bc": {
+    "parent": "span",
+    "sentence": "Government ID (biometric match)",
+    "type": "text"
+  },
+  "229e7cea1437": {
+    "parent": "span",
+    "type": "text"
+  },
+  "22b4a32961aa": {
+    "parent": "p",
+    "type": "text"
+  },
+  "23dce5fef1d0": {
+    "parent": "td",
+    "type": "text"
+  },
+  "24161a303857": {
+    "parent": "p",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "2717819f3c37": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "274b9d1fa93b": {
+    "parent": "a",
+    "type": "text"
+  },
+  "27621d394608": {
+    "parent": "div",
+    "type": "text"
+  },
+  "283bf30f8624": {
+    "parent": "span",
+    "type": "text"
+  },
+  "283fa450fb55": {
+    "parent": "span",
+    "type": "text"
+  },
+  "284d39a8280a": {
+    "parent": "p",
+    "type": "text"
+  },
+  "286275abd184": {
+    "parent": "div",
+    "type": "text"
+  },
+  "289401a44a7f": {
+    "attr": "placeholder",
+    "tag": "textarea",
+    "type": "attr:placeholder"
+  },
+  "2a8b22834aa2": {
+    "parent": "span",
+    "type": "text"
+  },
+  "2ab62ae94c17": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "2ac741e6203a": {
+    "parent": "button",
+    "type": "text"
+  },
+  "2b5c3d26721a": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "2cba4b90e7c1": {
+    "parent": "span",
+    "type": "text"
+  },
+  "2cff9baabf56": {
+    "parent": "button",
+    "type": "text"
+  },
+  "2d13182b80fe": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "2e5f37491d3b": {
+    "parent": "div",
+    "type": "text"
+  },
+  "2e96833b05b1": {
+    "parent": "span",
+    "sentence": "Copy the URL from the address bar or use Compartir . Return here and paste below .",
+    "type": "text"
+  },
+  "2eba310e0cd6": {
+    "attr": "aria-label",
+    "tag": "textarea",
+    "type": "attr:aria-label"
+  },
+  "2ee47c0daca3": {
+    "parent": "div",
+    "type": "text"
+  },
+  "3017de4b7b58": {
+    "parent": "div",
+    "type": "text"
+  },
+  "301e84af6439": {
+    "parent": "a",
+    "sentence": "Log in Sign up 🇬🇧 EN 🇬🇧 English 🇪🇸 Español Zero payment delays. Zero lead fees. Built for tradespeople. A platform built for tradespeople. Customer pays upfront into escrow — money is already there before your first tool comes out. Respond for free. Get paid milestone by milestone. We only win when you win. Sign up or import your existing profile Habitissimo Houzz CronoShare Hogami My website Are you a homeowner? Already have a client? Don't chase payments for milestones. The customer pays in full before work starts — held in escrow, not in their pocket. No more chasing, no \"I'll pay you next week\", no bad debt. It releases to your bank milestone by milestone as you complete each agreed phase: deposit, mid-job, final sign-off. The money is already there before your first tool comes out. Hot Water Cylinder Powered by Stripe €985 pre-paid by customer Deposit — work commences €295 Mid-job milestone €395 Final sign-off €295 Pay Pay Accept Apple Pay, Google Pay, and all major cards — milestone by milestone Materials sorted before you start. Every Leo job comes with a dedicated card for materials — yours to use from day one. The homeowner's deposit loads directly to your Leo card before work begins. Buy from suppliers as normal, no bank transfer, no fronting cash, no waiting to be reimbursed. The card is restricted to construction suppliers, so every purchase is automatically captured and visible to the homeowner in real time. No disputes about where the materials money went — it's all there in the record. Materials Card •••• •••• •••• 4821 Card Holder C. DÍAZ Expires 03/28 Automatic spend record · HWC-2026 Leroy Merlin — copper pipe Today 09:14 €148.50 Fontanería Centro — valves Today 11:32 €63.20 Remaining balance €288.30 Talk it. Leo writes it. Record a voice note after a site visit. Leo asks follow-up questions, then generates a professional scope of work — description, materials, cost breakdown, payment schedule, terms. What used to take 45 minutes at a desk takes 2 minutes in the van. 0:42 Your voice note Leo created your scope leo.casa/scope/hwc-2026 Hot Water Cylinder Replacement Scope shared · 21 Mar 2026 Scope of work Remove existing hot water cylinder and replace with Megaflo Eco 170i unvented cylinder. Includes disconnection, drain-down, removal and disposal of old unit, installation with all required safety valves, connection to existing feeds, commissioning and testing. Cost breakdown Megaflo Eco 170i cylinder €620 Installation labour (1 day) €280 Safety valves + fittings €85 Leo service fee (5%) €49.25 Your total €1,034.25 Payment schedule 40% upfront €413.70 60% on completion €620.55 Payment protected by Leo Terms Work to commence within 7 days Materials warranty: 2 years Labour guarantee: 12 months Approve & Pay Respond for free. No lead fees. Ever. Other platforms charge you every time you reply — even if the job never happens. On Leo, responding is free. Chatting is free. You only pay 4% when a job actually completes through us. If it doesn't happen, you owe nothing. Upstairs Bathroom Replumb El Rosario · Plumbing New 0:24 \"Need to check the combi pressure and the pipe runs before quoting the full reroute.\" Can you come take a look later today? I'm home all afternoon Invited to viewing El Rosario, Marbella Exact address shared Directions Free to respond · Free to chat · No lead fees Serious customers. Jobs that make sense. Every job comes with a proper description, photos, and location. You know exactly what you're walking into before you respond. No more \"can you come look at something?\" with zero context. leo.casa/brief/bath-replumb Plumbing Posted 2h ago Upstairs Bathroom Replumb El Rosario, Marbella Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa. +2 El Rosario, Marbella ~2 km radius Your reputation, assembled in one click. Leo searches the web for your business — reviews, portfolio, qualifications. Everything you've already built on other platforms gets pulled into one verified profile. No re-entering anything. Habitissimo 4.8★ · 12 reviews Houzz 4.9★ · 8 reviews CronoShare 9.5★ · 16 reviews Website fontaneriadiaz.es Leo found everything leo.casa/pro/fontaneria-diaz Fontanería Díaz Carlos Díaz · Fontanero · Marbella Reviews from across the web 4.8★ 12 reviews 4.9★ 8 reviews 5.0★ 3 reviews María L. ★★★★★ \"Excellent work on our bathroom. Professional, clean, and finished ahead of schedule.\" Projects Reforma de baño Cambio de calentador Assembled from Habitissimo, Houzz, Hogami & fontaneriadiaz.es Your credentials Be the contractor a homeowner can trust. Leo verifies your government ID, autónomo registration, public liability insurance, and criminal record — so homeowners know exactly who they're hiring. A Leo-verified badge isn't just a tick box. It's what closes the job. Leo handles the whole process. Takes about 10 minutes. Leo verification Carlos Díaz · Fontanero Government ID (biometric match) Autónomo registration (trade-specific) Public liability insurance (RC) Criminal record certificate Background sweep Leo-verified badge visible to all homeowners Found something on site? Snap a photo. Leo prices it, checks it against fair market rates, and sends it to the customer for approval. Nothing gets added to the bill without their say-so. No absorbing costs, no arguments about what was agreed. Work phases Demolition & removal 14 Mar · Old cylinder removed Pipework prep 15 Mar · Feeds adapted Payment released · €394 3 Installation In progress · started 18 Mar Add-on Sent to customer Additional Copper Pipework Found corroded pipe behind wall — replacing for safety. Copper pipe (1.5m) €52.50 Labour (45 min) €45.00 Total €97.50 4 Testing & commissioning 5 Customer sign-off A proper contract. Not a handshake. Every Leo job is backed by a construction agreement grounded in Spanish law. Scope, milestones, variation orders, materials card rules, dispute resolution — all written down before work starts. Both sides know exactly where they stand. Everything Leo records becomes your evidence if a homeowner disputes anything. Read the full agreement → Leo Construction Agreement Hot Water Cylinder Replacement LCS-4821 · James Mitchell ↔ Carlos Ruiz Itemised scope & unit rates Milestone payment schedule Variation order process Materials card governance Dispute resolution & cancellation Both parties agreed Under Spanish law How we compare. Other platforms Leo Cost to join Monthly subscriptions or credit packs Free. No subscription, no credits Lead fees $15–$200 per lead — even the ones who ghost Free to respond. 4% only when work completes How you quote Type it at 9pm on a laptop. Or don't. Voice note from the van. Leo writes the scope How you respond Type fast or lose. Template messages 30-second voice note. Homeowners see replies ranked by relevance and quality — not who paid or replied first Getting paid Chase invoices. Average write-off: £1,646/yr Escrow. Money held before work starts Mid-job surprises Absorb the cost or argue about it Snap a photo. Leo prices it. Customer approves Your existing clients They want a cut of those too 2.9% processing only. No referral fee Your work deserves better than a lead-gen platform. Join the tradespeople already using Leo to get paid on time, every time. Sign up or import your existing profile Habitissimo Houzz CronoShare Hogami My website Are you a homeowner? Already have a client? The layer between tradespeople and homeowners. Scope, payment, and protection for everyone. Contact WhatsApp operator@example.invalid Legal Terms & Conditions Construction Agreement Privacy Policy EU Dispute Resolution Read Leo Stories © 2026 Leo Casa Limited · Company No. 16259714 We need your general area So we can match you with tradespeople nearby. This isn’t your exact address — just the rough zone for the job. Get my location or search Skip for now Does this area look right? Pan the map to move the circle. Trades never see your exact spot — only this rough area. Trades only see this approximate area. Your exact location won’t be shared unless you invite someone for a viewing. Confirm area Back Build your brief A few quick questions — then you’ll see what tradespeople get Brief preview Add your WhatsApp number so we can send your brief and match you with tradespeople. Send Close preview Needs more info Preview brief Approve job Import from Habitissimo Your Habitissimo profile link We import reviews, photos and business details from your public page. 1 Open Habitissimo 2 Open your public profile and copy the URL from the address bar . 3 Switch back to this tab and paste below . Paste link Import Import from Houzz Your Houzz profile link We import your public portfolio and reviews. 1 Open Houzz 2 Open Perfil de Houzz (e.g. under Marketing ) so you see your public profile. 3 Copy the URL from the address bar or use Compartir . Return here and paste below . Paste link Import Import from CronoShare Your CronoShare profile link We import your services, reviews, and business details from your public CronoShare profile. 1 Open CronoShare 2 Open your public profile (the page that shows your name, services, and reviews) and copy the URL from the address bar . 3 Switch back here and paste below . Paste link Import My website Your website URL We scan your site for portfolio and contact info. 1 Open your business website in another tab. 2 Copy the URL from the address bar . 3 Switch back here and paste below . Paste link Import Migrate your profile Powered by Leo Importing… View full profile Save profile Add your WhatsApp number so we can send you job leads and next steps. Continue We'll find someone. Drop your WhatsApp number and we'll personally match you with a vetted tradesperson for this job. Maybe later We're on it. We'll message you on WhatsApp with a matched tradesperson shortly. Want to tell us more about the job? Message us on WhatsApp",
+    "type": "text"
+  },
+  "310015c66230": {
+    "parent": "p",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "31386f5c2a2b": {
+    "parent": "em",
+    "sentence": "Zero payment delays. Zero lead fees. Built for tradespeople.",
+    "type": "text"
+  },
+  "3155d41b5a69": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "31fbef162594": {
+    "parent": "button",
+    "type": "text"
+  },
+  "321d74d11f1f": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "32aed059db4e": {
+    "parent": "div",
+    "type": "text"
+  },
+  "32b5fe536aa4": {
+    "parent": "strong",
+    "sentence": "Open Perfil de Houzz (e.g. under Marketing ) so you see your public profile.",
+    "type": "text"
+  },
+  "32fcb6ec0209": {
+    "parent": "div",
+    "type": "text"
+  },
+  "347ef7f247d7": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "35093603246b": {
+    "parent": "div",
+    "type": "text"
+  },
+  "359a7318c8ec": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "36106d6960c7": {
+    "attr": "aria-label",
+    "tag": "a",
+    "type": "attr:aria-label"
+  },
+  "36cafd98238a": {
+    "parent": "span",
+    "type": "text"
+  },
+  "3756c5c66d94": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "3761699ea1e1": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "39086099c33f": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "399edaedc303": {
+    "parent": "a",
+    "type": "text"
+  },
+  "3c09b24e80a1": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "3c242559a790": {
+    "parent": "span",
+    "sentence": "Open your business website in another tab.",
+    "type": "text"
+  },
+  "3c5a7ecea742": {
+    "parent": "div",
+    "type": "text"
+  },
+  "3f61429d5730": {
+    "parent": "td",
+    "type": "text"
+  },
+  "4094ce516d09": {
+    "parent": "a",
+    "type": "text"
+  },
+  "42c435035939": {
+    "parent": "strong",
+    "sentence": "Open your public profile and copy the URL from the address bar .",
+    "type": "text"
+  },
+  "4337a705ddfa": {
+    "parent": "span",
+    "type": "text"
+  },
+  "4786553622c5": {
+    "parent": "a",
+    "type": "text"
+  },
+  "4787eaf7c938": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "496af5bc97c9": {
+    "parent": "h2",
+    "sentence": "We'll find someone.",
+    "type": "text"
+  },
+  "4a91ee5f0106": {
+    "parent": "h2",
+    "sentence": "We need your general area",
+    "type": "text"
+  },
+  "4b1bf41a54e9": {
+    "parent": "p",
+    "type": "text"
+  },
+  "4c8e4ccc8e85": {
+    "parent": "div",
+    "type": "text"
+  },
+  "4d92798a6063": {
+    "attr": "placeholder",
+    "tag": "textarea",
+    "type": "attr:placeholder"
+  },
+  "4df7e83ea1f0": {
+    "parent": "p",
+    "type": "text"
+  },
+  "4e71ef49e9a1": {
+    "parent": "div",
+    "type": "text"
+  },
+  "4eb05b3d5eee": {
+    "parent": "div",
+    "type": "text"
+  },
+  "5038762bb0d3": {
+    "parent": "td",
+    "type": "text"
+  },
+  "506ff3946215": {
+    "parent": "a",
+    "type": "text"
+  },
+  "5232f02ea80d": {
+    "parent": "span",
+    "type": "text"
+  },
+  "52808b161028": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "54472da7e6a4": {
+    "parent": "div",
+    "type": "text"
+  },
+  "54a0e8c17ebb": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "54ede4accc52": {
+    "parent": "span",
+    "type": "text"
+  },
+  "5723587a09d2": {
+    "parent": "strong",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "593b2b50765f": {
+    "parent": "div",
+    "type": "text"
+  },
+  "59e459668339": {
+    "parent": "div",
+    "type": "text"
+  },
+  "5a40f9aa6a53": {
+    "attr": "placeholder",
+    "tag": "textarea",
+    "type": "attr:placeholder"
+  },
+  "5a446af58247": {
+    "parent": "div",
+    "type": "text"
+  },
+  "5a6ccf25af1d": {
+    "parent": "p",
+    "type": "text"
+  },
+  "5a7d4e8b69f5": {
+    "parent": "span",
+    "type": "text"
+  },
+  "5bb4b838770b": {
+    "parent": "td",
+    "type": "text"
+  },
+  "5bc426e8d81e": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "5c0cdb6294db": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "5c4ca5e61006": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "5d155391853b": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "5e2b8e96503d": {
+    "parent": "a",
+    "type": "text"
+  },
+  "5fb534bc7fde": {
+    "parent": "button",
+    "type": "text"
+  },
+  "62d1172a74ac": {
+    "parent": "a",
+    "type": "text"
+  },
+  "6347c7be0ab2": {
+    "parent": "span",
+    "type": "text"
+  },
+  "653484b36f18": {
+    "attr": "aria-label",
+    "tag": "input",
+    "type": "attr:aria-label"
+  },
+  "65a00c9807d2": {
+    "parent": "span",
+    "sentence": "60% on completion €620.55",
+    "type": "text"
+  },
+  "66001653b228": {
+    "parent": "p",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "661673092916": {
+    "parent": "span",
+    "type": "text"
+  },
+  "6623b326160d": {
+    "parent": "div",
+    "type": "text"
+  },
+  "664cc1b8fc60": {
+    "parent": "p",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "665e56aab47a": {
+    "parent": "span",
+    "type": "text"
+  },
+  "668bce052e97": {
+    "parent": "div",
+    "type": "text"
+  },
+  "66e0f92cfb9e": {
+    "parent": "span",
+    "sentence": "Government ID (biometric match)",
+    "type": "text"
+  },
+  "6703e3a9983b": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "67af699b9ca0": {
+    "parent": "span",
+    "type": "text"
+  },
+  "67ba0b4ca4dd": {
+    "parent": "p",
+    "type": "text"
+  },
+  "67e5a3025bc0": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "68267ae1a2be": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "689ad77ab766": {
+    "parent": "span",
+    "sentence": "Autónomo registration (trade-specific)",
+    "type": "text"
+  },
+  "6962d089d69f": {
+    "parent": "li",
+    "type": "text"
+  },
+  "69d6c97bbd07": {
+    "parent": "span",
+    "type": "text"
+  },
+  "6a40edf1fc87": {
+    "parent": "a",
+    "type": "text"
+  },
+  "6b0725392cde": {
+    "parent": "td",
+    "type": "text"
+  },
+  "6b0ebfcf5c83": {
+    "parent": "strong",
+    "type": "text"
+  },
+  "6e1215c1b2a0": {
+    "parent": "span",
+    "sentence": "Public liability insurance (RC)",
+    "type": "text"
+  },
+  "6f81cf8e60c6": {
+    "parent": "div",
+    "type": "text"
+  },
+  "715a91aa77f0": {
+    "parent": "span",
+    "type": "text"
+  },
+  "723afa394dae": {
+    "parent": "span",
+    "type": "text"
+  },
+  "7341b51ac9b1": {
+    "parent": "td",
+    "type": "text"
+  },
+  "747a8f398395": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "75f86b435b41": {
+    "parent": "span",
+    "type": "text"
+  },
+  "76900f1bfd16": {
+    "parent": "button",
+    "type": "text"
+  },
+  "773decd3db48": {
+    "parent": "div",
+    "type": "text"
+  },
+  "77b64bbaaa97": {
+    "parent": "td",
+    "type": "text"
+  },
+  "77f120e0932a": {
+    "parent": "td",
+    "type": "text"
+  },
+  "78fe97e21450": {
+    "parent": "p",
+    "type": "text"
+  },
+  "79a9c12eac03": {
+    "parent": "td",
+    "type": "text"
+  },
+  "7a2c44890967": {
+    "parent": "a",
+    "type": "text"
+  },
+  "7a917cf8e8d2": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "7abf41c6cd40": {
+    "parent": "div",
+    "type": "text"
+  },
+  "7adca5c871e3": {
+    "parent": "strong",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "7b0a3d74494a": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "7b26e7c68c8a": {
+    "parent": "span",
+    "sentence": "Copy the URL from the address bar or use Compartir . Return here and paste below .",
+    "type": "text"
+  },
+  "7b3079609e72": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "7b6fff9ea860": {
+    "parent": "p",
+    "type": "text"
+  },
+  "7cda1682d014": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "7ce136c5f810": {
+    "parent": "h1",
+    "type": "text"
+  },
+  "7d8ab368210c": {
+    "parent": "button",
+    "type": "text"
+  },
+  "7d9eb7acb13e": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "7df50dd72168": {
+    "parent": "strong",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "7e51c04a08d4": {
+    "parent": "span",
+    "type": "text"
+  },
+  "7f1ee16aaadd": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "7fa615cd93bd": {
+    "parent": "div",
+    "type": "text"
+  },
+  "80bf154a33be": {
+    "parent": "div",
+    "type": "text"
+  },
+  "81e5cee9cc4f": {
+    "parent": "span",
+    "type": "text"
+  },
+  "8251fca8677d": {
+    "parent": "title",
+    "type": "text"
+  },
+  "853439a7a76b": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "85bdc51a1cf8": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "86754647194f": {
+    "parent": "p",
+    "type": "text"
+  },
+  "87bc90565005": {
+    "parent": "a",
+    "type": "text"
+  },
+  "87f17fa30f45": {
+    "parent": "span",
+    "type": "text"
+  },
+  "88bf0a859510": {
+    "parent": "button",
+    "type": "text"
+  },
+  "89152fbb0892": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "89ce2d7c9996": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "8ab6dd4d7504": {
+    "parent": "button",
+    "type": "text"
+  },
+  "8b1690bec17c": {
+    "parent": "span",
+    "type": "text"
+  },
+  "8d8bd478f3a8": {
+    "parent": "td",
+    "type": "text"
+  },
+  "8fdc31ff70ef": {
+    "parent": "span",
+    "sentence": "40% upfront €413.70",
+    "type": "text"
+  },
+  "9053546a1ef0": {
+    "parent": "p",
+    "type": "text"
+  },
+  "905ce0bb7570": {
+    "attr": "placeholder",
+    "tag": "textarea",
+    "type": "attr:placeholder"
+  },
+  "9247574db8d6": {
+    "parent": "td",
+    "type": "text"
+  },
+  "924787a33a5f": {
+    "parent": "div",
+    "type": "text"
+  },
+  "92d3da386db8": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "93a26b1eaff9": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "942792d78ffb": {
+    "parent": "p",
+    "type": "text"
+  },
+  "949796c906eb": {
+    "parent": "h2",
+    "sentence": "Respond for free. No lead fees. Ever.",
+    "type": "text"
+  },
+  "95791e6dd877": {
+    "parent": "p",
+    "type": "text"
+  },
+  "957feaa16fbc": {
+    "parent": "span",
+    "sentence": "Switch back to this tab and paste below .",
+    "type": "text"
+  },
+  "961a6062ba1b": {
+    "parent": "strong",
+    "sentence": "Powered by Stripe",
+    "type": "text"
+  },
+  "973153fe79e2": {
+    "parent": "div",
+    "type": "text"
+  },
+  "980fc020b998": {
+    "parent": "div",
+    "type": "text"
+  },
+  "98bfcb7cc76e": {
+    "attr": "placeholder",
+    "tag": "textarea",
+    "type": "attr:placeholder"
+  },
+  "990a2ddb3d39": {
+    "parent": "span",
+    "type": "text"
+  },
+  "99100985855b": {
+    "parent": "div",
+    "type": "text"
+  },
+  "99fba5728601": {
+    "parent": "span",
+    "sentence": "Open Perfil de Houzz (e.g. under Marketing ) so you see your public profile.",
+    "type": "text"
+  },
+  "9a19951ea303": {
+    "parent": "div",
+    "type": "text"
+  },
+  "9a3616b04beb": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "9af19364d592": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "9b9a8d05a7ec": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "9bb3a91fbff8": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "9c2bb2d3652b": {
+    "parent": "p",
+    "type": "text"
+  },
+  "9c5551e87cb7": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "9cf548cb8308": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "9d46ae013834": {
+    "parent": "div",
+    "type": "text"
+  },
+  "9dadf122f667": {
+    "parent": "div",
+    "type": "text"
+  },
+  "9e09cc7a8343": {
+    "parent": "span",
+    "type": "text"
+  },
+  "9ed823f1b0c9": {
+    "parent": "div",
+    "type": "text"
+  },
+  "9f9b7695158c": {
+    "parent": "strong",
+    "sentence": "Open your public profile and copy the URL from the address bar .",
+    "type": "text"
+  },
+  "a03c447b6015": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "a16d81353211": {
+    "attr": "alt",
+    "tag": "img",
+    "type": "attr:alt"
+  },
+  "a1adefc66491": {
+    "parent": "p",
+    "type": "text"
+  },
+  "a35e8db02488": {
+    "parent": "div",
+    "type": "text"
+  },
+  "a47b7b798112": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "a5b1bf4b9cca": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "a6a2d4cf7f1a": {
+    "parent": "p",
+    "type": "text"
+  },
+  "a6b835a6c09d": {
+    "parent": "h1",
+    "sentence": "Zero payment delays. Zero lead fees. Built for tradespeople.",
+    "type": "text"
+  },
+  "a6bcbeb923cd": {
+    "parent": "span",
+    "type": "text"
+  },
+  "a97a2e755189": {
+    "parent": "p",
+    "type": "text"
+  },
+  "a99dfd6ae8ff": {
+    "parent": "p",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "ab147486ad74": {
+    "parent": "div",
+    "type": "text"
+  },
+  "abf8af2da6c7": {
+    "parent": "td",
+    "type": "text"
+  },
+  "aebf7e7b92f5": {
+    "parent": "h2",
+    "sentence": "We need your general area",
+    "type": "text"
+  },
+  "aee46555d648": {
+    "parent": "span",
+    "sentence": "Switch back here and paste below .",
+    "type": "text"
+  },
+  "af691280f43a": {
+    "parent": "span",
+    "sentence": "Open your public profile (the page that shows your name, services, and reviews) and copy the URL from the address bar .",
+    "type": "text"
+  },
+  "b0227cc198b6": {
+    "parent": "p",
+    "type": "text"
+  },
+  "b291341b9ad0": {
+    "parent": "div",
+    "type": "text"
+  },
+  "b325c10d36ca": {
+    "parent": "span",
+    "type": "text"
+  },
+  "b353455a8c14": {
+    "parent": "div",
+    "type": "text"
+  },
+  "b58eb52c8810": {
+    "parent": "button",
+    "type": "text"
+  },
+  "b5a229ac8bec": {
+    "parent": "div",
+    "type": "text"
+  },
+  "b5c120b316c2": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "b731a1457154": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "b8232214704b": {
+    "parent": "span",
+    "type": "text"
+  },
+  "b86c2f62269a": {
+    "parent": "div",
+    "type": "text"
+  },
+  "b8b311b0f273": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "b959011c9d1e": {
+    "parent": "span",
+    "type": "text"
+  },
+  "badb47bf3a92": {
+    "parent": "h2",
+    "sentence": "Respond for free. No lead fees. Ever.",
+    "type": "text"
+  },
+  "bb3d45c7913c": {
+    "parent": "p",
+    "type": "text"
+  },
+  "bb58440174fe": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "bb958621716b": {
+    "parent": "div",
+    "type": "text"
+  },
+  "bbc263a44f64": {
+    "parent": "div",
+    "type": "text"
+  },
+  "bbe00a729a22": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "bbf331d2a600": {
+    "parent": "div",
+    "type": "text"
+  },
+  "bc23c128da32": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "bd1810d7a07b": {
+    "parent": "p",
+    "type": "text"
+  },
+  "bd59a9515568": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "be5a107d1274": {
+    "parent": "span",
+    "type": "text"
+  },
+  "bf82cf671059": {
+    "parent": "span",
+    "sentence": "Public liability insurance (RC)",
+    "type": "text"
+  },
+  "c01c4324f1fa": {
+    "parent": "span",
+    "type": "text"
+  },
+  "c030bf4c9da2": {
+    "parent": "div",
+    "type": "text"
+  },
+  "c189840cf7e2": {
+    "parent": "a",
+    "type": "text"
+  },
+  "c3daddeecfad": {
+    "parent": "p",
+    "type": "text"
+  },
+  "c3fc54aa5390": {
+    "parent": "div",
+    "type": "text"
+  },
+  "c4ec9b04c630": {
+    "parent": "td",
+    "type": "text"
+  },
+  "c6948396024b": {
+    "parent": "p",
+    "sentence": "We'll message you on WhatsApp with a matched tradesperson shortly. Want to tell us more about the job?",
+    "type": "text"
+  },
+  "c6b485200e49": {
+    "parent": "span",
+    "sentence": "Copy the URL from the address bar .",
+    "type": "text"
+  },
+  "c7e3e34948f7": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "c8828acd9578": {
+    "parent": "span",
+    "type": "text"
+  },
+  "c95356784006": {
+    "attr": "aria-label",
+    "tag": "div",
+    "type": "attr:aria-label"
+  },
+  "c9a25f63e121": {
+    "parent": "span",
+    "sentence": "A platform built for tradespeople. Customer pays upfront into escrow — money is already there before your first tool comes out. Respond for free. Get paid milestone by milestone. We only win when you win.",
+    "type": "text"
+  },
+  "c9aebca00e0f": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "c9b24ac51c58": {
+    "parent": "p",
+    "type": "text"
+  },
+  "c9b3c38247f7": {
+    "parent": "span",
+    "type": "text"
+  },
+  "ca503a374fab": {
+    "parent": "span",
+    "sentence": "Open Perfil de Houzz (e.g. under Marketing ) so you see your public profile.",
+    "type": "text"
+  },
+  "cab849be7b27": {
+    "parent": "span",
+    "type": "text"
+  },
+  "cb01435df92b": {
+    "parent": "div",
+    "type": "text"
+  },
+  "cc7bf7db333a": {
+    "parent": "li",
+    "type": "text"
+  },
+  "ccec6c1a3928": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "cd5a44ce9463": {
+    "parent": "strong",
+    "sentence": "Copy the URL from the address bar or use Compartir . Return here and paste below .",
+    "type": "text"
+  },
+  "ce19110b49ca": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "ce2d846e89d0": {
+    "parent": "div",
+    "type": "text"
+  },
+  "ce9815a8ef51": {
+    "parent": "p",
+    "type": "text"
+  },
+  "cfe1ae6e7f3a": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "cx:065c7b64548e": {
+    "parent": "span",
+    "sentence": "Open your business website in another tab.",
+    "type": "composite"
+  },
+  "cx:0896ccc51910": {
+    "parent": "span",
+    "sentence": "60% on completion €620.55",
+    "type": "composite"
+  },
+  "cx:1334491e25c0": {
+    "parent": "span",
+    "sentence": "Open your public profile and copy the URL from the address bar .",
+    "type": "composite"
+  },
+  "cx:14d9c22ea8f2": {
+    "parent": "span",
+    "sentence": "Public liability insurance (RC)",
+    "type": "composite"
+  },
+  "cx:16a0e9593d70": {
+    "parent": "span",
+    "sentence": "Government ID (biometric match)",
+    "type": "composite"
+  },
+  "cx:3632a4b0e5b8": {
+    "parent": "span",
+    "sentence": "Copy the URL from the address bar or use Compartir . Return here and paste below .",
+    "type": "composite"
+  },
+  "cx:4595ef632be4": {
+    "parent": "span",
+    "sentence": "Switch back here and paste below .",
+    "type": "composite"
+  },
+  "cx:4b69f20fe0d2": {
+    "parent": "span",
+    "sentence": "Copy the URL from the address bar .",
+    "type": "composite"
+  },
+  "cx:6840558cd813": {
+    "parent": "h2",
+    "sentence": "We need your general area",
+    "type": "composite"
+  },
+  "cx:87080353a943": {
+    "parent": "span",
+    "sentence": "Autónomo registration (trade-specific)",
+    "type": "composite"
+  },
+  "cx:895a2807448a": {
+    "parent": "h1",
+    "sentence": "Zero payment delays. Zero lead fees. Built for tradespeople.",
+    "type": "composite"
+  },
+  "cx:934811dbe532": {
+    "parent": "p",
+    "sentence": "We'll message you on WhatsApp with a matched tradesperson shortly. Want to tell us more about the job?",
+    "type": "composite"
+  },
+  "cx:9ebfc877055c": {
+    "parent": "h2",
+    "sentence": "Respond for free. No lead fees. Ever.",
+    "type": "composite"
+  },
+  "cx:a18212f96261": {
+    "parent": "h2",
+    "sentence": "We'll find someone.",
+    "type": "composite"
+  },
+  "cx:a54fe7d5c8f5": {
+    "parent": "span",
+    "sentence": "Switch back to this tab and paste below .",
+    "type": "composite"
+  },
+  "cx:b69092017e7b": {
+    "parent": "div",
+    "sentence": "Powered by Stripe",
+    "type": "composite"
+  },
+  "cx:c8400c8c3fd5": {
+    "parent": "span",
+    "sentence": "40% upfront €413.70",
+    "type": "composite"
+  },
+  "cx:d1c0937abedd": {
+    "parent": "span",
+    "sentence": "Open your public profile (the page that shows your name, services, and reviews) and copy the URL from the address bar .",
+    "type": "composite"
+  },
+  "cx:f66dc20a7f40": {
+    "parent": "span",
+    "sentence": "Open Perfil de Houzz (e.g. under Marketing ) so you see your public profile.",
+    "type": "composite"
+  },
+  "d01e8555cb95": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "d1489f2245d5": {
+    "parent": "div",
+    "type": "text"
+  },
+  "d1ee49c042a7": {
+    "parent": "strong",
+    "sentence": "Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa.",
+    "type": "text"
+  },
+  "d5e508cf155b": {
+    "parent": "h2",
+    "sentence": "We'll find someone.",
+    "type": "text"
+  },
+  "d5e9eac00ad8": {
+    "parent": "strong",
+    "sentence": "Copy the URL from the address bar or use Compartir . Return here and paste below .",
+    "type": "text"
+  },
+  "d650d239fd49": {
+    "parent": "strong",
+    "sentence": "Switch back to this tab and paste below .",
+    "type": "text"
+  },
+  "d742b9c7f548": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "d8567da8e535": {
+    "parent": "div",
+    "type": "text"
+  },
+  "d974fa07a370": {
+    "attr": "placeholder",
+    "tag": "input",
+    "type": "attr:placeholder"
+  },
+  "da0b99f6c00a": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "da2ed2150690": {
+    "parent": "span",
+    "type": "text"
+  },
+  "db28d45e239b": {
+    "parent": "div",
+    "type": "text"
+  },
+  "dbc537dfc9b4": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "dbc9f985bd43": {
+    "parent": "div",
+    "type": "text"
+  },
+  "dea47d0687b3": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "df48db8b4e61": {
+    "parent": "div",
+    "type": "text"
+  },
+  "e05bedce7309": {
+    "parent": "td",
+    "type": "text"
+  },
+  "e4c9839e2905": {
+    "parent": "div",
+    "type": "text"
+  },
+  "e54b434182c5": {
+    "parent": "div",
+    "type": "text"
+  },
+  "e6640de835ad": {
+    "parent": "em",
+    "sentence": "We'll find someone.",
+    "type": "text"
+  },
+  "e7c370f5c163": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "e8a8a1677dc8": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "e8b1bcc3223d": {
+    "parent": "span",
+    "type": "text"
+  },
+  "e978b00de465": {
+    "attr": "aria-label",
+    "tag": "div",
+    "type": "attr:aria-label"
+  },
+  "eaabcb3547be": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "eb19d770ff2e": {
+    "parent": "p",
+    "type": "text"
+  },
+  "eb650fa1243e": {
+    "attr": "aria-label",
+    "tag": "textarea",
+    "type": "attr:aria-label"
+  },
+  "eb91da9fa8ee": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "ec21453f9cd8": {
+    "attr": "aria-label",
+    "tag": "input",
+    "type": "attr:aria-label"
+  },
+  "ec858de3876b": {
+    "parent": "span",
+    "sentence": "Open your public profile and copy the URL from the address bar .",
+    "type": "text"
+  },
+  "eca117f9accf": {
+    "parent": "span",
+    "sentence": "Autónomo registration (trade-specific)",
+    "type": "text"
+  },
+  "ed077f3d8125": {
+    "parent": "span",
+    "sentence": "Open Perfil de Houzz (e.g. under Marketing ) so you see your public profile.",
+    "type": "text"
+  },
+  "ede548996483": {
+    "parent": "div",
+    "type": "text"
+  },
+  "ef977d09f3c5": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "f25950ebf2fa": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "f2609af41c60": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "f31e7043acde": {
+    "parent": "div",
+    "type": "text"
+  },
+  "f32fb5de8c70": {
+    "parent": "p",
+    "type": "text"
+  },
+  "f3d879707bd4": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "f4be20af4a53": {
+    "parent": "span",
+    "type": "text"
+  },
+  "f5904cf7a123": {
+    "parent": "strong",
+    "sentence": "Open Perfil de Houzz (e.g. under Marketing ) so you see your public profile.",
+    "type": "text"
+  },
+  "f59646acca24": {
+    "parent": "strong",
+    "sentence": "Open your business website in another tab.",
+    "type": "text"
+  },
+  "f5db58d022a0": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "f6725f3af08a": {
+    "parent": "div",
+    "type": "text"
+  },
+  "f6f4688ff23d": {
+    "parent": "button",
+    "type": "text"
+  },
+  "f7cc43772d60": {
+    "parent": "span",
+    "type": "text"
+  },
+  "f7d48ea73f3a": {
+    "parent": "div",
+    "type": "text"
+  },
+  "f8428c87c5f8": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "f8afb32cf079": {
+    "attr": "aria-label",
+    "tag": "input",
+    "type": "attr:aria-label"
+  },
+  "f9d99b5a9c02": {
+    "parent": "button",
+    "type": "text"
+  },
+  "fa3a1f27ac6c": {
+    "attr": "aria-label",
+    "tag": "textarea",
+    "type": "attr:aria-label"
+  },
+  "fa963e5c15c1": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "fb56ab24d106": {
+    "parent": "a",
+    "sentence": "Log in Sign up 🇬🇧 EN 🇬🇧 English 🇪🇸 Español Zero payment delays. Zero lead fees. Built for tradespeople. A platform built for tradespeople. Customer pays upfront into escrow — money is already there before your first tool comes out. Respond for free. Get paid milestone by milestone. We only win when you win. Sign up or import your existing profile Habitissimo Houzz CronoShare Hogami My website Are you a homeowner? Already have a client? Don't chase payments for milestones. The customer pays in full before work starts — held in escrow, not in their pocket. No more chasing, no \"I'll pay you next week\", no bad debt. It releases to your bank milestone by milestone as you complete each agreed phase: deposit, mid-job, final sign-off. The money is already there before your first tool comes out. Hot Water Cylinder Powered by Stripe €985 pre-paid by customer Deposit — work commences €295 Mid-job milestone €395 Final sign-off €295 Pay Pay Accept Apple Pay, Google Pay, and all major cards — milestone by milestone Materials sorted before you start. Every Leo job comes with a dedicated card for materials — yours to use from day one. The homeowner's deposit loads directly to your Leo card before work begins. Buy from suppliers as normal, no bank transfer, no fronting cash, no waiting to be reimbursed. The card is restricted to construction suppliers, so every purchase is automatically captured and visible to the homeowner in real time. No disputes about where the materials money went — it's all there in the record. Materials Card •••• •••• •••• 4821 Card Holder C. DÍAZ Expires 03/28 Automatic spend record · HWC-2026 Leroy Merlin — copper pipe Today 09:14 €148.50 Fontanería Centro — valves Today 11:32 €63.20 Remaining balance €288.30 Talk it. Leo writes it. Record a voice note after a site visit. Leo asks follow-up questions, then generates a professional scope of work — description, materials, cost breakdown, payment schedule, terms. What used to take 45 minutes at a desk takes 2 minutes in the van. 0:42 Your voice note Leo created your scope leo.casa/scope/hwc-2026 Hot Water Cylinder Replacement Scope shared · 21 Mar 2026 Scope of work Remove existing hot water cylinder and replace with Megaflo Eco 170i unvented cylinder. Includes disconnection, drain-down, removal and disposal of old unit, installation with all required safety valves, connection to existing feeds, commissioning and testing. Cost breakdown Megaflo Eco 170i cylinder €620 Installation labour (1 day) €280 Safety valves + fittings €85 Leo service fee (5%) €49.25 Your total €1,034.25 Payment schedule 40% upfront €413.70 60% on completion €620.55 Payment protected by Leo Terms Work to commence within 7 days Materials warranty: 2 years Labour guarantee: 12 months Approve & Pay Respond for free. No lead fees. Ever. Other platforms charge you every time you reply — even if the job never happens. On Leo, responding is free. Chatting is free. You only pay 4% when a job actually completes through us. If it doesn't happen, you owe nothing. Upstairs Bathroom Replumb El Rosario · Plumbing New 0:24 \"Need to check the combi pressure and the pipe runs before quoting the full reroute.\" Can you come take a look later today? I'm home all afternoon Invited to viewing El Rosario, Marbella Exact address shared Directions Free to respond · Free to chat · No lead fees Serious customers. Jobs that make sense. Every job comes with a proper description, photos, and location. You know exactly what you're walking into before you respond. No more \"can you come look at something?\" with zero context. leo.casa/brief/bath-replumb Plumbing Posted 2h ago Upstairs Bathroom Replumb El Rosario, Marbella Upstairs bathroom needs replumbing. Hot water barely reaches the taps. House built in 1985 with original copper pipework , never replaced. Combi boiler is a Vaillant ecoTEC in the kitchen downstairs. Bathroom includes basin, shower, and toilet . Detached villa. +2 El Rosario, Marbella ~2 km radius Your reputation, assembled in one click. Leo searches the web for your business — reviews, portfolio, qualifications. Everything you've already built on other platforms gets pulled into one verified profile. No re-entering anything. Habitissimo 4.8★ · 12 reviews Houzz 4.9★ · 8 reviews CronoShare 9.5★ · 16 reviews Website fontaneriadiaz.es Leo found everything leo.casa/pro/fontaneria-diaz Fontanería Díaz Carlos Díaz · Fontanero · Marbella Reviews from across the web 4.8★ 12 reviews 4.9★ 8 reviews 5.0★ 3 reviews María L. ★★★★★ \"Excellent work on our bathroom. Professional, clean, and finished ahead of schedule.\" Projects Reforma de baño Cambio de calentador Assembled from Habitissimo, Houzz, Hogami & fontaneriadiaz.es Your credentials Be the contractor a homeowner can trust. Leo verifies your government ID, autónomo registration, public liability insurance, and criminal record — so homeowners know exactly who they're hiring. A Leo-verified badge isn't just a tick box. It's what closes the job. Leo handles the whole process. Takes about 10 minutes. Leo verification Carlos Díaz · Fontanero Government ID (biometric match) Autónomo registration (trade-specific) Public liability insurance (RC) Criminal record certificate Background sweep Leo-verified badge visible to all homeowners Found something on site? Snap a photo. Leo prices it, checks it against fair market rates, and sends it to the customer for approval. Nothing gets added to the bill without their say-so. No absorbing costs, no arguments about what was agreed. Work phases Demolition & removal 14 Mar · Old cylinder removed Pipework prep 15 Mar · Feeds adapted Payment released · €394 3 Installation In progress · started 18 Mar Add-on Sent to customer Additional Copper Pipework Found corroded pipe behind wall — replacing for safety. Copper pipe (1.5m) €52.50 Labour (45 min) €45.00 Total €97.50 4 Testing & commissioning 5 Customer sign-off A proper contract. Not a handshake. Every Leo job is backed by a construction agreement grounded in Spanish law. Scope, milestones, variation orders, materials card rules, dispute resolution — all written down before work starts. Both sides know exactly where they stand. Everything Leo records becomes your evidence if a homeowner disputes anything. Read the full agreement → Leo Construction Agreement Hot Water Cylinder Replacement LCS-4821 · James Mitchell ↔ Carlos Ruiz Itemised scope & unit rates Milestone payment schedule Variation order process Materials card governance Dispute resolution & cancellation Both parties agreed Under Spanish law How we compare. Other platforms Leo Cost to join Monthly subscriptions or credit packs Free. No subscription, no credits Lead fees $15–$200 per lead — even the ones who ghost Free to respond. 4% only when work completes How you quote Type it at 9pm on a laptop. Or don't. Voice note from the van. Leo writes the scope How you respond Type fast or lose. Template messages 30-second voice note. Homeowners see replies ranked by relevance and quality — not who paid or replied first Getting paid Chase invoices. Average write-off: £1,646/yr Escrow. Money held before work starts Mid-job surprises Absorb the cost or argue about it Snap a photo. Leo prices it. Customer approves Your existing clients They want a cut of those too 2.9% processing only. No referral fee Your work deserves better than a lead-gen platform. Join the tradespeople already using Leo to get paid on time, every time. Sign up or import your existing profile Habitissimo Houzz CronoShare Hogami My website Are you a homeowner? Already have a client? The layer between tradespeople and homeowners. Scope, payment, and protection for everyone. Contact WhatsApp operator@example.invalid Legal Terms & Conditions Construction Agreement Privacy Policy EU Dispute Resolution Read Leo Stories © 2026 Leo Casa Limited · Company No. 16259714 We need your general area So we can match you with tradespeople nearby. This isn’t your exact address — just the rough zone for the job. Get my location or search Skip for now Does this area look right? Pan the map to move the circle. Trades never see your exact spot — only this rough area. Trades only see this approximate area. Your exact location won’t be shared unless you invite someone for a viewing. Confirm area Back Build your brief A few quick questions — then you’ll see what tradespeople get Brief preview Add your WhatsApp number so we can send your brief and match you with tradespeople. Send Close preview Needs more info Preview brief Approve job Import from Habitissimo Your Habitissimo profile link We import reviews, photos and business details from your public page. 1 Open Habitissimo 2 Open your public profile and copy the URL from the address bar . 3 Switch back to this tab and paste below . Paste link Import Import from Houzz Your Houzz profile link We import your public portfolio and reviews. 1 Open Houzz 2 Open Perfil de Houzz (e.g. under Marketing ) so you see your public profile. 3 Copy the URL from the address bar or use Compartir . Return here and paste below . Paste link Import Import from CronoShare Your CronoShare profile link We import your services, reviews, and business details from your public CronoShare profile. 1 Open CronoShare 2 Open your public profile (the page that shows your name, services, and reviews) and copy the URL from the address bar . 3 Switch back here and paste below . Paste link Import My website Your website URL We scan your site for portfolio and contact info. 1 Open your business website in another tab. 2 Copy the URL from the address bar . 3 Switch back here and paste below . Paste link Import Migrate your profile Powered by Leo Importing… View full profile Save profile Add your WhatsApp number so we can send you job leads and next steps. Continue We'll find someone. Drop your WhatsApp number and we'll personally match you with a vetted tradesperson for this job. Maybe later We're on it. We'll message you on WhatsApp with a matched tradesperson shortly. Want to tell us more about the job? Message us on WhatsApp",
+    "type": "text"
+  },
+  "fc74d11ab206": {
+    "parent": "span",
+    "type": "text"
+  },
+  "fd42c41f7ca6": {
+    "parent": "a",
+    "type": "text"
+  },
+  "fd6ef68a5a28": {
+    "parent": "div",
+    "type": "text"
+  },
+  "fdc5d2e9410c": {
+    "parent": "div",
+    "sentence": "Powered by Stripe",
+    "type": "text"
+  },
+  "ff8737bd352f": {
+    "parent": "div",
+    "type": "text"
+  },
+  "ffaf87a33c5c": {
+    "parent": "div",
+    "type": "text"
+  }
+}

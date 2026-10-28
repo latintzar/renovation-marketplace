@@ -1,0 +1,278 @@
+/* ═══════════════════════════════════════════════════════════════
+   LEO BRAND EFFECTS — single source of truth
+   ═══════════════════════════════════════════════════════════════
+   Canonical file. Referenced by:
+     - scope-app/public/design/brand-book.html
+     - scope-app/apps/web/src/index.css
+     - Any landing page or app that needs brand effects
+
+   DO NOT copy these rules elsewhere. Import this file.
+   
+   AUTOMATIC COLOR MODES:
+     - Glass frames auto-detect background context (see leo-glass-frame.css)
+     - Content inside glass frames never coupled to frame mode
+     - Speech-friendly: "dark Leo color" = dark mode, "light Leo color" = light
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Shared noise layers */
+.brand-noise { position: absolute; inset: 0; pointer-events: none; }
+
+.brand-grain-png {
+  position: absolute; inset: 0;
+  mix-blend-mode: overlay; opacity: .42;
+  background-image: none;
+  background-size: 128px;
+  image-rendering: pixelated;
+  pointer-events: none;
+}
+
+.brand-grain-svg {
+  position: absolute; inset: 0;
+  mix-blend-mode: overlay; opacity: .55;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px;
+  background-repeat: repeat;
+  pointer-events: none;
+}
+
+/* Blur/Vellum/Ghosted shared container */
+.brand-overlay { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+
+/* Glass layers — negative inset so the blur kernel has full pixel
+   coverage at edges; parent .brand-overlay clips via overflow:hidden.
+   IMPORTANT: both backdrop-filter AND -webkit-backdrop-filter are required.
+   Build tools (Vite/LightningCSS) strip the unprefixed version — do not let them. */
+.brand-glass { position: absolute; inset: -20px; }
+
+/* Vellum — the canonical (and currently only) brand translucency.
+   Canonical source: packages/brand/src/brand/translucency/vellum.py.
+   The `.brand-glass--ghosted` and `.brand-glass--blur` variants were
+   retired — they were parameter tweaks of this recipe, not distinct
+   styles. See packages/brand/src/brand/translucency/DESIGN.md. */
+.brand-glass--vellum {
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  background: rgba(250, 248, 244, .12);
+  border: 1px solid rgba(255, 255, 255, .35);
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, .05),
+    inset 0 1px 0 rgba(255, 255, 255, .45);
+}
+
+/* Ink bleed — tonal variation across the full surface.
+   No transparent endpoints. Every gradient runs color-to-color so there
+   are no uncovered edges. No animation (causes backdrop-filter repaint
+   flicker on scroll). */
+.brand-bleed {
+  position: absolute; inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(155deg, rgba(255,255,255,.14) 0%, rgba(0,0,0,.03) 40%, rgba(0,0,0,.08) 70%, rgba(255,255,255,.06) 100%),
+    linear-gradient(280deg, rgba(0,0,0,.05) 0%, rgba(255,255,255,.06) 35%, rgba(0,0,0,.04) 65%, rgba(255,255,255,.10) 100%),
+    linear-gradient(30deg, rgba(255,255,255,.04) 0%, rgba(0,0,0,.06) 30%, rgba(255,255,255,.05) 55%, rgba(0,0,0,.03) 80%, rgba(255,255,255,.08) 100%);
+}
+
+.brand-bleed--strong {
+  background:
+    linear-gradient(155deg, rgba(255,255,255,.22) 0%, rgba(0,0,0,.06) 35%, rgba(0,0,0,.14) 65%, rgba(255,255,255,.10) 100%),
+    linear-gradient(280deg, rgba(0,0,0,.10) 0%, rgba(255,255,255,.10) 30%, rgba(0,0,0,.06) 60%, rgba(255,255,255,.16) 100%),
+    linear-gradient(30deg, rgba(255,255,255,.06) 0%, rgba(0,0,0,.08) 25%, rgba(255,255,255,.04) 50%, rgba(0,0,0,.05) 75%, rgba(255,255,255,.12) 100%);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   LEO GLASS PILL — glassmorphic status / thinking indicator
+   Usage: <span class="leo-glass-pill"><span class="leo-glass-pill-dot"></span>Updating…</span>
+   ═══════════════════════════════════════════════════════════════ */
+@keyframes pill-dot-breathe {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.5; transform: scale(0.7); }
+}
+
+.leo-glass-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px 6px 12px;
+  border-radius: var(--r-xl, 20px);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: var(--ink, #1C1917);
+  background: rgba(250,248,244,0.65);
+  backdrop-filter: blur(12px) saturate(1.4);
+  -webkit-backdrop-filter: blur(12px) saturate(1.4);
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.5);
+}
+
+.leo-glass-pill-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--terra, #DA654D);
+  animation: pill-dot-breathe 1.6s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   LEO SHIMMER LABEL — charcoal text with terra grain-textured shine sweep
+   Usage: <span class="leo-shimmer-label">Thinking…</span>
+   ═══════════════════════════════════════════════════════════════ */
+@keyframes leo-shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Subtle same-tone shimmer: a soft cream highlight passes through ink text.
+   No orange — just a gentle light streak so it reads as "updating" not "alert". */
+.leo-shimmer-label {
+  background: linear-gradient(
+    110deg,
+    var(--ink, #1C1917) 0%,
+    var(--ink, #1C1917) 30%,
+    var(--stone, #57534E) 42%,
+    rgba(250,248,244,0.6) 50%,
+    var(--stone, #57534E) 58%,
+    var(--ink, #1C1917) 70%,
+    var(--ink, #1C1917) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: leo-shimmer 2.8s ease-in-out infinite;
+}
+
+/* ─── Pay Buttons ─────────────────────────────────────────────────────────────
+ * Google Sans loaded from Google Fonts — include in the <head> of any page using
+ * .leo-pay-pill or .leo-pay-btn:
+ * <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@600&display=swap" rel="stylesheet">
+ *
+ * React: use ApplePayButton / GooglePayButton from @scope/ui (no extra CSS needed).
+ * ──────────────────────────────────────────────────────────────────────────── */
+
+.leo-pay-pill,
+.leo-pay-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #000;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Pill variant — small, used inline */
+.leo-pay-pill {
+  padding: 7px 12px;
+  border-radius: var(--r-pill, 999px);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Button variant — full-width 44px, used in payment flows */
+.leo-pay-btn {
+  justify-content: center;
+  height: 44px;
+  width: 100%;
+  border-radius: var(--r-md, 8px);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+
+/* Apple Pay: San Francisco font (system font on Apple devices) */
+.leo-pay-pill--apple .leo-pay-label,
+.leo-pay-btn--apple .leo-pay-label {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Google Pay: Google Sans */
+.leo-pay-pill--google .leo-pay-label,
+.leo-pay-btn--google .leo-pay-label {
+  font-family: "Google Sans", "Product Sans", "Roboto", sans-serif;
+}
+
+/* ─── Chat Bubbles ────────────────────────────────────────────────────────────
+ * Leo response text and user message bubble.
+ * React: LeoBubble / UserBubble from @scope/ui
+ * Static HTML: .leo-chat-leo / .leo-chat-user (+ --dark variant for dark backgrounds)
+ * ──────────────────────────────────────────────────────────────────────────── */
+
+/* Leo response — no bubble shell, prose text */
+.leo-chat-leo {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--stone, #57534E);
+  padding: 2px 0 6px;
+  max-width: min(100%, 640px);
+}
+.leo-chat-leo--dark {
+  color: rgba(255,255,255,.75);
+}
+
+/* Shared prose styles inside .leo-chat-leo */
+.leo-chat-leo p          { margin: 0 0 0.65em; }
+.leo-chat-leo p:last-child { margin-bottom: 0; }
+.leo-chat-leo strong     { font-weight: 600; color: var(--ink, #1C1917); }
+.leo-chat-leo--dark strong { color: #fff; }
+.leo-chat-leo em         { font-style: italic; }
+.leo-chat-leo code       { font-family: ui-monospace, monospace; font-size: .875em; background: rgba(0,0,0,.06); padding: .1em .35em; border-radius: var(--r-xs, 3px); }
+.leo-chat-leo ul,
+.leo-chat-leo ol         { padding-left: 1.4em; margin: 0.25em 0 0.65em; }
+.leo-chat-leo li         { margin-bottom: 0.2em; }
+.leo-chat-leo a          { color: var(--teal, #115E59); text-decoration: underline; text-underline-offset: 2px; }
+
+/* Markdown tables inside Leo messages */
+.leo-chat-leo table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0;
+  font-size: 13px;
+  overflow-x: auto;
+  display: block;
+}
+.leo-chat-leo th,
+.leo-chat-leo td {
+  text-align: left;
+  padding: 6px 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  white-space: nowrap;
+}
+.leo-chat-leo th {
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: rgba(0,0,0,0.45);
+}
+.leo-chat-leo tr:last-child td { border-bottom: none; }
+.leo-chat-leo tr:nth-child(even) td { background: rgba(0,0,0,0.025); }
+
+/* User message — themeable bubble, right-aligned.
+   Reads --user-bubble-bg / --user-bubble-text from brand tokens so each
+   theme (default/vitrina_sky/...) can reskin without touching CSS.
+   Fallbacks preserve the historic terra+white look for consumers that
+   don't yet ship the new vars. */
+.leo-chat-user {
+  display: inline-block;
+  max-width: min(75%, 280px);
+  align-self: flex-end;
+  background: var(--user-bubble-bg, var(--terra, #DA654D));
+  color: var(--user-bubble-text, #fff);
+  font-size: 15px;
+  line-height: 1.6;
+  padding: 10px 14px;
+  border-radius: var(--r-sm, 6px) 6px 2px 6px; /* sharp bottom-right = sent indicator */
+}
+
+/* Dark background variant (landing page demo chats) */
+.leo-chat-user--dark {
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: var(--r-sm, 6px) 6px 2px 6px;
+  color: #fff;
+}
+
+

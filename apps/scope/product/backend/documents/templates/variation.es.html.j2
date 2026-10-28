@@ -1,0 +1,27 @@
+{% extends "_base.html.j2" %}
+
+{% block title %}Variación de Obra — Leo Scope {{ quote_token }}{% endblock %}
+
+{% block doc_meta %}
+  Variación de Obra<br>
+  Ref: {{ quote_token }}<br>
+  Variación: {{ variation_id }}<br>
+  Fecha: {{ variation_date }}
+{% endblock %}
+
+{% block content %}
+
+<div class="section">
+  <h1>Variación de Obra (placeholder)</h1>
+  <p style="color:var(--stone); font-size:10pt;">
+    Esta plantilla de variación es un marcador de posición. El contenido legal definitivo
+    se añadirá antes de emitir variaciones por escrito.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Resumen del cambio</h2>
+  <p>{{ change_summary }}</p>
+</div>
+
+{% endblock %}

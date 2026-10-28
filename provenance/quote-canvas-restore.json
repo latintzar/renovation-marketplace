@@ -1,0 +1,58 @@
+{
+  "kind": "compatibility restore of original author source",
+  "source_repository": "https://github.com/latintzar/leo",
+  "source_commit": "8c4f259ac5bd04f2291bb33aea9b478701385568",
+  "source_path": "scope-app/packages/ui/src/ScopeCanvas.tsx",
+  "source_git_blob": "bf79787590a69ab58e75ad8dbc8a684f4076fc30",
+  "source_bytes": 15201,
+  "source_sha256": "79ecdf5a5c048c1cb572388fd7b8b13d31deb2b5f09bc5787174aff93b7352c0",
+  "released_path": "packages/ui/src/QuoteCanvas.tsx",
+  "adaptations": [
+    "ScopeUpdate and ScopeContingencyDraft use their existing renamed Quote types",
+    "Component export renamed ScopeCanvas to QuoteCanvas",
+    "Existing permissive Record input retained at the current consumer boundary; original typed body retained"
+  ],
+  "original_layout_and_financial_formula_preserved": true,
+  "later_stub_privately_preserved_at_source_commit": "dbac69422281b857b9425ee01bb1876ddbdb7c2c",
+  "original_worktree_changed": false,
+  "locale_compatibility": {
+    "source_commit": "8c4f259ac5bd04f2291bb33aea9b478701385568",
+    "languages": {
+      "en": {
+        "source_path": "scope-app/apps/web/src/locales/en.json",
+        "source_sha256": "02be78257690976fbff8a9049c3fc2a2e14ff146ebd41f0064dcbd0ba251c768",
+        "added_keys": [],
+        "unrecovered_keys": [
+          "scope_contract_link",
+          "scope_description",
+          "scope_escrow_note",
+          "scope_labour",
+          "scope_materials_short",
+          "scope_materials_upfront_label",
+          "scope_materials_upfront_trigger",
+          "scope_phases",
+          "scope_service_fee_label",
+          "scope_service_fee_note"
+        ]
+      },
+      "es": {
+        "source_path": "scope-app/apps/web/src/locales/es.json",
+        "source_sha256": "584b489c180522ce0a1a4da511a98388e55f0c7dedb349d5c6f9468b5d85b0aa",
+        "added_keys": [],
+        "unrecovered_keys": [
+          "scope_contract_link",
+          "scope_description",
+          "scope_escrow_note",
+          "scope_labour",
+          "scope_materials_short",
+          "scope_materials_upfront_label",
+          "scope_materials_upfront_trigger",
+          "scope_phases",
+          "scope_service_fee_label",
+          "scope_service_fee_note"
+        ]
+      }
+    },
+    "status": "Same-revision locale lookup retained no additional keys; original Spanish fallbacks remain where current translations are absent"
+  }
+}

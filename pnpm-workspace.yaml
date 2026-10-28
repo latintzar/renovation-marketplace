@@ -1,0 +1,5 @@
+packages:
+  - apps/scope/product/web
+  - packages/ui
+  - packages/brand
+  - packages/tsconfig

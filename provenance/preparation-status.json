@@ -1,0 +1,16 @@
+{
+  "phase": "private review candidate",
+  "prepared_at": "2026-10-28T15:52:11.271017+00:00",
+  "originals_changed": false,
+  "history_included": false,
+  "starter": "original source-built scripted product",
+  "removed_operational_categories": [
+    "customer upload files and their original filenames",
+    "credential-bearing operational receipts"
+  ],
+  "verification": "provenance/release-checks.json",
+  "remaining": [
+    "Owner review and publication",
+    "Separately commissioned full connected-backend acceptance"
+  ]
+}

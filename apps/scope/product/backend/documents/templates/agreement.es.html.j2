@@ -1,0 +1,176 @@
+{% extends "_base.html.j2" %}
+
+{% block title %}Acuerdo de Obra — Leo Scope {{ quote_token }}{% endblock %}
+
+{% block doc_meta %}
+  Acuerdo de Obra<br>
+  Ref: {{ quote_token }}<br>
+  Fecha: {{ agreement_date }}<br>
+  Versión: {{ document_version }}
+{% endblock %}
+
+{% block content %}
+
+<div class="section">
+  <h1>Acuerdo de Construcción Leo</h1>
+  <p style="color:var(--stone); font-size:10pt;">
+    Leo Casa Limited (la "Plataforma", empresa nº 16259714, Suite 402, 2 Old Brompton Road, Londres SW7 3DQ)
+    facilita este acuerdo pero no es parte del contrato de construcción entre las partes que se indican a continuación.
+  </p>
+</div>
+
+<div class="section">
+  <h2>1. Partes</h2>
+  <div class="parties-grid">
+    <div class="party-card">
+      <div class="party-label">Propietario (Cliente)</div>
+      <div class="party-name">{{ homeowner_name }}</div>
+      <div class="party-detail">{{ homeowner_email }}</div>
+    </div>
+    <div class="party-card">
+      <div class="party-label">Contratista</div>
+      <div class="party-name">{{ contractor_name }}</div>
+      <div class="party-detail">{{ contractor_trade }}</div>
+      <div class="party-detail">{{ contractor_address }}</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>2. Descripción de los Trabajos</h2>
+  <p><strong>Proyecto:</strong> {{ job_title }}</p>
+  <p><strong>Dirección:</strong> {{ job_address }}</p>
+  {% if job_description %}
+  <p>{{ job_description }}</p>
+  {% endif %}
+</div>
+
+<div class="section">
+  <h2>3. Plan de Pagos (Custodia)</h2>
+  <p style="font-size:10pt; color:var(--stone);">
+    Todos los pagos son retenidos por Leo Casa Limited dentro de la infraestructura de pagos de Stripe
+    hasta que el Cliente apruebe cada fase. Los fondos se liberan únicamente cuando el Cliente confirma
+    la finalización satisfactoria de cada fase.
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Fase</th>
+        <th>Descripción</th>
+        <th class="amount">Importe</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in milestones %}
+      <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ item.title }}</td>
+        <td class="amount">€{{ "%.2f"|format(item.amount_cents / 100) }}</td>
+      </tr>
+      {% endfor %}
+      <tr class="total-row">
+        <td colspan="2"><strong>Total en custodia</strong></td>
+        <td class="amount"><strong>€{{ "%.2f"|format(total_amount_eur) }}</strong></td>
+      </tr>
+      {% if leo_fee_eur > 0 %}
+      <tr>
+        <td colspan="2">Comisión de plataforma Leo (5%)</td>
+        <td class="amount">€{{ "%.2f"|format(leo_fee_eur) }}</td>
+      </tr>
+      {% endif %}
+      {% if materials_upfront_eur > 0 %}
+      <tr>
+        <td colspan="2">Anticipo de materiales (liberado al inicio)</td>
+        <td class="amount">€{{ "%.2f"|format(materials_upfront_eur) }}</td>
+      </tr>
+      {% endif %}
+    </tbody>
+  </table>
+
+  <div class="escrow-box">
+    <strong>Cómo funciona la custodia:</strong> Tu pago completo se retiene de forma segura.
+    El contratista recibe cada pago solo después de que confirmes la fase correspondiente.
+    Apruebas cada liberación a través de la app Leo. Si el trabajo no se completa según lo acordado,
+    los fondos retenidos pueden devolverse.
+  </div>
+</div>
+
+<div class="section">
+  <h2>4. Variaciones de Obra</h2>
+  <p>Cualquier cambio en el alcance, coste o plazo acordados debe ser presentado por el Contratista
+  como una Variación de Obra a través de la plataforma Leo antes de que comience cualquier trabajo adicional.
+  Una Variación de Obra requiere tu aprobación expresa por escrito. No estás obligado a aceptar ninguna Variación.
+  El Contratista no puede exigir pago adicional por trabajos no cubiertos por una Variación aceptada.</p>
+</div>
+
+<div class="section">
+  <h2>5. Acceso, Salud y Seguridad</h2>
+  <p>Aceptas proporcionar al Contratista acceso razonable a la propiedad durante las horas de trabajo acordadas.
+  El Contratista es responsable de su propio cumplimiento de salud y seguridad.</p>
+</div>
+
+<div class="section">
+  <h2>6. Estándar de Ejecución</h2>
+  <p>El Contratista se compromete a realizar todos los trabajos de acuerdo con el alcance acordado,
+  con materiales de la calidad descrita y con la habilidad, cuidado y diligencia adecuados.</p>
+</div>
+
+<div class="section">
+  <h2>7. Seguro</h2>
+  <p>El Contratista confirma que tiene un seguro de responsabilidad civil adecuado para el tipo de
+  trabajo descrito en este acuerdo.</p>
+</div>
+
+<div class="section">
+  <h2>8. Resolución de Disputas</h2>
+  <p>Si surge una disputa, cualquiera de las partes puede abrirla a través de la app Leo.
+  Leo facilita un período de respuesta de 48 horas. Si no se resuelve, Leo puede comisionar a un
+  Arquitecto Técnico independiente. Ambas partes pueden acudir a la Junta Arbitral de Consumo
+  (Real Decreto 713/2024). Plataforma completa: leo.casa/terms (Sección 7).</p>
+</div>
+
+<div class="section">
+  <h2>9. Cancelación</h2>
+  <p>Si el Cliente desea cancelar antes de que comience el trabajo, se reembolsará el importe
+  completo en custodia en un plazo de 5–7 días hábiles. Una vez comenzado el trabajo o pedidos
+  los materiales, las condiciones de cancelación están sujetas a negociación facilitada por Leo.</p>
+</div>
+
+<div class="section">
+  <h2>10. Derecho de Desistimiento</h2>
+  <p>En virtud de la legislación de protección al consumidor de la UE, dispones de 14 días de
+  desistimiento desde este acuerdo. Al solicitar el inicio de los trabajos dentro del período de
+  desistimiento, aceptas que este derecho se pierde una vez comenzado el trabajo.</p>
+</div>
+
+<div class="section">
+  <h2>11. Ley Aplicable</h2>
+  <p>Este acuerdo se rige por las leyes de Inglaterra y Gales. Los consumidores de la UE conservan
+  el derecho a invocar las leyes de protección al consumidor de su país de residencia.</p>
+</div>
+
+<div class="signature-block section">
+  <h2>12. Acuerdo Electrónico</h2>
+  <p>Este acuerdo se acepta electrónicamente. Al hacer clic en "Acepto" en la app Leo, el Cliente confirma
+  que ha leído y comprende este acuerdo y autoriza a Leo a retener el pago en custodia según el plan anterior.</p>
+
+  <p style="margin-top: 12pt;">
+    <strong>Aceptado por:</strong> {{ homeowner_email }}<br>
+    <strong>Fecha:</strong> {{ agreement_date }}<br>
+    <strong>Referencia:</strong> {{ quote_token }}<br>
+    <strong>Versión del documento:</strong> {{ document_version }}
+  </p>
+
+  <p style="font-size:9pt; color:var(--stone); margin-top: 12pt;">
+    La aceptación se registra con: dirección de email, dirección IP, firma del navegador, fecha y hora,
+    y el hash SHA-256 de esta versión del documento.
+  </p>
+
+  <p style="font-size:9pt; color:var(--muted); margin-top: 8pt;">
+    Este acuerdo es facilitado por Leo Casa Limited. Leo no es parte del contrato de construcción
+    y no es responsable del desempeño de ninguna de las partes.
+  </p>
+</div>
+
+{% endblock %}

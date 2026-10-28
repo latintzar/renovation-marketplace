@@ -1,0 +1,217 @@
+/**
+ * Shared landing hero — homeowners.html + professionals.html
+ * Loaded after each page’s inline <style> so these rules win.
+ */
+
+/* ── Vertical flip (180°): dark / heavier masses read toward the top ── */
+.hero-box.hero-fluid-live .el-gradient__canvas,
+.hero-box.hero-fluid-live .leo-hero-noise {
+  transform: scaleY(-1);
+  transform-origin: center center;
+}
+/* Mild darken on live gradient only — under PNG noise + SVG grain (canvas → this → ::before glow → noise → ::after → copy) */
+/* Layer is flipped with the canvas (scaleY(-1)): gradient runs bottom→top in DOM so “dark at element bottom” reads as dark at the visual top of the hero; top of element → visual bottom stays transparent. */
+.hero-box.hero-fluid-live .leo-hero-darken {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  border-radius: inherit;
+  transform: scaleY(-1);
+  transform-origin: center center;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+  background: linear-gradient(
+    to bottom,
+    rgba(12, 10, 9, 0) 0%,
+    rgba(12, 10, 9, 0) 44%,
+    rgba(12, 10, 9, 0.1) 52%,
+    rgba(12, 10, 9, 0.22) 72%,
+    rgba(12, 10, 9, 0.28) 100%
+  );
+}
+.hero-box.hero-fluid-live.leo-hero-revealed .leo-hero-darken {
+  opacity: 1;
+}
+
+/* Tighter, brighter vignette under grain */
+.hero-box.hero-fluid-live::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  border-radius: inherit;
+  transform: scaleY(-1);
+  transform-origin: center center;
+  background: radial-gradient(
+      ellipse 72% 52% at 50% 38%,
+      rgba(12, 10, 9, 0.62) 0%,
+      transparent 52%
+    ),
+    radial-gradient(ellipse 58% 42% at 50% 42%, rgba(218, 101, 77, 0.22) 0%, transparent 50%);
+  filter: blur(32px);
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+.hero-box.hero-fluid-live.leo-hero-revealed::before {
+  opacity: 0.98;
+}
+
+/* Bottom CTA heroes (EN): both pages use .hero-trade — same blob corners as top trade */
+#hero-bot.leo-hero.hero-trade:not(.hero-fluid-live) .hb1 {
+  top: auto;
+  bottom: -80px;
+  right: -80px;
+}
+#hero-bot.leo-hero.hero-trade:not(.hero-fluid-live) .hb2 {
+  bottom: auto;
+  top: -50px;
+  left: -70px;
+}
+#hero-bot.leo-hero.hero-trade:not(.hero-fluid-live) .hb3 {
+  top: 62%;
+  left: 18%;
+}
+
+/* Ambient layer (noise) — same URL on both pages; lighter than inline duplication */
+.leo-hero-noise {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  mix-blend-mode: overlay;
+  opacity: 0.42;
+  background-image: none;
+  background-size: 128px;
+  image-rendering: pixelated;
+  pointer-events: none;
+}
+
+/* Stack: canvas 0 → darken 1 → ::before glow 2 → PNG noise 3 → SVG grain ::after 4 → UI 5 */
+.hero-box.hero-fluid-live .leo-hero-noise {
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+.hero-box.hero-fluid-live.leo-hero-revealed .leo-hero-noise {
+  opacity: 0.42;
+}
+.hero-box.hero-fluid-live::after {
+  z-index: 4;
+  transform: scaleY(-1);
+  transform-origin: center center;
+}
+
+/* CSS gradient fallback visible until WebGL canvas fades in */
+/* No CSS fallback gradient — hero starts as plain page background, canvas fades in from nothing */
+.hero-box.hero-home.hero-fluid-live {
+  background-color: var(--cream, var(--cream));
+  background-image: none;
+  animation: none;
+}
+.hero-box.hero-trade.hero-fluid-live {
+  background-color: #141210;
+  background-image: none;
+  animation: none;
+}
+
+/* Canvas fades in over 0.9s once WebGL is ready */
+.hero-box.hero-fluid-live .el-gradient__canvas {
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+.hero-box.hero-fluid-live .el-gradient__canvas.leo-fluid-ready {
+  opacity: 1;
+}
+
+/* Hero content: hidden until gradient is ready, then slides up + fades in */
+.hero-box.hero-fluid-live > *:not(.el-gradient__canvas):not(.leo-hero-noise):not(.leo-hero-darken) {
+  z-index: 5;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease 0.35s, transform 0.7s ease 0.35s;
+}
+.hero-box.hero-fluid-live.leo-hero-revealed > *:not(.el-gradient__canvas):not(.leo-hero-noise):not(.leo-hero-darken) {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger: sub-elements get increasing delay */
+.hero-box.hero-fluid-live.leo-hero-revealed > *:nth-child(4) { transition-delay: 0.45s; }
+.hero-box.hero-fluid-live.leo-hero-revealed > *:nth-child(5) { transition-delay: 0.55s; }
+.hero-box.hero-fluid-live.leo-hero-revealed > *:nth-child(6) { transition-delay: 0.65s; }
+.hero-box.hero-fluid-live.leo-hero-revealed > *:nth-child(7) { transition-delay: 0.75s; }
+.hero-box.hero-fluid-live.leo-hero-revealed > *:nth-child(n+8) { transition-delay: 0.85s; }
+
+/* Headline: Source Sans for body lines; Playfair italic on <em> only */
+.hero-box.leo-hero h1 {
+  font-family: var(--sans);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+.hero-box.leo-hero h1 em {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* Dark hero (fluid top + all trade heroes, including bottom CTA): light headline + subtitle */
+.hero-box.leo-hero.hero-fluid-live h1,
+.hero-box.leo-hero.hero-trade h1 {
+  color: var(--cream);
+}
+.hero-box.leo-hero.hero-fluid-live h1 em,
+.hero-box.leo-hero.hero-trade h1 em {
+  color: rgba(255, 255, 255, 0.95);
+}
+.hero-box.leo-hero.hero-fluid-live .hero-sub,
+.hero-box.leo-hero.hero-trade .hero-sub {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Reduced motion: kill blob drift; swap fluid for CSS gradient (see .leo-hero--reduced-motion) */
+@media (prefers-reduced-motion: reduce) {
+  .hero-blob {
+    animation: none !important;
+  }
+  .hero-home:not(.hero-fluid-live) {
+    animation: none !important;
+  }
+}
+
+/* Static gradient fallback when WebGL is skipped (same look family, no GPU sim) */
+html.leo-hero--reduced-motion .hero-box.leo-hero.hero-home.hero-fluid-live {
+  background-color: #f5e6d8;
+  background-image: radial-gradient(ellipse 120% 90% at 30% 75%, var(--terra) 0%, transparent 55%),
+    radial-gradient(ellipse 100% 80% at 80% 35%, #e8a88e 0%, transparent 50%),
+    radial-gradient(ellipse 90% 110% at 55% 10%, #c45c45 0%, transparent 50%),
+    radial-gradient(ellipse 80% 70% at 15% 25%, var(--cream) 0%, transparent 45%),
+    linear-gradient(200deg, var(--cream), #f0dcc8 40%, #f5e6d8 100%);
+  background-size: 200% 200%, 180% 180%, 200% 200%, 160% 160%, 100% 100%;
+  animation: leoHeroStaticDrift 48s ease-in-out infinite alternate;
+}
+
+html.leo-hero--reduced-motion .hero-box.leo-hero.hero-trade.hero-fluid-live {
+  background-color: #141210;
+  background-image: radial-gradient(ellipse 120% 80% at 25% 80%, var(--ink-dark) 0%, transparent 60%),
+    radial-gradient(ellipse 100% 90% at 75% 30%, var(--terra) 0%, transparent 55%),
+    radial-gradient(ellipse 80% 100% at 50% 0%, var(--terra-dk) 0%, transparent 50%),
+    linear-gradient(200deg, #0f0e0c, #141210 40%, var(--ink) 100%);
+  background-size: 200% 200%, 180% 180%, 200% 200%, 100% 100%;
+  animation: leoHeroStaticDrift 48s ease-in-out infinite alternate;
+}
+
+@keyframes leoHeroStaticDrift {
+  0% {
+    background-position: 30% 80%, 70% 20%, 50% 40%, 20% 60%, 0% 0%;
+  }
+  100% {
+    background-position: 55% 65%, 45% 35%, 40% 55%, 35% 45%, 0% 0%;
+  }
+}
+
+html.leo-hero--reduced-motion .hero-box.leo-hero.hero-fluid-live canvas.el-gradient__canvas {
+  display: none !important;
+}

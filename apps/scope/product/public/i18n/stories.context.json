@@ -1,0 +1,240 @@
+{
+  "009ed110badf": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "0703595c90ee": {
+    "parent": "div",
+    "type": "text"
+  },
+  "0730daa0f96c": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "08c9baf39d75": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "0ba4f0b02afb": {
+    "parent": "div",
+    "type": "text"
+  },
+  "110fa2bb7715": {
+    "parent": "button",
+    "type": "text"
+  },
+  "1198dbbb425f": {
+    "parent": "div",
+    "type": "text"
+  },
+  "173f5f9f26b4": {
+    "parent": "a",
+    "type": "text"
+  },
+  "179f3a04c037": {
+    "parent": "div",
+    "type": "text"
+  },
+  "1826517a1a6f": {
+    "parent": "div",
+    "type": "text"
+  },
+  "19dfdc7b7e3b": {
+    "parent": "div",
+    "type": "text"
+  },
+  "1df552e016d8": {
+    "parent": "div",
+    "type": "text"
+  },
+  "274b9d1fa93b": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "2ab33c6bce9a": {
+    "parent": "title",
+    "type": "text"
+  },
+  "2b5c3d26721a": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "3981a2b9c1ef": {
+    "parent": "button",
+    "type": "text"
+  },
+  "3ed861992b5c": {
+    "parent": "div",
+    "type": "text"
+  },
+  "419c3cbd7c62": {
+    "parent": "div",
+    "type": "text"
+  },
+  "4787eaf7c938": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "4c46255487ac": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "4f72bdfcfc5b": {
+    "parent": "a",
+    "type": "text"
+  },
+  "52a58b787afa": {
+    "parent": "div",
+    "type": "text"
+  },
+  "5544523b2832": {
+    "parent": "div",
+    "type": "text"
+  },
+  "5b00741d972e": {
+    "parent": "p",
+    "type": "text"
+  },
+  "5bc426e8d81e": {
+    "attr": "alt",
+    "tag": "img",
+    "type": "attr:alt"
+  },
+  "61636cdef547": {
+    "parent": "button",
+    "type": "text"
+  },
+  "632e1c583941": {
+    "parent": "button",
+    "type": "text"
+  },
+  "63437ae2ac20": {
+    "parent": "div",
+    "type": "text"
+  },
+  "67e5a3025bc0": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "6a40edf1fc87": {
+    "parent": "a",
+    "type": "text"
+  },
+  "6d09cf574882": {
+    "parent": "span",
+    "type": "text"
+  },
+  "71aa5c9dfdc5": {
+    "parent": "button",
+    "type": "text"
+  },
+  "747a8f398395": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "761b7ad8ad43": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "799f8c2b248e": {
+    "parent": "div",
+    "type": "text"
+  },
+  "7a5d0c7a4494": {
+    "parent": "div",
+    "type": "text"
+  },
+  "7ba48f6160b7": {
+    "parent": "div",
+    "type": "text"
+  },
+  "7d93e5fb5bff": {
+    "parent": "div",
+    "type": "text"
+  },
+  "7f1ee16aaadd": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "84ac55bfc91d": {
+    "parent": "div",
+    "type": "text"
+  },
+  "8abfe2eaa804": {
+    "parent": "div",
+    "type": "text"
+  },
+  "963829931fc7": {
+    "parent": "div",
+    "type": "text"
+  },
+  "9b9a8d05a7ec": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "a52ace420f21": {
+    "parent": "button",
+    "type": "text"
+  },
+  "ade9248e0132": {
+    "parent": "button",
+    "type": "text"
+  },
+  "afb5cc92ff29": {
+    "parent": "div",
+    "type": "text"
+  },
+  "b3dc168a02ae": {
+    "parent": "div",
+    "type": "text"
+  },
+  "c0c0a7d3de40": {
+    "parent": "p",
+    "type": "text"
+  },
+  "c3daddeecfad": {
+    "parent": "p",
+    "type": "text"
+  },
+  "d61354f14d13": {
+    "parent": "div",
+    "type": "text"
+  },
+  "df8906aa4306": {
+    "parent": "div",
+    "type": "text"
+  },
+  "e083bd83e9d3": {
+    "parent": "button",
+    "type": "text"
+  },
+  "e09ba1c5e31d": {
+    "parent": "div",
+    "type": "text"
+  },
+  "e4ddb8df21c6": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "ed1f7304c02b": {
+    "parent": "div",
+    "type": "text"
+  },
+  "fa394f7a1dce": {
+    "parent": "div",
+    "type": "text"
+  },
+  "fe04831990bd": {
+    "parent": "div",
+    "type": "text"
+  }
+}

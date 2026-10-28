@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="/brand-vars.css">
+<title>Leo — How Disputes Work</title>
+<meta name="description" content="If something goes wrong on your Leo renovation, here is exactly what happens — step by step, from in-app mediation through to consumer arbitration, court, and criminal complaint.">
+<link rel="canonical" href="https://leo.casa/how-disputes-work">
+<link href="https://leo.casa/how-disputes-work" hreflang="en" rel="alternate">
+<link href="https://leo.casa/como-resolver-disputas" hreflang="es" rel="alternate">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/leo-glass-frame.css">
+<link rel="stylesheet" href="/brand-effects.css">
+
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px;-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.7}
+.header{padding:20px 28px;border-bottom:1px solid var(--border);background:var(--cream);position:sticky;top:0;z-index:10}
+.header-inner{max-width:860px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--serif);font-size:1.2rem;font-weight:600;letter-spacing:-.03em;color:var(--ink);text-decoration:none}
+.lang-switch{position:relative;z-index:2}
+.lang-btn{display:flex;align-items:center;gap:3px;background:none;border:1px solid var(--border);border-radius:var(--r-pill);padding:5px 10px;font-family:var(--sans);font-size:.72rem;font-weight:600;color:var(--ink);cursor:pointer;white-space:nowrap;transition:border-color .15s}
+.lang-btn:hover{border-color:var(--stone)}
+.lang-flag{font-size:14px;line-height:1}
+.lang-code{letter-spacing:.03em}
+.lang-chevron{width:8px;height:8px;opacity:.7;color:var(--ink)}
+.lang-dropdown{position:absolute;right:0;top:calc(100% + 6px);background:#fff;border-radius:var(--r-md);box-shadow:0 4px 20px rgba(0,0,0,.12);padding:4px;display:none;min-width:120px;z-index:200}
+.lang-switch.open .lang-dropdown{display:block}
+.lang-option{display:flex;align-items:center;gap:6px;padding:7px 12px;border-radius:var(--r);text-decoration:none;font-family:var(--sans);font-size:.78rem;color:var(--ink);white-space:nowrap}
+.lang-option:hover{background:rgba(0,0,0,.04)}
+.lang-option.active{font-weight:700;color:var(--teal)}
+.hero{background:linear-gradient(135deg,var(--ink) 0%,var(--ink-dark) 50%,var(--ink) 100%);color:#fff;padding:80px 28px 60px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:none;background-size:128px;opacity:.03;pointer-events:none}
+.hero h1{font-family:var(--serif);font-size:clamp(2rem,6vw,3rem);font-weight:600;line-height:1.1;letter-spacing:-.03em;margin-bottom:16px;position:relative}
+.hero h1 em{font-style:italic;color:var(--terra)}
+.hero .subtitle{font-size:1.05rem;color:var(--muted);max-width:600px;margin:0 auto 24px;line-height:1.6;position:relative}
+.hero-stat-row{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;position:relative;margin-top:8px}
+.hero-stat{text-align:center}
+.hero-stat-num{font-family:var(--serif);font-size:1.8rem;font-weight:600;color:var(--terra);line-height:1}
+.hero-stat-label{font-size:.78rem;color:var(--muted);margin-top:4px}
+.content{max-width:860px;margin:0 auto;padding:48px 28px 80px}
+.toc{background:var(--cream-dk);border:1px solid var(--border);border-radius:var(--r);padding:28px 32px;margin-bottom:48px}
+.toc h2{font-family:var(--serif);font-size:1.1rem;font-weight:600;margin-bottom:16px;letter-spacing:-.01em}
+.toc ol{margin:0 0 0 20px;padding:0}
+.toc li{margin-bottom:8px}
+.toc a{font-size:.9rem;color:var(--teal);text-decoration:none;font-weight:500}
+.toc a:hover{text-decoration:underline}
+.section{margin-bottom:56px;scroll-margin-top:80px}
+.section h2{font-family:var(--serif);font-size:clamp(1.3rem,3vw,1.6rem);font-weight:600;letter-spacing:-.02em;margin-bottom:8px;padding-top:24px;border-top:1px solid var(--border)}
+.section h2:first-child{border-top:none;padding-top:0}
+.section .section-sub{font-size:.88rem;color:var(--muted);margin-bottom:24px}
+.section h3{font-family:var(--serif);font-size:1.05rem;font-weight:600;margin:28px 0 10px;letter-spacing:-.01em}
+.section p{font-size:.92rem;color:var(--stone);margin-bottom:14px;line-height:1.7}
+.section strong{color:var(--ink);font-weight:600}
+.info-card{background:var(--cream-dk);border:1px solid var(--border);border-radius:var(--r);padding:20px 24px;margin:20px 0}
+.info-card.teal{background:var(--teal-lt);border-color:#A7F3D0}
+.info-card.terra{background:var(--terra-lt);border-color:#FECACA}
+.info-card.amber{background:#FFFBEB;border-color:#FDE68A}
+.info-card p{margin-bottom:8px}
+.info-card p:last-child{margin-bottom:0}
+ul.checklist{list-style:none;margin:12px 0;padding:0}
+ul.checklist li{font-size:.9rem;color:var(--stone);padding:4px 0 4px 28px;position:relative;line-height:1.6}
+ul.checklist li::before{content:'✓';position:absolute;left:0;color:var(--teal);font-weight:700;font-size:1rem}
+
+/* Escalation ladder */
+.ladder{display:flex;flex-direction:column;gap:0;margin:28px 0}
+.ladder-step{display:flex;gap:20px;position:relative}
+.ladder-step+.ladder-step{margin-top:0}
+.ladder-left{display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:48px}
+.ladder-dot{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.88rem;flex-shrink:0;border:2px solid transparent;z-index:1}
+.ladder-dot.green{background:var(--teal-lt);color:var(--teal);border-color:#A7F3D0}
+.ladder-dot.amber{background:#FFFBEB;color:#92400E;border-color:#FDE68A}
+.ladder-dot.terra{background:var(--terra-lt);color:var(--terra);border-color:#FECACA}
+.ladder-dot.dark{background:var(--ink);color:#fff}
+.ladder-connector{width:2px;flex:1;background:var(--border);margin:4px 0}
+.ladder-body{padding-bottom:32px;flex:1}
+.ladder-body h3{font-family:var(--serif);font-size:1.05rem;font-weight:600;color:var(--ink);margin-bottom:4px;letter-spacing:-.01em}
+.ladder-body .meta{font-size:.8rem;color:var(--muted);margin-bottom:10px;font-weight:500}
+.ladder-body p{font-size:.9rem;color:var(--stone);line-height:1.65;margin-bottom:8px}
+.ladder-body p:last-child{margin-bottom:0}
+.ladder-tag{display:inline-flex;align-items:center;gap:5px;font-size:.75rem;font-weight:600;padding:3px 10px;border-radius:var(--r-xl);letter-spacing:.02em;margin-top:8px;margin-right:6px}
+.ladder-tag.free{background:var(--teal-lt);color:var(--teal);border:1px solid #A7F3D0}
+.ladder-tag.time{background:var(--cream-dk);color:var(--stone);border:1px solid var(--border)}
+.ladder-tag.binding{background:#FFFBEB;color:#92400E;border:1px solid #FDE68A}
+
+/* Aparejador explainer box */
+.aparejador-box{border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin:24px 0}
+.aparejador-box-header{background:var(--ink);padding:16px 20px;color:#fff}
+.aparejador-box-header h4{font-family:var(--serif);font-size:.98rem;font-weight:600;margin-bottom:2px}
+.aparejador-box-header p{font-size:.82rem;color:var(--muted);margin:0}
+.aparejador-box-body{padding:20px 24px}
+.aparejador-box-body p{font-size:.88rem;color:var(--stone);margin-bottom:10px;line-height:1.65}
+.aparejador-box-body p:last-child{margin-bottom:0}
+
+/* Case file preview */
+.case-file-preview{background:var(--ink);border-radius:var(--r);padding:20px 24px;margin:24px 0;color:#fff}
+.case-file-preview h4{font-family:var(--serif);font-size:.95rem;font-weight:600;margin-bottom:14px;color:#E7E5E4}
+.case-file-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px}
+.case-file-item:last-child{margin-bottom:0}
+.case-file-item svg{flex-shrink:0;margin-top:2px}
+.case-file-item span{font-size:.85rem;color:var(--muted);line-height:1.5}
+.case-file-item span strong{color:#E7E5E4}
+
+/* FAQ */
+.faq{margin-top:48px}
+.faq-item{border-bottom:1px solid var(--border);padding:0}
+.faq-q{font-family:var(--serif);font-size:.98rem;font-weight:600;padding:18px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:var(--ink);user-select:none}
+.faq-q::after{content:'+';font-size:1.2rem;color:var(--muted);transition:transform .2s ease}
+.faq-item.open .faq-q::after{content:'\2212'}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-item.open .faq-a{max-height:800px}
+.faq-a-inner{padding:0 0 18px;font-size:.9rem;color:var(--stone);line-height:1.7}
+
+.cta-section{background:linear-gradient(135deg,var(--ink) 0%,var(--ink-dark) 50%,var(--ink) 100%);padding:64px 28px;text-align:center;color:#fff;position:relative;overflow:hidden}
+.cta-section::before{content:'';position:absolute;inset:0;background-image:none;background-size:128px;opacity:.03;pointer-events:none}
+.cta-section h2{font-family:var(--serif);font-size:clamp(1.5rem,4vw,2rem);font-weight:600;letter-spacing:-.03em;margin-bottom:12px;position:relative}
+.cta-section h2 em{font-style:italic;color:var(--terra)}
+.cta-section p{font-size:.95rem;color:var(--muted);max-width:480px;margin:0 auto 32px;line-height:1.6;position:relative}
+.cta-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative}
+.cta-btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:var(--r);font-size:.92rem;font-weight:600;text-decoration:none;transition:all .15s}
+.cta-btn.primary{background:var(--terra);color:#fff}
+.cta-btn.primary:hover{background:var(--terra-dk);transform:translateY(-1px)}
+.cta-btn.secondary{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.15)}
+.cta-btn.secondary:hover{background:rgba(255,255,255,.12)}
+.footer{border-top:1px solid var(--border);padding:24px 28px;text-align:center}
+.footer p{font-size:.78rem;color:var(--muted);margin:0}
+.footer a{color:var(--teal);text-decoration:none}
+@media(max-width:640px){.content{padding:32px 20px 60px}.toc{padding:20px}.hero{padding:60px 20px 40px}.hero-stat-row{gap:16px}.cta-section{padding:48px 20px}}
+</style>
+
+</head>
+<body>
+<div class="header">
+  <div class="header-inner">
+    <a href="/" class="logo"><img src="/brand/leo-charcoal.svg" alt="Leo" height="18" style="display:block;width:auto" draggable="false"/></a>
+    <div class="lang-switch" id="langSwitch">
+      <button class="lang-btn" aria-label="Change language">
+        <span class="lang-flag">🇬🇧</span><span class="lang-code">EN</span>
+        <svg class="lang-chevron" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewBox="0 0 12 12"><path d="M3 4.5l3 3 3-3"/></svg>
+      </button>
+      <div class="lang-dropdown">
+        <a class="lang-option active" href="/how-disputes-work">🇬🇧 English</a>
+        <a class="lang-option" href="/como-resolver-disputas">🇪🇸 Español</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hero">
+  <h1>If something goes wrong,<br><em>you are not alone.</em></h1>
+  <p class="subtitle">Your money is always protected in escrow. If a dispute arises, Leo guides you through every step &mdash; from in-app mediation to binding arbitration to court. In most cases, you never leave Step 1.</p>
+  <div class="hero-stat-row">
+    <div class="hero-stat">
+      <div class="hero-stat-num">~70%</div>
+      <div class="hero-stat-label">resolved at Step 1</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">&euro;0</div>
+      <div class="hero-stat-label">cost to homeowner for arbitration</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">7</div>
+      <div class="hero-stat-label">escalation steps available</div>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+
+<div class="toc">
+  <h2>On this page</h2>
+  <ol>
+    <li><a href="#escrow-first">First: your money is always protected</a></li>
+    <li><a href="#platform-levers">What Leo can do immediately</a></li>
+    <li><a href="#ladder">The seven-step escalation ladder</a></li>
+    <li><a href="#aparejador">The aparejador &mdash; your independent expert</a></li>
+    <li><a href="#case-file">The Leo case file &mdash; your evidence pack</a></li>
+    <li><a href="#faq">Frequently asked questions</a></li>
+  </ol>
+</div>
+
+<!-- 1. Escrow first -->
+<div class="section" id="escrow-first">
+  <h2>1. First: your money is always protected</h2>
+  <p class="section-sub">Disputes are about work, not about money disappearing. The two are always separate on Leo.</p>
+
+  <p>When you start a Leo job, the full project amount goes into <strong>escrow</strong> &mdash; held by Stripe, not by Leo, and not by the contractor. No milestone payment is released until you confirm the work is done. If the contractor abandons the job, the money is still there.</p>
+
+  <p>This means that in almost all disputes, the question is: <em>how much does the contractor deserve for the work they actually did?</em> Not: <em>how do I get my money back?</em> That is a fundamentally different, easier problem to solve.</p>
+
+  <div class="info-card teal">
+    <p><strong>The contractor can never access money you haven&rsquo;t approved.</strong> Milestone payments sit in escrow until you tap &ldquo;Approve.&rdquo; The materials card is loaded for materials only &mdash; Leo can freeze it the moment a dispute is raised. Your exposure at any point is limited to what has already been legitimately spent.</p>
+  </div>
+</div>
+
+<!-- 2. Platform levers -->
+<div class="section" id="platform-levers">
+  <h2>2. What Leo can do immediately</h2>
+  <p class="section-sub">When a dispute is raised, Leo acts &mdash; automatically.</p>
+
+  <p>The moment you flag a dispute, Leo triggers platform-level protections without waiting for any manual review:</p>
+
+  <ul class="checklist">
+    <li><strong>Materials card frozen</strong> &mdash; the contractor cannot make new purchases on any job</li>
+    <li><strong>All pending milestone payments withheld</strong> &mdash; across all their active Leo projects</li>
+    <li><strong>New job matching paused</strong> &mdash; they do not receive new homeowner enquiries</li>
+    <li><strong>Case file auto-generated</strong> &mdash; scope, payments, photos, messages compiled into a structured evidence document</li>
+    <li><strong>Both parties notified</strong> &mdash; 48-hour cool-down window opens for direct resolution</li>
+  </ul>
+
+  <p>A contractor with multiple active Leo projects and thousands in pending milestone payments cannot afford to ghost a dispute. The platform leverage is proportional to how much they rely on Leo. <strong>This is not a threat &mdash; it is a mutual protection mechanism.</strong> The same protections apply if a homeowner tries to falsely dispute legitimate work.</p>
+
+  <div class="info-card amber">
+    <p><strong>If the dispute is resolved in the contractor&rsquo;s favour</strong> &mdash; everything unfreezes immediately, and Leo makes that explicit. The platform works for both sides.</p>
+  </div>
+</div>
+
+<!-- 3. The ladder -->
+<div class="section" id="ladder">
+  <h2>3. The seven-step escalation ladder</h2>
+  <p class="section-sub">Each step is proportionate to the size and nature of the problem. Most disputes end at Step 1 or 2a.</p>
+
+  <div class="ladder">
+
+    <div class="ladder-step">
+      <div class="ladder-left">
+        <div class="ladder-dot green">1</div>
+        <div class="ladder-connector"></div>
+      </div>
+      <div class="ladder-body">
+        <h3>Leo mediates &mdash; in-app, automated</h3>
+        <p class="meta">Free &middot; 48 hours &middot; Resolves ~70% of disputes</p>
+        <p>Leo auto-generates a case file and opens a structured conversation between both parties. The contractor sees what you are disputing. You see their response. Leo&rsquo;s system reviews the evidence and can issue a recommended resolution based on the contract terms, milestone photos, and payment records.</p>
+        <p>Most disputes are misunderstandings about scope or timing. With the full record in front of both sides, most resolve here.</p>
+        <span class="ladder-tag free">Free</span>
+        <span class="ladder-tag time">48 hours</span>
+      </div>
+    </div>
+
+    <div class="ladder-step">
+      <div class="ladder-left">
+        <div class="ladder-dot green">2a</div>
+        <div class="ladder-connector"></div>
+      </div>
+      <div class="ladder-body">
+        <h3>Remote aparejador review</h3>
+        <p class="meta">Covered by Leo &middot; 3&ndash;5 days &middot; Resolves most scope disputes</p>
+        <p>If mediation doesn&rsquo;t resolve it, Leo commissions an independent <em>aparejador</em> (a qualified <em>Arquitecto T&eacute;cnico</em>, the equivalent of a chartered building surveyor) to review the dispute remotely.</p>
+        <p>The aparejador reviews the scope document, milestone photos uploaded by both parties, variation order records, and any invoices. They issue a written professional opinion: <em>work within scope / work outside scope / insufficient evidence to determine remotely.</em></p>
+        <p>This opinion is signed with their COAAT colegio number and is <strong>legally valid as documentary evidence</strong> in Spanish arbitration and civil court proceedings.</p>
+        <span class="ladder-tag free">Free for homeowner</span>
+        <span class="ladder-tag time">3&ndash;5 days</span>
+        <span class="ladder-tag binding">Legally admissible</span>
+      </div>
+    </div>
+
+    <div class="ladder-step">
+      <div class="ladder-left">
+        <div class="ladder-dot amber">2b</div>
+        <div class="ladder-connector"></div>
+      </div>
+      <div class="ladder-body">
+        <h3>Physical aparejador visit</h3>
+        <p class="meta">Covered by Leo &middot; 1&ndash;5 days to schedule &middot; For hidden defects and quality disputes</p>
+        <p>If the remote aparejador states they <em>cannot determine from documentary evidence</em> &mdash; for example, a dispute about quality of materials installed, or a hidden structural defect &mdash; Leo schedules a physical site visit.</p>
+        <p>The aparejador visits in person, measures, inspects, and issues a full <em>informe pericial</em> (expert report). This is the highest-weight technical evidence available short of a court-appointed expert. It is accepted by the Junta Arbitral de Consumo and all levels of Spanish civil court.</p>
+        <p>Leo advances the cost of the visit and recovers it from the party found to be at fault &mdash; typically from escrowed funds or via the contractor clawback mechanism. There is no upfront charge to the homeowner.</p>
+        <span class="ladder-tag free">No charge to homeowner</span>
+        <span class="ladder-tag time">1&ndash;5 days</span>
+        <span class="ladder-tag binding">Full pericial report</span>
+      </div>
+    </div>
+
+    <div class="ladder-step">
+      <div class="ladder-left">
+        <div class="ladder-dot amber">3</div>
+        <div class="ladder-connector"></div>
+      </div>
+      <div class="ladder-body">
+        <h3>Junta Arbitral de Consumo &mdash; free consumer arbitration</h3>
+        <p class="meta">Free for homeowner &middot; 3&ndash;6 months &middot; Binding decision</p>
+        <p>Spain has a national consumer arbitration system (Sistema Arbitral de Consumo) that issues decisions with the same legal weight as a court judgment. Leo prepares the entire submission for you:</p>
+        <ul class="checklist" style="margin:10px 0">
+          <li>Pre-fills the online form with your identity, contractor identity, and case reference</li>
+          <li>Attaches the signed scope as proof of contract</li>
+          <li>Attaches the aparejador report as the technical opinion</li>
+          <li>Drafts the <em>exposici&oacute;n de hechos</em> (statement of facts) from the Leo case file</li>
+        </ul>
+        <p>Every Leo contractor signs an <strong>arbitration clause</strong> when they join the platform, contractually committing them to participate. If a contractor is adhered to the Junta Arbitral system and refuses to appear, the arbitration proceeds and a <em>laudo</em> is issued by default. If they are not yet adhered and refuse the Junta&rsquo;s invitation, that refusal is a documented breach of the Leo service agreement &mdash; and Leo prepares the full <em>procedimiento monitorio</em> petition for the homeowner to file.</p>
+        <p>The laudo (arbitration award) is an <em>título ejecutivo</em> &mdash; a direct enforcement title with the same legal weight as a court judgment. It is enforceable against the contractor&rsquo;s assets via the Court of First Instance without re-litigating the case.</p>
+        <span class="ladder-tag free">Free for homeowner</span>
+        <span class="ladder-tag time">3&ndash;6 months</span>
+        <span class="ladder-tag binding">Court-enforceable award (RD 713/2024)</span>
+      </div>
+    </div>
+
+    <div class="ladder-step">
+      <div class="ladder-left">
+        <div class="ladder-dot terra">4</div>
+        <div class="ladder-connector"></div>
+      </div>
+      <div class="ladder-body">
+        <h3>Procedimiento Monitorio &mdash; court payment order</h3>
+        <p class="meta">No upper limit &middot; No lawyer required to file &middot; Automatic enforcement if contractor ignores it</p>
+        <p>For money owed that the contractor disputes or ignores, Spain&rsquo;s <em>procedimiento monitorio</em> is a powerful tool. You file a petition at the local <em>Juzgado de Primera Instancia</em> with the documented debt. The judge reviews. If documentation is sufficient, a payment demand is issued to the contractor.</p>
+        <p>The contractor has 20 days to respond. If they do nothing &mdash; which fraudsters often do &mdash; <strong>the judge issues an automatic enforcement decree.</strong> This becomes a judgment debt enforceable against their assets (bank accounts, vehicles, property). No court battle. No waiting for a verdict.</p>
+        <p>Leo prepares the petition pre-filled with case file data, and tells you exactly where to file (your local juzgado). <strong>No lawyer required to file the petition</strong> regardless of amount (LEC Art. 814.2). A lawyer is only needed if the contractor opposes and the claim exceeds &euro;2,000, or for the execution phase if the enforced amount exceeds &euro;2,000.</p>
+        <span class="ladder-tag time">20-day auto-enforcement</span>
+        <span class="ladder-tag binding">No upper limit</span>
+      </div>
+    </div>
+
+    <div class="ladder-step">
+      <div class="ladder-left">
+        <div class="ladder-dot terra">5</div>
+        <div class="ladder-connector"></div>
+      </div>
+      <div class="ladder-body">
+        <h3>Juicio Verbal &mdash; small claims (under &euro;15,000)</h3>
+        <p class="meta">No lawyer required for claims under &euro;2,000 &middot; 6&ndash;18 months</p>
+        <p>If the contractor contests the monitorio (or the arbitration award), and the amount is under &euro;15,000, the case proceeds as a <em>juicio verbal</em> &mdash; a simplified oral hearing (threshold raised to &euro;15,000 by RDL 6/2023). No lawyer is required if the disputed amount is under &euro;2,000.</p>
+        <p>Leo&rsquo;s case file &mdash; scope, variation orders, payments, photos, aparejador report, chat history &mdash; is the foundation of the court filing. The contractor&rsquo;s verified identity is already on record.</p>
+        <span class="ladder-tag time">6&ndash;18 months</span>
+      </div>
+    </div>
+
+    <div class="ladder-step">
+      <div class="ladder-left">
+        <div class="ladder-dot dark">6</div>
+      </div>
+      <div class="ladder-body">
+        <h3>Criminal complaint &mdash; Guardia Civil or Police</h3>
+        <p class="meta">Identity documented &middot; Police report pre-assembled</p>
+        <p>If the contractor has committed fraud &mdash; taken money they were never going to earn, disappeared with materials funds, provided false identity &mdash; Leo provides the full criminal complaint package. This is not a civil dispute; this is a police matter.</p>
+        <p>Leo exports the contractor&rsquo;s biometric-verified identity (face photo, ID document, NIF, address), the full evidence file, and a formatted <em>denuncia</em> narrative. The homeowner delivers this to the nearest Guardia Civil post or police station. Because Leo verified the contractor&rsquo;s real identity, there is nowhere for them to hide.</p>
+        <span class="ladder-tag time">File within 6 months</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="info-card teal">
+    <p><strong>In most cases, you never leave Step 1.</strong> The contractor knows what Step 6 looks like &mdash; a police report with their face and home address attached. That knowledge is why most disputes resolve quickly.</p>
+  </div>
+</div>
+
+<!-- 4. Aparejador explainer -->
+<div class="section" id="aparejador">
+  <h2>4. The aparejador &mdash; your independent expert</h2>
+  <p class="section-sub">Spain&rsquo;s most trusted technical authority on construction quality and compliance.</p>
+
+  <div class="aparejador-box">
+    <div class="aparejador-box-header">
+      <h4>What is an aparejador?</h4>
+      <p>Arquitecto T&eacute;cnico &mdash; licensed through the COAAT (Colegio Oficial de Aparejadores y Arquitectos T&eacute;cnicos)</p>
+    </div>
+    <div class="aparejador-box-body">
+      <p>An aparejador is a qualified construction technical director &mdash; a professional with university-level training in building science, materials, construction methods, and Spanish building regulations. They are licensed professionals with mandatory malpractice insurance and a colegio registration number that can be independently verified.</p>
+      <p>In Spanish law, an <em>informe pericial</em> (expert report) from an aparejador is the standard technical evidence used in construction disputes at every level &mdash; from consumer arbitration through to the Supreme Court. When an aparejador signs an opinion, it carries the weight of a professional staking their licence on it.</p>
+    </div>
+  </div>
+
+  <h3>Remote review: what it covers</h3>
+  <p>The remote aparejador review at Step 2a covers the vast majority of renovation disputes. The aparejador reviews:</p>
+  <ul class="checklist">
+    <li>The signed Leo scope &mdash; what was agreed vs what was claimed</li>
+    <li>Milestone photos from both the contractor and homeowner, timestamped and geotagged</li>
+    <li>Variation order records &mdash; what was agreed, what was added, what was disputed</li>
+    <li>Invoices and receipts submitted during the job</li>
+    <li>The chat and voice note record between both parties</li>
+  </ul>
+
+  <h3>What remote review cannot cover</h3>
+  <ul class="checklist">
+    <li class="cross">Hidden structural defects not visible in photos (cracks behind plaster, leaks under floors)</li>
+    <li class="cross">Verification of the exact materials installed (is that tile actually Porcelanosa?)</li>
+    <li class="cross">Work done and concealed before the dispute was raised</li>
+  </ul>
+  <p>When any of these apply, the aparejador states it explicitly in their report &mdash; and the dispute escalates to a physical visit (Step 2b). The aparejador&rsquo;s report always includes a clear statement of what was and was not assessable remotely, so the document retains its legal validity.</p>
+
+  <h3>The structured photo protocol</h3>
+  <p>When a dispute is flagged, Leo sends both parties a structured photo checklist tied to the specific scope line items in dispute. Each item becomes a prompt: <em>&ldquo;Show the completed bathroom tiles from this angle.&rdquo;</em> Both parties upload independently. The aparejador reviews both sets.</p>
+  <p>For jobs above &euro;5,000 or where photos are ambiguous, the aparejador can join a live video call through the Leo platform and direct the walkthrough themselves. This is recorded and stored as part of the case file.</p>
+
+  <div class="info-card teal">
+    <p><strong>Legal basis:</strong> A <em>pericial documental</em> (expert opinion based on documentary evidence) is fully admissible in Spanish courts and arbitration under standard rules of evidence. The key condition &mdash; which Leo&rsquo;s process meets &mdash; is that the expert is a qualified colegio member and clearly states what they could and could not assess. This is standard practice in insurance claims across Spain.</p>
+  </div>
+</div>
+
+<!-- 5. Case file -->
+<div class="section" id="case-file">
+  <h2>5. The Leo case file</h2>
+  <p class="section-sub">Every job builds its own evidence pack from day one. Not after a dispute &mdash; from the moment the scope is signed.</p>
+
+  <p>The Leo case file is a structured PDF generated automatically at any point. It contains everything a police officer, arbitration panel, or civil court needs to understand what happened &mdash; formatted for non-technical readers, hashed for tamper-evidence.</p>
+
+  <div class="case-file-preview">
+    <h4>What the Leo case file contains</h4>
+    <div class="case-file-item">
+      <svg width="14" height="14" fill="none" stroke="#6EE7B7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      <span><strong>Signed scope document</strong> &mdash; every line item, unit rate, and milestone, timestamped at acceptance by both parties</span>
+    </div>
+    <div class="case-file-item">
+      <svg width="14" height="14" fill="none" stroke="#6EE7B7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      <span><strong>Variation order record</strong> &mdash; every change requested, who proposed it, approved or rejected, cost impact, timestamp</span>
+    </div>
+    <div class="case-file-item">
+      <svg width="14" height="14" fill="none" stroke="#6EE7B7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      <span><strong>Payment milestone history</strong> &mdash; each milestone, trigger date, homeowner confirmation, escrow release timestamp and amount</span>
+    </div>
+    <div class="case-file-item">
+      <svg width="14" height="14" fill="none" stroke="#6EE7B7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      <span><strong>Receipt submissions</strong> &mdash; every materials receipt uploaded: merchant, amount, category, approval status &mdash; the full audit trail for every euro spent on your project</span>
+    </div>
+    <div class="case-file-item">
+      <svg width="14" height="14" fill="none" stroke="#6EE7B7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      <span><strong>Timestamped photos</strong> &mdash; all photos uploaded by both parties, geotagged, organised by milestone and date</span>
+    </div>
+    <div class="case-file-item">
+      <svg width="14" height="14" fill="none" stroke="#6EE7B7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      <span><strong>Full conversation history</strong> &mdash; every message and voice note transcript between both parties, in chronological order</span>
+    </div>
+    <div class="case-file-item">
+      <svg width="14" height="14" fill="none" stroke="#6EE7B7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      <span><strong>Dispute record</strong> &mdash; if a dispute was raised: the stated reason, both parties&rsquo; statements, platform actions taken (card freeze, milestone holds), and outcome</span>
+    </div>
+    <div class="case-file-item">
+      <svg width="14" height="14" fill="none" stroke="#6EE7B7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      <span><strong>Aparejador report</strong> &mdash; if commissioned: the full signed <em>pericial</em> opinion, evidence basis, and the aparejador&rsquo;s COAAT colegio number</span>
+    </div>
+    <div class="case-file-item">
+      <svg width="14" height="14" fill="none" stroke="#6EE7B7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      <span><strong>Contractor identity dossier</strong> &mdash; legal name as shown on government ID, NIF, home address from onboarding, biometric face match result, AML screening result (1,300+ databases), RC insurance certificate and policy number, criminal record certificate upload date, OSINT background sweep summary</span>
+    </div>
+    <div class="case-file-item" style="margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,.1)">
+      <svg width="14" height="14" fill="none" stroke="var(--muted)" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+      <span style="color:var(--muted)">SHA-256 hash of all contents printed on cover &mdash; tamper-evident. Neither party can claim the file was altered.</span>
+    </div>
+  </div>
+
+  <p>This is why Leo is worth paying for. A homeowner who arrives at a police station or arbitration panel with the Leo case file has a 40-page structured document showing exactly what was agreed, what was paid, what was photographed, and what an independent expert concluded. That is a solved case, not a he-said-she-said.</p>
+</div>
+
+<!-- FAQ -->
+<div class="section faq" id="faq">
+  <h2>6. Frequently asked questions</h2>
+
+  <div class="faq-item">
+    <div class="faq-q">What if the contractor just ignores everything?</div>
+    <div class="faq-a"><div class="faq-a-inner">Ignoring the dispute is the worst thing a contractor can do. Their platform access is frozen (no new jobs, no milestone payments). If they ignore the Junta Arbitral, the arbitration proceeds and a laudo is issued against them by default (provided they are adhered). If they ignore the procedimiento monitorio, the court issues an automatic enforcement decree after 20 days. Leo has their verified identity and IBAN &mdash; ignoring will not make the debt go away. <strong>Important caveat:</strong> enforcement of any award ultimately depends on the contractor having seizable assets (bank funds, property, vehicles). This is why Leo&rsquo;s escrow model matters &mdash; for any money already under Leo&rsquo;s control, recovery is certain regardless of the contractor&rsquo;s financial position. The legal routes above cover amounts spent outside Leo&rsquo;s control (e.g., cash paid before using Leo, or materials purchased directly).</div></div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Who pays for the aparejador?</div>
+    <div class="faq-a"><div class="faq-a-inner">Leo covers the cost of the remote aparejador review (Step 2a) at no charge to either party. This is part of Leo&rsquo;s dispute resolution service &mdash; you get an independent professional opinion without paying anything upfront. For the physical site visit (Step 2b), Leo also advances the cost. After the outcome is determined, Leo recovers that cost from the party found to be at fault &mdash; typically deducted from the escrowed project funds. If the contractor is at fault and has no funds in escrow, Leo pursues recovery through the clawback mechanism. The homeowner is not out of pocket at any stage of the expert review process.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Does the contractor have to agree to arbitration?</div>
+    <div class="faq-a"><div class="faq-a-inner">Yes &mdash; they agreed when they joined Leo. The Leo service agreement contractually commits them to participate in arbitration under the <em>Sistema Arbitral de Consumo</em>, governed by Real Decreto 713/2024. If they are adhered to the system and refuse to appear, the arbitration proceeds and a <em>laudo</em> is issued against them by default. If they are not yet adhered and refuse the Junta&rsquo;s invitation, that refusal is a breach of the Leo service agreement &mdash; Leo then prepares the full <em>procedimiento monitorio</em> petition for the homeowner to file at their local court.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Do I need a lawyer for any of this?</div>
+    <div class="faq-a"><div class="faq-a-inner">For Steps 1&ndash;4 (mediation, aparejador review, Junta Arbitral), no lawyer is required. For the procedimiento monitorio, no lawyer is required to file the initial petition, regardless of the claim amount (LEC Art. 814.2). A lawyer becomes mandatory if: (a) the contractor opposes the monitorio and the amount exceeds &euro;2,000, converting it to a trial; (b) you need to enforce the judgment and the amount exceeds &euro;2,000; or (c) the case proceeds to a juicio ordinario (&gt;&euro;15,000 contested). Leo can help connect you with legal aid or a specialist construction lawyer if needed at those stages.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">What is the maximum amount I can claim through arbitration?</div>
+    <div class="faq-a"><div class="faq-a-inner">Consumer arbitration (Junta Arbitral de Consumo) has no formal upper limit under Spanish law &mdash; you can bring any consumer dispute. In practice, the Juntas are optimised for disputes under &euro;15,000. For larger amounts, formal arbitration under the Ley de Arbitraje or civil court is more appropriate, and Leo&rsquo;s documentation supports both.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Can the contractor dispute the aparejador&rsquo;s report?</div>
+    <div class="faq-a"><div class="faq-a-inner">Yes &mdash; either party can engage their own expert counter-report. In practice, if the aparejador&rsquo;s report is based on clear documentary evidence (photos, scope document, variation orders), a counter-report carries less weight unless it presents new physical evidence. The Junta Arbitral weighs all expert evidence submitted. Leo&rsquo;s aparejador reports are designed to be methodologically sound and clearly scoped to avoid easy challenge.</div></div>
+  </div>
+
+</div>
+
+</div><!-- end .content -->
+
+<div class="cta-section">
+  <h2>Built to protect you.<br><em>From day one.</em></h2>
+  <p>The best dispute is the one that never happens. Leo&rsquo;s scope, escrow, and documentation systems prevent most problems before they start.</p>
+  <div class="cta-links">
+    <a href="https://wa.me/?text=Hi!%20I%27d%20like%20to%20start%20a%20Leo%20project%20%F0%9F%91%8B" class="cta-btn primary" target="_blank" rel="noopener">
+      <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Start a project
+    </a>
+    <a href="/how-we-vet" class="cta-btn secondary">How we vet contractors &rarr;</a>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&copy; 2026 Leo Casa Limited &middot; Company No. 16259714 &middot; <a href="/">Home</a> &middot; <a href="/how-we-vet">How we vet contractors</a> &middot; <a href="/agreement">Construction Agreement</a> &middot; <a href="/terms">Terms &amp; Conditions</a></p>
+</div>
+
+<script>
+document.querySelectorAll('.faq-item').forEach(function(item){
+  item.querySelector('.faq-q').addEventListener('click',function(){
+    var wasOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');});
+    if(!wasOpen)item.classList.add('open');
+  });
+});
+</script>
+<script>
+(function(){
+  var ls = document.getElementById('langSwitch');
+  if(!ls) return;
+  ls.querySelector('.lang-btn').addEventListener('click', function(e){
+    e.stopPropagation();
+    ls.classList.toggle('open');
+  });
+  document.addEventListener('click', function(){ ls.classList.remove('open'); });
+})();
+</script>
+</body>
+</html>

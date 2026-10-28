@@ -1,0 +1,27 @@
+[project]
+name = "fulltext"
+version = "0.1.0"
+description = "Shared capability: retrieval substrate (FTS5 + BM25 + synonym expansion, stopword lists, stemmer, plus typed dispatchers for web / legal / forum providers). Keyword-based — semantic/vector retrieval lives in packages/storage."
+requires-python = ">=3.11"
+dependencies = [
+    "PyStemmer>=2.2,<3",
+    "core",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "respx>=0.21",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fulltext"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="/brand-vars.css">
+<title>Leo Stories — Insights for homeowners and tradespeople in Spain</title>
+<meta name="description" content="Practical advice on renovation payments, dispute resolution, contractor trust, quoting, and the future of AI in home improvement. From the team at Leo.">
+<meta property="og:title" content="Leo Stories">
+<meta property="og:description" content="Practical advice on renovation payments, dispute resolution, contractor trust, quoting, and the future of AI in home improvement.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://leo.casa/stories">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Leo Stories">
+<meta name="twitter:description" content="Insights for homeowners and tradespeople in Spain">
+<link rel="canonical" href="https://leo.casa/stories">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+img{max-width:100%}
+html{font-size:17px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);min-height:100vh;line-height:1.65}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-repeat:repeat;z-index:9999}
+
+/* ── Header ── */
+.site-header{position:sticky;top:0;z-index:100;background:rgba(250,248,244,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.header-inner{max-width:880px;margin:0 auto;padding:0 28px;height:56px;display:flex;align-items:center;justify-content:space-between}
+.header-left{display:flex;align-items:center;gap:12px}
+.header-logo{font-family:'Playfair Display',Georgia,serif;font-size:1.15rem;font-weight:600;letter-spacing:-.03em;color:var(--ink);text-decoration:none}
+.header-divider{width:1px;height:18px;background:var(--border)}
+.header-section{font-family:var(--sans);font-size:.95rem;font-weight:500;color:var(--stone);letter-spacing:-.01em}
+.header-home{font-size:.82rem;font-weight:500;color:var(--teal);text-decoration:none}
+.header-home:hover{text-decoration:underline}
+
+/* ── Hero ── */
+.index-hero{max-width:880px;margin:0 auto;padding:72px 28px 48px;text-align:center}
+.index-title{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2rem,5vw,3rem);font-weight:700;letter-spacing:-.03em;line-height:1.15;margin-bottom:16px}
+.index-sub{font-size:1.05rem;color:var(--stone);max-width:520px;margin:0 auto;line-height:1.6}
+
+/* ── Filter ── */
+.filter-row{max-width:880px;margin:0 auto;padding:0 28px 32px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.filter-pill{font-family:'Source Sans 3',sans-serif;font-size:.82rem;font-weight:500;padding:6px 16px;border-radius:var(--r-pill);border:1px solid var(--border);background:var(--cream);color:var(--stone);cursor:pointer;transition:all .15s;text-decoration:none}
+.filter-pill:hover{border-color:var(--stone);color:var(--ink)}
+.filter-pill.active{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+
+/* ── Card Grid ── */
+.story-grid{max-width:880px;margin:0 auto;padding:0 28px 64px;display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.story-card{text-decoration:none;color:inherit;border-radius:var(--r-lg);overflow:hidden;background:var(--card);border:1px solid var(--border);transition:box-shadow .25s,transform .15s}
+.story-card:hover{box-shadow:0 8px 30px rgba(0,0,0,.08);transform:translateY(-3px)}
+.story-card-thumb{position:relative;width:100%;height:200px;overflow:hidden}
+.story-card-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* Vellum overlay on story thumbnails */
+.story-vellum{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.sv-glass{position:absolute;inset:-20px;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);background:rgba(250,248,244,0.06)}
+.sv-bleed{position:absolute;inset:0;background:linear-gradient(155deg,rgba(255,255,255,.10) 0%,rgba(0,0,0,.03) 35%,rgba(0,0,0,.05) 65%,rgba(255,255,255,.06) 100%),linear-gradient(280deg,rgba(0,0,0,.04) 0%,rgba(255,255,255,.05) 30%,rgba(0,0,0,.02) 60%,rgba(255,255,255,.06) 100%)}
+.sv-png{position:absolute;inset:0;mix-blend-mode:overlay;opacity:.22;background-image:none;background-size:128px;image-rendering:pixelated}
+.sv-svg{position:absolute;inset:0;mix-blend-mode:overlay;opacity:.28;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px;background-repeat:repeat}
+.story-card-body{padding:20px 22px 24px}
+.story-card-cat{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--terracotta);margin-bottom:8px}
+.story-card-title{font-family:var(--sans);font-size:1.08rem;font-weight:600;color:var(--ink);line-height:1.35;margin-bottom:10px}
+.story-card-excerpt{font-size:.88rem;color:var(--stone);line-height:1.55;margin-bottom:12px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.story-card-meta{font-size:.75rem;color:var(--muted)}
+
+/* ── Footer ── */
+footer{background:var(--ink);color:rgba(253,251,247,.6);padding:48px 0 32px;margin-top:16px}
+.footer-inner{display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between;max-width:700px;margin:0 auto;padding:0 28px}
+.footer-col{min-width:120px}
+.footer-col-brand{flex:1 1 200px}
+.footer-brand{font-family:'Playfair Display',Georgia,serif;font-size:1.2rem;font-weight:600;letter-spacing:-.03em;color:var(--cream);margin-bottom:8px}
+.footer-tagline{font-size:.82rem;color:rgba(253,251,247,.5);line-height:1.5;max-width:220px}
+.footer-col h4{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:rgba(253,251,247,.4);margin-bottom:12px}
+.footer-col a{display:block;font-size:.85rem;color:rgba(253,251,247,.6);text-decoration:none;padding:3px 0;transition:color .15s}
+.footer-col a:hover{color:var(--cream)}
+.footer-bottom{font-size:.75rem;color:rgba(253,251,247,.35);text-align:center;margin-top:32px;padding:0 28px}
+
+/* ── Responsive ── */
+@media(max-width:600px){
+  .header-inner{padding:0 16px;height:50px}
+  .index-hero{padding:48px 20px 32px}
+  .filter-row{padding:0 20px 24px}
+  .story-grid{grid-template-columns:1fr;padding:0 20px 48px;gap:20px}
+    .footer-inner{flex-direction:column;gap:24px;padding:0 16px}
+  .footer-col-brand{flex:1 1 100%}
+}
+.lang-switch{position:relative;z-index:2}
+.lang-btn{display:flex;align-items:center;gap:3px;background:none;border:1px solid var(--border);border-radius:var(--r-pill);padding:5px 10px;font-family:'Source Sans 3',sans-serif;font-size:.72rem;font-weight:600;color:var(--ink);cursor:pointer;white-space:nowrap;transition:border-color .15s}
+.lang-btn:hover{border-color:var(--stone)}
+.lang-flag{font-size:14px;line-height:1}
+.lang-code{letter-spacing:.03em}
+.lang-chevron{width:8px;height:8px;opacity:.5}
+.lang-dropdown{position:absolute;right:0;top:calc(100% + 6px);background:#fff;border-radius:var(--r-md);box-shadow:0 4px 20px rgba(0,0,0,.12);padding:4px;display:none;min-width:120px;z-index:200}
+.lang-switch.open .lang-dropdown{display:block}
+.lang-option{display:flex;align-items:center;gap:6px;padding:7px 12px;border-radius:var(--r);text-decoration:none;font-family:'Source Sans 3',sans-serif;font-size:.78rem;color:var(--ink);white-space:nowrap}
+.lang-option:hover{background:rgba(0,0,0,.04)}
+.lang-option.active{font-weight:700;color:var(--teal)}
+.header-right{display:flex;align-items:center;gap:10px}
+</style>
+<script src="fluid-gradient-v4.js" defer></script>
+<!-- Google Analytics 4 -->
+
+
+
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a href="/" class="header-logo"><img src="/brand/leo-charcoal.svg" alt="Leo" height="18" style="display:block;width:auto" draggable="false"/></a>
+      <div class="header-divider"></div>
+      <span class="header-section">Stories</span>
+    </div>
+    <div class="header-right">
+      <a href="/" class="header-home">Back to Leo</a>
+      <div class="lang-switch" id="langSwitch">
+        <button class="lang-btn" aria-label="Change language">
+          <span class="lang-flag">🇬🇧</span><span class="lang-code">EN</span>
+          <svg class="lang-chevron" viewBox="0 0 8 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1.5 3L4 5.5L6.5 3"/></svg>
+        </button>
+        <div class="lang-dropdown">
+          <a href="/stories" class="lang-option active">🇬🇧 English</a>
+          <a href="/stories-es" class="lang-option">🇪🇸 Español</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<div class="index-hero">
+  <h1 class="index-title">Leo Stories</h1>
+  <p class="index-sub">Insights for homeowners and tradespeople navigating renovations in Spain. Practical, honest, and occasionally opinionated.</p>
+</div>
+
+<!-- Filter pills -->
+<div class="filter-row" id="filters">
+  <button class="filter-pill active" data-filter="all">All</button>
+  <button class="filter-pill" data-filter="disputes">Disputes</button>
+  <button class="filter-pill" data-filter="payments">Payments</button>
+  <button class="filter-pill" data-filter="communication">Communication</button>
+  <button class="filter-pill" data-filter="process">Process</button>
+  <button class="filter-pill" data-filter="trust">Trust</button>
+  <button class="filter-pill" data-filter="for-tradespeople">For Tradespeople</button>
+  <button class="filter-pill" data-filter="future">Future</button>
+</div>
+
+<!-- Article grid -->
+<div class="story-grid" id="storyGrid">
+  <a href="/stories/renovation-disputes-what-to-do" class="story-card" data-category="disputes">
+    <div class="story-card-thumb"><img src="/sample-attachment.png" alt="" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" aria-hidden="true"/><div class="story-vellum"><div class="sv-glass"></div><div class="sv-bleed"></div><div class="sv-png"></div><div class="sv-svg"></div></div></div>
+    <div class="story-card-body">
+      <div class="story-card-cat">Disputes</div>
+      <div class="story-card-title">What to Do When Things Go Wrong on a Renovation Job</div>
+      <div class="story-card-excerpt">Your renovation has gone wrong. Your builder stopped returning calls. Here's what Spanish law actually says you can do about it — from free complaints to mandatory mediation.</div>
+      <div class="story-card-meta">March 10, 2026 · 8 min read</div>
+    </div>
+  </a>
+  <a href="/stories/mediation-not-litigation" class="story-card" data-category="disputes">
+    <div class="story-card-thumb"><img src="/sample-attachment.png" alt="" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" aria-hidden="true"/><div class="story-vellum"><div class="sv-glass"></div><div class="sv-bleed"></div><div class="sv-png"></div><div class="sv-svg"></div></div></div>
+    <div class="story-card-body">
+      <div class="story-card-cat">Disputes</div>
+      <div class="story-card-title">Mediation, Not Litigation: Resolving Small Renovation Disputes</div>
+      <div class="story-card-excerpt">A cracked tile or a missed deadline doesn't need a courtroom. Here's why mediation resolves small renovation disputes faster, cheaper, and with less stress.</div>
+      <div class="story-card-meta">March 12, 2026 · 8 min read</div>
+    </div>
+  </a>
+  <a href="/stories/escrow-changes-everything" class="story-card" data-category="payments">
+    <div class="story-card-thumb"><img src="/sample-attachment.png" alt="" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" aria-hidden="true"/><div class="story-vellum"><div class="sv-glass"></div><div class="sv-bleed"></div><div class="sv-png"></div><div class="sv-svg"></div></div></div>
+    <div class="story-card-body">
+      <div class="story-card-cat">Payments</div>
+      <div class="story-card-title">Why Escrow Changes Everything for Home Renovation Payments</div>
+      <div class="story-card-excerpt">Paying a contractor upfront is risky. Not getting paid for finished work is worse. Escrow-held milestone payments fix both problems. Here's exactly how.</div>
+      <div class="story-card-meta">March 14, 2026 · 8 min read</div>
+    </div>
+  </a>
+  <a href="/stories/managing-expectations-mid-project" class="story-card" data-category="communication">
+    <div class="story-card-thumb"><img src="/sample-attachment.png" alt="" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" aria-hidden="true"/><div class="story-vellum"><div class="sv-glass"></div><div class="sv-bleed"></div><div class="sv-png"></div><div class="sv-svg"></div></div></div>
+    <div class="story-card-body">
+      <div class="story-card-cat">Communication</div>
+      <div class="story-card-title">The Conversation You Never Had: Managing Expectations Mid-Project</div>
+      <div class="story-card-excerpt">Most renovation disputes aren't about bad work — they're about mismatched expectations. Here's how to bridge the gap before it becomes a conflict.</div>
+      <div class="story-card-meta">March 16, 2026 · 8 min read</div>
+    </div>
+  </a>
+  <a href="/stories/variation-orders-budget-killer" class="story-card" data-category="process">
+    <div class="story-card-thumb"><img src="/sample-attachment.png" alt="" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" aria-hidden="true"/><div class="story-vellum"><div class="sv-glass"></div><div class="sv-bleed"></div><div class="sv-png"></div><div class="sv-svg"></div></div></div>
+    <div class="story-card-body">
+      <div class="story-card-cat">Process</div>
+      <div class="story-card-title">Variation Orders: The Mid-Project Change That Kills Budgets</div>
+      <div class="story-card-excerpt">Variation orders are the mid-project changes that blow budgets wide open. What they are, why they happen, and how to handle them without destroying trust.</div>
+      <div class="story-card-meta">March 18, 2026 · 8 min read</div>
+    </div>
+  </a>
+  <a href="/stories/hiring-contractor-trust-checklist" class="story-card" data-category="trust">
+    <div class="story-card-thumb"><img src="/sample-attachment.png" alt="" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" aria-hidden="true"/><div class="story-vellum"><div class="sv-glass"></div><div class="sv-bleed"></div><div class="sv-png"></div><div class="sv-svg"></div></div></div>
+    <div class="story-card-body">
+      <div class="story-card-cat">Trust</div>
+      <div class="story-card-title">Hiring a Contractor Nobody Recommended: A Trust Checklist</div>
+      <div class="story-card-excerpt">No friend-of-a-friend recommendation? No problem. A systematic checklist for vetting contractors in Spain — red flags, trust signals, and legal checks.</div>
+      <div class="story-card-meta">March 20, 2026 · 8 min read</div>
+    </div>
+  </a>
+  <a href="/stories/how-to-write-winning-quotes" class="story-card" data-category="for-tradespeople">
+    <div class="story-card-thumb"><img src="/sample-attachment.png" alt="" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" aria-hidden="true"/><div class="story-vellum"><div class="sv-glass"></div><div class="sv-bleed"></div><div class="sv-png"></div><div class="sv-svg"></div></div></div>
+    <div class="story-card-body">
+      <div class="story-card-cat">For Tradespeople</div>
+      <div class="story-card-title">How to Write a Quote That Wins the Job (and Protects You)</div>
+      <div class="story-card-excerpt">The difference between winning a job and losing it often comes down to the quote. How to write professional quotes that build trust and protect you legally.</div>
+      <div class="story-card-meta">March 22, 2026 · 8 min read</div>
+    </div>
+  </a>
+  <a href="/stories/best-quoting-tools-contractors-2026" class="story-card" data-category="for-tradespeople">
+    <div class="story-card-thumb"><img src="/sample-attachment.png" alt="" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" aria-hidden="true"/><div class="story-vellum"><div class="sv-glass"></div><div class="sv-bleed"></div><div class="sv-png"></div><div class="sv-svg"></div></div></div>
+    <div class="story-card-body">
+      <div class="story-card-cat">For Tradespeople</div>
+      <div class="story-card-title">The Best Tools for Writing Quotes as a Contractor in 2026</div>
+      <div class="story-card-excerpt">Buildxact, Tradify, Jobber, HousePro, Leo — which quoting tool is right for your business? A practical comparison of features, pricing, and workflows.</div>
+      <div class="story-card-meta">March 24, 2026 · 8 min read</div>
+    </div>
+  </a>
+  <a href="/stories/can-ai-mediate-renovation-dispute" class="story-card" data-category="future">
+    <div class="story-card-thumb"><img src="/sample-attachment.png" alt="" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" aria-hidden="true"/><div class="story-vellum"><div class="sv-glass"></div><div class="sv-bleed"></div><div class="sv-png"></div><div class="sv-svg"></div></div></div>
+    <div class="story-card-body">
+      <div class="story-card-cat">Future</div>
+      <div class="story-card-title">Can AI Mediate a Renovation Dispute?</div>
+      <div class="story-card-excerpt">The AAA has introduced AI-powered arbitration. Platforms are using scope analysis to flag disputes before they escalate. Is AI the future of fair resolution?</div>
+      <div class="story-card-meta">March 26, 2026 · 8 min read</div>
+    </div>
+  </a>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col footer-col-brand">
+      <div class="footer-brand"><img src="/brand/leo-cream.svg" alt="Leo" height="18" style="display:block;width:auto" draggable="false"/></div>
+      <p class="footer-tagline">The layer between tradespeople and homeowners. Scope, payment, and protection for everyone.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="https://wa.me/?text=Hi%20Leo!%20%F0%9F%91%8B" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="/terms">Terms &amp; Conditions</a>
+    </div>
+    <div class="footer-col">
+      <h4>Read</h4>
+      <a href="/stories">Leo Stories</a>
+    </div>
+  </div>
+  <p class="footer-bottom">&copy; 2026 Leo Casa Limited &middot; Company No. 16259714 &middot; Serving all of Spain</p>
+</footer>
+
+<script>
+(function(){
+  var pills=document.querySelectorAll('.filter-pill');
+  var cards=document.querySelectorAll('.story-card');
+  pills.forEach(function(pill){
+    pill.addEventListener('click',function(){
+      pills.forEach(function(p){p.classList.remove('active')});
+      pill.classList.add('active');
+      var f=pill.getAttribute('data-filter');
+      cards.forEach(function(c){
+        if(f==='all'||c.getAttribute('data-category')===f){
+          c.style.display='';
+        }else{
+          c.style.display='none';
+        }
+      });
+    });
+  });
+})();
+
+(function(){
+  var sw=document.getElementById('langSwitch');
+  if(!sw)return;
+  var btn=sw.querySelector('.lang-btn');
+  btn.addEventListener('click',function(e){e.stopPropagation();sw.classList.toggle('open')});
+  document.addEventListener('click',function(){sw.classList.remove('open')});
+})();
+</script>
+</body>
+</html>

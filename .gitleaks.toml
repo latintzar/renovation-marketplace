@@ -1,0 +1,11 @@
+[extend]
+useDefault = true
+
+# Source manifests contain SHA-256 content digests, never runtime values.
+# Both the known manifest path and an exact 64-hex match are required.
+[[allowlists]]
+description = "SHA-256 digests in source provenance manifests"
+condition = "AND"
+paths = ['''(^|/)provenance/(source-export|source-files|source-changes)\.json$''']
+regexTarget = "secret"
+regexes = ['''^[a-f0-9]{64}$''']

@@ -1,0 +1,50 @@
+# LiteLLM Proxy — the single LLM endpoint for every Leo capability.
+# Translates OpenAI-format requests into upstream provider calls.
+#
+# Chat completions: OpenRouter → Anthropic (Sonnet 4.5 / Haiku 4.5 / Opus 4.5)
+# Image generation: OpenRouter → Google Gemini
+#   - gemini-3-pro-image  ("Nano Banana Pro") — default. Identity preservation
+#     across up to 5 reference images, 2K/4K output, better prompt adherence.
+#   - gemini-2.5-flash-image ("Nano Banana") — cheaper fallback.
+
+model_list:
+  # --- Chat tiers (consumed via llm.chat / llm.chat_sync) --------------------
+  - model_name: anthropic/claude-sonnet-4.6
+    litellm_params:
+      model: openrouter/anthropic/claude-sonnet-4-5
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  - model_name: anthropic/claude-haiku-4.5
+    litellm_params:
+      model: openrouter/anthropic/claude-haiku-4-5
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  - model_name: anthropic/claude-opus-4.6
+    litellm_params:
+      model: openrouter/anthropic/claude-opus-4-5
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  # --- Image generation (consumed via llm.generate_image) -------------------
+  # Canonical ids come from llm.models.registry. Routed through OpenRouter so
+  # all paid traffic (chat + image) stays on one provider / one bill.
+  #
+  # Nano Banana Pro (Gemini 3 Pro Image) — default. Supports identity
+  # preservation across up to 5 subjects, 2K/4K output, and fine-grained edits.
+  # Use `quality: "medium"` for 2K, `"high"` for 4K.
+  - model_name: gemini-3-pro-image
+    litellm_params:
+      model: openrouter/google/gemini-3-pro-image-preview
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  # Nano Banana (Gemini 2.5 Flash Image) — cheaper/faster fallback, retained
+  # for cost-sensitive batch jobs.
+  - model_name: gemini-2.5-flash-image
+    litellm_params:
+      model: openrouter/google/gemini-2.5-flash-image
+      api_key: os.environ/OPENROUTER_API_KEY
+
+litellm_settings:
+  drop_params: true
+  num_retries: 2
+  request_timeout: 120
+  max_tokens: 4096

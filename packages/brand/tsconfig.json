@@ -1,0 +1,14 @@
+{
+  "extends": "@scope/tsconfig/react.json",
+  "compilerOptions": {
+    "resolveJsonModule": true
+  },
+  "include": [
+    "index.ts",
+    "src/brand/generated/tokens.ts",
+    "src/translucency.ts",
+    "src/motion.ts",
+    "src/typography.ts",
+    "src/illustrations.ts"
+  ]
+}

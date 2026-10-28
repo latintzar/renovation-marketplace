@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="/brand-vars.css">
+<title>Leo — How We Vet Every Contractor</title>
+<meta name="description" content="Every Leo contractor is biometrically verified, autónomo-registered, insured, and criminal-record checked. Here is exactly what we check, how we check it, and what it means for you.">
+<link rel="canonical" href="https://leo.casa/how-we-vet">
+<link href="https://leo.casa/how-we-vet" hreflang="en" rel="alternate">
+<link href="https://leo.casa/como-verificamos" hreflang="es" rel="alternate">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/leo-glass-frame.css">
+<link rel="stylesheet" href="/brand-effects.css">
+
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px;-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.7}
+.header{padding:20px 28px;border-bottom:1px solid var(--border);background:var(--cream);position:sticky;top:0;z-index:10}
+.header-inner{max-width:860px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--serif);font-size:1.2rem;font-weight:600;letter-spacing:-.03em;color:var(--ink);text-decoration:none}
+.lang-switch{position:relative;z-index:2}
+.lang-btn{display:flex;align-items:center;gap:3px;background:none;border:1px solid var(--border);border-radius:var(--r-pill);padding:5px 10px;font-family:var(--sans);font-size:.72rem;font-weight:600;color:var(--ink);cursor:pointer;white-space:nowrap;transition:border-color .15s}
+.lang-btn:hover{border-color:var(--stone)}
+.lang-flag{font-size:14px;line-height:1}
+.lang-code{letter-spacing:.03em}
+.lang-chevron{width:8px;height:8px;opacity:.7;color:var(--ink)}
+.lang-dropdown{position:absolute;right:0;top:calc(100% + 6px);background:#fff;border-radius:var(--r-md);box-shadow:0 4px 20px rgba(0,0,0,.12);padding:4px;display:none;min-width:120px;z-index:200}
+.lang-switch.open .lang-dropdown{display:block}
+.lang-option{display:flex;align-items:center;gap:6px;padding:7px 12px;border-radius:var(--r);text-decoration:none;font-family:var(--sans);font-size:.78rem;color:var(--ink);white-space:nowrap}
+.lang-option:hover{background:rgba(0,0,0,.04)}
+.lang-option.active{font-weight:700;color:var(--teal)}
+.hero{background:linear-gradient(135deg,var(--ink) 0%,var(--ink-dark) 50%,var(--ink) 100%);color:#fff;padding:80px 28px 60px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:none;background-size:128px;opacity:.03;pointer-events:none}
+.hero h1{font-family:var(--serif);font-size:clamp(2rem,6vw,3rem);font-weight:600;line-height:1.1;letter-spacing:-.03em;margin-bottom:16px;position:relative}
+.hero h1 em{font-style:italic;color:var(--terra)}
+.hero .subtitle{font-size:1.05rem;color:var(--muted);max-width:600px;margin:0 auto 32px;line-height:1.6;position:relative}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.25);border-radius:var(--r-xl);padding:8px 18px;font-size:.82rem;font-weight:600;color:#6EE7B7;position:relative}
+.content{max-width:860px;margin:0 auto;padding:48px 28px 80px}
+.toc{background:var(--cream-dk);border:1px solid var(--border);border-radius:var(--r);padding:28px 32px;margin-bottom:48px}
+.toc h2{font-family:var(--serif);font-size:1.1rem;font-weight:600;margin-bottom:16px;letter-spacing:-.01em}
+.toc ol{margin:0 0 0 20px;padding:0}
+.toc li{margin-bottom:8px}
+.toc a{font-size:.9rem;color:var(--teal);text-decoration:none;font-weight:500}
+.toc a:hover{text-decoration:underline}
+.section{margin-bottom:56px;scroll-margin-top:80px}
+.section h2{font-family:var(--serif);font-size:clamp(1.3rem,3vw,1.6rem);font-weight:600;letter-spacing:-.02em;margin-bottom:8px;padding-top:24px;border-top:1px solid var(--border)}
+.section h2:first-child{border-top:none;padding-top:0}
+.section .section-sub{font-size:.88rem;color:var(--muted);margin-bottom:24px}
+.section h3{font-family:var(--serif);font-size:1.05rem;font-weight:600;margin:28px 0 10px;letter-spacing:-.01em}
+.section p{font-size:.92rem;color:var(--stone);margin-bottom:14px;line-height:1.7}
+.section strong{color:var(--ink);font-weight:600}
+.info-card{background:var(--cream-dk);border:1px solid var(--border);border-radius:var(--r);padding:20px 24px;margin:20px 0}
+.info-card.teal{background:var(--teal-lt);border-color:#A7F3D0}
+.info-card.terra{background:var(--terra-lt);border-color:#FECACA}
+.info-card.amber{background:#FFFBEB;border-color:#FDE68A}
+.info-card p{margin-bottom:8px}
+.info-card p:last-child{margin-bottom:0}
+ul.checklist{list-style:none;margin:12px 0;padding:0}
+ul.checklist li{font-size:.9rem;color:var(--stone);padding:4px 0 4px 28px;position:relative;line-height:1.6}
+ul.checklist li::before{content:'✓';position:absolute;left:0;color:var(--teal);font-weight:700;font-size:1rem}
+ul.checklist li.cross::before{content:'✗';color:#EF4444}
+
+/* Verification check cards */
+.check-grid{display:grid;grid-template-columns:1fr;gap:20px;margin:28px 0}
+@media(min-width:640px){.check-grid{grid-template-columns:1fr 1fr}}
+.check-card{border:1px solid var(--border);border-radius:var(--r);overflow:hidden;background:#fff}
+.check-card-header{display:flex;align-items:center;gap:12px;padding:16px 20px;background:var(--ink);color:#fff}
+.check-card-num{width:28px;height:28px;border-radius:50%;background:var(--terra);color:#fff;font-size:.78rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.check-card-title{font-family:var(--serif);font-size:.95rem;font-weight:600;letter-spacing:-.01em}
+.check-card-body{padding:16px 20px}
+.check-card-body p{font-size:.85rem;color:var(--stone);margin-bottom:10px;line-height:1.6}
+.check-card-body p:last-child{margin-bottom:0}
+.check-card-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.check-tag{font-size:.75rem;font-weight:600;padding:3px 10px;border-radius:var(--r-xl);letter-spacing:.02em}
+.check-tag.provider{background:var(--teal-lt);color:var(--teal);border:1px solid #A7F3D0}
+.check-tag.cost{background:#F0FDF4;color:#166534;border:1px solid #BBF7D0}
+.check-tag.proves{background:var(--cream-dk);color:var(--stone);border:1px solid var(--border)}
+
+/* Platform comparison table */
+.compare-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.88rem}
+.compare-table th{background:var(--ink);color:#fff;padding:10px 14px;text-align:left;font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.04em}
+.compare-table td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--stone);vertical-align:top}
+.compare-table tr:nth-child(even) td{background:var(--cream-dk)}
+.compare-table .yes{color:var(--green);font-weight:700}
+.compare-table .no{color:#EF4444;font-weight:700}
+.compare-table .leo-col{background:rgba(17,94,89,.04)!important}
+.compare-table .leo-col.yes{color:var(--teal);font-weight:700}
+
+/* Honest disclaimer box */
+.honest-box{border:2px solid var(--border);border-radius:var(--r);padding:24px 28px;margin:32px 0;position:relative}
+.honest-box-label{position:absolute;top:-12px;left:16px;background:var(--cream);padding:0 8px;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.honest-box p{font-size:.9rem;color:var(--stone);margin-bottom:10px;line-height:1.7}
+.honest-box p:last-child{margin-bottom:0}
+
+/* CTA */
+.cta-section{background:linear-gradient(135deg,var(--ink) 0%,var(--ink-dark) 50%,var(--ink) 100%);padding:64px 28px;text-align:center;color:#fff;position:relative;overflow:hidden}
+.cta-section::before{content:'';position:absolute;inset:0;background-image:none;background-size:128px;opacity:.03;pointer-events:none}
+.cta-section h2{font-family:var(--serif);font-size:clamp(1.5rem,4vw,2rem);font-weight:600;letter-spacing:-.03em;margin-bottom:12px;position:relative}
+.cta-section h2 em{font-style:italic;color:var(--terra)}
+.cta-section p{font-size:.95rem;color:var(--muted);max-width:480px;margin:0 auto 32px;line-height:1.6;position:relative}
+.cta-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative}
+.cta-btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:var(--r);font-size:.92rem;font-weight:600;text-decoration:none;transition:all .15s}
+.cta-btn.primary{background:var(--terra);color:#fff}
+.cta-btn.primary:hover{background:var(--terra-dk);transform:translateY(-1px)}
+.cta-btn.secondary{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.15)}
+.cta-btn.secondary:hover{background:rgba(255,255,255,.12)}
+.footer{border-top:1px solid var(--border);padding:24px 28px;text-align:center}
+.footer p{font-size:.78rem;color:var(--muted);margin:0}
+.footer a{color:var(--teal);text-decoration:none}
+@media(max-width:640px){.content{padding:32px 20px 60px}.toc{padding:20px}.hero{padding:60px 20px 40px}.cta-section{padding:48px 20px}.check-grid{grid-template-columns:1fr}}
+</style>
+
+</head>
+<body>
+<div class="header">
+  <div class="header-inner">
+    <a href="/" class="logo"><img src="/brand/leo-charcoal.svg" alt="Leo" height="18" style="display:block;width:auto" draggable="false"/></a>
+    <div class="lang-switch" id="langSwitch">
+      <button class="lang-btn" aria-label="Change language">
+        <span class="lang-flag">🇬🇧</span><span class="lang-code">EN</span>
+        <svg class="lang-chevron" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewBox="0 0 12 12"><path d="M3 4.5l3 3 3-3"/></svg>
+      </button>
+      <div class="lang-dropdown">
+        <a class="lang-option active" href="/how-we-vet">🇬🇧 English</a>
+        <a class="lang-option" href="/como-verificamos">🇪🇸 Español</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hero">
+  <h1>We know more about<br>your contractor than<br><em>anyone else in Spain.</em></h1>
+  <p class="subtitle">Government ID checked against their face. Autónomo registration confirmed. Insurance on file. Criminal record uploaded. Most platforms check none of this.</p>
+  <div class="hero-badge">
+    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    Verification is mandatory &mdash; not optional
+  </div>
+</div>
+
+<div class="content">
+
+<div class="toc">
+  <h2>On this page</h2>
+  <ol>
+    <li><a href="#problem">What most platforms do (nothing)</a></li>
+    <li><a href="#four-checks">The four mandatory checks</a></li>
+    <li><a href="#what-proves">What each check proves &mdash; and what it doesn&rsquo;t</a></li>
+    <li><a href="#deterrence">Why verification works even when it&rsquo;s not perfect</a></li>
+    <li><a href="#honest">The honest disclaimer</a></li>
+    <li><a href="#if-wrong">If something still goes wrong</a></li>
+  </ol>
+</div>
+
+<!-- 1. The problem -->
+<div class="section" id="problem">
+  <h2>1. What most platforms do</h2>
+  <p class="section-sub">The uncomfortable truth about contractor directories in Spain.</p>
+
+  <p>Habitissimo, Houzz, CronoShare, Hogami &mdash; anyone can register. You submit an email, pick a trade category, and you&rsquo;re listed. The platform takes a subscription fee. Nobody checks who you are.</p>
+
+  <p>Reviews can be written by friends. Profile photos can be stolen. A contractor who defrauded three homeowners in Valencia can start fresh in Barcelona with a new account tomorrow morning. There is nothing stopping this.</p>
+
+  <table class="compare-table">
+    <thead>
+      <tr><th>Check</th><th>Habitissimo</th><th>Houzz</th><th>CronoShare</th><th class="leo-col">Leo</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Government ID verified</td>
+        <td class="no">No</td><td class="no">No</td><td class="no">No</td>
+        <td class="leo-col yes">Yes &mdash; biometric</td>
+      </tr>
+      <tr>
+        <td>Autónomo registration confirmed</td>
+        <td class="no">No</td><td class="no">No</td><td class="no">No</td>
+        <td class="leo-col yes">Yes &mdash; vs AEAT</td>
+      </tr>
+      <tr>
+        <td>RC civil liability insurance</td>
+        <td class="no">No</td><td class="no">No</td><td class="no">No</td>
+        <td class="leo-col yes">Yes &mdash; policy on file</td>
+      </tr>
+      <tr>
+        <td>Criminal record certificate</td>
+        <td class="no">No</td><td class="no">No</td><td class="no">No</td>
+        <td class="leo-col yes">Yes &mdash; Ministry of Justice</td>
+      </tr>
+      <tr>
+        <td>AML &amp; watchlist screening</td>
+        <td class="no">No</td><td class="no">No</td><td class="no">No</td>
+        <td class="leo-col yes">Yes &mdash; 1,300+ databases</td>
+      </tr>
+      <tr>
+        <td>Contractor can fake identity</td>
+        <td class="no" style="color:var(--amber);font-weight:700">Easy</td>
+        <td class="no" style="color:var(--amber);font-weight:700">Easy</td>
+        <td class="no" style="color:var(--amber);font-weight:700">Easy</td>
+        <td class="leo-col yes">Biometric face match prevents this</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="info-card terra">
+    <p><strong>The OCU data:</strong> Spanish consumer association OCU reports that 30&ndash;40% of homeowners experience significant problems with renovations &mdash; incomplete work, disappeared contractors, disputes over what was agreed. The platforms that list these contractors carry zero liability. Leo does.</p>
+  </div>
+</div>
+
+<!-- 2. The four checks -->
+<div class="section" id="four-checks">
+  <h2>2. The four mandatory checks</h2>
+  <p class="section-sub">Every contractor on Leo completes all four before they can accept a job.</p>
+
+  <div class="check-grid">
+
+    <div class="check-card">
+      <div class="check-card-header">
+        <div class="check-card-num">1</div>
+        <div class="check-card-title">Government ID &mdash; biometric</div>
+      </div>
+      <div class="check-card-body">
+        <p>The contractor photographs their DNI or NIE. The system compares the photo on the document to a live selfie taken during onboarding using passive liveness detection &mdash; the same technology banks use.</p>
+        <p>This is not &ldquo;upload a photo of your ID.&rdquo; That can be faked. This is a three-step biometric check: document authenticity, face match, and liveness confirmation.</p>
+        <div class="check-card-meta">
+          <span class="check-tag provider">Provider: Didit (YC W26)</span>
+          <span class="check-tag cost">Free tier: 500/mo</span>
+          <span class="check-tag proves">Proves: real person, real ID</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="check-card">
+      <div class="check-card-header">
+        <div class="check-card-num">2</div>
+        <div class="check-card-title">Autónomo registration &mdash; AEAT confirmed</div>
+      </div>
+      <div class="check-card-body">
+        <p>The contractor&rsquo;s NIF is validated directly against the AEAT (Hacienda) database. This confirms they are actively registered as self-employed in Spain and that their declared trade (IAE ep&iacute;grafe) matches what they&rsquo;re listed as on Leo.</p>
+        <p>For licensed trades, we go further. Electricians must provide their <strong>REBT habilitaci&oacute;n</strong> number, verified against the CCAA Registro Industrial. Aparejadores and architects must have an active <strong>COAAT or COA colegio registration</strong>, verified against the professional college registry. A plumber cannot list as an electrician. An unlicensed person cannot list as a licensed trade at all.</p>
+        <div class="check-card-meta">
+          <span class="check-tag provider">Source: AEAT + CCAA registries</span>
+          <span class="check-tag proves">Proves: registered for the trade they claim</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="check-card">
+      <div class="check-card-header">
+        <div class="check-card-num">3</div>
+        <div class="check-card-title">RC civil liability insurance</div>
+      </div>
+      <div class="check-card-body">
+        <p>Every Leo contractor must upload a current RC insurance policy &mdash; minimum &euro;300,000 coverage, with an expiry date we track. This policy covers physical damage they cause on your property.</p>
+        <p>If a plumber floods your living room or an electrician causes a fire, their insurer pays &mdash; not you, and not Leo. This is mandatory. Without it, they are not listed.</p>
+        <div class="check-card-meta">
+          <span class="check-tag cost">Min: &euro;300k coverage</span>
+          <span class="check-tag proves">Proves: insured against damage</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="check-card">
+      <div class="check-card-header">
+        <div class="check-card-num">4</div>
+        <div class="check-card-title">Criminal record certificate</div>
+      </div>
+      <div class="check-card-body">
+        <p>The contractor uploads their <em>Certificado de Antecedentes Penales</em> from the Spanish Ministry of Justice. This is an official document issued directly to the individual &mdash; it cannot be forged without forging a government certificate.</p>
+        <p>Certificates must be less than 90 days old at the time of submission and renewed annually. Leo stores the upload date, not the raw data (GDPR compliance).</p>
+        <div class="check-card-meta">
+          <span class="check-tag provider">Source: Ministerio de Justicia</span>
+          <span class="check-tag cost">Issued free online</span>
+          <span class="check-tag proves">Proves: no Spanish convictions</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="info-card teal">
+    <p><strong>Plus: AML &amp; watchlist screening.</strong> Every contractor is also screened against 1,300+ global databases via Didit&rsquo;s AML check: OFAC sanctions, EU watchlists, Interpol, and adverse media from 50,000+ news sources. This catches organised crime and sanctioned entities that a criminal certificate alone would miss.</p>
+  </div>
+
+  <h3>The background sweep &mdash; what the contractor doesn&rsquo;t see</h3>
+  <p>Alongside the four mandatory checks, Leo runs a parallel background sweep during onboarding. This is not disclosed to the contractor and has no effect on their profile unless something significant is found. It covers:</p>
+  <ul class="checklist">
+    <li><strong>Social platform scan</strong> &mdash; Facebook neighbourhood and renovation groups (<em>Vecinos de [ciudad]</em>, <em>Reformas [ciudad]</em>, <em>Denuncia p&uacute;blica</em>), Google Reviews, Habitissimo, Houzz, Hogami, and Forocoches/Mediavida forums searched for their name, phone number, and NIF</li>
+    <li><strong>Keyword filtering</strong> &mdash; Spanish fraud and quality warning terms: <em>estafa, estafador, chapuza, cobr&oacute; y se fue, desapareci&oacute; con el dinero</em> &mdash; and equivalents in English</li>
+    <li><strong>CCAA labour sanction registries</strong> &mdash; NIF crosschecked against public labour violation records in the 5 major autonomous communities (Catalu&ntilde;a DOGC, Extremadura, Castilla y Le&oacute;n, Madrid, Andaluc&iacute;a)</li>
+    <li><strong>Duplicate identity detection</strong> &mdash; face search across all previously verified Leo contractors to catch re-registrations by banned individuals</li>
+  </ul>
+  <div class="info-card amber">
+    <p><strong>What happens with a hit:</strong> Two or more matches in the direct fraud/crime category → the application is flagged for manual review before approval. Matches in quality/complaint categories → noted in the internal profile, the contractor is shown their own flag and invited to respond. No matches → the sweep is complete and does not appear on the public profile. The full sweep result is included in the case file issued if a dispute escalates.</p>
+  </div>
+</div>
+
+<!-- 3. What it proves -->
+<div class="section" id="what-proves">
+  <h2>3. What each check proves &mdash; and what it doesn&rsquo;t</h2>
+  <p class="section-sub">Precise claims only. We don&rsquo;t round up.</p>
+
+  <h3>What verification proves</h3>
+  <ul class="checklist">
+    <li>This is a real person whose face matches a real government-issued ID</li>
+    <li>They are actively registered with Hacienda as a self-employed worker in the trade they claim, under the correct IAE ep&iacute;grafe</li>
+    <li>For licensed trades (electricians, aparejadores), their professional licence or habilitaci&oacute;n has been confirmed against the relevant registry</li>
+    <li>They have a current RC insurance policy that covers physical damage they cause</li>
+    <li>They had no Spanish criminal convictions at the time of their certificate (within the last 90 days)</li>
+    <li>They do not appear on major international sanctions, watchlists, or adverse media databases</li>
+    <li>Their name, phone number, and NIF returned no significant fraud or scam complaints in a background sweep of public Spanish renovation forums, review platforms, and regional labour sanction registries at the time of onboarding</li>
+  </ul>
+
+  <h3>What verification does not prove</h3>
+  <ul class="checklist">
+    <li class="cross">That they are good at their trade &mdash; quality comes from reviews and completed jobs</li>
+    <li class="cross">That they have never been complained about &mdash; only that they have no criminal record</li>
+    <li class="cross">That they will complete your specific job without issues &mdash; that is what the scope, escrow, and dispute process is for</li>
+    <li class="cross">That they have never defrauded anyone abroad &mdash; the Spanish criminal certificate only covers Spanish convictions</li>
+  </ul>
+
+  <div class="info-card amber">
+    <p><strong>Why be this honest?</strong> Angi (formerly HomeAdvisor) was sued in the US for claiming contractor verification it didn&rsquo;t consistently enforce. We will not make claims we can&rsquo;t back up. What Leo has done is listed above. What it covers is listed above. The combination is more than any other platform in Spain offers &mdash; and it&rsquo;s specific enough to be meaningful.</p>
+  </div>
+</div>
+
+<!-- 4. Why deterrence works -->
+<div class="section" id="deterrence">
+  <h2>4. Why verification works even when it&rsquo;s not perfect</h2>
+  <p class="section-sub">The mechanism is deterrence, not guarantee.</p>
+
+  <p>Most renovation fraud in Spain is <strong>opportunistic</strong>, not organised. It is committed by people who know their victims have no real recourse: no contract, no identity record, no trail, nothing to take to the police.</p>
+
+  <p>The contractor who wants to take a deposit and disappear thinks through their options:</p>
+
+  <div style="margin:24px 0;padding:20px 24px;background:var(--ink);color:#fff;border-radius:var(--r)">
+    <p style="font-family:var(--serif);font-size:.95rem;font-style:italic;color:var(--border);line-height:1.7;margin-bottom:0">&ldquo;If I take this person&rsquo;s money, they have a photo of my face matching my DNI, my NIF linked to my Hacienda record, my home address, my phone number, and a timestamped record of everything I agreed to deliver. The platform will automatically generate a police report and an arbitration submission for them. My NIF will be flagged. Every other homeowner on this platform who looks me up will see a dispute on my record.&rdquo;</p>
+  </div>
+
+  <p>That thought is enough. Opportunistic fraudsters target victims with no recourse. Leo&rsquo;s verified pool is not that. <strong>The bad ones don&rsquo;t join.</strong> That is why verification matters even for the 99% of contractors who are honest: it filters the pool before the job starts.</p>
+
+  <p>For the organised fraud crews (the Guardia Civil issued a national alert in August 2025 about door-to-door renovation scam operations) &mdash; these are a different problem. They use fake IDs and front companies. Leo&rsquo;s verification reduces this risk but does not eliminate it. State your situation clearly to your contractor before any money moves.</p>
+</div>
+
+<!-- 5. Honest disclaimer -->
+<div class="section" id="honest">
+  <h2>5. The honest disclaimer</h2>
+
+  <div class="honest-box">
+    <span class="honest-box-label">Official Leo disclaimer</span>
+    <p>Leo has completed the checks listed on this page as of the dates shown on each contractor&rsquo;s profile. Leo cannot guarantee contractor behaviour after verification. Verification reduces risk but does not eliminate it.</p>
+    <p>If anything goes wrong, Leo provides a complete case file &mdash; signed scope, variation orders, payment records, milestone photos, message and voice note transcripts, materials receipts, contractor identity documents (legal name, NIF, face-matched ID, AML result, insurance certificate, criminal record upload date), and the OSINT background sweep summary &mdash; pre-formatted for police submission, consumer arbitration, and civil court, at no cost to the homeowner.</p>
+    <p><strong>Verification is the deterrent. Documentation is the safety net.</strong></p>
+  </div>
+</div>
+
+<!-- 6. If something goes wrong -->
+<div class="section" id="if-wrong">
+  <h2>6. If something still goes wrong</h2>
+  <p class="section-sub">You are never starting from nothing. Leo builds the case file from day one.</p>
+
+  <p>Every Leo job creates a running evidence file: the signed scope, every variation order, every milestone photo, every payment record, and the full conversation history. If a dispute arises, this file already exists &mdash; you don&rsquo;t scramble to find evidence after the fact.</p>
+
+  <ul class="checklist">
+    <li>Leo mediates automatically via the platform dispute process</li>
+    <li>An independent <em>aparejador</em> (qualified technical expert) can review photos and documents remotely &mdash; at no cost to the homeowner</li>
+    <li>Leo prepares a pre-filled submission for the Junta Arbitral de Consumo (free, binding under RD 713/2024)</li>
+    <li>The contractor&rsquo;s verified identity &mdash; legal name from government ID, NIF, home address, AML result, and OSINT sweep summary &mdash; is documented and ready for police if needed</li>
+    <li>Leo exports a structured case file: scope, variation orders, payment history, milestone photos, message transcripts, materials receipts, and the aparejador report &mdash; pre-formatted for police submission, consumer arbitration, and civil court</li>
+  </ul>
+
+  <div class="info-card teal">
+    <p><strong>See the full process:</strong> <a href="/how-disputes-work" style="color:var(--teal);font-weight:600">How disputes work on Leo &rarr;</a></p>
+  </div>
+</div>
+
+</div><!-- end .content -->
+
+<div class="cta-section">
+  <h2>Ready to find a <em>verified</em> contractor?</h2>
+  <p>Tell us about your project and we&rsquo;ll match you with a Leo Verified professional in your area.</p>
+  <div class="cta-links">
+    <a href="https://wa.me/?text=Hi!%20I%27d%20like%20to%20find%20a%20verified%20contractor%20for%20my%20renovation%20%F0%9F%91%8B" class="cta-btn primary" target="_blank" rel="noopener">
+      <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Find a verified contractor
+    </a>
+    <a href="/how-disputes-work" class="cta-btn secondary">How disputes work &rarr;</a>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&copy; 2026 Leo Casa Limited &middot; Company No. 16259714 &middot; <a href="/">Home</a> &middot; <a href="/how-disputes-work">How disputes work</a> &middot; <a href="/agreement">Construction Agreement</a> &middot; <a href="/terms">Terms &amp; Conditions</a></p>
+</div>
+
+<script>
+(function(){
+  var ls = document.getElementById('langSwitch');
+  if(!ls) return;
+  ls.querySelector('.lang-btn').addEventListener('click', function(e){
+    e.stopPropagation();
+    ls.classList.toggle('open');
+  });
+  document.addEventListener('click', function(){ ls.classList.remove('open'); });
+})();
+</script>
+</body>
+</html>

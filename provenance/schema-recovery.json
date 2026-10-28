@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-28T15:52:11.271017+00:00",
+  "scope": "Leo-owned application context only; catalog/migration/schema metadata only",
+  "live_bundle_matches_source_context": true,
+  "live_bundle_sha256": "75ddf4e987bc25bb0a6414d0dbfd4b3b12034b683263199a6aef887d8c5ec379",
+  "management_metadata": "authenticated project status INACTIVE",
+  "schema_query": "database metadata endpoint unavailable; no DDL exported",
+  "customer_rows_read": 0,
+  "writes": 0,
+  "project_resumed": false,
+  "archive_recovery": "March archive supplied property-analysis/acquisition schema, not core marketplace DDL",
+  "released_schema_kind": "explicit developer reconstruction from original route contracts",
+  "full_original_schema_recovered": false
+}

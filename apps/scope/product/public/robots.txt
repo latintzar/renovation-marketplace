@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://leo.casa/sitemap.xml
+
+# Leo — leo.casa
+# Home renovation scope, payment, and trust platform for Spain

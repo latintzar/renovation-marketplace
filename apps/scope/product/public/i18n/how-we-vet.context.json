@@ -1,0 +1,665 @@
+{
+  "001092259e69": {
+    "parent": "p",
+    "sentence": "For licensed trades, we go further. Electricians must provide their REBT habilitación number, verified against the CCAA Registro Industrial. Aparejadores and architects must have an active COAAT or COA colegio registration , verified against the professional college registry. A plumber cannot list as an electrician. An unlicensed person cannot list as a licensed trade at all.",
+    "type": "text"
+  },
+  "00681639daa2": {
+    "parent": "li",
+    "type": "text"
+  },
+  "009ed110badf": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "00b07a6916e3": {
+    "parent": "strong",
+    "type": "text"
+  },
+  "0156324c710c": {
+    "parent": "p",
+    "type": "text"
+  },
+  "017936a46f0e": {
+    "parent": "p",
+    "sentence": "That thought is enough. Opportunistic fraudsters target victims with no recourse. Leo’s verified pool is not that. The bad ones don’t join. That is why verification matters even for the 99% of contractors who are honest: it filters the pool before the job starts.",
+    "type": "text"
+  },
+  "01d7f02d46cb": {
+    "parent": "li",
+    "sentence": "Keyword filtering — Spanish fraud and quality warning terms: estafa, estafador, chapuza, cobró y se fue, desapareció con el dinero — and equivalents in English",
+    "type": "text"
+  },
+  "03a6515cd2ab": {
+    "parent": "li",
+    "type": "text"
+  },
+  "05012bbdd77a": {
+    "parent": "strong",
+    "sentence": "Keyword filtering — Spanish fraud and quality warning terms: estafa, estafador, chapuza, cobró y se fue, desapareció con el dinero — and equivalents in English",
+    "type": "text"
+  },
+  "072dce9bb2a7": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "090b943dedec": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "0b8b3682c7cf": {
+    "parent": "a",
+    "type": "text"
+  },
+  "0dc19834f536": {
+    "parent": "div",
+    "type": "text"
+  },
+  "105f784a8662": {
+    "parent": "strong",
+    "sentence": "CCAA labour sanction registries — NIF crosschecked against public labour violation records in the 5 major autonomous communities (Cataluña DOGC, Extremadura, Castilla y León, Madrid, Andalucía)",
+    "type": "text"
+  },
+  "11b21cfd6475": {
+    "parent": "span",
+    "type": "text"
+  },
+  "13288112516c": {
+    "parent": "td",
+    "type": "text"
+  },
+  "134a53e65295": {
+    "parent": "td",
+    "type": "text"
+  },
+  "14db5106b6f4": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "173f5f9f26b4": {
+    "parent": "a",
+    "sentence": "© 2026 Leo Casa Limited · Company No. 16259714 · Home · How disputes work · Construction Agreement · Terms & Conditions",
+    "type": "text"
+  },
+  "1a29a236e50d": {
+    "parent": "span",
+    "type": "text"
+  },
+  "1bcbd3f43cf7": {
+    "parent": "li",
+    "type": "text"
+  },
+  "1c34f88707b5": {
+    "parent": "em",
+    "sentence": "Ready to find a verified contractor?",
+    "type": "text"
+  },
+  "1d5d02cf6f0d": {
+    "parent": "p",
+    "type": "text"
+  },
+  "1ea442a134b2": {
+    "parent": "td",
+    "type": "text"
+  },
+  "1f478516ac5f": {
+    "parent": "p",
+    "sentence": "Most renovation fraud in Spain is opportunistic , not organised. It is committed by people who know their victims have no real recourse: no contract, no identity record, no trail, nothing to take to the police.",
+    "type": "text"
+  },
+  "1f4dfafc857d": {
+    "parent": "p",
+    "type": "text"
+  },
+  "1fb11348f965": {
+    "parent": "a",
+    "type": "text"
+  },
+  "21ec2ff130b7": {
+    "parent": "span",
+    "type": "text"
+  },
+  "229e7cea1437": {
+    "parent": "th",
+    "type": "text"
+  },
+  "22e332dd6986": {
+    "parent": "div",
+    "type": "text"
+  },
+  "263d21b03e8c": {
+    "parent": "strong",
+    "sentence": "Plus: AML & watchlist screening. Every contractor is also screened against 1,300+ global databases via Didit’s AML check: OFAC sanctions, EU watchlists, Interpol, and adverse media from 50,000+ news sources. This catches organised crime and sanctioned entities that a criminal certificate alone would miss.",
+    "type": "text"
+  },
+  "2884f86f9053": {
+    "parent": "span",
+    "type": "text"
+  },
+  "2cbe5b3e536a": {
+    "parent": "p",
+    "sentence": "What happens with a hit: Two or more matches in the direct fraud/crime category → the application is flagged for manual review before approval. Matches in quality/complaint categories → noted in the internal profile, the contractor is shown their own flag and invited to respond. No matches → the sweep is complete and does not appear on the public profile. The full sweep result is included in the case file issued if a dispute escalates.",
+    "type": "text"
+  },
+  "2e08112a2b9a": {
+    "parent": "div",
+    "type": "text"
+  },
+  "2f2cd2be5c59": {
+    "parent": "p",
+    "type": "text"
+  },
+  "30123a1f8603": {
+    "parent": "li",
+    "type": "text"
+  },
+  "311f879a29cd": {
+    "parent": "strong",
+    "sentence": "Social platform scan — Facebook neighbourhood and renovation groups ( Vecinos de [ciudad] , Reformas [ciudad] , Denuncia pública ), Google Reviews, Habitissimo, Houzz, Hogami, and Forocoches/Mediavida forums searched for their name, phone number, and NIF",
+    "type": "text"
+  },
+  "326978696490": {
+    "parent": "strong",
+    "sentence": "What happens with a hit: Two or more matches in the direct fraud/crime category → the application is flagged for manual review before approval. Matches in quality/complaint categories → noted in the internal profile, the contractor is shown their own flag and invited to respond. No matches → the sweep is complete and does not appear on the public profile. The full sweep result is included in the case file issued if a dispute escalates.",
+    "type": "text"
+  },
+  "32d1d89967e7": {
+    "parent": "p",
+    "type": "text"
+  },
+  "346fd03029fc": {
+    "parent": "strong",
+    "sentence": "The OCU data: Spanish consumer association OCU reports that 30–40% of homeowners experience significant problems with renovations — incomplete work, disappeared contractors, disputes over what was agreed. The platforms that list these contractors carry zero liability. Leo does.",
+    "type": "text"
+  },
+  "3515ad58a0bc": {
+    "parent": "span",
+    "type": "text"
+  },
+  "3682cb04b7b6": {
+    "parent": "td",
+    "type": "text"
+  },
+  "37dbf4dd2272": {
+    "parent": "li",
+    "type": "text"
+  },
+  "38064dd090f3": {
+    "parent": "em",
+    "sentence": "Keyword filtering — Spanish fraud and quality warning terms: estafa, estafador, chapuza, cobró y se fue, desapareció con el dinero — and equivalents in English",
+    "type": "text"
+  },
+  "38c8013b99a7": {
+    "parent": "strong",
+    "sentence": "Duplicate identity detection — face search across all previously verified Leo contractors to catch re-registrations by banned individuals",
+    "type": "text"
+  },
+  "39174c31e63e": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "3983f5136c80": {
+    "parent": "li",
+    "type": "text"
+  },
+  "3a78695388b3": {
+    "parent": "a",
+    "sentence": "© 2026 Leo Casa Limited · Company No. 16259714 · Home · How disputes work · Construction Agreement · Terms & Conditions",
+    "type": "text"
+  },
+  "3ce668b94368": {
+    "parent": "span",
+    "type": "text"
+  },
+  "3e9955a70c59": {
+    "parent": "td",
+    "type": "text"
+  },
+  "3f93ccc8296f": {
+    "parent": "a",
+    "type": "text"
+  },
+  "41527b549c88": {
+    "parent": "span",
+    "type": "text"
+  },
+  "415ad9b3461e": {
+    "parent": "strong",
+    "sentence": "For licensed trades, we go further. Electricians must provide their REBT habilitación number, verified against the CCAA Registro Industrial. Aparejadores and architects must have an active COAAT or COA colegio registration , verified against the professional college registry. A plumber cannot list as an electrician. An unlicensed person cannot list as a licensed trade at all.",
+    "type": "text"
+  },
+  "43d90cd927a4": {
+    "parent": "td",
+    "type": "text"
+  },
+  "4781860d26e7": {
+    "parent": "p",
+    "sentence": "Why be this honest? Angi (formerly HomeAdvisor) was sued in the US for claiming contractor verification it didn’t consistently enforce. We will not make claims we can’t back up. What Leo has done is listed above. What it covers is listed above. The combination is more than any other platform in Spain offers — and it’s specific enough to be meaningful.",
+    "type": "text"
+  },
+  "4aa968aa05f8": {
+    "parent": "strong",
+    "sentence": "For licensed trades, we go further. Electricians must provide their REBT habilitación number, verified against the CCAA Registro Industrial. Aparejadores and architects must have an active COAAT or COA colegio registration , verified against the professional college registry. A plumber cannot list as an electrician. An unlicensed person cannot list as a licensed trade at all.",
+    "type": "text"
+  },
+  "4b2c936b1106": {
+    "parent": "p",
+    "type": "text"
+  },
+  "4b4b6c974170": {
+    "parent": "a",
+    "sentence": "© 2026 Leo Casa Limited · Company No. 16259714 · Home · How disputes work · Construction Agreement · Terms & Conditions",
+    "type": "text"
+  },
+  "4ede5f684328": {
+    "parent": "li",
+    "type": "text"
+  },
+  "50547a1211c5": {
+    "parent": "p",
+    "sentence": "Most renovation fraud in Spain is opportunistic , not organised. It is committed by people who know their victims have no real recourse: no contract, no identity record, no trail, nothing to take to the police.",
+    "type": "text"
+  },
+  "51d0b030fa46": {
+    "parent": "em",
+    "sentence": "Social platform scan — Facebook neighbourhood and renovation groups ( Vecinos de [ciudad] , Reformas [ciudad] , Denuncia pública ), Google Reviews, Habitissimo, Houzz, Hogami, and Forocoches/Mediavida forums searched for their name, phone number, and NIF",
+    "type": "text"
+  },
+  "52b615884680": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "54a35734b10f": {
+    "parent": "td",
+    "type": "text"
+  },
+  "54f15fa8a4e7": {
+    "parent": "li",
+    "type": "text"
+  },
+  "5690b83ff077": {
+    "parent": "p",
+    "type": "text"
+  },
+  "590d8875b128": {
+    "parent": "p",
+    "sentence": "Plus: AML & watchlist screening. Every contractor is also screened against 1,300+ global databases via Didit’s AML check: OFAC sanctions, EU watchlists, Interpol, and adverse media from 50,000+ news sources. This catches organised crime and sanctioned entities that a criminal certificate alone would miss.",
+    "type": "text"
+  },
+  "594fb045fce2": {
+    "parent": "td",
+    "type": "text"
+  },
+  "59bc64cacb4d": {
+    "parent": "h2",
+    "sentence": "Ready to find a verified contractor?",
+    "type": "text"
+  },
+  "59d7a7eb8349": {
+    "parent": "li",
+    "type": "text"
+  },
+  "5a53bd500133": {
+    "parent": "li",
+    "type": "text"
+  },
+  "5b3398c314f5": {
+    "parent": "li",
+    "type": "text"
+  },
+  "5bc426e8d81e": {
+    "attr": "alt",
+    "tag": "img",
+    "type": "attr:alt"
+  },
+  "5ee18afbf242": {
+    "parent": "p",
+    "sentence": "© 2026 Leo Casa Limited · Company No. 16259714 · Home · How disputes work · Construction Agreement · Terms & Conditions",
+    "type": "text"
+  },
+  "5fcf960fc55e": {
+    "parent": "p",
+    "type": "text"
+  },
+  "5fef8d10502a": {
+    "parent": "h1",
+    "sentence": "We know more about your contractor than anyone else in Spain.",
+    "type": "text"
+  },
+  "60c801c448e2": {
+    "parent": "p",
+    "sentence": "The OCU data: Spanish consumer association OCU reports that 30–40% of homeowners experience significant problems with renovations — incomplete work, disappeared contractors, disputes over what was agreed. The platforms that list these contractors carry zero liability. Leo does.",
+    "type": "text"
+  },
+  "63f66c0e8cf0": {
+    "parent": "h1",
+    "sentence": "We know more about your contractor than anyone else in Spain.",
+    "type": "text"
+  },
+  "67e5a3025bc0": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "6d0f8ae04fb3": {
+    "parent": "p",
+    "type": "text"
+  },
+  "6d1870fdd5a9": {
+    "parent": "strong",
+    "type": "text"
+  },
+  "6e87de7d07c6": {
+    "parent": "p",
+    "type": "text"
+  },
+  "715a91aa77f0": {
+    "parent": "th",
+    "type": "text"
+  },
+  "7208bb012b45": {
+    "parent": "p",
+    "type": "text"
+  },
+  "7453ef49c093": {
+    "parent": "p",
+    "type": "text"
+  },
+  "7a2c44890967": {
+    "parent": "a",
+    "sentence": "© 2026 Leo Casa Limited · Company No. 16259714 · Home · How disputes work · Construction Agreement · Terms & Conditions",
+    "type": "text"
+  },
+  "7dd43e88287c": {
+    "parent": "h2",
+    "sentence": "Ready to find a verified contractor?",
+    "type": "text"
+  },
+  "7f1ee16aaadd": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "7f8499142ab5": {
+    "parent": "li",
+    "type": "text"
+  },
+  "8224e7ae8035": {
+    "parent": "p",
+    "type": "text"
+  },
+  "825873f401d3": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "846730622a69": {
+    "parent": "td",
+    "type": "text"
+  },
+  "87f17fa30f45": {
+    "parent": "th",
+    "type": "text"
+  },
+  "8970abfd46de": {
+    "parent": "p",
+    "type": "text"
+  },
+  "8a480f094d6a": {
+    "parent": "p",
+    "type": "text"
+  },
+  "8d774c74af32": {
+    "parent": "li",
+    "type": "text"
+  },
+  "90e2d0198378": {
+    "parent": "title",
+    "type": "text"
+  },
+  "92b50d38a369": {
+    "parent": "em",
+    "sentence": "Social platform scan — Facebook neighbourhood and renovation groups ( Vecinos de [ciudad] , Reformas [ciudad] , Denuncia pública ), Google Reviews, Habitissimo, Houzz, Hogami, and Forocoches/Mediavida forums searched for their name, phone number, and NIF",
+    "type": "text"
+  },
+  "9311c97f824a": {
+    "parent": "li",
+    "sentence": "An independent aparejador (qualified technical expert) can review photos and documents remotely — at no cost to the homeowner",
+    "type": "text"
+  },
+  "935d4edc649c": {
+    "parent": "em",
+    "sentence": "Social platform scan — Facebook neighbourhood and renovation groups ( Vecinos de [ciudad] , Reformas [ciudad] , Denuncia pública ), Google Reviews, Habitissimo, Houzz, Hogami, and Forocoches/Mediavida forums searched for their name, phone number, and NIF",
+    "type": "text"
+  },
+  "9928b837e3bf": {
+    "parent": "p",
+    "type": "text"
+  },
+  "9a7441cac0c1": {
+    "parent": "p",
+    "type": "text"
+  },
+  "9d60841e0a78": {
+    "parent": "th",
+    "type": "text"
+  },
+  "9ff163d32f43": {
+    "parent": "li",
+    "sentence": "CCAA labour sanction registries — NIF crosschecked against public labour violation records in the 5 major autonomous communities (Cataluña DOGC, Extremadura, Castilla y León, Madrid, Andalucía)",
+    "type": "text"
+  },
+  "a21161484427": {
+    "parent": "strong",
+    "sentence": "That thought is enough. Opportunistic fraudsters target victims with no recourse. Leo’s verified pool is not that. The bad ones don’t join. That is why verification matters even for the 99% of contractors who are honest: it filters the pool before the job starts.",
+    "type": "text"
+  },
+  "a2e6b8874a77": {
+    "parent": "p",
+    "type": "text"
+  },
+  "a380c557f012": {
+    "parent": "span",
+    "type": "text"
+  },
+  "a895787594d7": {
+    "parent": "li",
+    "type": "text"
+  },
+  "aae7c5ff5b83": {
+    "parent": "a",
+    "type": "text"
+  },
+  "abc96b95ccaa": {
+    "parent": "p",
+    "type": "text"
+  },
+  "acd6d0cc837c": {
+    "parent": "p",
+    "type": "text"
+  },
+  "adb289360eec": {
+    "parent": "a",
+    "type": "text"
+  },
+  "aeb0308aeb28": {
+    "parent": "strong",
+    "sentence": "Why be this honest? Angi (formerly HomeAdvisor) was sued in the US for claiming contractor verification it didn’t consistently enforce. We will not make claims we can’t back up. What Leo has done is listed above. What it covers is listed above. The combination is more than any other platform in Spain offers — and it’s specific enough to be meaningful.",
+    "type": "text"
+  },
+  "aed4a23dab67": {
+    "parent": "li",
+    "sentence": "Social platform scan — Facebook neighbourhood and renovation groups ( Vecinos de [ciudad] , Reformas [ciudad] , Denuncia pública ), Google Reviews, Habitissimo, Houzz, Hogami, and Forocoches/Mediavida forums searched for their name, phone number, and NIF",
+    "type": "text"
+  },
+  "b1bc8513c968": {
+    "parent": "span",
+    "type": "text"
+  },
+  "b20706f8967f": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "b4269776dbe6": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "b5658fc8edda": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "b91e78173521": {
+    "parent": "p",
+    "sentence": "The contractor uploads their Certificado de Antecedentes Penales from the Spanish Ministry of Justice. This is an official document issued directly to the individual — it cannot be forged without forging a government certificate.",
+    "type": "text"
+  },
+  "bd4e11e57808": {
+    "parent": "a",
+    "type": "text"
+  },
+  "bebcb5eb3701": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "c0f6c001a5d6": {
+    "parent": "a",
+    "type": "text"
+  },
+  "c167f98e7bad": {
+    "parent": "p",
+    "type": "text"
+  },
+  "c34d8e527559": {
+    "parent": "em",
+    "sentence": "We know more about your contractor than anyone else in Spain.",
+    "type": "text"
+  },
+  "c3777ad7fa40": {
+    "parent": "p",
+    "sentence": "That thought is enough. Opportunistic fraudsters target victims with no recourse. Leo’s verified pool is not that. The bad ones don’t join. That is why verification matters even for the 99% of contractors who are honest: it filters the pool before the job starts.",
+    "type": "text"
+  },
+  "c8024546e3c5": {
+    "parent": "p",
+    "sentence": "For licensed trades, we go further. Electricians must provide their REBT habilitación number, verified against the CCAA Registro Industrial. Aparejadores and architects must have an active COAAT or COA colegio registration , verified against the professional college registry. A plumber cannot list as an electrician. An unlicensed person cannot list as a licensed trade at all.",
+    "type": "text"
+  },
+  "cbc529bed792": {
+    "parent": "td",
+    "type": "text"
+  },
+  "cx:097adb26db36": {
+    "parent": "h1",
+    "sentence": "We know more about your contractor than anyone else in Spain.",
+    "type": "composite"
+  },
+  "cx:3dd9dd28c150": {
+    "parent": "li",
+    "sentence": "Keyword filtering — Spanish fraud and quality warning terms: estafa, estafador, chapuza, cobró y se fue, desapareció con el dinero — and equivalents in English",
+    "type": "composite"
+  },
+  "cx:65ccbdd7b8d1": {
+    "parent": "h2",
+    "sentence": "Ready to find a verified contractor?",
+    "type": "composite"
+  },
+  "cx:b81811df2fbb": {
+    "parent": "li",
+    "sentence": "An independent aparejador (qualified technical expert) can review photos and documents remotely — at no cost to the homeowner",
+    "type": "composite"
+  },
+  "cx:c27fd85b79cd": {
+    "parent": "li",
+    "sentence": "Duplicate identity detection — face search across all previously verified Leo contractors to catch re-registrations by banned individuals",
+    "type": "composite"
+  },
+  "d1c1e411349f": {
+    "parent": "a",
+    "type": "text"
+  },
+  "d2e87d6cc9b0": {
+    "parent": "span",
+    "type": "text"
+  },
+  "d308f76bb225": {
+    "parent": "p",
+    "type": "text"
+  },
+  "d56e7ebe2f39": {
+    "parent": "li",
+    "sentence": "Social platform scan — Facebook neighbourhood and renovation groups ( Vecinos de [ciudad] , Reformas [ciudad] , Denuncia pública ), Google Reviews, Habitissimo, Houzz, Hogami, and Forocoches/Mediavida forums searched for their name, phone number, and NIF",
+    "type": "text"
+  },
+  "d6915875decb": {
+    "parent": "td",
+    "type": "text"
+  },
+  "d76cc8a85cb8": {
+    "parent": "em",
+    "sentence": "An independent aparejador (qualified technical expert) can review photos and documents remotely — at no cost to the homeowner",
+    "type": "text"
+  },
+  "db97e42b71b4": {
+    "parent": "p",
+    "sentence": "For licensed trades, we go further. Electricians must provide their REBT habilitación number, verified against the CCAA Registro Industrial. Aparejadores and architects must have an active COAAT or COA colegio registration , verified against the professional college registry. A plumber cannot list as an electrician. An unlicensed person cannot list as a licensed trade at all.",
+    "type": "text"
+  },
+  "dc2946a25e07": {
+    "parent": "li",
+    "sentence": "An independent aparejador (qualified technical expert) can review photos and documents remotely — at no cost to the homeowner",
+    "type": "text"
+  },
+  "e029b895361c": {
+    "parent": "a",
+    "type": "text"
+  },
+  "e3f619a02c98": {
+    "parent": "td",
+    "type": "text"
+  },
+  "e4d308648348": {
+    "parent": "li",
+    "sentence": "Duplicate identity detection — face search across all previously verified Leo contractors to catch re-registrations by banned individuals",
+    "type": "text"
+  },
+  "ebef0b08dee2": {
+    "parent": "li",
+    "type": "text"
+  },
+  "ecfba9c9878c": {
+    "parent": "em",
+    "sentence": "The contractor uploads their Certificado de Antecedentes Penales from the Spanish Ministry of Justice. This is an official document issued directly to the individual — it cannot be forged without forging a government certificate.",
+    "type": "text"
+  },
+  "ee693956f2a0": {
+    "parent": "td",
+    "type": "text"
+  },
+  "ef65af0dfa33": {
+    "parent": "strong",
+    "sentence": "Most renovation fraud in Spain is opportunistic , not organised. It is committed by people who know their victims have no real recourse: no contract, no identity record, no trail, nothing to take to the police.",
+    "type": "text"
+  },
+  "f1133952728a": {
+    "parent": "span",
+    "type": "text"
+  },
+  "f55d53ba95f2": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "fb6e895fcd0f": {
+    "parent": "li",
+    "sentence": "Keyword filtering — Spanish fraud and quality warning terms: estafa, estafador, chapuza, cobró y se fue, desapareció con el dinero — and equivalents in English",
+    "type": "text"
+  },
+  "fc2f71e33415": {
+    "parent": "td",
+    "type": "text"
+  },
+  "fdad453e12e3": {
+    "parent": "p",
+    "sentence": "The contractor uploads their Certificado de Antecedentes Penales from the Spanish Ministry of Justice. This is an official document issued directly to the individual — it cannot be forged without forging a government certificate.",
+    "type": "text"
+  }
+}

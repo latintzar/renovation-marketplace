@@ -1,0 +1,28 @@
+[project]
+name = "brand"
+version = "0.1.0"
+description = "Leo brand — tokens, palette, typography, logos, and effects. Canonical source of truth; TS + CSS mirrors are derived via `python -m brand.build`."
+requires-python = ">=3.11"
+dependencies = [
+    # brand.illustrations — raster lane post-processors (luminosity_alpha,
+    # chroma_key).
+    "Pillow>=10.0",
+    # brand.illustrations — both lanes talk to llm.generate_image (raster)
+    # which routes through the local LiteLLM proxy.
+    "llm",
+    # brand.illustrations — vector lane traces raster output into SVG.
+    "vtracer>=0.6.15",
+]
+
+[project.optional-dependencies]
+dev = ["tinycss2>=1.3"]
+
+[project.scripts]
+brand-build = "brand.build:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/brand"]

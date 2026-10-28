@@ -1,0 +1,42 @@
+{
+  "capture": "actual source-built React pages",
+  "records": [
+    {
+      "file": "quote.png",
+      "width": 1600,
+      "entry": "/app/quote/first?reel=set-milestones",
+      "capture_adjustment": "walkthrough switcher and narration hidden; product components unchanged",
+      "errors": 0,
+      "external_requests": 0,
+      "mutating_requests": 0
+    },
+    {
+      "file": "quote-edit.png",
+      "width": 1600,
+      "entry": "/app/quote/first?reel=set-milestones",
+      "capture_adjustment": "same page after pressing its existing Edit control",
+      "native_editor_inputs": 36,
+      "errors": 0,
+      "external_requests": 0,
+      "mutating_requests": 0
+    },
+    {
+      "file": "mobile-quote.png",
+      "width": 390,
+      "entry": "/app/quote/first?reel=set-milestones",
+      "capture_adjustment": "walkthrough switcher and narration hidden; product components unchanged",
+      "errors": 0,
+      "external_requests": 0,
+      "mutating_requests": 0
+    },
+    {
+      "file": "review.png",
+      "width": 1600,
+      "entry": "/app/project/reel?reel=approve-release",
+      "capture_adjustment": "walkthrough switcher and narration hidden; product components unchanged",
+      "errors": 0,
+      "external_requests": 0,
+      "mutating_requests": 0
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "025136485cfd": {
+    "parent": "span",
+    "sentence": "Done: 0",
+    "type": "text"
+  },
+  "062dda15f883": {
+    "parent": "label",
+    "type": "text"
+  },
+  "0af771b99e2e": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "0d01abf73784": {
+    "parent": "span",
+    "sentence": "MAD: 0",
+    "type": "text"
+  },
+  "0e570ca6fabe": {
+    "parent": "button",
+    "sentence": "Source ▾",
+    "type": "text"
+  },
+  "1154231e70e8": {
+    "parent": "label",
+    "type": "text"
+  },
+  "135e59e62646": {
+    "parent": "title",
+    "type": "text"
+  },
+  "1684921d796a": {
+    "parent": "label",
+    "type": "text"
+  },
+  "18e872be2359": {
+    "parent": "span",
+    "sentence": "Total: 0",
+    "type": "text"
+  },
+  "1b362827d8a5": {
+    "parent": "span",
+    "sentence": "HAB: 111",
+    "type": "text"
+  },
+  "2c77385bcc5a": {
+    "parent": "button",
+    "type": "text"
+  },
+  "38c2e92ebcb0": {
+    "parent": "label",
+    "type": "text"
+  },
+  "42480aed45ff": {
+    "parent": "label",
+    "type": "text"
+  },
+  "42a6de774c10": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "4309a6431f4a": {
+    "parent": "label",
+    "type": "text"
+  },
+  "44fc0db8da0a": {
+    "parent": "span",
+    "sentence": "MLG: 0",
+    "type": "text"
+  },
+  "45ad42321fbd": {
+    "parent": "span",
+    "sentence": "Sent: 0",
+    "type": "text"
+  },
+  "5832b4f31505": {
+    "parent": "label",
+    "type": "text"
+  },
+  "5bc426e8d81e": {
+    "parent": "span",
+    "sentence": "Leo Sales Tracker",
+    "type": "text"
+  },
+  "6501e1ced8da": {
+    "parent": "button",
+    "type": "text"
+  },
+  "6e431d74d991": {
+    "parent": "label",
+    "type": "text"
+  },
+  "73f993538921": {
+    "parent": "span",
+    "sentence": "Left: 0",
+    "type": "text"
+  },
+  "74a3cea7f940": {
+    "parent": "span",
+    "sentence": "IG: 99",
+    "type": "text"
+  },
+  "7dc932f0c43e": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "9709653fc80c": {
+    "parent": "button",
+    "sentence": "Trade ▾",
+    "type": "text"
+  },
+  "989b8dee3e27": {
+    "attr": "placeholder",
+    "tag": "textarea",
+    "type": "attr:placeholder"
+  },
+  "993fdbeef023": {
+    "parent": "button",
+    "type": "text"
+  },
+  "a66b6c078db2": {
+    "parent": "label",
+    "type": "text"
+  },
+  "a72b39a2bc71": {
+    "parent": "h1",
+    "sentence": "Leo Sales Tracker",
+    "type": "text"
+  },
+  "a780b6126d33": {
+    "parent": "label",
+    "type": "text"
+  },
+  "adeffdd8bb0e": {
+    "parent": "label",
+    "type": "text"
+  },
+  "baa6bc488219": {
+    "parent": "button",
+    "type": "text"
+  },
+  "bba246f502ab": {
+    "parent": "span",
+    "sentence": "VLC: 0",
+    "type": "text"
+  },
+  "bcf0489a7b45": {
+    "parent": "button",
+    "type": "text"
+  },
+  "bdce21036c7e": {
+    "parent": "button",
+    "type": "text"
+  },
+  "cx:04d58de5c1ff": {
+    "parent": "span",
+    "sentence": "Done: 0",
+    "type": "composite"
+  },
+  "cx:1ccaf7dafa93": {
+    "parent": "span",
+    "sentence": "Left: 0",
+    "type": "composite"
+  },
+  "cx:32a4e42f1c1c": {
+    "parent": "span",
+    "sentence": "HAB: 111",
+    "type": "composite"
+  },
+  "cx:3afe84de3b26": {
+    "parent": "span",
+    "sentence": "IG: 99",
+    "type": "composite"
+  },
+  "cx:44ebf0422462": {
+    "parent": "span",
+    "sentence": "Total: 0",
+    "type": "composite"
+  },
+  "cx:5e3234553908": {
+    "parent": "button",
+    "sentence": "City ▾",
+    "type": "composite"
+  },
+  "cx:673f0ac3e82a": {
+    "parent": "h1",
+    "sentence": "Leo Sales Tracker",
+    "type": "composite"
+  },
+  "cx:ae720477369b": {
+    "parent": "span",
+    "sentence": "MAD: 0",
+    "type": "composite"
+  },
+  "cx:cf4346f13f46": {
+    "parent": "button",
+    "sentence": "Source ▾",
+    "type": "composite"
+  },
+  "cx:e2475f4173ff": {
+    "parent": "span",
+    "sentence": "BCN: 0",
+    "type": "composite"
+  },
+  "cx:e95885f69e39": {
+    "parent": "span",
+    "sentence": "Sent: 0",
+    "type": "composite"
+  },
+  "cx:ec881fe60e02": {
+    "parent": "button",
+    "sentence": "Trade ▾",
+    "type": "composite"
+  },
+  "cx:f61e1227f101": {
+    "parent": "span",
+    "sentence": "MLG: 0",
+    "type": "composite"
+  },
+  "cx:f8ded7ac1aca": {
+    "parent": "span",
+    "sentence": "VLC: 0",
+    "type": "composite"
+  },
+  "e9c722cbefc2": {
+    "parent": "label",
+    "type": "text"
+  },
+  "ede110c10283": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "f811cbde58c7": {
+    "parent": "span",
+    "sentence": "BCN: 0",
+    "type": "text"
+  },
+  "fc33f73246f4": {
+    "parent": "button",
+    "sentence": "City ▾",
+    "type": "text"
+  }
+}

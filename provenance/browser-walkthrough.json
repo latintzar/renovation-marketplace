@@ -1,0 +1,131 @@
+{
+  "browser": "Chromium",
+  "network": "only selected local origin allowed",
+  "entries": [
+    {
+      "flow": "quote",
+      "width": 1600,
+      "checks": {
+        "http_200": true,
+        "page_errors": 0,
+        "external_requests": 0,
+        "mutating_requests": 0,
+        "missing_resources": 0,
+        "horizontal_overflow": false,
+        "materials_displayed": true,
+        "iva_displayed": true,
+        "total_8190_displayed": true
+      }
+    },
+    {
+      "flow": "review",
+      "width": 1600,
+      "checks": {
+        "http_200": true,
+        "page_errors": 0,
+        "external_requests": 0,
+        "mutating_requests": 0,
+        "missing_resources": 0,
+        "horizontal_overflow": false
+      }
+    },
+    {
+      "flow": "brief",
+      "width": 1600,
+      "checks": {
+        "http_200": true,
+        "page_errors": 0,
+        "external_requests": 0,
+        "mutating_requests": 0,
+        "missing_resources": 0,
+        "horizontal_overflow": false
+      }
+    },
+    {
+      "flow": "proof",
+      "width": 1600,
+      "checks": {
+        "http_200": true,
+        "page_errors": 0,
+        "external_requests": 0,
+        "mutating_requests": 0,
+        "missing_resources": 0,
+        "horizontal_overflow": false
+      }
+    },
+    {
+      "flow": "profile",
+      "width": 1600,
+      "checks": {
+        "http_200": true,
+        "page_errors": 0,
+        "external_requests": 0,
+        "mutating_requests": 0,
+        "missing_resources": 0,
+        "horizontal_overflow": false
+      }
+    },
+    {
+      "flow": "quote",
+      "width": 390,
+      "checks": {
+        "http_200": true,
+        "page_errors": 0,
+        "external_requests": 0,
+        "mutating_requests": 0,
+        "missing_resources": 0,
+        "horizontal_overflow": false
+      }
+    },
+    {
+      "flow": "review",
+      "width": 390,
+      "checks": {
+        "http_200": true,
+        "page_errors": 0,
+        "external_requests": 0,
+        "mutating_requests": 0,
+        "missing_resources": 0,
+        "horizontal_overflow": false
+      }
+    },
+    {
+      "flow": "brief",
+      "width": 390,
+      "checks": {
+        "http_200": true,
+        "page_errors": 0,
+        "external_requests": 0,
+        "mutating_requests": 0,
+        "missing_resources": 0,
+        "horizontal_overflow": false
+      }
+    },
+    {
+      "flow": "proof",
+      "width": 390,
+      "checks": {
+        "http_200": true,
+        "page_errors": 0,
+        "external_requests": 0,
+        "mutating_requests": 0,
+        "missing_resources": 0,
+        "horizontal_overflow": false
+      }
+    },
+    {
+      "flow": "profile",
+      "width": 390,
+      "checks": {
+        "http_200": true,
+        "page_errors": 0,
+        "external_requests": 0,
+        "mutating_requests": 0,
+        "missing_resources": 0,
+        "horizontal_overflow": false
+      }
+    }
+  ],
+  "provider_calls": 0,
+  "customer_rows_read": 0
+}

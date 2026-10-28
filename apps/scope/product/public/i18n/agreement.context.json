@@ -1,0 +1,1546 @@
+{
+  "0071d24dfce9": {
+    "parent": "em",
+    "sentence": "For money owed that the contractor disputes or ignores, the procedimiento monitorio allows a homeowner to file a petition at the local Juzgado de Primera Instancia without a lawyer, regardless of the claim amount. If the contractor does not respond within 20 days, the court issues an automatic enforcement decree — a judgment debt enforceable against their bank accounts and assets. Leo prepares the pre-filled petition from the case file.",
+    "type": "text"
+  },
+  "009ed110badf": {
+    "attr": "aria-label",
+    "tag": "button",
+    "type": "attr:aria-label"
+  },
+  "00f2ebfb54b5": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "011076fb9190": {
+    "parent": "li",
+    "type": "text"
+  },
+  "0214a8630e82": {
+    "parent": "td",
+    "type": "text"
+  },
+  "02e34b8b4daa": {
+    "parent": "td",
+    "type": "text"
+  },
+  "0310056c84c5": {
+    "parent": "td",
+    "type": "text"
+  },
+  "034812dd4a0d": {
+    "parent": "li",
+    "type": "text"
+  },
+  "046051a14321": {
+    "parent": "li",
+    "type": "text"
+  },
+  "04795c716d5a": {
+    "parent": "li",
+    "sentence": "The milestone schedule and payment terms are understood",
+    "type": "text"
+  },
+  "04a5c23a6756": {
+    "parent": "span",
+    "type": "text"
+  },
+  "051b703a4ab7": {
+    "parent": "td",
+    "type": "text"
+  },
+  "0631a87ac62f": {
+    "parent": "p",
+    "sentence": "For contested claims: Juicio Verbal for amounts under €15,000 (no lawyer required under €2,000, threshold raised to €15,000 by RDL 6/2023); Juicio Ordinario for amounts over €15,000 (lawyer required). Under Ley Orgánica 1/2025 , prior MASC (mediation/arbitration) attempt must be documented before proceeding to a Juicio Ordinario — Leo’s arbitration step fulfils this requirement. Leo provides the full case file and can refer to construction law specialists for this stage.",
+    "type": "text"
+  },
+  "06f0b8499584": {
+    "parent": "p",
+    "sentence": "Leo prepares a complete submission to the relevant Junta Arbitral de Consumo under Real Decreto 713/2024: pre-filled form, signed scope, aparejador report, payment records, and communication history. Every Leo contractor commits to this arbitration system when they join the platform. Every Leo contractor agrees to participate in arbitration when they join the platform. If they refuse to participate when invited by the Junta, that refusal is documented as a breach of the Leo service agreement and strengthens the homeowner’s case in subsequent court proceedings. The arbitration laudo (award) has the same legal weight as a court judgment and is enforceable against the contractor’s assets.",
+    "type": "text"
+  },
+  "0803668ce562": {
+    "parent": "p",
+    "type": "text"
+  },
+  "089f452811b0": {
+    "parent": "td",
+    "type": "text"
+  },
+  "08ef4cf28f13": {
+    "parent": "figcaption",
+    "type": "text"
+  },
+  "0a4f41853750": {
+    "parent": "td",
+    "type": "text"
+  },
+  "0a9aa069e470": {
+    "parent": "p",
+    "type": "text"
+  },
+  "0b2e9330ccea": {
+    "parent": "div",
+    "type": "text"
+  },
+  "0b3f713826f3": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "0b594035244c": {
+    "parent": "li",
+    "type": "text"
+  },
+  "0b5c3e4756d3": {
+    "parent": "div",
+    "type": "text"
+  },
+  "0d10ae6dcf78": {
+    "parent": "td",
+    "type": "text"
+  },
+  "0d9d57d1a0cd": {
+    "parent": "p",
+    "sentence": "Full legal identity of both the homeowner (or property owner / authorised representative) and the professional (autónomo or company with CIF). The property address where the work will take place — the legal site.",
+    "type": "text"
+  },
+  "0fac2fc212c1": {
+    "parent": "li",
+    "type": "text"
+  },
+  "10c84289e8d0": {
+    "parent": "a",
+    "type": "text"
+  },
+  "11d3bf9c2681": {
+    "parent": "p",
+    "type": "text"
+  },
+  "1208c7a84058": {
+    "parent": "li",
+    "type": "text"
+  },
+  "12fc08c21592": {
+    "parent": "div",
+    "sentence": "Labour completed · Photos submitted · Awaiting approval",
+    "type": "text"
+  },
+  "140315e5f838": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "168df4511669": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "173f5f9f26b4": {
+    "parent": "a",
+    "sentence": "© 2026 Leo Casa Limited · Company No. 16259714 · Home · Terms & Conditions · Construction Agreement · How we vet contractors · How disputes work",
+    "type": "text"
+  },
+  "18a92b9ab5e7": {
+    "parent": "em",
+    "sentence": "In standard Spanish construction practice, a variation order ( modificado de obra ) is simply an amendment to the contract . The original agreement stays in force — the variation adds, removes, or changes specific items.",
+    "type": "text"
+  },
+  "19c05d7aba98": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "1a7545b5bae4": {
+    "parent": "em",
+    "sentence": "For contested claims: Juicio Verbal for amounts under €15,000 (no lawyer required under €2,000, threshold raised to €15,000 by RDL 6/2023); Juicio Ordinario for amounts over €15,000 (lawyer required). Under Ley Orgánica 1/2025 , prior MASC (mediation/arbitration) attempt must be documented before proceeding to a Juicio Ordinario — Leo’s arbitration step fulfils this requirement. Leo provides the full case file and can refer to construction law specialists for this stage.",
+    "type": "text"
+  },
+  "1b0308fe1cf1": {
+    "parent": "p",
+    "type": "text"
+  },
+  "1b94ce23c543": {
+    "parent": "span",
+    "type": "text"
+  },
+  "1cb90a7ca127": {
+    "parent": "li",
+    "type": "text"
+  },
+  "1cba2e5f26a1": {
+    "parent": "div",
+    "type": "text"
+  },
+  "1d36d78123e1": {
+    "parent": "span",
+    "type": "text"
+  },
+  "1d4a71b15897": {
+    "parent": "li",
+    "sentence": "Disputes will follow the resolution process described below, before any legal action",
+    "type": "text"
+  },
+  "1d9bb29edd81": {
+    "parent": "p",
+    "sentence": "Leo is neither the contractor nor the client. We are the platform that structures the agreement and holds the payment infrastructure. The contract is between you and the person doing (or commissioning) the work .",
+    "type": "text"
+  },
+  "1dc5b1d50d0e": {
+    "parent": "p",
+    "sentence": "The principle: The materials card is governed by the contract, not by mood. If the contract is in force and the professional is performing, the card stays active. If there is a legitimate concern, the dispute process handles it — not a surprise card cancellation.",
+    "type": "text"
+  },
+  "1ea442a134b2": {
+    "parent": "td",
+    "type": "text"
+  },
+  "203bf0630057": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "20a79754b569": {
+    "parent": "p",
+    "type": "text"
+  },
+  "218a413ba6f0": {
+    "parent": "td",
+    "type": "text"
+  },
+  "21bcbb0c7daa": {
+    "parent": "p",
+    "type": "text"
+  },
+  "22e9f1959a3b": {
+    "parent": "td",
+    "type": "text"
+  },
+  "2379f16c48de": {
+    "parent": "div",
+    "sentence": "Yes. When both sides accept a scope on Leo, it creates a binding contract under Spanish law ( Código Civil , articles 1544–1600, on contrato de obra ). The electronic acceptance, timestamped and linked to both parties’ identities, has the same legal force as a signed paper document under Spain’s Ley 34/2002 on electronic commerce.",
+    "type": "text"
+  },
+  "2460fbc107b6": {
+    "parent": "li",
+    "sentence": "Disputes will follow the resolution process described below, before any legal action",
+    "type": "text"
+  },
+  "24978841e1c4": {
+    "parent": "p",
+    "sentence": "For contested claims: Juicio Verbal for amounts under €15,000 (no lawyer required under €2,000, threshold raised to €15,000 by RDL 6/2023); Juicio Ordinario for amounts over €15,000 (lawyer required). Under Ley Orgánica 1/2025 , prior MASC (mediation/arbitration) attempt must be documented before proceeding to a Juicio Ordinario — Leo’s arbitration step fulfils this requirement. Leo provides the full case file and can refer to construction law specialists for this stage.",
+    "type": "text"
+  },
+  "24e7457708e1": {
+    "parent": "div",
+    "type": "text"
+  },
+  "2525b84db7f2": {
+    "parent": "p",
+    "type": "text"
+  },
+  "261888cfe642": {
+    "parent": "p",
+    "type": "text"
+  },
+  "26cea62c8a1f": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "276c76e79409": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "2907c778209c": {
+    "parent": "strong",
+    "sentence": "For money owed that the contractor disputes or ignores, the procedimiento monitorio allows a homeowner to file a petition at the local Juzgado de Primera Instancia without a lawyer, regardless of the claim amount. If the contractor does not respond within 20 days, the court issues an automatic enforcement decree — a judgment debt enforceable against their bank accounts and assets. Leo prepares the pre-filled petition from the case file.",
+    "type": "text"
+  },
+  "298be083d96d": {
+    "parent": "div",
+    "sentence": "Leo’s T&Cs govern your relationship with the Leo platform — how you use the website, data protection, Leo’s role and liability. The construction agreement governs the relationship between the homeowner and the professional — what gets built, how much it costs, and what happens if things go wrong. They are separate documents that work together.",
+    "type": "text"
+  },
+  "2ab62ae94c17": {
+    "parent": "div",
+    "type": "text"
+  },
+  "2b4b46b5bca0": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "2eb0e7a79371": {
+    "parent": "p",
+    "sentence": "Every Leo job agreement contains the same core elements, drawn from standard Spanish construction contracting ( contrato de obra ) and international works procurement practice.",
+    "type": "text"
+  },
+  "2ed931d953f4": {
+    "parent": "p",
+    "sentence": "For money owed that the contractor disputes or ignores, the procedimiento monitorio allows a homeowner to file a petition at the local Juzgado de Primera Instancia without a lawyer, regardless of the claim amount. If the contractor does not respond within 20 days, the court issues an automatic enforcement decree — a judgment debt enforceable against their bank accounts and assets. Leo prepares the pre-filled petition from the case file.",
+    "type": "text"
+  },
+  "2f0c60506a0b": {
+    "parent": "p",
+    "type": "text"
+  },
+  "2f1911d77a96": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "308a478d94b0": {
+    "parent": "em",
+    "sentence": "Leo prepares a complete submission to the relevant Junta Arbitral de Consumo under Real Decreto 713/2024: pre-filled form, signed scope, aparejador report, payment records, and communication history. Every Leo contractor commits to this arbitration system when they join the platform. Every Leo contractor agrees to participate in arbitration when they join the platform. If they refuse to participate when invited by the Junta, that refusal is documented as a breach of the Leo service agreement and strengthens the homeowner’s case in subsequent court proceedings. The arbitration laudo (award) has the same legal weight as a court judgment and is enforceable against the contractor’s assets.",
+    "type": "text"
+  },
+  "30a81a16ff5d": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "30aac0049da4": {
+    "parent": "p",
+    "sentence": "If unresolved, Leo commissions a qualified Arquitecto Técnico (aparejador) to review the dispute remotely. The aparejador examines the scope document, milestone photos from both parties, variation order records, and invoices. They issue a written professional opinion — work within scope, outside scope, or insufficient remote evidence — signed under their COAAT colegio registration. This opinion is legally admissible in Spanish arbitration and civil court.",
+    "type": "text"
+  },
+  "30f1f6ecc76b": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "31954186a49d": {
+    "parent": "div",
+    "type": "text"
+  },
+  "321ddc00dd6b": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "324fa2ae6e4a": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "3a60fb20552b": {
+    "parent": "strong",
+    "sentence": "Regulatory requirements — building inspector requires additional work for compliance",
+    "type": "text"
+  },
+  "3a78695388b3": {
+    "parent": "a",
+    "sentence": "© 2026 Leo Casa Limited · Company No. 16259714 · Home · Terms & Conditions · Construction Agreement · How we vet contractors · How disputes work",
+    "type": "text"
+  },
+  "3a8a16597a31": {
+    "parent": "p",
+    "sentence": "For contested claims: Juicio Verbal for amounts under €15,000 (no lawyer required under €2,000, threshold raised to €15,000 by RDL 6/2023); Juicio Ordinario for amounts over €15,000 (lawyer required). Under Ley Orgánica 1/2025 , prior MASC (mediation/arbitration) attempt must be documented before proceeding to a Juicio Ordinario — Leo’s arbitration step fulfils this requirement. Leo provides the full case file and can refer to construction law specialists for this stage.",
+    "type": "text"
+  },
+  "3b41a2345867": {
+    "parent": "em",
+    "sentence": "If unresolved, Leo commissions a qualified Arquitecto Técnico (aparejador) to review the dispute remotely. The aparejador examines the scope document, milestone photos from both parties, variation order records, and invoices. They issue a written professional opinion — work within scope, outside scope, or insufficient remote evidence — signed under their COAAT colegio registration. This opinion is legally admissible in Spanish arbitration and civil court.",
+    "type": "text"
+  },
+  "3bc078933482": {
+    "parent": "th",
+    "type": "text"
+  },
+  "3c00f23367bd": {
+    "parent": "div",
+    "type": "text"
+  },
+  "3c3606cfd06a": {
+    "parent": "li",
+    "type": "text"
+  },
+  "3d925769342d": {
+    "parent": "td",
+    "type": "text"
+  },
+  "3ef8f8055911": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "3faad847739f": {
+    "parent": "li",
+    "type": "text"
+  },
+  "3fbf41e7ab82": {
+    "parent": "div",
+    "type": "text"
+  },
+  "4079349a1996": {
+    "parent": "p",
+    "type": "text"
+  },
+  "43bfa168ec1b": {
+    "parent": "strong",
+    "sentence": "The contract total is the sum of all line items, plus the Leo platform fee (5%, paid by the homeowner). Payments are tied to milestones — not calendar dates. Money moves when work is done, not when time passes.",
+    "type": "text"
+  },
+  "43c311e15e24": {
+    "parent": "p",
+    "sentence": "For contested claims: Juicio Verbal for amounts under €15,000 (no lawyer required under €2,000, threshold raised to €15,000 by RDL 6/2023); Juicio Ordinario for amounts over €15,000 (lawyer required). Under Ley Orgánica 1/2025 , prior MASC (mediation/arbitration) attempt must be documented before proceeding to a Juicio Ordinario — Leo’s arbitration step fulfils this requirement. Leo provides the full case file and can refer to construction law specialists for this stage.",
+    "type": "text"
+  },
+  "44fb4f6d6d93": {
+    "parent": "p",
+    "sentence": "When the contract includes a materials advance, the homeowner can opt for a Leo materials card instead of a direct bank transfer. This is a prepaid card issued to the professional, loaded with the materials budget from the escrowed funds.",
+    "type": "text"
+  },
+  "452b9e0d2d59": {
+    "parent": "td",
+    "type": "text"
+  },
+  "45ce6dfca7b8": {
+    "parent": "p",
+    "type": "text"
+  },
+  "482d7a6ca7e2": {
+    "parent": "td",
+    "type": "text"
+  },
+  "485ef875deea": {
+    "parent": "td",
+    "type": "text"
+  },
+  "488a4bfd0de4": {
+    "parent": "strong",
+    "sentence": "Unforeseen site conditions — hidden damp, unexpected structural issues, asbestos, outdated wiring",
+    "type": "text"
+  },
+  "4aa447ff2d1f": {
+    "parent": "p",
+    "type": "text"
+  },
+  "4b4b6c974170": {
+    "parent": "a",
+    "sentence": "© 2026 Leo Casa Limited · Company No. 16259714 · Home · Terms & Conditions · Construction Agreement · How we vet contractors · How disputes work",
+    "type": "text"
+  },
+  "4b65d020d86a": {
+    "parent": "div",
+    "type": "text"
+  },
+  "4c1388710c5a": {
+    "parent": "td",
+    "type": "text"
+  },
+  "4c85737bd8c3": {
+    "parent": "p",
+    "sentence": "For contested claims: Juicio Verbal for amounts under €15,000 (no lawyer required under €2,000, threshold raised to €15,000 by RDL 6/2023); Juicio Ordinario for amounts over €15,000 (lawyer required). Under Ley Orgánica 1/2025 , prior MASC (mediation/arbitration) attempt must be documented before proceeding to a Juicio Ordinario — Leo’s arbitration step fulfils this requirement. Leo provides the full case file and can refer to construction law specialists for this stage.",
+    "type": "text"
+  },
+  "4dc6917f0589": {
+    "parent": "p",
+    "type": "text"
+  },
+  "4f8399facef8": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "5038762bb0d3": {
+    "parent": "td",
+    "type": "text"
+  },
+  "5144b0fb6d8a": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "5236a0fe48d3": {
+    "parent": "div",
+    "type": "text"
+  },
+  "54103ba3bce1": {
+    "parent": "p",
+    "sentence": "For money owed that the contractor disputes or ignores, the procedimiento monitorio allows a homeowner to file a petition at the local Juzgado de Primera Instancia without a lawyer, regardless of the claim amount. If the contractor does not respond within 20 days, the court issues an automatic enforcement decree — a judgment debt enforceable against their bank accounts and assets. Leo prepares the pre-filled petition from the case file.",
+    "type": "text"
+  },
+  "550e4da401fd": {
+    "parent": "p",
+    "sentence": "The contract is the referee. Because every Leo job has a clear scope, itemised pricing, photo evidence, and a written variation trail, disputes are resolved on facts — not on who argues louder. See the full dispute process →",
+    "type": "text"
+  },
+  "5801ceef6954": {
+    "parent": "span",
+    "type": "text"
+  },
+  "58c537f664ef": {
+    "parent": "div",
+    "type": "text"
+  },
+  "59305285d4ca": {
+    "parent": "p",
+    "sentence": "This is the same structure used in professional presupuestos across Spain. It makes pricing transparent and variations easy to calculate.",
+    "type": "text"
+  },
+  "5963255adf77": {
+    "parent": "p",
+    "type": "text"
+  },
+  "59cf72853ed7": {
+    "parent": "p",
+    "sentence": "The 14-day safety net: If a professional marks a milestone complete and the homeowner doesn’t respond within 14 days, Leo reviews the evidence and may release funds. This protects professionals from being held hostage by unresponsive clients.",
+    "type": "text"
+  },
+  "59e459668339": {
+    "parent": "div",
+    "type": "text"
+  },
+  "5a45f0e62cbb": {
+    "parent": "em",
+    "sentence": "Yes. When both sides accept a scope on Leo, it creates a binding contract under Spanish law ( Código Civil , articles 1544–1600, on contrato de obra ). The electronic acceptance, timestamped and linked to both parties’ identities, has the same legal force as a signed paper document under Spain’s Ley 34/2002 on electronic commerce.",
+    "type": "text"
+  },
+  "5a6a14f2d708": {
+    "parent": "p",
+    "type": "text"
+  },
+  "5a8be4897586": {
+    "parent": "li",
+    "type": "text"
+  },
+  "5bb4b838770b": {
+    "parent": "td",
+    "type": "text"
+  },
+  "5bc426e8d81e": {
+    "attr": "alt",
+    "tag": "img",
+    "type": "attr:alt"
+  },
+  "5cd05a3171c9": {
+    "parent": "p",
+    "sentence": "If the remote aparejador states they cannot determine the disputed fact from documentary evidence — for example, a hidden structural defect or a question about materials actually installed — the dispute escalates to a physical site visit. The aparejador inspects in person, issues a full informe pericial (expert report), and this becomes the basis for the next stage. Physical visit cost: approximately €300–600, typically borne by the losing party.",
+    "type": "text"
+  },
+  "5d7e3a0ab448": {
+    "parent": "p",
+    "sentence": "The principle: Higher value → more rigour. But even the simplest tier gives you a written record, payment protection, and a dispute process. That is more than most homeowners in Spain get today.",
+    "type": "text"
+  },
+  "5ec9c2b52014": {
+    "parent": "div",
+    "type": "text"
+  },
+  "5ed65ea43984": {
+    "parent": "em",
+    "sentence": "Every Leo job agreement contains the same core elements, drawn from standard Spanish construction contracting ( contrato de obra ) and international works procurement practice.",
+    "type": "text"
+  },
+  "5ee18afbf242": {
+    "parent": "p",
+    "sentence": "© 2026 Leo Casa Limited · Company No. 16259714 · Home · Terms & Conditions · Construction Agreement · How we vet contractors · How disputes work",
+    "type": "text"
+  },
+  "5f2fabdd0d83": {
+    "parent": "span",
+    "type": "text"
+  },
+  "6007acbe30b2": {
+    "parent": "div",
+    "type": "text"
+  },
+  "60fe710095ab": {
+    "parent": "div",
+    "sentence": "Yes. When both sides accept a scope on Leo, it creates a binding contract under Spanish law ( Código Civil , articles 1544–1600, on contrato de obra ). The electronic acceptance, timestamped and linked to both parties’ identities, has the same legal force as a signed paper document under Spain’s Ley 34/2002 on electronic commerce.",
+    "type": "text"
+  },
+  "6117e062e8bd": {
+    "parent": "em",
+    "sentence": "If the remote aparejador states they cannot determine the disputed fact from documentary evidence — for example, a hidden structural defect or a question about materials actually installed — the dispute escalates to a physical site visit. The aparejador inspects in person, issues a full informe pericial (expert report), and this becomes the basis for the next stage. Physical visit cost: approximately €300–600, typically borne by the losing party.",
+    "type": "text"
+  },
+  "62914466b412": {
+    "parent": "td",
+    "type": "text"
+  },
+  "643eca1d1bb3": {
+    "parent": "a",
+    "type": "text"
+  },
+  "65a00c9807d2": {
+    "parent": "span",
+    "sentence": "60% on completion €620.55",
+    "type": "text"
+  },
+  "661673092916": {
+    "parent": "span",
+    "type": "text"
+  },
+  "66c214116ee7": {
+    "parent": "span",
+    "sentence": "Megaflo cylinder & fittings · Paid from escrow · 12 Mar",
+    "type": "text"
+  },
+  "66c48b184362": {
+    "parent": "title",
+    "type": "text"
+  },
+  "67e5a3025bc0": {
+    "note": "string literal",
+    "type": "js"
+  },
+  "68e40ffa6a01": {
+    "parent": "p",
+    "type": "text"
+  },
+  "69462bbec0fe": {
+    "parent": "em",
+    "type": "text"
+  },
+  "699a02e9fcba": {
+    "parent": "td",
+    "type": "text"
+  },
+  "6acfb920f4be": {
+    "parent": "h1",
+    "sentence": "The Standard Leo Construction Agreement",
+    "type": "text"
+  },
+  "6b07f2fbf81e": {
+    "parent": "p",
+    "sentence": "The contract total is the sum of all line items, plus the Leo platform fee (5%, paid by the homeowner). Payments are tied to milestones — not calendar dates. Money moves when work is done, not when time passes.",
+    "type": "text"
+  },
+  "6b5cfe41f916": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "6dac25b0c112": {
+    "parent": "p",
+    "type": "text"
+  },
+  "6e64968b489c": {
+    "parent": "a",
+    "type": "text"
+  },
+  "6fefcb8be4ba": {
+    "parent": "li",
+    "type": "text"
+  },
+  "705224608d37": {
+    "parent": "p",
+    "type": "text"
+  },
+  "70863612a7b4": {
+    "parent": "div",
+    "type": "text"
+  },
+  "70fbb54bd5e6": {
+    "parent": "th",
+    "type": "text"
+  },
+  "712ddb0cf9f8": {
+    "parent": "td",
+    "type": "text"
+  },
+  "736d526d9e23": {
+    "parent": "li",
+    "type": "text"
+  },
+  "742c0e2610f0": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "753158853fc8": {
+    "parent": "td",
+    "type": "text"
+  },
+  "76011b5d7a0e": {
+    "parent": "em",
+    "sentence": "For contested claims: Juicio Verbal for amounts under €15,000 (no lawyer required under €2,000, threshold raised to €15,000 by RDL 6/2023); Juicio Ordinario for amounts over €15,000 (lawyer required). Under Ley Orgánica 1/2025 , prior MASC (mediation/arbitration) attempt must be documented before proceeding to a Juicio Ordinario — Leo’s arbitration step fulfils this requirement. Leo provides the full case file and can refer to construction law specialists for this stage.",
+    "type": "text"
+  },
+  "781934a65ea0": {
+    "parent": "li",
+    "type": "text"
+  },
+  "78e22fab31d3": {
+    "parent": "li",
+    "type": "text"
+  },
+  "78ea503c9d62": {
+    "parent": "div",
+    "sentence": "Yes. When both sides accept a scope on Leo, it creates a binding contract under Spanish law ( Código Civil , articles 1544–1600, on contrato de obra ). The electronic acceptance, timestamped and linked to both parties’ identities, has the same legal force as a signed paper document under Spain’s Ley 34/2002 on electronic commerce.",
+    "type": "text"
+  },
+  "7962623c7e24": {
+    "parent": "td",
+    "type": "text"
+  },
+  "79d425411fe1": {
+    "parent": "a",
+    "type": "text"
+  },
+  "7a2c44890967": {
+    "parent": "em",
+    "sentence": "The Standard Leo Construction Agreement",
+    "type": "text"
+  },
+  "7abf41c6cd40": {
+    "parent": "div",
+    "type": "text"
+  },
+  "7aed58cfc092": {
+    "parent": "th",
+    "type": "text"
+  },
+  "7b8739ff5823": {
+    "parent": "strong",
+    "sentence": "Client-requested changes — upgraded finishes, additional rooms, changed layout",
+    "type": "text"
+  },
+  "7c1b3889009d": {
+    "parent": "li",
+    "sentence": "Both parties agree to handle changes through variation orders , not verbal side-deals",
+    "type": "text"
+  },
+  "7c6c9abf9260": {
+    "parent": "p",
+    "type": "text"
+  },
+  "7e436ac0be85": {
+    "parent": "td",
+    "type": "text"
+  },
+  "7f1ee16aaadd": {
+    "attr": "content",
+    "tag": "meta",
+    "type": "attr:content"
+  },
+  "7f4d442f37dc": {
+    "parent": "p",
+    "type": "text"
+  },
+  "7ff79f8e8806": {
+    "parent": "a",
+    "type": "text"
+  },
+  "80bfdacec29b": {
+    "parent": "em",
+    "sentence": "For contested claims: Juicio Verbal for amounts under €15,000 (no lawyer required under €2,000, threshold raised to €15,000 by RDL 6/2023); Juicio Ordinario for amounts over €15,000 (lawyer required). Under Ley Orgánica 1/2025 , prior MASC (mediation/arbitration) attempt must be documented before proceeding to a Juicio Ordinario — Leo’s arbitration step fulfils this requirement. Leo provides the full case file and can refer to construction law specialists for this stage.",
+    "type": "text"
+  },
+  "80f6ac1699e6": {
+    "parent": "a",
+    "type": "text"
+  },
+  "822bab8d41bc": {
+    "parent": "li",
+    "type": "text"
+  },
+  "828f093ed820": {
+    "parent": "td",
+    "type": "text"
+  },
+  "831ca4225f6a": {
+    "parent": "p",
+    "type": "text"
+  },
+  "8353d2911e33": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "8592cb39f924": {
+    "parent": "p",
+    "sentence": "Full legal identity of both the homeowner (or property owner / authorised representative) and the professional (autónomo or company with CIF). The property address where the work will take place — the legal site.",
+    "type": "text"
+  },
+  "85a39ab345d6": {
+    "parent": "td",
+    "type": "text"
+  },
+  "864c6cdf48b2": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "86583307d03d": {
+    "parent": "li",
+    "sentence": "Scope clarifications — original scope was ambiguous, both sides agree on interpretation",
+    "type": "text"
+  },
+  "8ab898797714": {
+    "parent": "div",
+    "type": "text"
+  },
+  "8d48835b7d0d": {
+    "parent": "li",
+    "type": "text"
+  },
+  "8f2f3a837e9a": {
+    "parent": "li",
+    "type": "text"
+  },
+  "8f39e347fee5": {
+    "parent": "p",
+    "sentence": "The default is designed to be enough. The standard Leo agreement is based on Spanish construction law, international works procurement norms (FIDIC-lite for residential), and our domain expertise. Most homeowners and professionals will never need their own lawyers. But the option is there.",
+    "type": "text"
+  },
+  "8f4f3f6ef483": {
+    "parent": "div",
+    "sentence": "Megaflo cylinder & fittings · Paid from escrow · 12 Mar",
+    "type": "text"
+  },
+  "8fdc31ff70ef": {
+    "parent": "span",
+    "sentence": "40% upfront €413.70",
+    "type": "text"
+  },
+  "8fe53816d372": {
+    "parent": "li",
+    "sentence": "Material substitutions — specified product unavailable, alternative proposed",
+    "type": "text"
+  },
+  "9207748318bf": {
+    "parent": "p",
+    "sentence": "If the remote aparejador states they cannot determine the disputed fact from documentary evidence — for example, a hidden structural defect or a question about materials actually installed — the dispute escalates to a physical site visit. The aparejador inspects in person, issues a full informe pericial (expert report), and this becomes the basis for the next stage. Physical visit cost: approximately €300–600, typically borne by the losing party.",
+    "type": "text"
+  },
+  "93339e0135d2": {
+    "parent": "strong",
+    "sentence": "If unresolved, Leo commissions a qualified Arquitecto Técnico (aparejador) to review the dispute remotely. The aparejador examines the scope document, milestone photos from both parties, variation order records, and invoices. They issue a written professional opinion — work within scope, outside scope, or insufficient remote evidence — signed under their COAAT colegio registration. This opinion is legally admissible in Spanish arbitration and civil court.",
+    "type": "text"
+  },
+  "933c1d1ef660": {
+    "parent": "p",
+    "type": "text"
+  },
+  "936f871a47d2": {
+    "parent": "strong",
+    "sentence": "The homeowner is never obligated to accept a variation. If they decline, the professional completes the original scope as agreed. No verbal side-deals, no “we’ll sort it out later.” Everything is written, timestamped, and traceable.",
+    "type": "text"
+  },
+  "9520a0986aa2": {
+    "parent": "div",
+    "type": "text"
+  },
+  "964be7ca2002": {
+    "parent": "li",
+    "sentence": "Client-requested changes — upgraded finishes, additional rooms, changed layout",
+    "type": "text"
+  },
+  "96772994e6b6": {
+    "parent": "em",
+    "sentence": "For money owed that the contractor disputes or ignores, the procedimiento monitorio allows a homeowner to file a petition at the local Juzgado de Primera Instancia without a lawyer, regardless of the claim amount. If the contractor does not respond within 20 days, the court issues an automatic enforcement decree — a judgment debt enforceable against their bank accounts and assets. Leo prepares the pre-filled petition from the case file.",
+    "type": "text"
+  },
+  "990a2ddb3d39": {
+    "parent": "span",
+    "type": "text"
+  },
+  "9915518062aa": {
+    "parent": "p",
+    "sentence": "If unresolved, Leo commissions a qualified Arquitecto Técnico (aparejador) to review the dispute remotely. The aparejador examines the scope document, milestone photos from both parties, variation order records, and invoices. They issue a written professional opinion — work within scope, outside scope, or insufficient remote evidence — signed under their COAAT colegio registration. This opinion is legally admissible in Spanish arbitration and civil court.",
+    "type": "text"
+  },
+  "99daba2a2715": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "9a8bf87cf0b1": {
+    "parent": "p",
+    "type": "text"
+  },
+  "9b2f4c2ed52b": {
+    "parent": "div",
+    "type": "text"
+  },
+  "9b32af27eb15": {
+    "parent": "li",
+    "sentence": "The itemised pricing (unit rates × quantities) is accepted",
+    "type": "text"
+  },
+  "9b7a1146d585": {
+    "parent": "td",
+    "type": "text"
+  },
+  "9bd69ab26e6d": {
+    "parent": "span",
+    "type": "text"
+  },
+  "9c870aa6e5e9": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "9d6e2502b0a3": {
+    "parent": "strong",
+    "sentence": "In standard Spanish construction practice, a variation order ( modificado de obra ) is simply an amendment to the contract . The original agreement stays in force — the variation adds, removes, or changes specific items.",
+    "type": "text"
+  },
+  "9dcff98e275f": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "9e08dceb1b8a": {
+    "parent": "strong",
+    "sentence": "Disputes will follow the resolution process described below, before any legal action",
+    "type": "text"
+  },
+  "9e9adf2a856e": {
+    "parent": "a",
+    "sentence": "This page explains the agreement structure — not Leo’s platform T&Cs. Read the T&Cs →",
+    "type": "text"
+  },
+  "9eacc4fbab69": {
+    "parent": "li",
+    "sentence": "The scope of work accurately describes what will be built, repaired, or installed",
+    "type": "text"
+  },
+  "9f0948847f19": {
+    "parent": "span",
+    "type": "text"
+  },
+  "a02103c88962": {
+    "parent": "strong",
+    "sentence": "Full legal identity of both the homeowner (or property owner / authorised representative) and the professional (autónomo or company with CIF). The property address where the work will take place — the legal site.",
+    "type": "text"
+  },
+  "a16b73c09e89": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "a19bd5017b71": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "a28295b51551": {
+    "parent": "p",
+    "sentence": "Every Leo job agreement contains the same core elements, drawn from standard Spanish construction contracting ( contrato de obra ) and international works procurement practice.",
+    "type": "text"
+  },
+  "a2b18df31a1d": {
+    "parent": "div",
+    "type": "text"
+  },
+  "a35e8db02488": {
+    "parent": "div",
+    "type": "text"
+  },
+  "a418f080a0d4": {
+    "parent": "p",
+    "sentence": "This is the same structure used in professional presupuestos across Spain. It makes pricing transparent and variations easy to calculate.",
+    "type": "text"
+  },
+  "a441e0502556": {
+    "parent": "th",
+    "type": "text"
+  },
+  "a48ff842765f": {
+    "parent": "p",
+    "sentence": "For money owed that the contractor disputes or ignores, the procedimiento monitorio allows a homeowner to file a petition at the local Juzgado de Primera Instancia without a lawyer, regardless of the claim amount. If the contractor does not respond within 20 days, the court issues an automatic enforcement decree — a judgment debt enforceable against their bank accounts and assets. Leo prepares the pre-filled petition from the case file.",
+    "type": "text"
+  },
+  "a65bcd39463e": {
+    "parent": "a",
+    "sentence": "Leo’s T&Cs govern your relationship with the Leo platform — how you use the website, data protection, Leo’s role and liability. The construction agreement governs the relationship between the homeowner and the professional — what gets built, how much it costs, and what happens if things go wrong. They are separate documents that work together.",
+    "type": "text"
+  },
+  "a6aaf70a158e": {
+    "parent": "p",
+    "sentence": "If unresolved, Leo commissions a qualified Arquitecto Técnico (aparejador) to review the dispute remotely. The aparejador examines the scope document, milestone photos from both parties, variation order records, and invoices. They issue a written professional opinion — work within scope, outside scope, or insufficient remote evidence — signed under their COAAT colegio registration. This opinion is legally admissible in Spanish arbitration and civil court.",
+    "type": "text"
+  },
+  "a6c27ce63b08": {
+    "parent": "em",
+    "sentence": "This is the same structure used in professional presupuestos across Spain. It makes pricing transparent and variations easy to calculate.",
+    "type": "text"
+  },
+  "a7ba7f82fa38": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "a808c81367a7": {
+    "parent": "p",
+    "sentence": "In standard Spanish construction practice, a variation order ( modificado de obra ) is simply an amendment to the contract . The original agreement stays in force — the variation adds, removes, or changes specific items.",
+    "type": "text"
+  },
+  "aa02444ccbc5": {
+    "parent": "div",
+    "type": "text"
+  },
+  "ab8055a39c03": {
+    "parent": "li",
+    "type": "text"
+  },
+  "abae6f6fc042": {
+    "parent": "li",
+    "sentence": "Both parties agree to handle changes through variation orders , not verbal side-deals",
+    "type": "text"
+  },
+  "abf8af2da6c7": {
+    "parent": "td",
+    "type": "text"
+  },
+  "ac2be5326cab": {
+    "parent": "p",
+    "type": "text"
+  },
+  "ac579ad2f6fb": {
+    "parent": "td",
+    "type": "text"
+  },
+  "acbf07893767": {
+    "parent": "strong",
+    "sentence": "When the contract includes a materials advance, the homeowner can opt for a Leo materials card instead of a direct bank transfer. This is a prepaid card issued to the professional, loaded with the materials budget from the escrowed funds.",
+    "type": "text"
+  },
+  "ad62a2d9e0fb": {
+    "parent": "p",
+    "sentence": "Why this matters: A clear, written agreement protects both sides. The homeowner knows exactly what they are paying for. The professional knows exactly what they are expected to deliver. No ambiguity, no “I thought you meant…”",
+    "type": "text"
+  },
+  "ae183c824075": {
+    "parent": "div",
+    "type": "text"
+  },
+  "ae48b972c6db": {
+    "parent": "span",
+    "type": "text"
+  },
+  "b04516078b4d": {
+    "parent": "p",
+    "type": "text"
+  },
+  "b1f36c9eb7ba": {
+    "parent": "p",
+    "type": "text"
+  },
+  "b1f663c0184e": {
+    "parent": "li",
+    "type": "text"
+  },
+  "b2d1f8b962d9": {
+    "parent": "li",
+    "sentence": "Regulatory requirements — building inspector requires additional work for compliance",
+    "type": "text"
+  },
+  "b344d80e24a3": {
+    "parent": "li",
+    "sentence": "The scope of work accurately describes what will be built, repaired, or installed",
+    "type": "text"
+  },
+  "b3aeeb32a0c7": {
+    "parent": "th",
+    "type": "text"
+  },
+  "b3e12af5f1d3": {
+    "parent": "strong",
+    "sentence": "Scope clarifications — original scope was ambiguous, both sides agree on interpretation",
+    "type": "text"
+  },
+  "b418837e82df": {
+    "parent": "th",
+    "type": "text"
+  },
+  "b47eca895a79": {
+    "parent": "div",
+    "type": "text"
+  },
+  "b49204f545b8": {
+    "parent": "a",
+    "sentence": "The contract is the referee. Because every Leo job has a clear scope, itemised pricing, photo evidence, and a written variation trail, disputes are resolved on facts — not on who argues louder. See the full dispute process →",
+    "type": "text"
+  },
+  "b5658fc8edda": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "b6a9d056da9b": {
+    "parent": "p",
+    "sentence": "Leo prepares a complete submission to the relevant Junta Arbitral de Consumo under Real Decreto 713/2024: pre-filled form, signed scope, aparejador report, payment records, and communication history. Every Leo contractor commits to this arbitration system when they join the platform. Every Leo contractor agrees to participate in arbitration when they join the platform. If they refuse to participate when invited by the Junta, that refusal is documented as a breach of the Leo service agreement and strengthens the homeowner’s case in subsequent court proceedings. The arbitration laudo (award) has the same legal weight as a court judgment and is enforceable against the contractor’s assets.",
+    "type": "text"
+  },
+  "b71b77cb9cc0": {
+    "parent": "a",
+    "type": "text"
+  },
+  "b7b7d3eb63d1": {
+    "parent": "span",
+    "sentence": "Labour completed · Photos submitted · Awaiting approval",
+    "type": "text"
+  },
+  "b91d51fa0504": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "bab98aea6083": {
+    "parent": "td",
+    "type": "text"
+  },
+  "bb18c990de77": {
+    "parent": "p",
+    "type": "text"
+  },
+  "bd08acf6a21a": {
+    "parent": "strong",
+    "sentence": "The milestone schedule and payment terms are understood",
+    "type": "text"
+  },
+  "bdfc7f875f9b": {
+    "parent": "p",
+    "type": "text"
+  },
+  "be20bcb03c24": {
+    "parent": "strong",
+    "sentence": "A structured description of what is to be built . Not a vague paragraph — an itemised list of work packages, each with:",
+    "type": "text"
+  },
+  "c30e2854b7a7": {
+    "parent": "strong",
+    "sentence": "Material substitutions — specified product unavailable, alternative proposed",
+    "type": "text"
+  },
+  "c3afadd2bef3": {
+    "parent": "strong",
+    "sentence": "The 14-day safety net: If a professional marks a milestone complete and the homeowner doesn’t respond within 14 days, Leo reviews the evidence and may release funds. This protects professionals from being held hostage by unresponsive clients.",
+    "type": "text"
+  },
+  "c415be03248b": {
+    "parent": "a",
+    "type": "text"
+  },
+  "c41afd7cd3f2": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "c46d204d0a0d": {
+    "parent": "p",
+    "type": "text"
+  },
+  "c5bfcc842226": {
+    "parent": "figcaption",
+    "type": "text"
+  },
+  "c6ce383d7b1b": {
+    "parent": "td",
+    "type": "text"
+  },
+  "c99ef316fcf4": {
+    "parent": "h2",
+    "sentence": "Want to see Leo in action?",
+    "type": "text"
+  },
+  "c9aebca00e0f": {
+    "parent": "div",
+    "type": "text"
+  },
+  "c9b3c38247f7": {
+    "parent": "span",
+    "type": "text"
+  },
+  "ca2b847578ab": {
+    "parent": "strong",
+    "sentence": "The principle: Higher value → more rigour. But even the simplest tier gives you a written record, payment protection, and a dispute process. That is more than most homeowners in Spain get today.",
+    "type": "text"
+  },
+  "cc0697aa4a04": {
+    "parent": "li",
+    "sentence": "Unforeseen site conditions — hidden damp, unexpected structural issues, asbestos, outdated wiring",
+    "type": "text"
+  },
+  "cc61891c3c8d": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "ce07798a6f2a": {
+    "parent": "li",
+    "type": "text"
+  },
+  "ce2d846e89d0": {
+    "parent": "div",
+    "type": "text"
+  },
+  "cfa5d072d99b": {
+    "parent": "p",
+    "type": "text"
+  },
+  "cfcc9893ab38": {
+    "parent": "td",
+    "type": "text"
+  },
+  "cfe878d73369": {
+    "parent": "p",
+    "type": "text"
+  },
+  "cx:063949129edf": {
+    "parent": "div",
+    "sentence": "Labour completed · Photos submitted · Awaiting approval",
+    "type": "composite"
+  },
+  "cx:2cc67f58fc7b": {
+    "parent": "li",
+    "sentence": "Disputes will follow the resolution process described below, before any legal action",
+    "type": "composite"
+  },
+  "cx:344a70b69bac": {
+    "parent": "p",
+    "sentence": "This is the same structure used in professional presupuestos across Spain. It makes pricing transparent and variations easy to calculate.",
+    "type": "composite"
+  },
+  "cx:3e73163843db": {
+    "parent": "li",
+    "sentence": "The itemised pricing (unit rates × quantities) is accepted",
+    "type": "composite"
+  },
+  "cx:4665670b10e4": {
+    "parent": "li",
+    "sentence": "Both parties agree to handle changes through variation orders , not verbal side-deals",
+    "type": "composite"
+  },
+  "cx:72c47fcbc137": {
+    "parent": "li",
+    "sentence": "The scope of work accurately describes what will be built, repaired, or installed",
+    "type": "composite"
+  },
+  "cx:7808f63342d5": {
+    "parent": "span",
+    "sentence": "This page explains the agreement structure — not Leo’s platform T&Cs. Read the T&Cs →",
+    "type": "composite"
+  },
+  "cx:7b09871a551a": {
+    "parent": "li",
+    "sentence": "Client-requested changes — upgraded finishes, additional rooms, changed layout",
+    "type": "composite"
+  },
+  "cx:8c93d7645291": {
+    "parent": "li",
+    "sentence": "Regulatory requirements — building inspector requires additional work for compliance",
+    "type": "composite"
+  },
+  "cx:9045d6671569": {
+    "parent": "p",
+    "sentence": "A structured description of what is to be built . Not a vague paragraph — an itemised list of work packages, each with:",
+    "type": "composite"
+  },
+  "cx:92c58562f222": {
+    "parent": "p",
+    "sentence": "Every Leo job agreement contains the same core elements, drawn from standard Spanish construction contracting ( contrato de obra ) and international works procurement practice.",
+    "type": "composite"
+  },
+  "cx:a7fd1b2a9004": {
+    "parent": "h2",
+    "sentence": "Want to see Leo in action?",
+    "type": "composite"
+  },
+  "cx:ae1ec932aa8b": {
+    "parent": "span",
+    "sentence": "60% on completion €620.55",
+    "type": "composite"
+  },
+  "cx:c588f773d173": {
+    "parent": "li",
+    "sentence": "Material substitutions — specified product unavailable, alternative proposed",
+    "type": "composite"
+  },
+  "cx:c5bd71e4c587": {
+    "parent": "li",
+    "sentence": "Scope clarifications — original scope was ambiguous, both sides agree on interpretation",
+    "type": "composite"
+  },
+  "cx:e3a6facd962c": {
+    "parent": "span",
+    "sentence": "40% upfront €413.70",
+    "type": "composite"
+  },
+  "cx:e666cdb8b2ee": {
+    "parent": "li",
+    "sentence": "The milestone schedule and payment terms are understood",
+    "type": "composite"
+  },
+  "cx:e79431b2647b": {
+    "parent": "div",
+    "sentence": "Megaflo cylinder & fittings · Paid from escrow · 12 Mar",
+    "type": "composite"
+  },
+  "cx:eb011305ed02": {
+    "parent": "li",
+    "sentence": "Unforeseen site conditions — hidden damp, unexpected structural issues, asbestos, outdated wiring",
+    "type": "composite"
+  },
+  "cx:f41c7081596a": {
+    "parent": "h1",
+    "sentence": "The Standard Leo Construction Agreement",
+    "type": "composite"
+  },
+  "d0a8cc7f0a62": {
+    "parent": "figcaption",
+    "type": "text"
+  },
+  "d1489f2245d5": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "d24a4aedc764": {
+    "parent": "td",
+    "type": "text"
+  },
+  "d4632b91b300": {
+    "parent": "strong",
+    "sentence": "Both parties agree to handle changes through variation orders , not verbal side-deals",
+    "type": "text"
+  },
+  "d59174a7e300": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "d5a2bae8ab50": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "d604ecc13dac": {
+    "parent": "p",
+    "sentence": "The homeowner is never obligated to accept a variation. If they decline, the professional completes the original scope as agreed. No verbal side-deals, no “we’ll sort it out later.” Everything is written, timestamped, and traceable.",
+    "type": "text"
+  },
+  "d80ed9c45078": {
+    "parent": "strong",
+    "sentence": "The scope of work accurately describes what will be built, repaired, or installed",
+    "type": "text"
+  },
+  "d84c355f0f76": {
+    "parent": "div",
+    "type": "text"
+  },
+  "d8cefa64ee7b": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "d9f1c25aec2d": {
+    "parent": "em",
+    "sentence": "Yes. When both sides accept a scope on Leo, it creates a binding contract under Spanish law ( Código Civil , articles 1544–1600, on contrato de obra ). The electronic acceptance, timestamped and linked to both parties’ identities, has the same legal force as a signed paper document under Spain’s Ley 34/2002 on electronic commerce.",
+    "type": "text"
+  },
+  "db633bd082b0": {
+    "parent": "strong",
+    "sentence": "The itemised pricing (unit rates × quantities) is accepted",
+    "type": "text"
+  },
+  "dbcf38925765": {
+    "parent": "div",
+    "type": "text"
+  },
+  "dbd01f96e348": {
+    "parent": "p",
+    "type": "text"
+  },
+  "dc00900ad8d8": {
+    "parent": "p",
+    "sentence": "When the contract includes a materials advance, the homeowner can opt for a Leo materials card instead of a direct bank transfer. This is a prepaid card issued to the professional, loaded with the materials budget from the escrowed funds.",
+    "type": "text"
+  },
+  "e0ca20204eae": {
+    "parent": "a",
+    "type": "text"
+  },
+  "e2e5d871a4e2": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "e3fd1775b603": {
+    "parent": "figcaption",
+    "type": "text"
+  },
+  "e590924826af": {
+    "parent": "div",
+    "type": "text"
+  },
+  "e5b8d5aef816": {
+    "parent": "p",
+    "type": "text"
+  },
+  "e60aed9205e4": {
+    "parent": "p",
+    "sentence": "A structured description of what is to be built . Not a vague paragraph — an itemised list of work packages, each with:",
+    "type": "text"
+  },
+  "e642b48ae4e6": {
+    "parent": "a",
+    "type": "text"
+  },
+  "e6ee50dd3fab": {
+    "parent": "strong",
+    "sentence": "Leo is neither the contractor nor the client. We are the platform that structures the agreement and holds the payment infrastructure. The contract is between you and the person doing (or commissioning) the work .",
+    "type": "text"
+  },
+  "e769483bea58": {
+    "parent": "strong",
+    "sentence": "Why this matters: A clear, written agreement protects both sides. The homeowner knows exactly what they are paying for. The professional knows exactly what they are expected to deliver. No ambiguity, no “I thought you meant…”",
+    "type": "text"
+  },
+  "e78402d960f0": {
+    "parent": "button",
+    "type": "text"
+  },
+  "e956a9404b46": {
+    "parent": "a",
+    "type": "text"
+  },
+  "e97bb952e912": {
+    "parent": "div",
+    "sentence": "Leo’s T&Cs govern your relationship with the Leo platform — how you use the website, data protection, Leo’s role and liability. The construction agreement governs the relationship between the homeowner and the professional — what gets built, how much it costs, and what happens if things go wrong. They are separate documents that work together.",
+    "type": "text"
+  },
+  "e9d4a6f66604": {
+    "parent": "p",
+    "type": "text"
+  },
+  "ea85700dd184": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "ec5d7a2f1723": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "ecb8e555fd3e": {
+    "parent": "em",
+    "sentence": "Leo prepares a complete submission to the relevant Junta Arbitral de Consumo under Real Decreto 713/2024: pre-filled form, signed scope, aparejador report, payment records, and communication history. Every Leo contractor commits to this arbitration system when they join the platform. Every Leo contractor agrees to participate in arbitration when they join the platform. If they refuse to participate when invited by the Junta, that refusal is documented as a breach of the Leo service agreement and strengthens the homeowner’s case in subsequent court proceedings. The arbitration laudo (award) has the same legal weight as a court judgment and is enforceable against the contractor’s assets.",
+    "type": "text"
+  },
+  "ed08639b4c5e": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "eda394acb4ca": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "ede8385ad154": {
+    "parent": "p",
+    "type": "text"
+  },
+  "ee591f130178": {
+    "parent": "h4",
+    "type": "text"
+  },
+  "ef35f5c60027": {
+    "parent": "td",
+    "type": "text"
+  },
+  "ef6ad0616a4c": {
+    "parent": "div",
+    "type": "text"
+  },
+  "efdf4de6ba27": {
+    "parent": "p",
+    "sentence": "In standard Spanish construction practice, a variation order ( modificado de obra ) is simply an amendment to the contract . The original agreement stays in force — the variation adds, removes, or changes specific items.",
+    "type": "text"
+  },
+  "effc6e79d7d6": {
+    "parent": "strong",
+    "sentence": "The contract is the referee. Because every Leo job has a clear scope, itemised pricing, photo evidence, and a written variation trail, disputes are resolved on facts — not on who argues louder. See the full dispute process →",
+    "type": "text"
+  },
+  "effe4c1facd4": {
+    "parent": "h2",
+    "type": "text"
+  },
+  "f00a5a687990": {
+    "parent": "div",
+    "type": "text"
+  },
+  "f02122c7cd4c": {
+    "parent": "td",
+    "type": "text"
+  },
+  "f06bc7cb7c84": {
+    "parent": "p",
+    "sentence": "The contract total is the sum of all line items, plus the Leo platform fee (5%, paid by the homeowner). Payments are tied to milestones — not calendar dates. Money moves when work is done, not when time passes.",
+    "type": "text"
+  },
+  "f19432e978b9": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "f2795703eaf0": {
+    "parent": "p",
+    "sentence": "Leo prepares a complete submission to the relevant Junta Arbitral de Consumo under Real Decreto 713/2024: pre-filled form, signed scope, aparejador report, payment records, and communication history. Every Leo contractor commits to this arbitration system when they join the platform. Every Leo contractor agrees to participate in arbitration when they join the platform. If they refuse to participate when invited by the Junta, that refusal is documented as a breach of the Leo service agreement and strengthens the homeowner’s case in subsequent court proceedings. The arbitration laudo (award) has the same legal weight as a court judgment and is enforceable against the contractor’s assets.",
+    "type": "text"
+  },
+  "f31bc360c03b": {
+    "parent": "h3",
+    "type": "text"
+  },
+  "f3454d5b801a": {
+    "parent": "li",
+    "type": "text"
+  },
+  "f3f22a8e6b8d": {
+    "parent": "span",
+    "sentence": "This page explains the agreement structure — not Leo’s platform T&Cs. Read the T&Cs →",
+    "type": "text"
+  },
+  "f424296b3e53": {
+    "parent": "div",
+    "type": "text"
+  },
+  "f520d1db46d1": {
+    "parent": "em",
+    "sentence": "Want to see Leo in action?",
+    "type": "text"
+  },
+  "f562e475177f": {
+    "parent": "div",
+    "type": "text"
+  },
+  "f5dd62bc8065": {
+    "parent": "li",
+    "type": "text"
+  },
+  "f6725f3af08a": {
+    "parent": "div",
+    "type": "text"
+  },
+  "f68f3b519d94": {
+    "parent": "p",
+    "type": "text"
+  },
+  "f7682060b288": {
+    "parent": "div",
+    "sentence": "Yes. When both sides accept a scope on Leo, it creates a binding contract under Spanish law ( Código Civil , articles 1544–1600, on contrato de obra ). The electronic acceptance, timestamped and linked to both parties’ identities, has the same legal force as a signed paper document under Spain’s Ley 34/2002 on electronic commerce.",
+    "type": "text"
+  },
+  "f8b792dd25ac": {
+    "parent": "li",
+    "type": "text"
+  },
+  "f8f57bef3f9a": {
+    "parent": "strong",
+    "sentence": "The default is designed to be enough. The standard Leo agreement is based on Spanish construction law, international works procurement norms (FIDIC-lite for residential), and our domain expertise. Most homeowners and professionals will never need their own lawyers. But the option is there.",
+    "type": "text"
+  },
+  "fb9bb149fd9d": {
+    "parent": "p",
+    "sentence": "For money owed that the contractor disputes or ignores, the procedimiento monitorio allows a homeowner to file a petition at the local Juzgado de Primera Instancia without a lawyer, regardless of the claim amount. If the contractor does not respond within 20 days, the court issues an automatic enforcement decree — a judgment debt enforceable against their bank accounts and assets. Leo prepares the pre-filled petition from the case file.",
+    "type": "text"
+  },
+  "fbd1f2cdae8a": {
+    "parent": "p",
+    "sentence": "In standard Spanish construction practice, a variation order ( modificado de obra ) is simply an amendment to the contract . The original agreement stays in force — the variation adds, removes, or changes specific items.",
+    "type": "text"
+  },
+  "fbe5627ece16": {
+    "parent": "li",
+    "type": "text"
+  },
+  "fc4e84255a41": {
+    "parent": "th",
+    "type": "text"
+  },
+  "fd64e81bf74d": {
+    "parent": "div",
+    "type": "text"
+  },
+  "fd6f779cc9e1": {
+    "parent": "button",
+    "type": "text"
+  },
+  "fd86d942a93c": {
+    "parent": "div",
+    "type": "text"
+  },
+  "fdde9d78cfa0": {
+    "parent": "p",
+    "sentence": "A structured description of what is to be built . Not a vague paragraph — an itemised list of work packages, each with:",
+    "type": "text"
+  },
+  "fe23f6cec111": {
+    "parent": "a",
+    "sentence": "© 2026 Leo Casa Limited · Company No. 16259714 · Home · Terms & Conditions · Construction Agreement · How we vet contractors · How disputes work",
+    "type": "text"
+  }
+}

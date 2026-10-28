@@ -1,0 +1,14 @@
+{
+  "name": "renovation-marketplace",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev": "pnpm --filter @scope/web dev --host 127.0.0.1 --port 18260",
+    "build": "pnpm --filter @scope/web build",
+    "check": "pnpm --filter @scope/web exec tsc -b"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

@@ -1,0 +1,632 @@
+{
+  "source_commit": "dbac69422281b857b9425ee01bb1876ddbdb7c2c",
+  "originals_changed": false,
+  "change_descriptions": "Broad categories; original literals and operational upload filenames are excluded.",
+  "changed_original_files": [
+    {
+      "file": "apps/scope/product/backend/agent/ephemeral_context.py",
+      "original_sha256": "4565586ac991a0e0d8ad87cf496621200fb7039031d6bcfd77aa7000920af106",
+      "released_sha256": "c1cc8639cf8b9c72a42afddde7e7a2abccfa6348adfccd6f27c74ec5c23a634d",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/backend/agent/peter_notify.py",
+      "original_sha256": "4a1034593b7d9d49366d4913080c0683108fd7d0789ed67515347c1149cb5913",
+      "released_sha256": "991655e362c29f2791292c2a69c4bf2e14d655ccfead21e876d02a4f96be8d71",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/backend/agent/tools/admin.py",
+      "original_sha256": "d2025308a73ed451063b7b0186a1c288ae0b0fcf12362fcfc1b519ff1400720b",
+      "released_sha256": "deec01667da0be84d3e85cc3833a189afee12a489f7b370b6482b7a492ddbcef",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/backend/agent/tools/delivery.py",
+      "original_sha256": "8be1f04b10abd87e889347fde3dde3ee37308ae82447b5ccee1b70b71779e277",
+      "released_sha256": "b83d964dc1a442662768ef88309e812c2ad619dd18908365ffcac6617e155b3c",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/backend/agent/tools/outreach.py",
+      "original_sha256": "0a9c52580c83b01b2c95f66d6da1717185be45958b284d3609432de5a82fcf9d",
+      "released_sha256": "37f767a90cd38e21a87de0631f89a869c551a094c6008377a6c4a51a8d4671a0",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/backend/agent/tools/user_flow.py",
+      "original_sha256": "19f330ac9b40832eb115594b9ac01933bd59e8bcb5d0cc3b5b540f6e2742c9ce",
+      "released_sha256": "39caa105f47d5f9a789a1b9dd7554e1cfb8b8ae7559a6933790a024a9bd8b9f6",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/backend/config.py",
+      "original_sha256": "4a9d16f8812354aefb9cbd938aceb8aa61b19f1cc333d73ddf884b4571617aac",
+      "released_sha256": "298475b3de87719c789a3826e6d63646552186492dd68ddc89221f34de0484d6",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/backend/constants.py",
+      "original_sha256": "82ba17bcb27136b6f78e7d2f4643ff3b7b1ec4ec54c559e2a66fbdc583d0256a",
+      "released_sha256": "3cf49fb34de5c278da4e2c7a4a4661b48694935cd5ae87c880b4819629a6d964",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/backend/main.py",
+      "original_sha256": "1043c53d76cbe8e74a3e1e9d75d86015f7a01d5ea5cd5a6f8b7fbb675d164806",
+      "released_sha256": "b03c2323046da7ef00f595c765718e47e3ed305a8746324d015347c633afccf0",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/backend/routes/chat.py",
+      "original_sha256": "94bab5e9a3d70b73bd9d27564067dad0aecbf84066a9c826bb1aabb41b66a5df",
+      "released_sha256": "6b1bd1fdbd460e4f673be7410e7284bf98590ef9333258530e9d756c31f4fab6",
+      "reason": "Authenticated participant or bounds guard; recipient defaults where applicable"
+    },
+    {
+      "file": "apps/scope/product/backend/routes/chatwoot.py",
+      "original_sha256": "3ba447a847169ca38ad021220f66e11c0a84998b03b11eb38e32d13bcf2d16bd",
+      "released_sha256": "17ab32125a0936ef7f38648aaf640977e415f18707aecbb41ce03a169bad1b9c",
+      "reason": "Authenticated participant or bounds guard; recipient defaults where applicable"
+    },
+    {
+      "file": "apps/scope/product/backend/routes/documents.py",
+      "original_sha256": "d02c3d557dc14475293838d7ffba25d44bcd2a158482c201955ca7134a97c2db",
+      "released_sha256": "72f63c856483240584ea02477c8285f04975cc5fa519dbb54c57946575b7b89e",
+      "reason": "Authenticated participant or bounds guard; recipient defaults where applicable"
+    },
+    {
+      "file": "apps/scope/product/backend/routes/job_inbox.py",
+      "original_sha256": "f0043aa95e552523d0e2c4920a90827278c3da21f3359d1203d432f5a503feec",
+      "released_sha256": "3ea5f671906e0110be915f6840a50f210ba32ce041f09523145a9a69005de524",
+      "reason": "Authenticated participant or bounds guard; recipient defaults where applicable"
+    },
+    {
+      "file": "apps/scope/product/backend/routes/marketplace.py",
+      "original_sha256": "457ad3e5cf541108618d8157abf14f49615167cffdb5267d2abe83e954520aeb",
+      "released_sha256": "24234c85eab410ad7d75578c6ebfa41e2520ee88d109d0db2a64480d829c7eca",
+      "reason": "Authenticated participant or bounds guard; recipient defaults where applicable"
+    },
+    {
+      "file": "apps/scope/product/backend/routes/messages.py",
+      "original_sha256": "8d800a1190b5187c690c0b1a8104cea2e8efc460d140bdf7e4bfccb6937b18f9",
+      "released_sha256": "362d0dfd8599731db24c6085b3c76822e9331664d3cc4bd71eee695b63e28683",
+      "reason": "Authenticated participant or bounds guard; recipient defaults where applicable"
+    },
+    {
+      "file": "apps/scope/product/backend/routes/meta_whatsapp.py",
+      "original_sha256": "5d45707bda4812e6ff3db83e8a3c1dbb0a9c94e0384eadf7eb68a62e0df168e5",
+      "released_sha256": "27450832b65bd24220e38820b8bca7e1ee1748a47311ddcae2164dbe06959e4f",
+      "reason": "Authenticated participant or bounds guard; recipient defaults where applicable"
+    },
+    {
+      "file": "apps/scope/product/backend/routes/milestone.py",
+      "original_sha256": "73f8c6b1e7a4c17dd5a721f2c296c8615a7c4e5e21e41082505614460106a1e4",
+      "released_sha256": "e75b8e282f6ad41e85c7b2e6ce804805f271a61fc58ad9162233ed14fbfc9554",
+      "reason": "Authenticated participant or bounds guard; recipient defaults where applicable"
+    },
+    {
+      "file": "apps/scope/product/backend/routes/milestones.py",
+      "original_sha256": "056c13bcd0dfc2dcd63725ecabf35e2ebdc7f8c6a78854bd7dc1d426b07f849f",
+      "released_sha256": "449e611c4e5d7c9e284063dd28c514df28dc6faddd0a196e742a1c7102ea91ad",
+      "reason": "Authenticated participant or bounds guard; recipient defaults where applicable"
+    },
+    {
+      "file": "apps/scope/product/backend/routes/notifications.py",
+      "original_sha256": "d365e528c784298855690e3f683257e437868009d78c07bac7972214be654486",
+      "released_sha256": "e0dc5f2923e896ad1e27fe49cb6e8d4fd635c9b0bf8b45e2e3e38bb8d66ba4ca",
+      "reason": "Authenticated participant or bounds guard; recipient defaults where applicable"
+    },
+    {
+      "file": "apps/scope/product/backend/routes/pages.py",
+      "original_sha256": "931842cfe510dce6d4e7c9041934bb48f366961c80a0d92b15f7512a1fcc4529",
+      "released_sha256": "6ec5ba2f57c7aa68e651f4a03aa9a6b71695c8cce02f94db6081e780514dfbee",
+      "reason": "Authenticated participant or bounds guard; recipient defaults where applicable"
+    },
+    {
+      "file": "apps/scope/product/backend/routes/payment.py",
+      "original_sha256": "14d4145a0cd3effe2545878116ba9a07fa9cd8189005ce7d0ee5bf44ae0132b4",
+      "released_sha256": "9a98034f570404e0be35b3402a4fb7cac50b943fcf74e488363aebc54a623f73",
+      "reason": "Authenticated participant or bounds guard; recipient defaults where applicable"
+    },
+    {
+      "file": "apps/scope/product/backend/routes/profile_import.py",
+      "original_sha256": "6372e6bba77a732940a5a23efb3482671d9e5825b19ac817cc0df2852c55b5ec",
+      "released_sha256": "5eddc320d381735689ff30002eff1af9fe2d514ff3be3836189f30d1776ed881",
+      "reason": "Authenticated participant or bounds guard; recipient defaults where applicable"
+    },
+    {
+      "file": "apps/scope/product/backend/routes/projects.py",
+      "original_sha256": "b2645c026bc5c8a95f6a8f53f460d59dd1420d3f98734329af1d44596594e9c7",
+      "released_sha256": "71285bbcd6d4308a919376b4385e06970494cdbc60bb96903637a235c22bc914",
+      "reason": "Authenticated participant or bounds guard; recipient defaults where applicable"
+    },
+    {
+      "file": "apps/scope/product/backend/routes/resend_inbound.py",
+      "original_sha256": "71aa486c5d6d4244756eb1fd8263dcd9ff72b90cc63d11996a245f15c01de454",
+      "released_sha256": "bd78afa650ceb81f9031af127ae1acd139380839f00ca157230f8c2113c4efb8",
+      "reason": "Authenticated participant or bounds guard; recipient defaults where applicable"
+    },
+    {
+      "file": "apps/scope/product/backend/routes/stripe_connect.py",
+      "original_sha256": "060536c7cfc4c1c2f94f1a9e06dddd050365a61dc655bc9985c56efd21d85e1f",
+      "released_sha256": "a1c46fbd5c4dfdab8b5fa03dc5865bb1a004ed45f890bb23821b8e034a3510ec",
+      "reason": "Authenticated participant or bounds guard; recipient defaults where applicable"
+    },
+    {
+      "file": "apps/scope/product/backend/tests/documents/conftest.py",
+      "original_sha256": "6ac3cec5e3212fb6c0e476d2ec95a5213f5a810c43c8f01588c63e0efc91d4dd",
+      "released_sha256": "dd46a08e1329f5a019285b076711f4bdf45472573da21b31347f02e085b6c5f3",
+      "reason": "Rename existing synthetic quote-token fixture"
+    },
+    {
+      "file": "apps/scope/product/backend/tests/documents/test_payloads.py",
+      "original_sha256": "c6762c0c9ae79d4c18ac000ddc51933268c2ff5cfb4a78a5c9d1afa40aa464e4",
+      "released_sha256": "05ca641f1c0be5e9ef2bcaebdb11ea5e43b0d8cbf9d7b1028cb620a2009cf5c5",
+      "reason": "Rename existing synthetic quote-token fixture"
+    },
+    {
+      "file": "apps/scope/product/backend/tests/records/conftest.py",
+      "original_sha256": "2e574478142e5f30e71070a70e2eb19c15d20ec1ba49444a59591148ea14b68b",
+      "released_sha256": "bf43497245420393c7fbf5c7e62d91c725f46d340dbff4a65f7d9665a47ac0fb",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/backend/tests/records/test_conversations.py",
+      "original_sha256": "3a045dad9d104d8dcc467ace229d4cf51bb06858fcb9b3f9326203fa7dd4440e",
+      "released_sha256": "a7b5b9cba3a36c921673f8255b89a497dd82f602f7f824b6d4f64472dbe076f1",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/backend/tests/records/test_dossier.py",
+      "original_sha256": "7cba636d23c77029879f05011e8160357dcdead2a3403bdcb874a8e9fd156815",
+      "released_sha256": "716f58d475e07515c6bec7c5659970f3602ea1e6198520e8bc8e2c2b89427005",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/backend/tests/records/test_leads.py",
+      "original_sha256": "6e28854b5fe54aa5dfebae64c8502d3c0bea2c434850a89070eea9a517d27c75",
+      "released_sha256": "124702f47019da4e0d2c3fc59dd787f4e51cd73c73b31c35f79be6ad64a75d4f",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/backend/tests/records/test_proposals.py",
+      "original_sha256": "bc88b3c094eb8265588faf470c0885932ece439b0fb1535529f74a0c7bea8378",
+      "released_sha256": "a6b1455f4d09c1ab339d6b84ea4c3f7a8ed48debd190d20d02b847080c44d542",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/integrations/didit/README.md",
+      "original_sha256": "d05ae2d4e989b2b149b82fa90091ec30d12ca6e00cfef33bcc35aac634a9b410",
+      "released_sha256": "97779644aeb2367c742b6c1bd72d4fe7d8b0777e1580db3ce18268fb6d839c17",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/integrations/supabase-auth/README.md",
+      "original_sha256": "532baaa6c787e6d750a5faecbe1707d6b9739c0a253a98afd5feee781796441e",
+      "released_sha256": "066523f29293bd528f3992dc6ff36fec69c1f6ad631bbb6607721836399eca7f",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/agreement-es.html",
+      "original_sha256": "e2b872869c6e8c114f92bbc629744ac146982f65c1f86939b813eddb3a605930",
+      "released_sha256": "93aaf634180b1fa6ca5aac2d58726abd432b53813f280d8494e08b9c6f57e8f4",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/agreement.html",
+      "original_sha256": "d9fd47d0ccd16dc79bd5b385f8210d34b2352f10ef1682e968395686595cef24",
+      "released_sha256": "9e8c63b667853d8b315aa5f5faf7a18da1549d7a999588f8c7242ec5fec6725f",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/brand-effects.css",
+      "original_sha256": "d9fde958cad79bcbbe02e9066d19a60aa5ad4f43c753e14bbbce78e866027750",
+      "released_sha256": "a69543b07483088305a85f224c040fe322b1f1afc45f6da8dc8a97f43af645ad",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/css/leo-landing-hero.css",
+      "original_sha256": "1f05aa15b8e59868075be9b9fa832193040849b0d152a74262a8b17998b9f8a6",
+      "released_sha256": "87f2acd41becadbbb0479a7a31e785b8641e380e1cb06a4f80fa71bb3684bbff",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/homeowners-es.html",
+      "original_sha256": "238aaf3c27b848862fab0f0a00f463f92133efe03fc1c19c9b44e161dee5a112",
+      "released_sha256": "371e79902e5131f4ccad51c3b99687410e4f630358babe2f52f0d6f3c143a825",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/homeowners.html",
+      "original_sha256": "db95fbaadb1450b8b639a288b89048ec2a4e75a0ba94b366f70f007df66bb425",
+      "released_sha256": "6cc138bb4b686fb621e4ede9da1eb9ea5a7034de7292a04a59c157925654037e",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/how-disputes-work-es.html",
+      "original_sha256": "63b12f8150b938c3633fb8264a95f43f038b95d6f6a07cb528eb792c2400aa10",
+      "released_sha256": "0a2fe37498f0b208fc3b7cb07bb1abe3168d67fef8ee50c2d818f63caea2810b",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/how-disputes-work.html",
+      "original_sha256": "9d4e941760199f0c13c2b97a00dc3f69362ce53c287de9ff6fd086670f154177",
+      "released_sha256": "a8e16b91edca2066e13cc3df8fbbc6b3984902378c60fefd7284ce48ad50dcd1",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/how-we-vet-es.html",
+      "original_sha256": "3bda9b466f67bec556312e461dc94a5810f7194577b1221e417bbbd5e40db523",
+      "released_sha256": "2956b3768fab58ea9cb6b6db24389dc1218efa6af8d7742e090947bfb6372791",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/how-we-vet.html",
+      "original_sha256": "673efd56d2f314a8b0b3c0b098184aa8ac4e51a6f2dc22f73ed0f130bdcf58d4",
+      "released_sha256": "281cdf086a9b72cbec827eff343b1990e48afe557166680ec6b0240dc17dc06a",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/i18n/homeowners.en.json",
+      "original_sha256": "688902c63ce2fa7d8f0f91983b70b0be0ccb963a2b2267476bab47bb8a4ead0c",
+      "released_sha256": "73522bc14599e8b5e8eb4beb610d6b827b7b9e73b543cf0e470b9fe97eea152f",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/i18n/homeowners.es.json",
+      "original_sha256": "0ab21cc066e43a071673b249ad524ed47b97cc24441fcc9794556963e5ade37a",
+      "released_sha256": "6159f36e12654b58fc1521347e6706e9affacc94c829389f43d530d1aa30e33f",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/i18n/professionals.context.json",
+      "original_sha256": "99290102c84e47ade1011eeafd0cf64cd20490e80bd0f3718b58fc08eff28486",
+      "released_sha256": "7b3b7618b9deab36507b3067aeaa10e7eefb952d53c8d81b4c3c3d0918c9b214",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/i18n/professionals.en.json",
+      "original_sha256": "f442faa8147722dedb45aebae705e2d5e072a674b2d4d8a14c766ab617b1d934",
+      "released_sha256": "6757a5b7ade8517683477868cc9a774039362f3872cc45a0f8d3f156633a6940",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/i18n/professionals.es.json",
+      "original_sha256": "2d2e36da10f9d89f793dc6084965a49a88c71f6c6abde9c878ac76de153b0360",
+      "released_sha256": "7ed4e489300e870ebb8d8c29fd1842966994e7fba9b7fc96fd700a83b7f4dffa",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/i18n/terms.context.json",
+      "original_sha256": "121669b731efc44c62baf8be3e5af997b0f7f8c46acb0cb83a1915b45e83cb26",
+      "released_sha256": "03ab86767c984ad97a39429fba92873db0b26ba4804f6d7228eb8cf59be6dce5",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/i18n/terms.en.json",
+      "original_sha256": "8012bc0e8f4816b6e160bee5a634698b60deedd592e713cc1953308c699f6fb5",
+      "released_sha256": "43a61a61b19e9db336e4c0598889b264b59513435d0f94d31f96d300ec6207e4",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/i18n/terms.es.json",
+      "original_sha256": "8cb8fcf0b0917104a25d435415253a4b4ce6e065e57ee97bf59e8fa6c203171a",
+      "released_sha256": "dbb9d8319947742f4a0d44a7921b1f81bf650c7daef431c503b0993e75aec861",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/professionals-es.html",
+      "original_sha256": "7dc14b1e947ec55cd8c1012d1f4cae57273dac6543a11029ef5e08db44b4fa79",
+      "released_sha256": "50398093f2949d64dd866df39bd5d77b2ca6192f4f442eac5f092c1d66615048",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/professionals.html",
+      "original_sha256": "c8c7f93f1e4470b04f81eca1ce13cd10f2dea791b9f46b8a14624e31ac4b96f5",
+      "released_sha256": "0d6bb3d8fd789fae738c57bdcfb55f471a5fcc7121f33ed42809ea88a2731a55",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories-es.html",
+      "original_sha256": "54447361a06987a496ea6c2aaefbf4635775a28c2c688ca31fc0671b5a352102",
+      "released_sha256": "82104830c8aa60848ae45d3ea4e96b4c71d3df60f8e54f52ffea8f2dba861ed9",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories.html",
+      "original_sha256": "59a09f3641ceebe08c12f5c6b7e372e41707a52a406defccca606f95aabb3d89",
+      "released_sha256": "d81d777110a74f95aacf73d77b0293dc05612d06365ef3ced9b63f2fafc57992",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/best-quoting-tools-contractors-2026-es.html",
+      "original_sha256": "d78077ba7e6286b68c94be0718ccbb817a1b4bbf9f25bd6397741b89fad5e085",
+      "released_sha256": "866f19bcf620d25f260995f9bcab1b7909f5c0aa7862cb4c8c8a5a720e3d3d63",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/best-quoting-tools-contractors-2026.html",
+      "original_sha256": "7aa5d6b9b57326f6661dabd605ae18dd43451b74542c458b547e45f25f41af19",
+      "released_sha256": "4f9e86ecc900bb53a69d3d784f6a857260bd7c12425ac2a2c707b4a8dfba54e8",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/can-ai-mediate-renovation-dispute-es.html",
+      "original_sha256": "6197ce9af4dce6b56aa5bece014c38601a056bb89c309556a445fcc772fdb2a7",
+      "released_sha256": "90116ed479ae58aa1f6cbdfdc4817a0d7d20cd1040cd5e3b245016aac6bdd34b",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/can-ai-mediate-renovation-dispute.html",
+      "original_sha256": "96b4d8b0f903e1bacc4b3b284d95c04fc59017304fc594c2338ae6fad06c38ab",
+      "released_sha256": "62a9825cee6299d6ab25719901a5e6de93eecaa1dfdb0801dd559914d47bf8f1",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/escrow-changes-everything-es.html",
+      "original_sha256": "433f34e8d642c00861ed8c0d3b9061a4e4de0e0fdb4a721ed8c6c929eabac95a",
+      "released_sha256": "77d98184b7773e265223b70034ecb74598ef839b4cf46d992429c262a5f6083a",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/escrow-changes-everything.html",
+      "original_sha256": "30356530b05d599cab0e3125127a727d04027aedbe3ca3e27cf57e87c6300722",
+      "released_sha256": "9514312aa68cc6b6ef7e1af0e5a2f32800c73fb22539c7ad677740e0ba58a589",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/hiring-contractor-trust-checklist-es.html",
+      "original_sha256": "ab0a6176ee9de46b8703ae217bcac16885157e051ec12a0ee13265be6db64e9d",
+      "released_sha256": "089495f8f814f34d9026b0a8a4106b7e05ec11e6a07b0c2874162a79e198ac08",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/hiring-contractor-trust-checklist.html",
+      "original_sha256": "7b6cf3c54a0c66dd4dd2a11019ae567502ebba8bc1e96b0609f65ae2824710ae",
+      "released_sha256": "aa3a983a64f131de974e9c21957b88b25ec92cbd332bcd340a4ea1443dcc9932",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/how-to-write-winning-quotes-es.html",
+      "original_sha256": "9da08e9303b6d7cd60ae124fec80d01ff1aab121263511859109ded30d0931b7",
+      "released_sha256": "83c54d8ecb5a41dd1847755300382027cf1046118d24c28f5fc001d7d70516d4",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/how-to-write-winning-quotes.html",
+      "original_sha256": "30d946b75ec4aa377977138085cbf3cace8a801cff5a3faa2d69666fdd22c38f",
+      "released_sha256": "574020aa761895d4a47e89dc25f0a0993a85d4653916d2aa1b348777fe502d8e",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/index.html",
+      "original_sha256": "59a09f3641ceebe08c12f5c6b7e372e41707a52a406defccca606f95aabb3d89",
+      "released_sha256": "d81d777110a74f95aacf73d77b0293dc05612d06365ef3ced9b63f2fafc57992",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/managing-expectations-mid-project-es.html",
+      "original_sha256": "9f01d2c459ad61d9dc035f01acaeadbf746e6d9fe615fc60f5080b9e6be1d748",
+      "released_sha256": "f9634ee2c2d4e40bbaa465d927aa8f2b513637767c340bc128ccbeeeac1d0f70",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/managing-expectations-mid-project.html",
+      "original_sha256": "835370ee84d1349addc5d797414bb514ae930b243f06165d08a8648657ecd07b",
+      "released_sha256": "0a54190793d266149445acd018eb8bfdd668da30018327f4c1648313f815778b",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/mediation-not-litigation-es.html",
+      "original_sha256": "5bfb7677be1e4135b29b4287ac86367e08464e7a80b846594870b918c4c52673",
+      "released_sha256": "da0b2e9ed54df49816fdf11d92975f5343e6e1cd58f83abfd8141d749dc6ea6d",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/mediation-not-litigation.html",
+      "original_sha256": "02d03e5a963ee1d61b01bc153a54e14c866f3d64cb99857639a0b406af19fa73",
+      "released_sha256": "51c4603da96fcecf7301c1a7bdfef72f4c370676ed1ed32d24e9c56d07d2e27e",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/renovation-disputes-what-to-do-es.html",
+      "original_sha256": "19811b199b760ec1fc26422f106587e7dd52427b059b4312a2ca087a8c3587df",
+      "released_sha256": "9651f07ca41300818b453e4f8c7dfa91234901d9b27e83b9b58d4a51e222e8bd",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/renovation-disputes-what-to-do.html",
+      "original_sha256": "94737f020af285c170544a0682124c02d61485366ba13e286c942706c542a68e",
+      "released_sha256": "63fb0f9d6a612d1987ef4a705af5920e7b6eb018d295cec80307f135127f7e8e",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/variation-orders-budget-killer-es.html",
+      "original_sha256": "f9308d92c94077edae4d6c6fb972b1c9b4abf71b8b6a7140f4e0aee552847ce0",
+      "released_sha256": "8e8516884db7e733413066e8e3c229a13ba01328c7b37f8972ba076950b11ab9",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/stories/variation-orders-budget-killer.html",
+      "original_sha256": "240f1e98d78730958f88a3c1f1f1deeb71c5e6d191e0dae0dde72720150d18ef",
+      "released_sha256": "fd9cb2a47c6cd4b8253bd00999f533a1e8fd80303ba9525dae1e07d4d4351607",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/terms-es.html",
+      "original_sha256": "d6cf4c68a0e2dd8629919586195fddbcbc389d6d184433d44b89601fc38b1e27",
+      "released_sha256": "91be362b1fd324dc88be7a8ebf8b8658bebe30b1812e3c835c75af8961e92024",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/public/terms.html",
+      "original_sha256": "5ab7fe8c7f6334c9d2ff7a3e38bfb69a2c8bc00b26bc86f87a4329368e975b50",
+      "released_sha256": "27edd1a06ab229c0d59b1971270ac3351e7506e3c0e7a35c7960bdef64568342",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/tests/e2e/lib/auth.ts",
+      "original_sha256": "a366c1a79d9856f4c703eb69cf61ffe11c5f6d305daebe2ad2b1114db30317d3",
+      "released_sha256": "04a652bfe82b0b1d525de8d8e61c469f5b4e0f3da4e78bbae805d5a13825130a",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/tests/e2e/lib/fixtures.ts",
+      "original_sha256": "cb6ba110d9552b80ddc227e6d926a1556875185a3bb9e1e7be4533a58878e870",
+      "released_sha256": "a59167a82e4fd776e3bf35c017e65e8e8a91245b8f95d536fb599b0f1ec56dff",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/tests/e2e/lib/setup.ts",
+      "original_sha256": "c099e1ff56df9e3f9cfc247bcc745645e4d15d6e5ea18a009da7c50e79f3881f",
+      "released_sha256": "ab5033ee04a4123eb2ff7f8bc6b1ad816e623c6cf1a31a7980c5ac006a03af5c",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/tests/e2e/variation-orders.spec.ts",
+      "original_sha256": "3a40d2d210142ac1a6b0e61bf621f09ef75fadca8803e944a3b71d70482ccc32",
+      "released_sha256": "e10e15c0115eed7df668238606be97b6a874f7f93e1188828b457334f7ecefa6",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/web/index.html",
+      "original_sha256": "230039f945ebac68dbccf9736aaea401e4ff344c47a41f1a41786ab763afd9fa",
+      "released_sha256": "be887c63ec0492d040b746a5495bfbe462c4c8ec306d573a41236bdba290515b",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/web/package.json",
+      "original_sha256": "53078f3ad7b5fff30be6a837ae93433d7d033269b60879bb041b0de3ee665570",
+      "released_sha256": "6675afdc16e86d4f79cfe5e37b162c47b7866f9d2e78ab08f1ffa4eb6b1b5415",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/web/src/components/LocationPickerModal.tsx",
+      "original_sha256": "32c7f3015c2e0409652e0073628b0dc12eb193f78079b507624dbf2b7736b758",
+      "released_sha256": "8ab8e93625ab986b349d75595ae944a6d7467faefa5d709ab9dcdf324923f488",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/web/src/components/chat/ActionBar.tsx",
+      "original_sha256": "7232f69f7c419d2ced315425249c8255690fd2c1a545200ec700a5b87b82dd97",
+      "released_sha256": "54bc9f1368e774771ef6480f42c91b9568f933caa5948b271d7e0de7299404bb",
+      "reason": "Use existing ghost/icon button variant so preview icon remains visible"
+    },
+    {
+      "file": "apps/scope/product/web/src/components/dashboard/SubmitProofSheet.tsx",
+      "original_sha256": "57049c4d0b6a707ea00aff63b39d4484e14184f1637c59394f29a8eab61b572c",
+      "released_sha256": "8908cdf3a19d33fefa764591a1f39e06468d2388f30337bd92f36236c3fb0d04",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/web/src/data.ts",
+      "original_sha256": "bbe070e353908bb308b49c4cfc057b862a8f53ecc081fe6987f6e55e2777c022",
+      "released_sha256": "0f7dd1a4d83ed03b8efe4ec6f36145cf74816ba6cdf95f187af8f96071410719",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/web/src/index.css",
+      "original_sha256": "0e2ed2b212ee15bac3e1b86877b595aad52d75e02ed7fb45404af0a4e7b05feb",
+      "released_sha256": "7a9848901e077fa0593447106ce803de695d4a65a073780526478d6b0b7f9c5e",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/web/src/lib/api.ts",
+      "original_sha256": "c95005d1abad14aab8dbbc98bca582198b705b3e568d7ed703ed30640dede00d",
+      "released_sha256": "d29436feae801e08bf79e814c915c3a03d7b3d0507183f0869fbebb01e4130db",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/web/src/lib/supabase.ts",
+      "original_sha256": "365857ab116a77a108e3855c50d0a716a76935a4cdff809fc78aa53c1317b218",
+      "released_sha256": "5b54b2bac741733f43d9c660cd1988b75d20f33a8bcac663048e50d4e6bbf96e",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/web/src/pages/AuthCallback.tsx",
+      "original_sha256": "519d4a5b5da4ad3247d0ebe6085f6173529c682f41bc3cee4b0ed4757af07dc6",
+      "released_sha256": "5d17bc6f56b7e1a5310524eee4ba90edd1e2a0f52eeedb2537d60cb2229c332a",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/web/src/pages/ComponentLibrary.tsx",
+      "original_sha256": "4f537928fa7ed3157c1c9ef52eb4780667122d94290aada43a4b26b0a1f694c1",
+      "released_sha256": "d9c341cbb79476fb116afbcf8a169519e7e656d8f0c22d0801a73c02ca8b9b40",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/web/src/pages/FirstQuote.tsx",
+      "original_sha256": "d407f0a86e071611a5badb8bfd7182ca991c57ca9aea3e1be5d7de1730c19948",
+      "released_sha256": "08cab7c3bc45b4245795b578257a5ec5ec1351b7d5f8a68fc5e39770d2e8d5f7",
+      "reason": "Preserve materials/IVA merge and use existing icon-button variant"
+    },
+    {
+      "file": "apps/scope/product/web/src/pages/SandboxDashboard.tsx",
+      "original_sha256": "64ef5507a925b28969dfe2768a00877034c119418e7098c97765b41dcaaad757",
+      "released_sha256": "c7492a7156aba4f586282a41f4b8c11115a9ef01873faade1dab4123fb4496f7",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "apps/scope/product/web/src/reel/scripts/approve-release.ts",
+      "original_sha256": "ca83cc23e49c65891f9f83f8ff041ea4e69d0f67701734b76303c60039adaad4",
+      "released_sha256": "7837d89c54339096f92ffe8ea9d719e4a52b82761b2d18acbb13252baaff7f99",
+      "reason": "Authored fictional attachment replaces unknown-rights media"
+    },
+    {
+      "file": "packages/brand/src/brand/effects.css",
+      "original_sha256": "d9fde958cad79bcbbe02e9066d19a60aa5ad4f43c753e14bbbce78e866027750",
+      "released_sha256": "a69543b07483088305a85f224c040fe322b1f1afc45f6da8dc8a97f43af645ad",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "packages/core/src/core/phone.py",
+      "original_sha256": "4b71f63472a1ba9d482a92196f64a5f0537a0fca3b5bf42c89bbd1262548314a",
+      "released_sha256": "14efb8943f44b286a1bd944b5828ad1ce47fd9eb77bc72fef9c1cc36e205492f",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "packages/core/tests/test_phone.py",
+      "original_sha256": "675fdf8adc9d06d9d80e942340a6711446fdf06bc8c4a13086198969b136bbb4",
+      "released_sha256": "cf550c7476fd8f73975b78c5ba0e39c9366a52ad6deec8f11f08dca1fdc454ee",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "packages/payments/tests/test_public_api.py",
+      "original_sha256": "f1fc89ea884bf550c173220f6d3b6257770f26af2f385ec926babcef3fe8a808",
+      "released_sha256": "d9a55e274294a776813b45bc12c556be7bf8a6a41b2a7a838787395cd23575fc",
+      "reason": "Align export assertion with existing payment API"
+    },
+    {
+      "file": "packages/ui/package.json",
+      "original_sha256": "1fa08d9793d23e59470ff5b60536d066e55eda05c5f05d12abc13bb2d66de82a",
+      "released_sha256": "08ccf3eff46186d5c945e402648a708fb8063cec4694c50255cccec84233739d",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "packages/ui/src/ChatBubbles.tsx",
+      "original_sha256": "18315856470929e0ff52f121285b7d48c997572f8a91349c68d5d0a3844a6759",
+      "released_sha256": "568127db69c2c390b807e54126b6e2ba90eca248c99dc6d6e366bbe6df237b09",
+      "reason": "Sanitize rendered markdown HTML"
+    },
+    {
+      "file": "packages/ui/src/MaterialsCard.tsx",
+      "original_sha256": "97d0ac9cbca4502c8da9bb724ee0617505f7f44539d69716f9ad90cbfacf812d",
+      "released_sha256": "6863e6da765f8c7720f567dd04a3d30e9987327ba43b0c4ea62632e29876ac53",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "packages/ui/src/MilestoneList.tsx",
+      "original_sha256": "542c539274a65c98e40a9205edb0e2997e451983eb14bf7ff8479479344e3c94",
+      "released_sha256": "503f022aa212c32f6a65be8196d0b6eaa244f3d9135586057516ce52f583cfa6",
+      "reason": "Recipient configuration, privacy or source portability adaptation"
+    },
+    {
+      "file": "packages/ui/src/QuoteCanvas.tsx",
+      "original_sha256": "adad5683a587285236d06b332521bf597d8de2f83177a4492097f01397bf714b",
+      "released_sha256": "65d680f78595e3345debf3f9b45d39153c53a29a8cd3d5e321e124984346b97d",
+      "reason": "Compatibility restoration of original author source"
+    }
+  ],
+  "omissions": "provenance/asset-omissions.json; operational categories in preparation-status.json"
+}

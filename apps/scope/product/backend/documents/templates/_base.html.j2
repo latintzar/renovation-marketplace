@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}Leo Scope{% endblock %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  /* Leo brand tokens — self-contained for WeasyPrint PDF rendering */
+  :root {
+    --cream:    #FAF8F4;
+    --cream-dk: #F0EBE3;
+    --ink:      #1C1917;
+    --stone:    #57534E;
+    --muted:    #A8A29E;
+    --border:   #E7E1D8;
+    --terra:    #DA654D;
+    --teal:     #115E59;
+    --card:     #FFFFFF;
+  }
+  @page {
+    margin: 2.5cm 2cm;
+    @top-right {
+      content: "Leo Scope";
+      font-size: 9pt;
+      color: var(--muted);
+      font-family: 'Source Sans 3', system-ui, sans-serif;
+    }
+    @bottom-center {
+      content: "Página " counter(page) " de " counter(pages);
+      font-size: 8pt;
+      color: var(--muted);
+      font-family: 'Source Sans 3', system-ui, sans-serif;
+    }
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Source Sans 3', Georgia, serif;
+    font-size: 11pt;
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.6;
+    padding: 24px 20px;
+  }
+
+  @media print {
+    body { padding: 0; }
+  }
+
+  .doc-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16pt;
+    border-bottom: 2pt solid var(--ink);
+    margin-bottom: 24pt;
+  }
+
+  .logo-text {
+    font-size: 20pt;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--ink);
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .doc-meta {
+    text-align: right;
+    font-size: 9pt;
+    color: var(--stone);
+    line-height: 1.4;
+  }
+
+  h1 { font-size: 18pt; font-weight: 700; margin-bottom: 8pt; }
+  h2 { font-size: 13pt; font-weight: 600; margin-bottom: 6pt; margin-top: 20pt; color: var(--ink); border-bottom: 1pt solid var(--border); padding-bottom: 4pt; }
+  h3 { font-size: 11pt; font-weight: 600; margin-bottom: 4pt; margin-top: 14pt; }
+  p { margin-bottom: 8pt; }
+
+  table { width: 100%; border-collapse: collapse; margin: 12pt 0; font-size: 10pt; }
+  th { background: var(--ink); color: var(--cream); padding: 6pt 10pt; text-align: left; font-weight: 600; }
+  td { padding: 6pt 10pt; border-bottom: 1pt solid var(--border); }
+  tr:last-child td { border-bottom: none; }
+  .amount { text-align: right; font-weight: 600; }
+  .total-row td { font-weight: 700; background: var(--cream-dk); }
+
+  .section { margin-bottom: 20pt; break-inside: avoid; }
+  .parties-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16pt; margin: 12pt 0; }
+  .party-card { padding: 10pt; background: var(--card); border: 1pt solid var(--border); border-radius: var(--r-xs, 4px); }
+  .party-label { font-size: 8pt; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 4pt; }
+  .party-name { font-weight: 700; font-size: 12pt; }
+  .party-detail { font-size: 9pt; color: var(--stone); }
+
+  .escrow-box { background: #F0FDF4; border: 1.5pt solid #16A34A; border-radius: 4pt; padding: 10pt; margin: 12pt 0; font-size: 10pt; }
+  .escrow-box strong { color: #15803D; }
+
+  .signature-block { break-before: page; margin-top: 32pt; padding-top: 20pt; border-top: 1pt solid var(--border); }
+
+  .paid-stamp {
+    display: inline-block;
+    border: 3pt solid #16A34A;
+    color: #15803D;
+    padding: 6pt 18pt;
+    font-size: 16pt;
+    font-weight: 700;
+    transform: rotate(-8deg);
+    letter-spacing: 0.1em;
+    margin: 16pt 0;
+  }
+
+  .footer-note { font-size: 8pt; color: var(--muted); margin-top: 24pt; padding-top: 12pt; border-top: 1pt solid var(--border); }
+</style>
+</head>
+<body>
+
+<div class="doc-header">
+  <span class="logo-text">Leo</span>
+  <div class="doc-meta">
+    {% block doc_meta %}{% endblock %}
+  </div>
+</div>
+
+{% block content %}{% endblock %}
+
+<div class="footer-note">
+  Facilitado por Leo Casa Limited · Suite 402, 2 Old Brompton Road, Londres SW7 3DQ · leo.casa/terms
+</div>
+
+</body>
+</html>

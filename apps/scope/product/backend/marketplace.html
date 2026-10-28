@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leo — Capabilities</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#FAF8F4;--cream-dk:#F0EBE3;--ink:#1C1917;--stone:#57534E;--muted:#A8A29E;--border:#E7E1D8;--card:#FFFFFF;--teal:#115E59;--teal-lt:#ECFDF5;--terra:#DA654D;--terra-lt:#FDF0ED;--green:#10B981;--green-lt:#D1FAE5;--amber:#F59E0B;--amber-lt:#FEF3C7;--red:#EF4444;--serif:'Playfair Display',Georgia,serif;--sans:'Source Sans 3',system-ui,sans-serif;--r:6px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+
+.hdr{position:sticky;top:0;z-index:50;background:rgba(250,248,244,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:14px 20px}
+.hi{max-width:640px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--serif);font-size:1.15rem;font-weight:600;letter-spacing:-.03em}
+.logo em{color:var(--terra);font-style:italic}
+.hs{font-size:12px;color:var(--stone)}.hs b{color:var(--ink);font-weight:700}
+
+.wrap{max-width:640px;margin:0 auto;padding:20px 20px 100px}
+
+/* Section headers */
+.sh{margin:28px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.sh:first-child{margin-top:0}
+.sh h2{font-family:var(--serif);font-size:1.1rem;font-weight:600;letter-spacing:-.02em}
+.sh p{font-size:12.5px;color:var(--stone);margin-top:2px;line-height:1.4}
+
+/* Search */
+.sb{position:relative;margin-bottom:12px}
+.sb input{width:100%;padding:9px 12px 9px 34px;border:1.5px solid var(--border);border-radius:var(--r);font:400 14px/1.4 var(--sans);background:var(--card);outline:0;transition:border .15s}
+.sb input:focus{border-color:var(--terra)}
+.sb svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none}
+
+/* Cards */
+.g{display:grid;gap:8px}
+.c{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:13px 13px 13px 15px;display:flex;align-items:flex-start;gap:11px;transition:.15s}
+.c:hover{border-color:var(--muted);box-shadow:0 2px 6px rgba(0,0,0,.04)}
+.c.on{border-left:3px solid var(--teal)}
+.ci{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:15px;background:var(--cream-dk)}
+.c.on .ci{background:var(--teal-lt)}
+.cb{flex:1;min-width:0}
+.cn{font-size:13.5px;font-weight:600;letter-spacing:-.01em;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.cd{font-size:12.5px;color:var(--stone);line-height:1.45;margin-top:2px}
+.tags{display:flex;gap:4px;margin-top:5px;flex-wrap:wrap}
+.tag{font-size:10px;padding:1px 5px;border-radius:3px;background:var(--cream);color:var(--muted);border:1px solid var(--border)}
+.badge{font-size:9.5px;font-weight:700;padding:1px 5px;border-radius:3px;letter-spacing:.02em;white-space:nowrap}
+.b-core{background:var(--teal-lt);color:var(--teal)}
+.b-warn{background:var(--amber-lt);color:#92400E}
+.b-tools{background:var(--cream-dk);color:var(--stone)}
+.b-high{background:var(--green-lt);color:#065F46}
+.b-med{background:#EFF6FF;color:#1E40AF}
+.b-low{background:var(--cream-dk);color:var(--muted)}
+.c-why{font-size:11.5px;color:var(--teal);margin-top:4px;font-weight:500;line-height:1.35}
+.c-why::before{content:'→ ';font-weight:700}
+
+/* Toggle */
+.tog{flex-shrink:0;align-self:center;position:relative;width:38px;height:21px;cursor:pointer}
+.tog input{display:none}
+.tog .sl{position:absolute;inset:0;background:var(--border);border-radius:11px;transition:.2s}
+.tog .sl::before{content:'';position:absolute;width:15px;height:15px;left:3px;top:3px;background:#fff;border-radius:50%;transition:.2s;box-shadow:0 1px 2px rgba(0,0,0,.1)}
+.tog input:checked+.sl{background:var(--teal)}
+.tog input:checked+.sl::before{transform:translateX(17px)}
+.tog.busy .sl{background:var(--amber);animation:pulse .8s infinite}
+@keyframes pulse{50%{opacity:.6}}
+
+/* Community card */
+.cc{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:12px 14px;transition:.15s}
+.cc:hover{border-color:var(--muted);box-shadow:0 2px 6px rgba(0,0,0,.04)}
+.cc.has-overlap{border-left:3px solid var(--green)}
+.cc-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.cc-left{flex:1;min-width:0}
+.cc-name{font-size:13.5px;font-weight:600;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.cc-inst{font-size:12px;font-weight:700;color:var(--teal);white-space:nowrap;display:flex;align-items:center;gap:2px;flex-shrink:0;margin-top:2px}
+.cc-src{font-size:10.5px;color:var(--muted);margin-top:1px;font-family:ui-monospace,SFMono-Regular,monospace}
+.cc-desc{font-size:12.5px;color:var(--stone);margin-top:3px;line-height:1.4}
+.cc-overlap{display:inline-flex;align-items:center;gap:3px;font-size:10.5px;font-weight:600;color:var(--green);background:var(--green-lt);padding:2px 7px;border-radius:3px;margin-top:6px}
+
+/* Bar chart for installs */
+.bar-wrap{margin-top:6px}
+.bar{height:4px;border-radius:2px;background:var(--cream-dk);overflow:hidden}
+.bar-fill{height:100%;border-radius:2px;background:var(--teal);transition:width .3s}
+
+/* Toast */
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--ink);color:#fff;padding:9px 18px;border-radius:var(--r);font:600 13px/1.3 var(--sans);box-shadow:0 8px 20px rgba(0,0,0,.15);transition:transform .3s;z-index:100}
+.toast.vis{transform:translateX(-50%) translateY(0)}
+
+.skel{background:linear-gradient(90deg,var(--border) 25%,var(--cream) 50%,var(--border) 75%);background-size:200% 100%;animation:sh 1.5s infinite;border-radius:var(--r);height:56px}
+@keyframes sh{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.empty{text-align:center;padding:40px 16px;color:var(--muted);font-size:13px}
+
+@media(max-width:500px){.hi{flex-direction:column;align-items:flex-start;gap:4px}}
+</style>
+</head>
+<body>
+
+<div class="hdr"><div class="hi">
+  <div class="logo">Leo <em>Capabilities</em></div>
+  <div class="hs"><b id="s-a">—</b> active · <b id="s-d">—</b> more available</div>
+</div></div>
+
+<div class="wrap">
+
+  <!-- SECTION 1: What Leo can do right now -->
+  <div class="sh"><h2>What Leo does right now</h2><p>These are always on. Leo uses them in every conversation.</p></div>
+  <div class="g" id="g-kit"><div class="skel"></div><div class="skel"></div></div>
+
+  <!-- SECTION 2: Things you can turn on -->
+  <div class="sh" id="sh-add"><h2>Turn on more</h2><p>Hermes capabilities ready to activate. Sorted by how useful they'd be for Leo Scope — green tags = high priority for our app.</p></div>
+  <div class="g" id="g-disc"><div class="skel"></div></div>
+
+  <!-- SECTION 3: What the community uses -->
+  <div class="sh"><h2>What everyone else uses</h2><p>Real install counts from <a href="https://skills.sh" target="_blank" style="color:var(--terra);font-weight:600">skills.sh</a> — the open registry for 13k+ Hermes agents. Green = Leo already covers this.</p></div>
+  <div class="sb"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><input id="cq" placeholder="Search community skills…"></div>
+  <div class="g" id="g-comm"><div class="skel"></div><div class="skel"></div></div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const TK=new URLSearchParams(location.search).get('token')||'';
+const AP=location.origin;
+let S=null;
+let maxInstalls=1;
+
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('vis');setTimeout(()=>t.classList.remove('vis'),2400)}
+function fmt(n){if(n>=1e6)return(n/1e6).toFixed(1)+'M';if(n>=1e3)return(n/1e3).toFixed(n>=1e4?0:1)+'k';return n.toString()}
+
+const LEO_NAMES={
+  'web_search':'Web Search','web_extract':'Page Reader','memory':'Persistent Memory',
+  'browser':'Web Browser','code_execution':'Calculator & Code','photo_analysis':'Photo Analysis',
+  'update_brief':'Brief Builder','update_profile':'Profile Builder','set_drawer':'UI Drawer',
+};
+
+async function boot(){
+  const r=await fetch(`${AP}/api/marketplace/state?token=${TK}`);
+  if(!r.ok){document.querySelector('.wrap').innerHTML='<p class="empty">Access denied.</p>';return}
+  S=await r.json();
+  render();
+  loadComm('');
+}
+
+function render(){
+  if(!S)return;
+  document.getElementById('s-a').textContent=S.stats.active;
+  document.getElementById('s-d').textContent=S.stats.available;
+  renderKit();
+  renderDiscover();
+}
+
+function card(c, showToggle){
+  const on=c.enabled;
+  const warn=c.warn?`<span class="badge b-warn">⚠ ${c.warn}</span>`:'';
+  const tools=c.tools?`<span class="badge b-tools">${c.tools} tool${c.tools>1?'s':''}</span>`:'';
+  const note=c.note&&!c.warn?`<span class="badge b-tools">${c.note}</span>`:'';
+  const rec=c.rec==='high'?'<span class="badge b-high">recommended</span>':c.rec==='medium'?'<span class="badge b-med">nice to have</span>':c.rec==='low'?'<span class="badge b-low">niche</span>':'';
+  const why=c.why?`<div class="c-why">${c.why}</div>`:'';
+  const ver=c.version?`<span class="tag">v${c.version}</span>`:'';
+  const tagHtml=(c.tags||[]).slice(0,3).map(t=>`<span class="tag">${t}</span>`).join('');
+  const extra=tagHtml||ver?`<div class="tags">${tagHtml}${ver}</div>`:'';
+
+  const tog=showToggle&&!c.locked?`<label class="tog"><input type="checkbox" ${on?'checked':''} onchange="tog_('${c.id}',this)"><span class="sl"></span></label>`:'';
+
+  return `<div class="c ${on?'on':''}">
+    <div class="ci">${c.icon||'📦'}</div>
+    <div class="cb"><div class="cn">${c.name} ${rec}${tools}${note}${warn}</div><div class="cd">${c.desc}</div>${why}${extra}</div>
+    ${tog}
+  </div>`;
+}
+
+function renderKit(){
+  document.getElementById('g-kit').innerHTML=S.kit.map(c=>card(c,c.kind!=='core')).join('');
+}
+
+function renderDiscover(){
+  const g=document.getElementById('g-disc');
+  const order={'high':0,'medium':1,'low':2};
+  const items=[...S.discover].sort((a,b)=>(order[a.rec]??1)-(order[b.rec]??1));
+  if(!items.length){g.innerHTML='<p class="empty">Everything is already enabled.</p>';return}
+  g.innerHTML=items.map(c=>card(c,true)).join('');
+}
+
+function commCard(i){
+  const pct=Math.max(2,Math.round((i.installs/maxInstalls)*100));
+  const overlap=i.leo_overlap;
+  const overlapName=overlap?LEO_NAMES[overlap]||overlap:null;
+  const olHtml=overlapName?`<div class="cc-overlap">✓ Leo has: ${overlapName}</div>`:'';
+
+  return `<div class="cc ${overlap?'has-overlap':''}">
+    <div class="cc-top">
+      <div class="cc-left">
+        <div class="cc-name">${i.name}</div>
+        ${i.source?`<div class="cc-src">${i.source}</div>`:''}
+      </div>
+      ${i.installs?`<div class="cc-inst"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M19 12l-7 7-7-7"/></svg> ${fmt(i.installs)}</div>`:''}
+    </div>
+    ${i.desc?`<div class="cc-desc">${i.desc}</div>`:''}
+    <div class="bar-wrap"><div class="bar"><div class="bar-fill" style="width:${pct}%"></div></div></div>
+    ${olHtml}
+  </div>`;
+}
+
+async function loadComm(q){
+  const g=document.getElementById('g-comm');
+  g.innerHTML='<div class="skel"></div><div class="skel"></div><div class="skel"></div>';
+  try{
+    const query=q||'popular';
+    const r=await fetch(`${AP}/api/marketplace/community?token=${TK}&q=${encodeURIComponent(query)}&limit=30`);
+    const d=await r.json();
+    const items=d.results||[];
+    if(!items.length){g.innerHTML='<p class="empty">No results. Try a different search.</p>';return}
+    maxInstalls=Math.max(1,...items.map(i=>i.installs||0));
+    g.innerHTML=items.map(i=>commCard(i)).join('');
+  }catch(e){g.innerHTML='<p class="empty">Could not load community data.</p>'}
+}
+
+async function tog_(id,el){
+  const t=el.closest('.tog');t.classList.add('busy');
+  try{
+    const r=await fetch(`${AP}/api/marketplace/toggle?token=${TK}&id=${encodeURIComponent(id)}`,{method:'POST'});
+    const d=await r.json();
+    if(d.ok){
+      toast(d.action==='enabled'?'✓ Enabled':'✕ Disabled');
+      const fromKit=S.kit.findIndex(c=>c.id===id);
+      const fromDisc=S.discover.findIndex(c=>c.id===id);
+      if(d.action==='enabled'&&fromDisc>=0){const item=S.discover.splice(fromDisc,1)[0];item.enabled=true;S.kit.push(item);S.stats.active++;S.stats.available--}
+      if(d.action==='disabled'&&fromKit>=0){const item=S.kit.splice(fromKit,1)[0];item.enabled=false;S.discover.unshift(item);S.stats.active--;S.stats.available++}
+      render();
+    }else{toast('Error');el.checked=!el.checked}
+  }catch(e){toast('Network error');el.checked=!el.checked}
+  t.classList.remove('busy');
+}
+
+let cd;
+document.getElementById('cq').addEventListener('input',e=>{clearTimeout(cd);cd=setTimeout(()=>loadComm(e.target.value),500)});
+
+boot();
+</script>
+</body>
+</html>

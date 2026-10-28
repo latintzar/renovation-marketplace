@@ -1,0 +1,32 @@
+{
+  "name": "@scope/brand",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./tokens.json": "./src/brand/generated/tokens.json",
+    "./tokens.css": "./src/brand/generated/tokens.css",
+    "./vars.css": "./src/brand/generated/vars.css",
+    "./effects.css": "./src/brand/effects.css",
+    "./fluid-gradient.js": "./src/brand/fluid-gradient.js",
+    "./assets/*": "./src/brand/assets/*"
+  },
+  "files": [
+    "index.ts",
+    "src/brand/generated/",
+    "src/translucency.ts",
+    "src/motion.ts",
+    "src/typography.ts",
+    "src/illustrations.ts",
+    "src/brand/effects.css",
+    "src/brand/fluid-gradient.js",
+    "src/brand/assets/"
+  ],
+  "devDependencies": {
+    "@scope/tsconfig": "workspace:*",
+    "typescript": "~5.9.3"
+  }
+}

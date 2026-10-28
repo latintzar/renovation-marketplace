@@ -1,0 +1,14 @@
+/*
+ * @scope/ui/theme.css — compatibility shim.
+ *
+ * Historical callers imported Tailwind v4 `@theme` tokens from here.
+ * The canonical source is now `@scope/brand/tokens.css` (generated from
+ * `packages/brand/src/brand/tokens.py` by `python3 -m brand.build`). It
+ * contains the full `@theme` block AND the `[data-theme="<name>"]`
+ * override blocks for multi-theming.
+ *
+ * New code should import `@scope/brand/tokens.css` directly. This shim
+ * stays so we don't break existing `@import '@scope/ui/theme.css'` lines.
+ */
+
+@import "@scope/brand/tokens.css";

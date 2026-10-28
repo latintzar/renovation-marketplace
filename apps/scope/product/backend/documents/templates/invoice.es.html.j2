@@ -1,0 +1,108 @@
+{% extends "_base.html.j2" %}
+
+{% block title %}Factura — Leo Scope {{ quote_token }}{% endblock %}
+
+{% block doc_meta %}
+  Factura<br>
+  Ref: {{ quote_token }}<br>
+  Fecha: {{ completion_date }}<br>
+  Estado: PAGADO
+{% endblock %}
+
+{% block content %}
+
+<div class="section">
+  <h1>Factura de Obra</h1>
+  <div class="paid-stamp">PAGADO</div>
+</div>
+
+<div class="section">
+  <h2>Partes</h2>
+  <div class="parties-grid">
+    <div class="party-card">
+      <div class="party-label">Propietario</div>
+      <div class="party-name">{{ homeowner_email }}</div>
+    </div>
+    <div class="party-card">
+      <div class="party-label">Contratista</div>
+      <div class="party-name">{{ contractor_name }}</div>
+      <div class="party-detail">{{ contractor_trade }}</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Proyecto</h2>
+  <p><strong>{{ job_title }}</strong></p>
+  {% if job_address %}<p>{{ job_address }}</p>{% endif %}
+  <p>Completado el {{ completion_date }}</p>
+</div>
+
+<div class="section">
+  <h2>Desglose de Pagos</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Fase</th>
+        <th>Descripción</th>
+        <th>Fecha liberación</th>
+        <th class="amount">Importe</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in milestones %}
+      <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ item.title }}</td>
+        <td>{{ item.released_at or completion_date }}</td>
+        <td class="amount">€{{ "%.2f"|format(item.amount_cents / 100) }}</td>
+      </tr>
+      {% endfor %}
+      {% if materials_upfront_cents and materials_upfront_cents > 0 %}
+      <tr>
+        <td>—</td>
+        <td>Anticipo de materiales</td>
+        <td>Al inicio</td>
+        <td class="amount">€{{ "%.2f"|format(materials_upfront_cents / 100) }}</td>
+      </tr>
+      {% endif %}
+      <tr class="total-row">
+        <td colspan="3"><strong>Subtotal obra</strong></td>
+        <td class="amount"><strong>€{{ "%.2f"|format(work_subtotal_eur) }}</strong></td>
+      </tr>
+      {% if leo_fee_eur > 0 %}
+      <tr>
+        <td colspan="3">Comisión de plataforma Leo (5%)</td>
+        <td class="amount">€{{ "%.2f"|format(leo_fee_eur) }}</td>
+      </tr>
+      {% endif %}
+      {% if iva_eur > 0 %}
+      <tr>
+        <td colspan="3">IVA ({{ iva_rate }}%)</td>
+        <td class="amount">€{{ "%.2f"|format(iva_eur) }}</td>
+      </tr>
+      {% endif %}
+      <tr class="total-row" style="font-size: 13pt;">
+        <td colspan="3"><strong>TOTAL PAGADO</strong></td>
+        <td class="amount"><strong>€{{ "%.2f"|format(total_charged_eur) }}</strong></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="section">
+  <h2>Información de Pago</h2>
+  <p>Pagado mediante Stripe Checkout en escrow Leo. Referencia de la plataforma: {{ quote_token }}</p>
+  {% if payment_intent_id %}
+  <p style="font-size:9pt; color:var(--stone);">ID de transacción Stripe: {{ payment_intent_id }}</p>
+  {% endif %}
+</div>
+
+<div class="section" style="margin-top: 24pt;">
+  <p style="font-size:9pt; color:var(--stone);">
+    Este documento es un comprobante de pago generado por la plataforma Leo Scope.
+    Para cualquier consulta: soporte@leo.casa
+  </p>
+</div>
+
+{% endblock %}

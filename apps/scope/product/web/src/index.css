@@ -1,0 +1,118 @@
+@import "tailwindcss";
+@source "../../../../../packages/ui/src/**/*.{tsx,ts}";
+@import "@scope/ui/theme.css";
+@font-face{font-family:'Source Sans 3';src:url("/fonts/SourceSans3.ttf") format("truetype");font-style:normal;font-weight:200 900;font-display:swap}
+@font-face{font-family:'Source Sans 3';src:url("/fonts/SourceSans3-Italic.ttf") format("truetype");font-style:italic;font-weight:200 900;font-display:swap}
+@font-face{font-family:'Playfair Display';src:url("/fonts/PlayfairDisplay.ttf") format("truetype");font-style:normal;font-weight:200 900;font-display:swap}
+@font-face{font-family:'Playfair Display';src:url("/fonts/PlayfairDisplay-Italic.ttf") format("truetype");font-style:italic;font-weight:200 900;font-display:swap}
+
+
+@layer base {
+  body {
+    background: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    overscroll-behavior: none;
+  }
+}
+
+/* ---- animations ---- */
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes recDot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(239,68,68,.5); }
+  50%      { opacity: .6; box-shadow: 0 0 0 4px rgba(239,68,68,0); }
+}
+@keyframes typing-dot {
+  0%, 60%, 100% { transform: translateY(0); opacity: .4; }
+  30%           { transform: translateY(-4px); opacity: 1; }
+}
+@keyframes waveform-bar {
+  0%, 100% { height: 3px; }
+  50%      { height: var(--h, 14px); }
+}
+@keyframes orb-breathe {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.04); }
+}
+@keyframes orb-listen {
+  0%, 100% { transform: scale(1); filter: brightness(1); }
+  50%      { transform: scale(1.08); filter: brightness(1.15); }
+}
+@keyframes orb-speak {
+  0%, 100% { transform: scale(1); }
+  25%      { transform: scale(1.12); }
+  75%      { transform: scale(0.96); }
+}
+@keyframes pulse-ring {
+  0%   { transform: scale(1); opacity: .5; }
+  100% { transform: scale(2); opacity: 0; }
+}
+@keyframes slide-up {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+.anim-fade-up   { animation: fade-up .28s ease-out both; }
+.anim-slide-up  { animation: slide-up .32s ease-out both; }
+
+.typing-dot { animation: typing-dot 1.4s infinite; }
+.typing-dot:nth-child(2) { animation-delay: .15s; }
+.typing-dot:nth-child(3) { animation-delay: .3s; }
+
+/* safe-area for capacitor */
+.pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+.pt-safe { padding-top: env(safe-area-inset-top, 0px); }
+
+
+/* ═══════════════════════════════════════════
+   BRAND EFFECTS — loaded as a static CSS file (/brand-effects.css)
+   that bypasses Vite/LightningCSS so backdrop-filter survives the build.
+   Single source of truth: scope-app/public/brand-effects.css
+   ═══════════════════════════════════════════ */
+
+/* Vellum pulse — subtle opacity breathe on the editing overlay */
+@keyframes vellum-pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.55; }
+}
+.leo-vellum-pulse {
+  animation: vellum-pulse 2s ease-in-out infinite;
+}
+
+/* ── Leo Chat Markdown ──────────────────────────────────────────────
+   Prose styles scoped to .leo-markdown — used in Leo's chat messages.
+   Minimal: no full @tailwindcss/typography dependency.
+   ──────────────────────────────────────────────────────────────────── */
+.leo-markdown { line-height: 1.65; }
+.leo-markdown p { margin: 0 0 0.65em; }
+.leo-markdown p:last-child { margin-bottom: 0; }
+.leo-markdown strong { font-weight: 600; color: var(--color-ink); }
+.leo-markdown em { font-style: italic; }
+.leo-markdown code {
+  font-family: ui-monospace, monospace;
+  font-size: 0.85em;
+  background: rgba(0,0,0,0.06);
+  border-radius: var(--r-xs, 3px);
+  padding: 0.1em 0.35em;
+}
+.leo-markdown ul, .leo-markdown ol {
+  margin: 0.4em 0 0.65em 1.2em;
+  padding: 0;
+}
+.leo-markdown li { margin-bottom: 0.2em; }
+.leo-markdown a { color: var(--color-teal); text-decoration: underline; text-underline-offset: 2px; }
+
+/* Inline markdown in user bubbles (white text on terracotta) */
+.prose-inline strong { font-weight: 700; }
+.prose-inline em { font-style: italic; }
+.prose-inline code {
+  font-family: ui-monospace, monospace;
+  font-size: 0.85em;
+  background: rgba(255,255,255,0.2);
+  border-radius: var(--r-xs, 3px);
+  padding: 0.1em 0.3em;
+}

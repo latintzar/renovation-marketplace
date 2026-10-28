@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<link href="/brand-vars.css" rel="stylesheet"/>
+<title>Leo — Cómo funcionan las reclamaciones</title>
+<meta content="Si algo sale mal en tu reforma con Leo, aquí tienes exactamente lo que ocurre — paso a paso, desde la mediación en la app hasta el arbitraje de consumo, el juzgado y la denuncia penal." name="description"/>
+<link href="https://leo.casa/how-disputes-work" rel="canonical"/>
+<link href="https://leo.casa/how-disputes-work" hreflang="en" rel="alternate"/>
+<link href="https://leo.casa/como-resolver-disputas" hreflang="es" rel="alternate"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/leo-glass-frame.css" rel="stylesheet"/>
+<link href="/brand-effects.css" rel="stylesheet"/>
+
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px;-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.7}
+.header{padding:20px 28px;border-bottom:1px solid var(--border);background:var(--cream);position:sticky;top:0;z-index:10}
+.header-inner{max-width:860px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--serif);font-size:1.2rem;font-weight:600;letter-spacing:-.03em;color:var(--ink);text-decoration:none}
+.lang-switch{position:relative;z-index:2}
+.lang-btn{display:flex;align-items:center;gap:3px;background:none;border:1px solid var(--border);border-radius:var(--r-pill);padding:5px 10px;font-family:var(--sans);font-size:.72rem;font-weight:600;color:var(--ink);cursor:pointer;white-space:nowrap;transition:border-color .15s}
+.lang-btn:hover{border-color:var(--stone)}
+.lang-flag{font-size:14px;line-height:1}
+.lang-code{letter-spacing:.03em}
+.lang-chevron{width:8px;height:8px;opacity:.7;color:var(--ink)}
+.lang-dropdown{position:absolute;right:0;top:calc(100% + 6px);background:#fff;border-radius:var(--r-md);box-shadow:0 4px 20px rgba(0,0,0,.12);padding:4px;display:none;min-width:120px;z-index:200}
+.lang-switch.open .lang-dropdown{display:block}
+.lang-option{display:flex;align-items:center;gap:6px;padding:7px 12px;border-radius:var(--r);text-decoration:none;font-family:var(--sans);font-size:.78rem;color:var(--ink);white-space:nowrap}
+.lang-option:hover{background:rgba(0,0,0,.04)}
+.lang-option.active{font-weight:700;color:var(--teal)}
+.hero{background:linear-gradient(135deg,var(--ink) 0%,var(--ink-dark) 50%,var(--ink) 100%);color:#fff;padding:80px 28px 60px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:none;background-size:128px;opacity:.03;pointer-events:none}
+.hero h1{font-family:var(--serif);font-size:clamp(2rem,6vw,3rem);font-weight:600;line-height:1.1;letter-spacing:-.03em;margin-bottom:16px;position:relative}
+.hero h1 em{font-style:italic;color:var(--terra)}
+.hero .subtitle{font-size:1.05rem;color:var(--muted);max-width:600px;margin:0 auto 24px;line-height:1.6;position:relative}
+.hero-stat-row{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;position:relative;margin-top:8px}
+.hero-stat{text-align:center}
+.hero-stat-num{font-family:var(--serif);font-size:1.8rem;font-weight:600;color:var(--terra);line-height:1}
+.hero-stat-label{font-size:.78rem;color:var(--muted);margin-top:4px}
+.content{max-width:860px;margin:0 auto;padding:48px 28px 80px}
+.toc{background:var(--cream-dk);border:1px solid var(--border);border-radius:var(--r);padding:28px 32px;margin-bottom:48px}
+.toc h2{font-family:var(--serif);font-size:1.1rem;font-weight:600;margin-bottom:16px;letter-spacing:-.01em}
+.toc ol{margin:0 0 0 20px;padding:0}
+.toc li{margin-bottom:8px}
+.toc a{font-size:.9rem;color:var(--teal);text-decoration:none;font-weight:500}
+.toc a:hover{text-decoration:underline}
+.section{margin-bottom:56px;scroll-margin-top:80px}
+.section h2{font-family:var(--serif);font-size:clamp(1.3rem,3vw,1.6rem);font-weight:600;letter-spacing:-.02em;margin-bottom:8px;padding-top:24px;border-top:1px solid var(--border)}
+.section h2:first-child{border-top:none;padding-top:0}
+.section .section-sub{font-size:.88rem;color:var(--muted);margin-bottom:24px}
+.section h3{font-family:var(--serif);font-size:1.05rem;font-weight:600;margin:28px 0 10px;letter-spacing:-.01em}
+.section p{font-size:.92rem;color:var(--stone);margin-bottom:14px;line-height:1.7}
+.section strong{color:var(--ink);font-weight:600}
+.info-card{background:var(--cream-dk);border:1px solid var(--border);border-radius:var(--r);padding:20px 24px;margin:20px 0}
+.info-card.teal{background:var(--teal-lt);border-color:#A7F3D0}
+.info-card.terra{background:var(--terra-lt);border-color:#FECACA}
+.info-card.amber{background:#FFFBEB;border-color:#FDE68A}
+.info-card p{margin-bottom:8px}
+.info-card p:last-child{margin-bottom:0}
+ul.checklist{list-style:none;margin:12px 0;padding:0}
+ul.checklist li{font-size:.9rem;color:var(--stone);padding:4px 0 4px 28px;position:relative;line-height:1.6}
+ul.checklist li::before{content:'✓';position:absolute;left:0;color:var(--teal);font-weight:700;font-size:1rem}
+
+/* Escalation ladder */
+.ladder{display:flex;flex-direction:column;gap:0;margin:28px 0}
+.ladder-step{display:flex;gap:20px;position:relative}
+.ladder-step+.ladder-step{margin-top:0}
+.ladder-left{display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:48px}
+.ladder-dot{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.88rem;flex-shrink:0;border:2px solid transparent;z-index:1}
+.ladder-dot.green{background:var(--teal-lt);color:var(--teal);border-color:#A7F3D0}
+.ladder-dot.amber{background:#FFFBEB;color:#92400E;border-color:#FDE68A}
+.ladder-dot.terra{background:var(--terra-lt);color:var(--terra);border-color:#FECACA}
+.ladder-dot.dark{background:var(--ink);color:#fff}
+.ladder-connector{width:2px;flex:1;background:var(--border);margin:4px 0}
+.ladder-body{padding-bottom:32px;flex:1}
+.ladder-body h3{font-family:var(--serif);font-size:1.05rem;font-weight:600;color:var(--ink);margin-bottom:4px;letter-spacing:-.01em}
+.ladder-body .meta{font-size:.8rem;color:var(--muted);margin-bottom:10px;font-weight:500}
+.ladder-body p{font-size:.9rem;color:var(--stone);line-height:1.65;margin-bottom:8px}
+.ladder-body p:last-child{margin-bottom:0}
+.ladder-tag{display:inline-flex;align-items:center;gap:5px;font-size:.75rem;font-weight:600;padding:3px 10px;border-radius:var(--r-xl);letter-spacing:.02em;margin-top:8px;margin-right:6px}
+.ladder-tag.free{background:var(--teal-lt);color:var(--teal);border:1px solid #A7F3D0}
+.ladder-tag.time{background:var(--cream-dk);color:var(--stone);border:1px solid var(--border)}
+.ladder-tag.binding{background:#FFFBEB;color:#92400E;border:1px solid #FDE68A}
+
+/* Aparejador explainer box */
+.aparejador-box{border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin:24px 0}
+.aparejador-box-header{background:var(--ink);padding:16px 20px;color:#fff}
+.aparejador-box-header h4{font-family:var(--serif);font-size:.98rem;font-weight:600;margin-bottom:2px}
+.aparejador-box-header p{font-size:.82rem;color:var(--muted);margin:0}
+.aparejador-box-body{padding:20px 24px}
+.aparejador-box-body p{font-size:.88rem;color:var(--stone);margin-bottom:10px;line-height:1.65}
+.aparejador-box-body p:last-child{margin-bottom:0}
+
+/* Case file preview */
+.case-file-preview{background:var(--ink);border-radius:var(--r);padding:20px 24px;margin:24px 0;color:#fff}
+.case-file-preview h4{font-family:var(--serif);font-size:.95rem;font-weight:600;margin-bottom:14px;color:#E7E5E4}
+.case-file-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px}
+.case-file-item:last-child{margin-bottom:0}
+.case-file-item svg{flex-shrink:0;margin-top:2px}
+.case-file-item span{font-size:.85rem;color:var(--muted);line-height:1.5}
+.case-file-item span strong{color:#E7E5E4}
+
+/* FAQ */
+.faq{margin-top:48px}
+.faq-item{border-bottom:1px solid var(--border);padding:0}
+.faq-q{font-family:var(--serif);font-size:.98rem;font-weight:600;padding:18px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:var(--ink);user-select:none}
+.faq-q::after{content:'+';font-size:1.2rem;color:var(--muted);transition:transform .2s ease}
+.faq-item.open .faq-q::after{content:'\2212'}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-item.open .faq-a{max-height:800px}
+.faq-a-inner{padding:0 0 18px;font-size:.9rem;color:var(--stone);line-height:1.7}
+
+.cta-section{background:linear-gradient(135deg,var(--ink) 0%,var(--ink-dark) 50%,var(--ink) 100%);padding:64px 28px;text-align:center;color:#fff;position:relative;overflow:hidden}
+.cta-section::before{content:'';position:absolute;inset:0;background-image:none;background-size:128px;opacity:.03;pointer-events:none}
+.cta-section h2{font-family:var(--serif);font-size:clamp(1.5rem,4vw,2rem);font-weight:600;letter-spacing:-.03em;margin-bottom:12px;position:relative}
+.cta-section h2 em{font-style:italic;color:var(--terra)}
+.cta-section p{font-size:.95rem;color:var(--muted);max-width:480px;margin:0 auto 32px;line-height:1.6;position:relative}
+.cta-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative}
+.cta-btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:var(--r);font-size:.92rem;font-weight:600;text-decoration:none;transition:all .15s}
+.cta-btn.primary{background:var(--terra);color:#fff}
+.cta-btn.primary:hover{background:var(--terra-dk);transform:translateY(-1px)}
+.cta-btn.secondary{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.15)}
+.cta-btn.secondary:hover{background:rgba(255,255,255,.12)}
+.footer{border-top:1px solid var(--border);padding:24px 28px;text-align:center}
+.footer p{font-size:.78rem;color:var(--muted);margin:0}
+.footer a{color:var(--teal);text-decoration:none}
+@media(max-width:640px){.content{padding:32px 20px 60px}.toc{padding:20px}.hero{padding:60px 20px 40px}.hero-stat-row{gap:16px}.cta-section{padding:48px 20px}}
+</style>
+
+</head>
+<body>
+<div class="header">
+<div class="header-inner">
+<a class="logo" href="/"><img alt="Leo" draggable="false" height="18" src="/brand/leo-charcoal.svg" style="display:block;width:auto"/></a>
+<div class="lang-switch" id="langSwitch">
+<button aria-label="Cambiar idioma" class="lang-btn">
+<span class="lang-flag">🇪🇸</span><span class="lang-code">ES</span>
+<svg class="lang-chevron" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 12 12"><path d="M3 4.5l3 3 3-3"></path></svg>
+</button>
+<div class="lang-dropdown">
+<a class="lang-option" href="/how-disputes-work">🇬🇧 English</a>
+<a class="lang-option active" href="/como-resolver-disputas">🇪🇸 Español</a>
+</div>
+</div>
+</div>
+</div>
+<div class="hero">
+<h1>Si algo sale mal,<br/><em>no estás solo.</em></h1>
+<p class="subtitle">Tu dinero siempre está protegido en el depósito de garantía. Si surge una disputa, Leo te guía en cada paso — desde la mediación en la app hasta el arbitraje vinculante y el juzgado. En la mayoría de los casos, nunca sales del Paso 1.</p>
+<div class="hero-stat-row">
+<div class="hero-stat">
+<div class="hero-stat-num">~70%</div>
+<div class="hero-stat-label">se resuelven en el Paso 1</div>
+</div>
+<div class="hero-stat">
+<div class="hero-stat-num">€0</div>
+<div class="hero-stat-label">coste para el propietario en el arbitraje</div>
+</div>
+<div class="hero-stat">
+<div class="hero-stat-num">7</div>
+<div class="hero-stat-label">pasos de escalada disponibles</div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="toc">
+<h2>En esta página</h2>
+<ol>
+<li><a href="#escrow-first">Primero: tu dinero siempre está protegido</a></li>
+<li><a href="#platform-levers">Qué puede hacer Leo de inmediato</a></li>
+<li><a href="#ladder">Los siete niveles de escalada</a></li>
+<li><a href="#aparejador">El aparejador — tu experto independiente</a></li>
+<li><a href="#case-file">El expediente Leo — tu paquete de pruebas</a></li>
+<li><a href="#faq">Preguntas frecuentes</a></li>
+</ol>
+</div>
+<!-- 1. Escrow first -->
+<div class="section" id="escrow-first">
+<h2>1. Primero: tu dinero siempre está protegido</h2>
+<p class="section-sub">Las disputas son sobre el trabajo, no sobre dinero que desaparece. En Leo, ambas cosas siempre están separadas.</p>
+<p>Cuando inicias un trabajo en Leo, el importe total del proyecto va al<strong>depósito de garantía</strong>— gestionado por Stripe, no por Leo ni por el profesional. Ningún pago de fase se libera hasta que confirmas que el trabajo está hecho. Si el profesional abandona el trabajo, el dinero sigue ahí.</p>
+<p>Esto significa que en casi todas las disputas, la pregunta es:<em>¿cuánto merece el profesional por el trabajo que realmente hizo?</em>No:<em>¿cómo recupero mi dinero?</em>Es un problema fundamentalmente distinto, y mucho más fácil de resolver.</p>
+<div class="info-card teal">
+<p><strong>El profesional nunca puede acceder al dinero que no has aprobado.</strong>Los pagos de fase permanecen en el depósito de garantía hasta que pulsas "Aprobar". La tarjeta de materiales está habilitada solo para materiales — Leo puede bloquearla en el momento en que se abre una disputa. Tu exposición en cualquier momento se limita a lo que ya se ha gastado de forma legítima.</p>
+</div>
+</div>
+<!-- 2. Platform levers -->
+<div class="section" id="platform-levers">
+<h2>2. Qué puede hacer Leo de inmediato</h2>
+<p class="section-sub">Cuando se abre una disputa, Leo actúa — de forma automática.</p>
+<p>En el momento en que marcas una disputa, Leo activa protecciones a nivel de plataforma sin esperar ninguna revisión manual:</p>
+<ul class="checklist">
+<li><strong>Tarjeta de materiales bloqueada</strong> — el profesional no puede realizar nuevas compras en ningún trabajo</li>
+<li><strong>Todos los pagos de fase pendientes retenidos</strong> — en todos sus proyectos activos en Leo</li>
+<li><strong>Asignación de nuevos trabajos pausada</strong> — no recibe nuevas consultas de propietarios</li>
+<li><strong>Expediente generado automáticamente</strong> — presupuesto, pagos, fotos y mensajes compilados en un documento de pruebas estructurado</li>
+<li><strong>Ambas partes notificadas</strong> — se abre un período de 48 horas para la resolución directa</li>
+</ul>
+<p>Un profesional con varios proyectos activos en Leo y miles de euros en pagos de fase pendientes no puede permitirse ignorar una disputa. La presión de la plataforma es proporcional a cuánto depende de Leo.<strong>Esto no es una amenaza — es un mecanismo de protección mutua.</strong>Las mismas protecciones se aplican si un propietario intenta disputar falsamente un trabajo legítimo.</p>
+<div class="info-card amber">
+<p><strong>Si la disputa se resuelve a favor del profesional</strong> — todo se desbloquea de inmediato, y Leo lo deja claro. La plataforma trabaja para ambas partes.</p>
+</div>
+</div>
+<!-- 3. The ladder -->
+<div class="section" id="ladder">
+<h2>3. Los siete niveles de escalada</h2>
+<p class="section-sub">Cada paso es proporcional al tamaño y la naturaleza del problema. La mayoría de las disputas se resuelven en el paso 1 o 2a.</p>
+<div class="ladder">
+<div class="ladder-step">
+<div class="ladder-left">
+<div class="ladder-dot green">1</div>
+<div class="ladder-connector"></div>
+</div>
+<div class="ladder-body">
+<h3>Leo media — en la app, de forma automática</h3>
+<p class="meta">Gratis · 48 horas · Resuelve ~70% de las disputas</p>
+<p>Leo genera automáticamente un expediente y abre una conversación estructurada entre ambas partes. El profesional ve qué estás disputando. Tú ves su respuesta. El sistema de Leo revisa las pruebas y puede emitir una resolución recomendada basada en los términos del contrato, las fotos de las fases y los registros de pagos.</p>
+<p>La mayoría de las disputas son malentendidos sobre el alcance del trabajo o los plazos. Con el historial completo delante de ambas partes, la mayoría se resuelven aquí.</p>
+<span class="ladder-tag free">Gratis</span>
+<span class="ladder-tag time">48 horas</span>
+</div>
+</div>
+<div class="ladder-step">
+<div class="ladder-left">
+<div class="ladder-dot green">2a</div>
+<div class="ladder-connector"></div>
+</div>
+<div class="ladder-body">
+<h3>Revisión remota del aparejador</h3>
+<p class="meta">A cargo de Leo · 3–5 días · Resuelve la mayoría de las disputas sobre el alcance</p>
+<p>Si la mediación no lo resuelve, Leo encarga a un<em>aparejador</em>(un<em>Arquitecto Técnico</em>cualificado, equivalente a un perito de la construcción colegiado) que revise la disputa de forma remota.</p>
+<p>El aparejador revisa el presupuesto detallado, las fotos de las fases subidas por ambas partes, los registros de órdenes de variación y cualquier factura. Emite un dictamen profesional por escrito:<em>trabajo dentro del alcance / trabajo fuera del alcance / pruebas insuficientes para determinarlo de forma remota.</em></p>
+<p>Este dictamen está firmado con el número de colegiado COAAT y es <strong>válido legalmente como prueba documental</strong> en procedimientos de arbitraje y juicio civil en España.</p>
+<span class="ladder-tag free">Gratis para el propietario</span>
+<span class="ladder-tag time">3–5 días</span>
+<span class="ladder-tag binding">Admisible legalmente</span>
+</div>
+</div>
+<div class="ladder-step">
+<div class="ladder-left">
+<div class="ladder-dot amber">2b</div>
+<div class="ladder-connector"></div>
+</div>
+<div class="ladder-body">
+<h3>Visita presencial del aparejador</h3>
+<p class="meta">A cargo de Leo · 1–5 días para programarla · Para defectos ocultos y disputas de calidad</p>
+<p>Si el aparejador remoto indica que<em>no puede determinarlo a partir de la documentación</em>— por ejemplo, una disputa sobre la calidad de los materiales instalados o un defecto estructural oculto — Leo programa una visita a obra presencial.</p>
+<p>El aparejador visita en persona, mide, inspecciona y emite un<em>informe pericial</em>completo. Es la prueba técnica de mayor peso disponible antes de recurrir a un perito judicial. Es aceptado por la Junta Arbitral de Consumo y por todos los niveles de la jurisdicción civil española.</p>
+<p>Leo adelanta el coste de la visita y lo recupera de la parte declarada culpable — normalmente de los fondos en garantía o mediante el mecanismo de reclamación al profesional. No hay ningún cargo anticipado para el propietario.</p>
+<span class="ladder-tag free">Sin coste para el propietario</span>
+<span class="ladder-tag time">1–5 días</span>
+<span class="ladder-tag binding">Informe pericial completo</span>
+</div>
+</div>
+<div class="ladder-step">
+<div class="ladder-left">
+<div class="ladder-dot amber">3</div>
+<div class="ladder-connector"></div>
+</div>
+<div class="ladder-body">
+<h3>Junta Arbitral de Consumo — arbitraje de consumo gratuito</h3>
+<p class="meta">Gratis para el propietario · 3–6 meses · Decisión vinculante</p>
+<p>España cuenta con un sistema nacional de arbitraje de consumo (Sistema Arbitral de Consumo) que emite resoluciones con el mismo peso legal que una sentencia judicial. Leo prepara toda la solicitud por ti:</p>
+<ul class="checklist" style="margin:10px 0">
+<li>Rellena previamente el formulario online con tu identidad, la del profesional y la referencia del caso</li>
+<li>Adjunta el presupuesto firmado como prueba del contrato</li>
+<li>Adjunta el informe del aparejador como dictamen técnico</li>
+<li>Redacta la <em>exposición de hechos</em> a partir del expediente Leo</li>
+</ul>
+<p>Todos los profesionales de Leo firman una<strong>cláusula de arbitraje</strong>al unirse a la plataforma, comprometiéndose contractualmente a participar. Si un profesional está adherido al sistema de la Junta Arbitral y se niega a comparecer, el arbitraje continúa y se emite un<em>laudo</em>en rebeldía. Si aún no está adherido y rechaza la invitación de la Junta, ese rechazo constituye un incumplimiento documentado del contrato de servicio de Leo — y Leo prepara el<em>procedimiento monitorio</em>completo para que el propietario lo presente.</p>
+<p>El laudo (resolución arbitral) es un<em>título ejecutivo</em>— un título de ejecución directa con el mismo peso legal que una sentencia judicial. Es ejecutable contra los bienes del profesional a través del Juzgado de Primera Instancia sin necesidad de volver a litigar el caso.</p>
+<span class="ladder-tag free">Gratis para el propietario</span>
+<span class="ladder-tag time">3–6 meses</span>
+<span class="ladder-tag binding">Resolución ejecutable judicialmente (RD 713/2024)</span>
+</div>
+</div>
+<div class="ladder-step">
+<div class="ladder-left">
+<div class="ladder-dot terra">4</div>
+<div class="ladder-connector"></div>
+</div>
+<div class="ladder-body">
+<h3>Procedimiento Monitorio — orden judicial de pago</h3>
+<p class="meta">Sin límite máximo · Sin necesidad de abogado para presentarlo · Ejecución automática si el profesional lo ignora</p>
+<p>Para deudas que el profesional disputa o ignora, el<em>procedimiento monitorio</em>es una herramienta muy eficaz. Presentas una petición en el<em>Juzgado de Primera Instancia</em>local con la deuda documentada. El juez la revisa. Si la documentación es suficiente, se emite un requerimiento de pago al profesional.</p>
+<p>El profesional tiene 20 días para responder. Si no hace nada — algo habitual entre los defraudadores —<strong>el juez emite un decreto de ejecución automática. Esta deuda queda como sentencia ejecutable contra sus bienes (cuentas bancarias, vehículos, propiedades). Sin juicio. Sin esperar un veredicto.</strong>Esta deuda queda como sentencia ejecutable contra sus bienes (cuentas bancarias, vehículos, propiedades). Sin juicio. Sin esperar un veredicto.</p>
+<p>Leo prepara la petición con los datos del expediente ya cumplimentados y te indica exactamente dónde presentarla (tu juzgado local). No se necesita abogado para presentar la petición, independientemente del importe (LEC Art. 814.2). El abogado solo es necesario si el profesional se opone y la reclamación supera los 2.000 €, o en la fase de ejecución si el importe ejecutado supera los 2.000 €.<strong>No se necesita abogado para presentar la petición</strong>independientemente del importe (LEC Art. 814.2). El abogado solo es necesario si el profesional se opone y la reclamación supera los 2.000 €, o en la fase de ejecución si el importe ejecutado supera los 2.000 €.</p>
+<span class="ladder-tag time">Ejecución automática a los 20 días</span>
+<span class="ladder-tag binding">Sin límite máximo</span>
+</div>
+</div>
+<div class="ladder-step">
+<div class="ladder-left">
+<div class="ladder-dot terra">5</div>
+<div class="ladder-connector"></div>
+</div>
+<div class="ladder-body">
+<h3>Juicio Verbal — reclamaciones de menor cuantía (menos de 15.000 €)</h3>
+<p class="meta">Sin abogado para reclamaciones inferiores a 2.000 € · 6–18 meses</p>
+<p>Si el profesional impugna el monitorio (o el laudo arbitral) y el importe es inferior a 15.000 €, el caso se tramita como<em>juicio verbal</em>— una vista oral simplificada (umbral elevado a 15.000 € por el RDL 6/2023). No se necesita abogado si el importe en disputa es inferior a 2.000 €.</p>
+<p>El expediente de Leo — presupuesto, órdenes de variación, pagos, fotos, informe del aparejador e historial de conversaciones — es la base del escrito judicial. La identidad verificada del profesional ya consta en el registro.</p>
+<span class="ladder-tag time">6–18 meses</span>
+</div>
+</div>
+<div class="ladder-step">
+<div class="ladder-left">
+<div class="ladder-dot dark">6</div>
+</div>
+<div class="ladder-body">
+<h3>Denuncia penal — Guardia Civil o Policía</h3>
+<p class="meta">Identidad documentada · Denuncia preassemblada</p>
+<p>Si el profesional ha cometido un fraude — cobrado dinero que nunca iba a ganarse, desaparecido con los fondos de materiales o facilitado una identidad falsa — Leo te proporciona el paquete completo para la denuncia penal. Esto no es una disputa civil; es un asunto policial.</p>
+<p>Leo exporta la identidad verificada biométricamente del profesional (foto, documento de identidad, NIF, domicilio), el expediente completo y una<em>denuncia</em>redactada. El propietario la entrega en el puesto de la Guardia Civil o comisaría más cercana. Como Leo ha verificado la identidad real del profesional, no hay donde esconderse.</p>
+<span class="ladder-tag time">Presentar en un plazo de 6 meses</span>
+</div>
+</div>
+</div>
+<div class="info-card teal">
+<p><strong>En la mayoría de los casos, nunca se sale del Paso 1.</strong>El profesional sabe cómo es el Paso 6 — una denuncia policial con su foto y domicilio adjuntos. Ese conocimiento es lo que hace que la mayoría de las disputas se resuelvan rápido.</p>
+</div>
+</div>
+<!-- 4. Aparejador explainer -->
+<div class="section" id="aparejador">
+<h2>4. El aparejador — tu perito independiente</h2>
+<p class="section-sub">La autoridad técnica más reconocida en España en materia de calidad y cumplimiento en construcción.</p>
+<div class="aparejador-box">
+<div class="aparejador-box-header">
+<h4>¿Qué es un aparejador?</h4>
+<p>Arquitecto Técnico — colegiado en el COAAT (Colegio Oficial de Aparejadores y Arquitectos Técnicos)</p>
+</div>
+<div class="aparejador-box-body">
+<p>Un aparejador es un director técnico de obra cualificado — un profesional con formación universitaria en ciencias de la construcción, materiales, métodos constructivos y normativa española de edificación. Son profesionales colegiados con seguro de responsabilidad civil obligatorio y número de colegiado verificable de forma independiente.</p>
+<p>En el derecho español, un<em>informe pericial</em>(informe pericial) de un aparejador es la prueba técnica estándar en disputas de construcción a todos los niveles — desde el arbitraje de consumo hasta el Tribunal Supremo. Cuando un aparejador firma un dictamen, lo hace poniendo en juego su licencia profesional.</p>
+</div>
+</div>
+<h3>Revisión remota: qué cubre</h3>
+<p>La revisión remota del aparejador en el Paso 2a cubre la gran mayoría de las disputas en reformas. El aparejador revisa:</p>
+<ul class="checklist">
+<li>El presupuesto detallado firmado en Leo — lo acordado frente a lo reclamado</li>
+<li>Fotos de los hitos aportadas por el profesional y el propietario, con marca de tiempo y geolocalización</li>
+<li>Registros de órdenes de variación — lo acordado, lo añadido y lo disputado</li>
+<li>Facturas y recibos presentados durante la obra</li>
+<li>El registro de mensajes y notas de voz entre ambas partes</li>
+</ul>
+<h3>Lo que la revisión remota no puede cubrir</h3>
+<ul class="checklist">
+<li class="cross">Defectos estructurales ocultos no visibles en fotos (grietas tras el yeso, filtraciones bajo el suelo)</li>
+<li class="cross">Verificación de los materiales exactos instalados (¿es ese azulejo realmente Porcelanosa?)</li>
+<li class="cross">Trabajos realizados y ocultados antes de que se abriera la disputa</li>
+</ul>
+<p>Cuando alguno de estos casos aplica, el aparejador lo indica expresamente en su informe — y la disputa escala a una visita presencial (Paso 2b). El informe del aparejador siempre incluye una declaración clara de lo que pudo y no pudo evaluarse de forma remota, de modo que el documento conserva su validez legal.</p>
+<h3>El protocolo estructurado de fotografías</h3>
+<p>Cuando se abre una disputa, Leo envía a ambas partes una lista de verificación fotográfica estructurada vinculada a los elementos concretos del presupuesto en disputa. Cada elemento se convierte en una indicación:<em>«Muestra los azulejos del baño terminados desde este ángulo.»</em>Ambas partes suben las fotos de forma independiente. El aparejador revisa ambos conjuntos.</p>
+<p>Para obras superiores a 5.000 € o cuando las fotos son ambiguas, el aparejador puede unirse a una videollamada en directo a través de la plataforma Leo y dirigir el recorrido él mismo. Esta sesión queda grabada y se incorpora al expediente.</p>
+<div class="info-card teal">
+<p><strong>Base legal:</strong> A <em>pericial documental</em>(dictamen pericial basado en prueba documental) es plenamente admisible en los tribunales españoles y en arbitraje conforme a las normas generales de la prueba. El requisito clave — que el proceso de Leo cumple — es que el perito sea miembro colegiado cualificado y declare con claridad qué pudo y qué no pudo evaluar. Esta es la práctica habitual en los peritajes de seguros en toda España.</p>
+</div>
+</div>
+<!-- 5. Case file -->
+<div class="section" id="case-file">
+<h2>5. El expediente Leo</h2>
+<p class="section-sub">Cada obra genera su propio paquete de pruebas desde el primer día. No tras una disputa — desde el momento en que se firma el presupuesto.</p>
+<p>El expediente Leo es un PDF estructurado que se genera automáticamente en cualquier momento. Contiene todo lo que un agente de policía, un tribunal arbitral o un juzgado civil necesita para entender lo ocurrido — redactado para lectores no técnicos y con hash para garantizar su integridad.</p>
+<div class="case-file-preview">
+<h4>Qué contiene el expediente Leo</h4>
+<div class="case-file-item">
+<svg fill="none" height="14" stroke="#6EE7B7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="14"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<span><strong>Presupuesto firmado</strong> — cada partida, precio unitario y fase, con marca de tiempo de aceptación por ambas partes</span>
+</div>
+<div class="case-file-item">
+<svg fill="none" height="14" stroke="#6EE7B7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="14"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<span><strong>Registro de órdenes de variación</strong> — cada cambio solicitado, quién lo propuso, aprobado o rechazado, impacto en el coste y marca de tiempo</span>
+</div>
+<div class="case-file-item">
+<svg fill="none" height="14" stroke="#6EE7B7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="14"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<span><strong>Historial de pagos por fases</strong> — cada fase, fecha de activación, confirmación del propietario, marca de tiempo de liberación del depósito de garantía e importe</span>
+</div>
+<div class="case-file-item">
+<svg fill="none" height="14" stroke="#6EE7B7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="14"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<span><strong>Justificantes de compra</strong> — cada ticket de materiales subido: comercio, importe, categoría, estado de aprobación — el registro completo de cada euro gastado en tu obra</span>
+</div>
+<div class="case-file-item">
+<svg fill="none" height="14" stroke="#6EE7B7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="14"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<span><strong>Fotos con marca de tiempo</strong> — todas las fotos subidas por ambas partes, con geolocalización, organizadas por fase y fecha</span>
+</div>
+<div class="case-file-item">
+<svg fill="none" height="14" stroke="#6EE7B7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="14"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<span><strong>Historial completo de conversaciones</strong> — todos los mensajes y transcripciones de notas de voz entre ambas partes, en orden cronológico</span>
+</div>
+<div class="case-file-item">
+<svg fill="none" height="14" stroke="#6EE7B7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="14"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<span><strong>Registro de la disputa</strong> — si se abrió una disputa: el motivo declarado, las declaraciones de ambas partes, las acciones tomadas por la plataforma (bloqueo de tarjeta, retención de fases) y el resultado</span>
+</div>
+<div class="case-file-item">
+<svg fill="none" height="14" stroke="#6EE7B7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="14"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<span><strong>Informe del aparejador</strong> — si se encargó: la opinión <em>pericial</em> firmada completa, la base documental y el número de colegio COAAT del aparejador</span>
+</div>
+<div class="case-file-item">
+<svg fill="none" height="14" stroke="#6EE7B7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="14"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<span><strong>Dossier de identidad del profesional</strong>— nombre legal según el documento de identidad oficial, NIF, domicilio registrado en el alta, resultado de la verificación biométrica facial, resultado del cribado AML (más de 1.300 bases de datos), certificado de seguro de RC y número de póliza, fecha de subida del certificado de antecedentes penales y resumen del análisis OSINT</span>
+</div>
+<div class="case-file-item" style="margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,.1)">
+<svg fill="none" height="14" stroke="var(--muted)" stroke-width="2" viewbox="0 0 24 24" width="14"><rect height="11" rx="2" width="18" x="3" y="11"></rect><path d="M7 11V7a5 5 0 0110 0v4"></path></svg>
+<span style="color:var(--muted)">Hash SHA-256 de todos los contenidos impreso en la portada — a prueba de manipulaciones. Ninguna de las partes puede alegar que el archivo fue alterado.</span>
+</div>
+</div>
+<p>Por eso merece la pena usar Leo. Un propietario que llega a una comisaría o a un tribunal arbitral con el expediente Leo tiene un documento estructurado de 40 páginas que muestra exactamente qué se acordó, qué se pagó, qué se fotografió y qué concluyó un perito independiente. Eso es un caso resuelto, no una disputa de palabra contra palabra.</p>
+</div>
+<!-- FAQ -->
+<div class="section faq" id="faq">
+<h2>6. Preguntas frecuentes</h2>
+<div class="faq-item">
+<div class="faq-q">¿Qué pasa si el profesional lo ignora todo?</div>
+<div class="faq-a"><div class="faq-a-inner">Ignorar la disputa es lo peor que puede hacer un profesional. Su acceso a la plataforma queda bloqueado (sin nuevos trabajos, sin cobros de hitos). Si ignora la Junta Arbitral, el arbitraje sigue adelante y se emite un laudo en su contra por defecto (siempre que esté adherido). Si ignora el procedimiento monitorio, el juzgado emite un decreto de ejecución automática a los 20 días. Leo tiene su identidad verificada y su IBAN — ignorarlo no hará desaparecer la deuda.<strong>Nota importante:</strong>la ejecución de cualquier resolución depende en última instancia de que el profesional tenga bienes embargables (fondos bancarios, propiedades, vehículos). Por eso el modelo de depósito de garantía de Leo es clave — para cualquier dinero que ya esté bajo el control de Leo, la recuperación está garantizada independientemente de la situación financiera del profesional. Las vías legales descritas cubren los importes gastados fuera del control de Leo (p. ej., pagos en efectivo realizados antes de usar Leo o materiales comprados directamente).</div></div>
+</div>
+<div class="faq-item">
+<div class="faq-q">¿Quién paga al aparejador?</div>
+<div class="faq-a"><div class="faq-a-inner">Leo cubre el coste de la revisión remota del aparejador (Paso 2a) sin cargo para ninguna de las partes. Es parte del servicio de resolución de disputas de Leo — recibes una opinión profesional independiente sin pagar nada por adelantado. Para la visita presencial (Paso 2b), Leo también adelanta el coste. Una vez determinado el resultado, Leo recupera ese coste de la parte declarada responsable — normalmente descontándolo de los fondos del proyecto en depósito de garantía. Si el profesional es el responsable y no tiene fondos en garantía, Leo inicia la recuperación mediante el mecanismo de reclamación. El propietario no desembolsa nada en ninguna fase del proceso pericial.</div></div>
+</div>
+<div class="faq-item">
+<div class="faq-q">¿Está obligado el profesional a aceptar el arbitraje?</div>
+<div class="faq-a"><div class="faq-a-inner">Sí — lo aceptó al unirse a Leo. El contrato de servicio de Leo le compromete contractualmente a participar en el arbitraje del<em>Sistema Arbitral de Consumo</em>, regulado por el Real Decreto 713/2024. Si está adherido al sistema y se niega a comparecer, el arbitraje sigue adelante y se emite un laudo en su contra por defecto. Si aún no está adherido y rechaza la invitación de la Junta, ese rechazo constituye un incumplimiento del contrato de servicio de Leo — y Leo prepara entonces la petición completa del<em>laudo</em>se emite en su contra por defecto. Si aún no está adherido y rechaza la invitación de la Junta, ese rechazo constituye un incumplimiento del contrato de servicio de Leo — y Leo prepara entonces la petición completa del<em>procedimiento monitorio</em>para que el propietario la presente en su juzgado local.</div></div>
+</div>
+<div class="faq-item">
+<div class="faq-q">¿Necesito un abogado para todo esto?</div>
+<div class="faq-a"><div class="faq-a-inner">Para los Pasos 1 a 4 (mediación, revisión del aparejador, Junta Arbitral), no se necesita abogado. Para el procedimiento monitorio, tampoco se necesita abogado para presentar la petición inicial, independientemente del importe reclamado (LEC Art. 814.2). El abogado es obligatorio si: (a) el profesional se opone al monitorio y el importe supera los 2.000 €, convirtiéndose en juicio; (b) es necesario ejecutar la sentencia y el importe supera los 2.000 €; o (c) el caso pasa a juicio ordinario (más de 15.000 € en disputa). Leo puede ayudarte a contactar con asistencia jurídica gratuita o un abogado especialista en construcción si lo necesitas en esas fases.</div></div>
+</div>
+<div class="faq-item">
+<div class="faq-q">¿Cuál es el importe máximo que puedo reclamar mediante arbitraje?</div>
+<div class="faq-a"><div class="faq-a-inner">El arbitraje de consumo (Junta Arbitral de Consumo) no tiene límite máximo formal en el derecho español — puedes presentar cualquier disputa de consumo. En la práctica, las Juntas están optimizadas para disputas inferiores a 15.000 €. Para importes mayores, el arbitraje formal conforme a la Ley de Arbitraje o la vía judicial es más adecuada, y la documentación de Leo es válida en ambos casos.</div></div>
+</div>
+<div class="faq-item">
+<div class="faq-q">¿Puede el profesional impugnar el informe del aparejador?</div>
+<div class="faq-a"><div class="faq-a-inner">Sí — cualquiera de las partes puede encargar su propio informe pericial de parte. En la práctica, si el informe del aparejador se basa en prueba documental clara (fotos, presupuesto, órdenes de variación), un contrainforme tiene menos peso salvo que aporte nueva prueba física. La Junta Arbitral valora toda la prueba pericial presentada. Los informes del aparejador de Leo están diseñados para ser metodológicamente sólidos y con un alcance bien definido, de modo que sean difíciles de rebatir.</div></div>
+</div>
+</div>
+</div><!-- end .content -->
+<div class="cta-section">
+<h2>Diseñado para protegerte.<br/><em>Desde el primer día.</em></h2>
+<p>La mejor disputa es la que nunca llega a producirse. El presupuesto detallado, el depósito de garantía y los sistemas de documentación de Leo previenen la mayoría de los problemas antes de que empiecen.</p>
+<div class="cta-links">
+<a class="cta-btn primary" href="https://wa.me/?text=Hi!%20I%27d%20like%20to%20start%20a%20Leo%20project%20%F0%9F%91%8B" rel="noopener" target="_blank">
+<svg fill="white" height="18" viewbox="0 0 24 24" width="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>Iniciar un proyecto</a>
+<a class="cta-btn secondary" href="/como-verificamos">Cómo verificamos a los profesionales →</a>
+</div>
+</div>
+<div class="footer">
+<p>© 2026 Leo Casa Limited · Company No. 16259714 ·<a href="/">Inicio</a> · <a href="/como-verificamos">Cómo verificamos a los profesionales</a> · <a href="/contrato">Contrato de obra</a> · <a href="/terms-es">Términos y condiciones</a></p>
+</div>
+<script>
+document.querySelectorAll('.faq-item').forEach(function(item){
+  item.querySelector('.faq-q').addEventListener('click',function(){
+    var wasOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');});
+    if(!wasOpen)item.classList.add('open');
+  });
+});
+</script>
+<script>
+(function(){
+  var ls = document.getElementById('langSwitch');
+  if(!ls) return;
+  ls.querySelector('.lang-btn').addEventListener('click', function(e){
+    e.stopPropagation();
+    ls.classList.toggle('open');
+  });
+  document.addEventListener('click', function(){ ls.classList.remove('open'); });
+})();
+</script>
+</body>
+</html>

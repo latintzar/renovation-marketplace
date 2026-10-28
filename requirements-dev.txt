@@ -1,0 +1,13 @@
+# The scripted UI needs Python's standard library and the web workspace only.
+# These small dependencies run source/domain checks without AI or payment services.
+fastapi==0.141.1
+httpx==0.28.1
+pydantic==2.13.5
+pydantic-settings==2.7.1
+python-dotenv==1.2.3
+pytest==8.3.4
+pytest-asyncio==0.24.0
+stripe==15.0.0
+Jinja2==3.1.6
+Babel==2.18.0
+respx==0.22.0

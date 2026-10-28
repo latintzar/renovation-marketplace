@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="/brand-vars.css">
+<title>Why Escrow Changes Everything for Home Renovation Payments — Leo Stories</title>
+<meta name="description" content="How escrow and milestone-based payments protect both homeowners and contractors in renovation projects. What escrow means, how it works, and why it's becoming the standard in Spain.">
+<meta property="og:title" content="Why Escrow Changes Everything for Home Renovation Payments — Leo Stories">
+<meta property="og:description" content="How escrow and milestone-based payments protect both homeowners and contractors in renovation projects. What escrow means, how it works, and why it's becoming the standard in Spain.">
+<meta property="og:image" content="/sample-attachment.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://leo.casa/stories/escrow-changes-everything">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Escrow Changes Everything for Home Renovation Payments — Leo Stories">
+<meta name="twitter:description" content="How escrow and milestone-based payments protect both homeowners and contractors in renovation projects. What escrow means, how it works, and why it's becoming the standard in Spain.">
+<meta name="twitter:image" content="/sample-attachment.png">
+<link rel="canonical" href="https://leo.casa/stories/escrow-changes-everything">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<!-- Schema.org Article -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Why Escrow Changes Everything for Home Renovation Payments",
+  "description": "How escrow and milestone-based payments protect both homeowners and contractors in renovation projects. What escrow means, how it works, and why it's becoming the standard in Spain.",
+  "image": "/sample-attachment.png",
+  "datePublished": "2026-03-14",
+  "dateModified": "2026-03-14",
+  "author": {
+    "@type": "Organization",
+    "name": "Leo",
+    "url": "https://leo.casa"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Leo",
+    "url": "https://leo.casa",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/sample-attachment.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://leo.casa/stories/escrow-changes-everything"
+  }
+}
+</script>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+        {"@type": "Question", "name": "How does escrow work for home renovation payments?", "acceptedAnswer": {"@type": "Answer", "text": "The homeowner deposits the total project funds into a secure escrow account managed by a neutral third party before work begins. As the contractor completes each agreed milestone (e.g., demolition, plumbing, tiling), the corresponding payment is released from escrow. Neither party controls the funds directly \u2014 money is only released when both sides confirm the milestone conditions have been met."}},
+    {"@type": "Question", "name": "Why is paying a contractor upfront risky?", "acceptedAnswer": {"@type": "Answer", "text": "Paying large sums upfront \u2014 such as the full project cost or a disproportionate deposit \u2014 removes the contractor's financial incentive to stay on schedule. Thousands of homeowners each year experience contractors who disappear, delay work, or fail to deliver materials after receiving upfront payment. With no leverage, the homeowner is left chasing refunds, often through costly legal proceedings."}},
+    {"@type": "Question", "name": "How do milestone-based payments protect both homeowners and contractors?", "acceptedAnswer": {"@type": "Answer", "text": "Milestones protect homeowners by ensuring they only pay for completed work, reducing the risk of losing money to unfinished projects. They protect contractors by guaranteeing that funds are already secured in escrow and will be released promptly upon completion of each phase \u2014 eliminating the common problem of homeowners withholding final payments unfairly. Both parties have clear expectations tied to specific deliverables."}},
+    {"@type": "Question", "name": "How many milestones should a typical renovation project have?", "acceptedAnswer": {"@type": "Answer", "text": "Most residential renovations are divided into 3 to 5 milestones depending on project complexity. A bathroom renovation might have 3 milestones (demolition, rough-in plumbing and electrical, finishing and fixtures), while a full home renovation could have 5 or more. Each milestone should be clearly defined in the contract with specific deliverables so there is no ambiguity about when payment is triggered."}}
+  ]
+}
+</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+img{max-width:100%}
+html{font-size:17px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);min-height:100vh;line-height:1.65}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-repeat:repeat;z-index:9999}
+
+/* ── Progress Bar ── */
+.progress-bar{position:fixed;top:0;left:0;height:3px;background:var(--terracotta);width:0%;z-index:1000;transition:width 60ms linear}
+
+/* ── Header ── */
+.site-header{position:sticky;top:0;z-index:100;background:rgba(250,248,244,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.header-inner{max-width:780px;margin:0 auto;padding:0 28px;height:56px;display:flex;align-items:center;justify-content:space-between}
+.header-left{display:flex;align-items:center;gap:12px}
+.header-logo{font-family:'Playfair Display',Georgia,serif;font-size:1.15rem;font-weight:600;letter-spacing:-.03em;color:var(--ink);text-decoration:none}
+.header-divider{width:1px;height:18px;background:var(--border)}
+.header-section{font-size:.82rem;font-weight:500;color:var(--muted);text-decoration:none}
+.header-section:hover{color:var(--stone)}
+.header-back{font-size:.82rem;font-weight:500;color:var(--teal);text-decoration:none;display:flex;align-items:center;gap:4px}
+.header-back:hover{text-decoration:underline}
+.header-back svg{width:14px;height:14px}
+
+/* ── Hero ── */
+.hero-image{display:none}
+
+/* ── Article ── */
+.article-wrap{max-width:680px;margin:0 auto;padding:48px 28px 64px}
+.article-category{display:inline-block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--terracotta);margin-bottom:16px}
+.article-title{font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.8rem,5vw,2.6rem);font-weight:700;letter-spacing:-.02em;line-height:1.2;margin-bottom:16px}
+.article-meta{display:flex;align-items:center;gap:12px;font-size:.82rem;color:var(--muted);margin-bottom:40px;padding-bottom:24px;border-bottom:1px solid var(--border)}
+.article-meta .dot{width:3px;height:3px;border-radius:50%;background:var(--muted)}
+
+.article-body{font-size:1.06rem;line-height:1.85;color:var(--stone)}
+.article-body h2{font-family:'Playfair Display',Georgia,serif;font-size:1.4rem;font-weight:600;letter-spacing:-.01em;color:var(--ink);margin:48px 0 16px}
+.article-body h3{font-family:'Playfair Display',Georgia,serif;font-size:1.15rem;font-weight:600;color:var(--ink);margin:36px 0 12px}
+.article-body p{margin-bottom:20px}
+.article-body ul,.article-body ol{margin:0 0 20px 24px}
+.article-body li{margin-bottom:8px;line-height:1.75}
+.article-body strong{color:var(--ink);font-weight:600}
+.article-body a{color:var(--teal);text-decoration:underline;text-underline-offset:2px}
+.article-body a:hover{color:var(--terracotta)}
+.article-body blockquote{margin:32px 0;padding:20px 24px;border-left:3px solid var(--terracotta);background:rgba(218,101,77,.04);border-radius:0 8px 8px 0;font-family:'Playfair Display',Georgia,serif;font-size:1.15rem;font-style:italic;line-height:1.6;color:var(--ink)}
+.article-body blockquote p{margin-bottom:0;color:var(--ink);font-size:inherit;line-height:inherit}
+
+/* ── Leo CTA callout ── */
+.leo-callout{margin:40px 0;padding:28px 32px;background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);display:flex;align-items:center;gap:20px}
+.leo-callout-icon{width:48px;height:48px;background:var(--teal);border-radius:var(--r-lg);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.leo-callout-icon svg{width:24px;height:24px;color:#fff}
+.leo-callout-body{flex:1}
+.leo-callout-title{font-family:var(--sans);font-weight:600;font-size:1rem;color:var(--ink);margin-bottom:4px}
+.leo-callout-text{font-size:.88rem;color:var(--stone);line-height:1.5;margin-bottom:8px}
+.leo-callout-link{font-size:.85rem;font-weight:600;color:var(--teal);text-decoration:none}
+.leo-callout-link:hover{text-decoration:underline}
+
+/* ── FAQ Section ── */
+.faq-section{margin-top:56px;padding-top:40px;border-top:1px solid var(--border)}
+.faq-title{font-family:'Playfair Display',Georgia,serif;font-size:1.3rem;font-weight:600;color:var(--ink);margin-bottom:24px}
+.faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+.faq-item:last-child{border-bottom:none;padding-bottom:0}
+.faq-q{font-weight:600;color:var(--ink);font-size:1rem;margin-bottom:8px;cursor:pointer;display:flex;align-items:flex-start;gap:8px}
+.faq-q::before{content:'Q';display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:var(--r);background:var(--terracotta);color:#fff;font-size:.7rem;font-weight:700;flex-shrink:0;margin-top:2px}
+.faq-a{font-size:.95rem;color:var(--stone);line-height:1.7;padding-left:30px}
+
+/* ── Share ── */
+.share-row{display:flex;align-items:center;gap:10px;margin-top:40px;padding-top:24px;border-top:1px solid var(--border)}
+.share-label{font-size:.82rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.share-btn{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;border:1px solid var(--border);background:var(--card);color:var(--stone);cursor:pointer;transition:border-color .15s,color .15s}
+.share-btn:hover{border-color:var(--stone);color:var(--ink)}
+.share-btn svg{width:16px;height:16px}
+.share-toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;font-size:.85rem;font-weight:500;padding:10px 20px;border-radius:var(--r-pill);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:500}
+.share-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ── Related Articles ── */
+.related-section{margin-top:56px;padding-top:40px;border-top:1px solid var(--border)}
+.related-title{font-family:'Playfair Display',Georgia,serif;font-size:1.3rem;font-weight:600;color:var(--ink);margin-bottom:24px}
+.related-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.related-card{text-decoration:none;color:inherit;border-radius:var(--r-lg);overflow:hidden;background:var(--card);border:1px solid var(--border);transition:box-shadow .2s,transform .15s}
+.related-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.08);transform:translateY(-2px)}
+.related-card-img{width:100%;height:140px;object-fit:cover;display:block}
+.related-card-body{padding:16px}
+.related-card-cat{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--terracotta);margin-bottom:6px}
+.related-card-title{font-family:var(--sans);font-size:.95rem;font-weight:600;color:var(--ink);line-height:1.35}
+.related-card-time{font-size:.75rem;color:var(--muted);margin-top:8px}
+
+/* ── Footer ── */
+footer{background:var(--ink);color:rgba(253,251,247,.6);padding:48px 0 32px;margin-top:64px}
+.footer-inner{display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between;max-width:700px;margin:0 auto;padding:0 28px}
+.footer-col{min-width:120px}
+.footer-col-brand{flex:1 1 200px}
+.footer-brand{font-family:'Playfair Display',Georgia,serif;font-size:1.2rem;font-weight:600;letter-spacing:-.03em;color:var(--cream);margin-bottom:8px}
+.footer-tagline{font-size:.82rem;color:rgba(253,251,247,.5);line-height:1.5;max-width:220px}
+.footer-col h4{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:rgba(253,251,247,.4);margin-bottom:12px}
+.footer-col a{display:block;font-size:.85rem;color:rgba(253,251,247,.6);text-decoration:none;padding:3px 0;transition:color .15s}
+.footer-col a:hover{color:var(--cream)}
+.footer-bottom{font-size:.75rem;color:rgba(253,251,247,.35);text-align:center;margin-top:32px;padding:0 28px}
+
+/* ── Responsive ── */
+@media(max-width:600px){
+  .header-inner{padding:0 16px;height:50px}
+  .article-wrap{padding:32px 20px 48px}
+  .hero-image{display:none}
+  .article-title{font-size:clamp(1.5rem,6vw,2rem)}
+  .article-meta{flex-wrap:wrap;gap:8px}
+  .related-grid{grid-template-columns:1fr}
+  .leo-callout{flex-direction:column;align-items:flex-start;padding:20px 24px}
+  .footer-inner{flex-direction:column;gap:24px;padding:0 16px}
+  .footer-col-brand{flex:1 1 100%}
+  .share-row{flex-wrap:wrap}
+}
+.lang-switch{position:relative;z-index:2}
+.lang-btn{display:flex;align-items:center;gap:3px;background:none;border:1px solid var(--border);border-radius:var(--r-pill);padding:5px 10px;font-family:'Source Sans 3',sans-serif;font-size:.72rem;font-weight:600;color:var(--ink);cursor:pointer;white-space:nowrap;transition:border-color .15s}
+.lang-btn:hover{border-color:var(--stone)}
+.lang-flag{font-size:14px;line-height:1}
+.lang-code{letter-spacing:.03em}
+.lang-chevron{width:8px;height:8px;opacity:.5}
+.lang-dropdown{position:absolute;right:0;top:calc(100% + 6px);background:#fff;border-radius:var(--r-md);box-shadow:0 4px 20px rgba(0,0,0,.12);padding:4px;display:none;min-width:120px;z-index:200}
+.lang-switch.open .lang-dropdown{display:block}
+.lang-option{display:flex;align-items:center;gap:6px;padding:7px 12px;border-radius:var(--r);text-decoration:none;font-family:'Source Sans 3',sans-serif;font-size:.78rem;color:var(--ink);white-space:nowrap}
+.lang-option:hover{background:rgba(0,0,0,.04)}
+.lang-option.active{font-weight:700;color:var(--teal)}
+.header-right{display:flex;align-items:center;gap:10px}
+
+/* ── Story gradient hero ── */
+.story-hero{position:relative;width:100%;height:clamp(220px,30vw,440px);overflow:hidden}
+.story-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.story-hero .story-vellum{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.story-hero .sv-glass{position:absolute;inset:-20px;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);background:rgba(250,248,244,.06)}
+.story-hero .sv-bleed{position:absolute;inset:0;background:linear-gradient(155deg,rgba(255,255,255,.10) 0%,rgba(0,0,0,.03) 35%,rgba(0,0,0,.05) 65%,rgba(255,255,255,.06) 100%),linear-gradient(280deg,rgba(0,0,0,.04) 0%,rgba(255,255,255,.05) 30%,rgba(0,0,0,.02) 60%,rgba(255,255,255,.06) 100%)}
+.story-hero .sv-png{position:absolute;inset:0;mix-blend-mode:overlay;opacity:.22;background-image:none;background-size:128px;image-rendering:pixelated}
+.story-hero .sv-svg{position:absolute;inset:0;mix-blend-mode:overlay;opacity:.28;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px;background-repeat:repeat}
+
+</style>
+<script src="/fluid-gradient-v4.js" defer></script>
+<!-- Google Analytics 4 -->
+
+
+
+</head>
+<body>
+
+<!-- Progress bar -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a href="/" class="header-logo"><img src="/brand/leo-charcoal.svg" alt="Leo" height="18" style="display:block;width:auto" draggable="false"/></a>
+      <div class="header-divider"></div>
+      <a href="/stories" class="header-section">Stories</a>
+    </div>
+    <div class="header-right">
+      <a href="/stories" class="header-back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        All stories
+      </a>
+      <div class="lang-switch" id="langSwitch">
+        <button class="lang-btn" aria-label="Change language">
+          <span class="lang-flag">🇬🇧</span><span class="lang-code">EN</span>
+          <svg class="lang-chevron" viewBox="0 0 8 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1.5 3L4 5.5L6.5 3"/></svg>
+        </button>
+        <div class="lang-dropdown">
+          <a href="/stories/escrow-changes-everything" class="lang-option active">🇬🇧 English</a>
+          <a href="/stories/escrow-changes-everything-es" class="lang-option">🇪🇸 Español</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Hero image -->
+<div class="story-hero"><img src="/sample-attachment.png" alt="" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" aria-hidden="true"/><div class="story-vellum"><div class="sv-glass"></div><div class="sv-bleed"></div><div class="sv-png"></div><div class="sv-svg"></div></div></div>
+
+<!-- Article -->
+<article class="article-wrap" id="articleBody">
+  <span class="article-category">Payments</span>
+  <h1 class="article-title">Why Escrow Changes Everything for Home Renovation Payments</h1>
+  <div class="article-meta">
+    <span>Leo Editorial</span>
+    <span class="dot"></span>
+    <time datetime="2026-03-14">March 14, 2026</time>
+    <span class="dot"></span>
+    <span>9 min read</span>
+  </div>
+
+  <div class="article-body">
+    <h2>Why Milestone Payments and Escrow Are the Smartest Way to Pay for a Renovation</h2>
+
+<p>Here's a story that plays out thousands of times a year across Spain. A homeowner hands a contractor €15,000 upfront for a bathroom renovation. The contractor starts strong, then disappears for three weeks. Materials are half-delivered. Calls go unanswered. The homeowner is left with a gutted bathroom, a lighter bank account, and a sinking feeling in their stomach. Now flip it around: a contractor finishes a beautiful kitchen installation, sends the final invoice, and waits. And waits. The homeowner suddenly has "concerns" about minor details, withholds the final payment, and the contractor — who has materials to buy for the next job — is left chasing money they've already earned. Both of these scenarios are depressingly common. And both are entirely preventable.</p>
+
+<p>The solution isn't new — it's been used in real estate transactions for decades. It's called escrow. And when you combine it with a milestone-based payment structure, it becomes the single most effective way to protect everyone involved in a renovation project. Let's break down exactly how it works, why it matters, and why this model is rapidly becoming the standard for residential construction across Europe and beyond.</p>
+
+<h2>What Is Escrow, in Plain English?</h2>
+
+<p>Escrow sounds like a legal term that belongs in a boardroom, but the concept is beautifully simple. An escrow account is a secure holding place for money, managed by a neutral third party — not the homeowner, not the contractor. The funds sit there, safe and untouched, until both sides agree that specific conditions have been met. Think of it like a trusted friend holding the cash during a bet: nobody gets paid until the outcome is clear. In a renovation context, the homeowner deposits the project funds into escrow before work begins. As the contractor completes each agreed phase of work, the corresponding payment is released. No one is chasing money. No one is paying for work that hasn't happened yet.</p>
+
+<blockquote>Escrow is essentially a financial seatbelt for renovation projects. The homeowner's money is protected from being spent on work that never gets completed, and the contractor is guaranteed payment for work they actually deliver. It removes the single biggest source of conflict in any building project: who pays whom, and when.</blockquote>
+
+<p>As Build Safe Escrow — a Miami-based construction escrow service that's been gaining significant traction — puts it: "Funds are secured in a neutral escrow account, and payments are released only as agreed milestones are completed. This protects property owners while ensuring contractors are paid for the work they perform." It's not about distrust. It's about structure. Even when both parties begin a project with the best intentions, life can interrupt progress. Illness, supply chain delays, financial issues — any of these can derail a project and put previously paid funds at risk.</p>
+
+<h2>How Milestone Payments Actually Work</h2>
+
+<p>A milestone payment structure breaks a renovation project into clearly defined phases, each with its own deliverables and its own payment. Instead of the old model — a large deposit upfront, maybe a mid-project payment, and a final lump sum — you get a granular schedule that ties money directly to progress. A typical kitchen renovation, for example, might be structured as: 15% deposit on contract signing, 25% on completion of demolition and rough plumbing, 30% on installation of cabinetry and countertops, 20% on tiling and electrical finishing, and a final 10% on snagging and sign-off. Each payment is released only when the homeowner confirms that phase is complete.</p>
+
+<p>This isn't just theory — it's how large-scale construction has operated for years. Draw schedules, as they're known in the industry, are standard practice for commercial projects and construction loans. What's changing now is that this same discipline is being applied to residential renovations, where historically things have been far more informal. Companies like PayKeeper are building platforms specifically to automate this process for everyday transactions, including construction projects. Their model is straightforward: funds are deposited upfront into a secure escrow account, work is verified at each milestone, and payments release automatically to the right parties. No chasing cheques. No stalled progress.</p>
+
+<h3>What a Typical Milestone Schedule Looks Like</h3>
+
+<p>The exact structure depends on the project, but most renovations follow a similar rhythm. There's an initial deposit — usually between 10% and 20% — that secures the contractor's commitment and covers initial material purchases. Then come the construction phases, each representing a meaningful chunk of progress that can be visually verified. Demolition and structural work might be one milestone. Rough-in for plumbing, electrical, and HVAC is another. Finishing work — tiling, painting, fixture installation — forms the later milestones. And there's always a final retention payment, typically 5% to 10%, that's held back until all snagging items are resolved and the homeowner is fully satisfied.</p>
+
+<p>The beauty of this approach is that it creates natural checkpoints. Both parties pause, review the work, confirm it meets the agreed scope, and then — and only then — does money change hands. It transforms a renovation from a leap of faith into a series of manageable, verifiable steps. And when those milestones are defined clearly upfront, in a proper scope document, there's very little room for the kind of ambiguity that breeds disputes.</p>
+
+<h2>The Two Problems This Model Solves</h2>
+
+<h3>Problem One: Homeowners Paying for Work That Never Gets Finished</h3>
+
+<p>This is the nightmare scenario that keeps homeowners up at night, and it's especially common among expats renovating property in Spain. You're dealing with an unfamiliar market, possibly a language barrier, and contractors who may be juggling multiple jobs. The traditional payment model — hand over a big deposit and hope for the best — puts all the risk on the homeowner. If the contractor runs into financial trouble, your deposit might end up funding someone else's project. If they simply overcommit and can't deliver on time, you have very little leverage once the money is gone. According to construction law experts, this cross-funding problem — where a contractor uses one client's deposit to pay for materials on another client's job — is one of the most common causes of project failure in residential construction.</p>
+
+<p>With escrow-held milestone payments, this risk essentially disappears. Your money sits in a secure account, ring-fenced for your project alone. It cannot be used to fund other jobs. The contractor only receives payment when they've demonstrably completed the agreed work. If they walk off the job after milestone two, you've only paid for milestones one and two — and the remaining funds are still safely in escrow, available to hire a replacement contractor to finish the work.</p>
+
+<h3>Problem Two: Contractors Not Getting Paid for Completed Work</h3>
+
+<p>Here's the side of the story that doesn't get enough attention. Good contractors get burned by bad payment practices all the time. A homeowner approves the work verbally, then delays the bank transfer for weeks. Or they invent defects to justify withholding payment. Or they simply run out of money mid-project and can't pay what they owe. For a small contracting business — and most renovation firms in Spain are small — a single unpaid invoice of €8,000 or €10,000 can be catastrophic. It disrupts cash flow, delays material purchases for the next job, and creates a domino effect that can threaten the entire business.</p>
+
+<blockquote>Milestone-based escrow doesn't just protect homeowners — it's equally powerful for contractors. When funds are deposited into escrow before work begins, the contractor knows the money exists. They're not working on faith. They're working with the certainty that verified completion of each phase triggers guaranteed payment.</blockquote>
+
+<p>This is a point that Build Safe Escrow emphasises strongly: "Construction escrows are not just for the benefit of the property owner." The guaranteed payment structure gives contractors confidence to commit fully to a project, order materials without hesitation, and schedule their teams efficiently. It also eliminates the awkward dynamic of having to chase clients for money — a task that most tradespeople despise and that damages professional relationships. When the escrow account is funded, the conversation shifts from "Will I get paid?" to "Let me do great work so the next milestone gets approved."</p>
+
+<h2>Why This Model Is Going Mainstream</h2>
+
+<p>For years, construction escrow was considered overkill for residential projects — something reserved for large commercial developments or high-value real estate transactions. That's changing fast. The emergence of dedicated platforms like Build Safe Escrow, PayKeeper, and Leo signals a clear market shift. Homeowners are more informed than ever, contractors are tired of payment uncertainty, and technology has made it possible to manage escrow and milestone approvals without the bureaucratic overhead that used to make it impractical for a €20,000 bathroom renovation.</p>
+
+<p>The trend is particularly relevant in Spain's renovation market, where a growing population of international homeowners is investing in property upgrades. These buyers are accustomed to consumer protections in other areas of their financial lives — they wouldn't buy a car without some form of payment protection, and they increasingly expect the same when spending €30,000 to €80,000 on a home renovation. At the same time, Spanish tradespeople are recognising that offering escrow-backed payments is a competitive advantage. It signals professionalism, builds trust with cautious clients, and ultimately leads to smoother projects with fewer disputes.</p>
+
+<h3>How Leo Builds This Into the Renovation Process</h3>
+
+<p>This is exactly the approach that Leo has taken — not as an add-on, but as a core part of how renovation projects are managed on the platform. When a tradesperson uses Leo, they record a voice note describing the work, and Leo generates a professional scope document with clear phases and pricing. Payments are then held in escrow and released phase by phase as the homeowner approves completed work. It's the milestone payment model described in this article, but built directly into the workflow so that neither party needs to set up separate escrow accounts or negotiate payment terms from scratch. The scope defines the milestones, the escrow holds the funds, and approval triggers payment. Simple.</p>
+
+<p>What makes this particularly effective is the connection between scope clarity and payment structure. Most renovation disputes don't start as payment disputes — they start as scope disputes. "I thought the price included the tiling." "That wall wasn't in the original quote." When the scope is detailed and agreed upfront, and payments are tied to specific deliverables within that scope, the vast majority of conflicts never arise in the first place. The combination of clear documentation and structured payments creates a framework where both sides know exactly what's expected, exactly what it costs, and exactly when money moves.</p>
+
+<h2>What to Look for in an Escrow-Based Payment System</h2>
+
+<p>Not all escrow arrangements are created equal. If you're considering this approach for your renovation — and you should — here are the key features that matter. First, the escrow must be genuinely independent. The funds should be held by a neutral party, not by the contractor and not by a platform that has a financial incentive to release funds prematurely. Second, milestone definitions need to be specific and verifiable. "Phase 2 complete" means nothing; "all rough plumbing installed and pressure-tested, electrical first fix complete, and stud walls erected per approved plan" means everything. Third, the approval process should be straightforward — ideally digital, with a clear record of what was approved and when.</p>
+
+<p>You should also look for transparency in fees. Escrow services typically charge a percentage of the project value or a flat fee per transaction. This cost is almost always worth it — consider it insurance against the far greater cost of a payment dispute or an abandoned project. Finally, ensure there's a clear dispute resolution mechanism. What happens if the homeowner refuses to approve a milestone that the contractor believes is complete? A good system will have a defined process for resolving these situations fairly, without leaving funds locked indefinitely.</p>
+
+<blockquote>The cost of escrow protection on a renovation project is typically a fraction of the total budget — but it eliminates the risk of losing thousands to abandoned work or unpaid invoices. For both homeowners and contractors, it's the most cost-effective insurance available.</blockquote>
+
+<h2>The Bottom Line</h2>
+
+<p>Renovation payments have been broken for a long time. The traditional model — big deposits, vague timelines, and a prayer that everything works out — serves neither homeowners nor contractors well. Escrow-held milestone payments fix this by introducing accountability, transparency, and fairness into every transaction. Your money is protected until work is verified. Your contractor is guaranteed payment for work they complete. And both of you can focus on what actually matters: getting the renovation done well.</p>
+
+<p>If you're planning a renovation in Spain — whether you're a homeowner about to invest your savings or a tradesperson about to commit your time and expertise — insist on a milestone-based payment structure with proper escrow protection. It's not a sign of distrust. It's a sign of professionalism. And increasingly, it's simply how smart renovations get done.</p>
+  </div>
+
+  <!-- Leo CTA -->
+  <div class="leo-callout">
+    <div class="leo-callout-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    </div>
+    <div class="leo-callout-body">
+      <div class="leo-callout-title">Leo handles the paperwork</div>
+      <div class="leo-callout-text">Voice note in, professional scope out. Payments held safely until work is approved. Free for tradespeople.</div>
+      <a href="/" class="leo-callout-link">Learn more about Leo &rarr;</a>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq-section">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+        <div class="faq-item">
+      <div class="faq-q">How does escrow work for home renovation payments?</div>
+      <div class="faq-a">The homeowner deposits the total project funds into a secure escrow account managed by a neutral third party before work begins. As the contractor completes each agreed milestone (e.g., demolition, plumbing, tiling), the corresponding payment is released from escrow. Neither party controls the funds directly — money is only released when both sides confirm the milestone conditions have been met.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Why is paying a contractor upfront risky?</div>
+      <div class="faq-a">Paying large sums upfront — such as the full project cost or a disproportionate deposit — removes the contractor's financial incentive to stay on schedule. Thousands of homeowners each year experience contractors who disappear, delay work, or fail to deliver materials after receiving upfront payment. With no leverage, the homeowner is left chasing refunds, often through costly legal proceedings.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How do milestone-based payments protect both homeowners and contractors?</div>
+      <div class="faq-a">Milestones protect homeowners by ensuring they only pay for completed work, reducing the risk of losing money to unfinished projects. They protect contractors by guaranteeing that funds are already secured in escrow and will be released promptly upon completion of each phase — eliminating the common problem of homeowners withholding final payments unfairly. Both parties have clear expectations tied to specific deliverables.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How many milestones should a typical renovation project have?</div>
+      <div class="faq-a">Most residential renovations are divided into 3 to 5 milestones depending on project complexity. A bathroom renovation might have 3 milestones (demolition, rough-in plumbing and electrical, finishing and fixtures), while a full home renovation could have 5 or more. Each milestone should be clearly defined in the contract with specific deliverables so there is no ambiguity about when payment is triggered.</div>
+    </div>
+  </div>
+
+  <!-- Share -->
+  <div class="share-row">
+    <span class="share-label">Share</span>
+    <button class="share-btn" id="shareLink" aria-label="Copy link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+    </button>
+    <a class="share-btn" href="https://wa.me/?text=Why%20Escrow%20Changes%20Everything%20for%20Home%20Renovation%20Payments%20https://leo.casa/stories/escrow-changes-everything" target="_blank" rel="noopener" aria-label="Share on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.616l4.573-1.453A11.948 11.948 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.94 9.94 0 01-5.332-1.542l-.382-.229-2.716.863.904-2.652-.252-.4A9.944 9.944 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+    </a>
+    <a class="share-btn" href="https://twitter.com/intent/tweet?text=Why%20Escrow%20Changes%20Everything%20for%20Home%20Renovation%20Payments&url=https://leo.casa/stories/escrow-changes-everything" target="_blank" rel="noopener" aria-label="Share on X">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    </a>
+  </div>
+
+  <!-- Related -->
+  <div class="related-section">
+    <h2 class="related-title">More from Leo Stories</h2>
+    <div class="related-grid">
+            <a href="/stories/renovation-disputes-what-to-do" class="related-card" data-category="disputes">
+        <div class="related-card-thumb" style="width:100%;height:140px;position:relative;overflow:hidden"><img src="/sample-attachment.png" alt="" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" aria-hidden="true"/><div class="story-vellum"><div class="sv-glass"></div><div class="sv-bleed"></div><div class="sv-png"></div><div class="sv-svg"></div></div></div>
+        <div class="related-card-body">
+          <div class="related-card-cat">Disputes</div>
+          <div class="related-card-title">What to Do When Things Go Wrong on a Renovation Job</div>
+          <div class="related-card-time">8 min read</div>
+        </div>
+      </a>
+      <a href="/stories/mediation-not-litigation" class="related-card" data-category="disputes">
+        <div class="related-card-thumb" style="width:100%;height:140px;position:relative;overflow:hidden"><img src="/sample-attachment.png" alt="" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" aria-hidden="true"/><div class="story-vellum"><div class="sv-glass"></div><div class="sv-bleed"></div><div class="sv-png"></div><div class="sv-svg"></div></div></div>
+        <div class="related-card-body">
+          <div class="related-card-cat">Disputes</div>
+          <div class="related-card-title">Mediation, Not Litigation: Resolving Small Renovation Disputes</div>
+          <div class="related-card-time">8 min read</div>
+        </div>
+      </a>
+      <a href="/stories/managing-expectations-mid-project" class="related-card" data-category="communication">
+        <div class="related-card-thumb" style="width:100%;height:140px;position:relative;overflow:hidden"><img src="/sample-attachment.png" alt="" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" aria-hidden="true"/><div class="story-vellum"><div class="sv-glass"></div><div class="sv-bleed"></div><div class="sv-png"></div><div class="sv-svg"></div></div></div>
+        <div class="related-card-body">
+          <div class="related-card-cat">Communication</div>
+          <div class="related-card-title">The Conversation You Never Had: Managing Expectations Mid-Project</div>
+          <div class="related-card-time">8 min read</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</article>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col footer-col-brand">
+      <div class="footer-brand"><img src="/brand/leo-cream.svg" alt="Leo" height="18" style="display:block;width:auto" draggable="false"/></div>
+      <p class="footer-tagline">The layer between tradespeople and homeowners. Scope, payment, and protection for everyone.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="https://wa.me/?text=Hi%20Leo!%20%F0%9F%91%8B" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="/terms">Terms &amp; Conditions</a>
+    </div>
+    <div class="footer-col">
+      <h4>Read</h4>
+      <a href="/stories">Leo Stories</a>
+    </div>
+  </div>
+  <p class="footer-bottom">&copy; 2026 Leo Casa Limited &middot; Company No. 16259714 &middot; Serving all of Spain</p>
+</footer>
+
+<div class="share-toast" id="shareToast">Link copied!</div>
+
+<script>
+(function(){
+  var bar=document.getElementById('progressBar');
+  var article=document.getElementById('articleBody');
+  if(!bar||!article)return;
+  function update(){
+    var rect=article.getBoundingClientRect();
+    var top=window.scrollY+rect.top;
+    var height=rect.height;
+    var scrolled=window.scrollY-top;
+    var pct=Math.max(0,Math.min(100,(scrolled/(height-window.innerHeight))*100));
+    bar.style.width=pct+'%';
+  }
+  window.addEventListener('scroll',update,{passive:true});
+  update();
+})();
+
+(function(){
+  var btn=document.getElementById('shareLink');
+  var toast=document.getElementById('shareToast');
+  if(!btn)return;
+  btn.addEventListener('click',function(){
+    navigator.clipboard.writeText(window.location.href).then(function(){
+      toast.classList.add('show');
+      setTimeout(function(){toast.classList.remove('show')},2000);
+    });
+  });
+})();
+
+(function(){
+  var sw=document.getElementById('langSwitch');
+  if(!sw)return;
+  var btn=sw.querySelector('.lang-btn');
+  btn.addEventListener('click',function(e){e.stopPropagation();sw.classList.toggle('open')});
+  document.addEventListener('click',function(){sw.classList.remove('open')});
+})();
+</script>
+</body>
+</html>

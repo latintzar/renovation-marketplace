@@ -1,0 +1,34 @@
+{
+  "name": "@scope/ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./theme.css": "./src/theme.css"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@scope/tsconfig": "workspace:*",
+    "@types/react": "^19.2.14",
+    "typescript": "~5.9.3"
+  },
+  "dependencies": {
+    "@google-pay/button-react": "^3.2.1",
+    "@scope/brand": "workspace:*",
+    "apple-pay-button": "^1.2.1",
+    "dompurify": "^3.3.1",
+    "i18next": "^26.0.4",
+    "i18next-browser-languagedetector": "^8.2.1",
+    "lucide-react": "^0.577.0",
+    "mapbox-gl": "^3.22.0",
+    "marked": "^17.0.5",
+    "react-i18next": "^17.0.2",
+    "vaul": "^1.1.2"
+  }
+}

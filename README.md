@@ -2,9 +2,23 @@
 
 Leo.casa is a renovation marketplace for homeowners and contractors, with quotes, project chat and milestone payments.
 
-[Website](https://leo.casa) · [Open app](https://preview.atelierneyra.com/?project=renovation-marketplace) · [Documentation](https://docs.atelierneyra.com/renovation-marketplace/overview/)
+[Website](https://leo.casa) · [Open app](https://preview.atelierneyra.com/apps/renovation-marketplace/?local_role=contractor) · [Documentation](https://docs.atelierneyra.com/renovation-marketplace/overview/)
 
 ![Native renovation quote with phases, materials and total](docs/assets/readme-hero.png)
+
+## How it works
+
+The quote, conversation, evidence of work and payments often live in different places. Both sides need a shared understanding of what was agreed, what changed and what is ready to pay.
+
+| Feature | What it does |
+| --- | --- |
+| Quote canvas | Edit phases, work, materials and totals in the offer itself. |
+| Project chat | Discuss the quote and keep messages with the project. |
+| Variations | Review changes to the agreed work and price. |
+| Milestone review | Submit proof, review the phase and record acceptance. |
+| Stripe Connect | The source includes checkout, connected accounts, transfers, refunds, disputes and event handling. |
+
+The native preview runs the original React and FastAPI app with a private visitor workspace. Quote edits, messages, proof and reviews persist. Real payment and provider operations are commissioned with your own accounts. Set up the database and Stripe Connect account, then complete account-specific payment and compliance acceptance. [Product guide](docs/PROJECT.md).
 
 ## Run locally
 

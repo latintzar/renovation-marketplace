@@ -109,3 +109,7 @@ python tests/browser_native.py
 The backend tests exercise persisted edits, canonical/legacy field aliases, original sender and project-party logic, phase proof, restart, cross-visitor isolation, origin checks, request bounds and held provider/payment routes. The browser check exercises the normal quote, project and chat pages against a running local server. Playwright and Chromium are optional test dependencies: install `playwright==1.58.0`, then run `python -m playwright install chromium`. `NATIVE_TEST_URL` selects another running origin/prefix; `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` selects an existing Chromium binary.
 
 [made by atelier neyra](https://atelierneyra.com)
+
+## Atelier navigation
+
+The bundled MIT Atelier navigation and ISC-licensed Lucide icons link the hosted app to the other previews. The root viewport starts beneath the 56px bar. Remove the script and root inset from the web entry when adapting the workspace for another deployment.

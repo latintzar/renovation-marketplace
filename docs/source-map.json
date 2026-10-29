@@ -1942,6 +1942,266 @@
     },
     {
       "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/seed.py",
+      "name": "starter",
+      "line": 6,
+      "arguments": [
+        "identity"
+      ],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/server.py",
+      "name": "create_app",
+      "line": 18,
+      "arguments": [
+        "state"
+      ],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/server.py",
+      "name": "identity",
+      "line": 34,
+      "arguments": [],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/server.py",
+      "name": "current_user",
+      "line": 40,
+      "arguments": [],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/server.py",
+      "name": "contractor",
+      "line": 45,
+      "arguments": [],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/server.py",
+      "name": "homeowner",
+      "line": 51,
+      "arguments": [],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/server.py",
+      "name": "no_external_sandbox",
+      "line": 57,
+      "arguments": [],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/server.py",
+      "name": "domain_error",
+      "line": 62,
+      "arguments": [
+        "_request",
+        "error"
+      ],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/server.py",
+      "name": "workspace",
+      "line": 66,
+      "arguments": [
+        "request",
+        "call_next"
+      ],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/server.py",
+      "name": "session",
+      "line": 131,
+      "arguments": [],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/server.py",
+      "name": "language",
+      "line": 135,
+      "arguments": [
+        "request"
+      ],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/server.py",
+      "name": "logout",
+      "line": 142,
+      "arguments": [],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/server.py",
+      "name": "health",
+      "line": 149,
+      "arguments": [],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/server.py",
+      "name": "page",
+      "line": 160,
+      "arguments": [
+        "path"
+      ],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/store.py",
+      "name": "now",
+      "line": 16,
+      "arguments": [],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/store.py",
+      "name": "__init__",
+      "line": 21,
+      "arguments": [
+        "self",
+        "state"
+      ],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/store.py",
+      "name": "connect",
+      "line": 30,
+      "arguments": [
+        "self"
+      ],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/store.py",
+      "name": "admit",
+      "line": 37,
+      "arguments": [
+        "self",
+        "secret",
+        "role"
+      ],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/store.py",
+      "name": "user",
+      "line": 65,
+      "arguments": [
+        "self",
+        "identity"
+      ],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/store.py",
+      "name": "reset",
+      "line": 69,
+      "arguments": [
+        "self",
+        "identity"
+      ],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/store.py",
+      "name": "language",
+      "line": 74,
+      "arguments": [
+        "self",
+        "identity",
+        "language"
+      ],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/store.py",
+      "name": "rows",
+      "line": 83,
+      "arguments": [
+        "self",
+        "db",
+        "guest",
+        "table"
+      ],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/store.py",
+      "name": "operation",
+      "line": 86,
+      "arguments": [
+        "self",
+        "identity",
+        "table",
+        "method",
+        "params",
+        "payload"
+      ],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/store.py",
+      "name": "matches",
+      "line": 92,
+      "arguments": [
+        "row"
+      ],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/store.py",
+      "name": "rest_app",
+      "line": 163,
+      "arguments": [
+        "self"
+      ],
+      "description": ""
+    },
+    {
+      "language": "Python",
+      "file": "apps/scope/product/backend/local_mode/store.py",
+      "name": "records",
+      "line": 167,
+      "arguments": [
+        "table",
+        "request"
+      ],
+      "description": ""
+    },
+    {
+      "language": "Python",
       "file": "apps/scope/product/backend/main.py",
       "name": "lifespan",
       "line": 62,
@@ -3357,7 +3617,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/canvas.py",
       "name": "_get_job_by_token",
-      "line": 39,
+      "line": 40,
       "arguments": [
         "token"
       ],
@@ -3367,7 +3627,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/canvas.py",
       "name": "_get_contractor_display",
-      "line": 52,
+      "line": 53,
       "arguments": [
         "contractor_id"
       ],
@@ -3377,7 +3637,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/canvas.py",
       "name": "_get_quote_by_token",
-      "line": 75,
+      "line": 76,
       "arguments": [
         "token"
       ],
@@ -3387,7 +3647,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/canvas.py",
       "name": "api_get_canvas",
-      "line": 91,
+      "line": 92,
       "arguments": [
         "token"
       ],
@@ -3397,10 +3657,11 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/canvas.py",
       "name": "api_finalize_quote",
-      "line": 167,
+      "line": 170,
       "arguments": [
         "req",
-        "ctx"
+        "ctx",
+        "caller"
       ],
       "description": "Persist a finalized quote to Supabase and return a shareable URL."
     },
@@ -3408,7 +3669,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/canvas.py",
       "name": "api_list_quotes",
-      "line": 249,
+      "line": 257,
       "arguments": [
         "contractor_id"
       ],
@@ -3418,9 +3679,10 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/canvas.py",
       "name": "api_update_quote",
-      "line": 320,
+      "line": 329,
       "arguments": [
-        "req"
+        "req",
+        "caller"
       ],
       "description": "Update an existing quote row by token."
     },
@@ -3428,7 +3690,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/canvas.py",
       "name": "api_claim_profile",
-      "line": 357,
+      "line": 373,
       "arguments": [
         "req"
       ],
@@ -3438,7 +3700,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/canvas.py",
       "name": "get_contractor_by_auth_user",
-      "line": 414,
+      "line": 430,
       "arguments": [
         "auth_user_id"
       ],
@@ -3448,7 +3710,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/canvas.py",
       "name": "api_set_phone",
-      "line": 470,
+      "line": 486,
       "arguments": [
         "req"
       ],
@@ -3458,7 +3720,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/canvas.py",
       "name": "get_homeowner_quotes",
-      "line": 499,
+      "line": 515,
       "arguments": [
         "email",
         "limit"
@@ -4650,7 +4912,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/milestone.py",
       "name": "release_milestone",
-      "line": 269,
+      "line": 273,
       "arguments": [
         "req",
         "ctx"
@@ -4661,7 +4923,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/milestone.py",
       "name": "create_variation",
-      "line": 441,
+      "line": 445,
       "arguments": [
         "req",
         "ctx"
@@ -4672,7 +4934,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/milestone.py",
       "name": "approve_variation",
-      "line": 497,
+      "line": 501,
       "arguments": [
         "req",
         "ctx"
@@ -4683,7 +4945,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/milestone.py",
       "name": "decline_variation",
-      "line": 575,
+      "line": 579,
       "arguments": [
         "req",
         "ctx"
@@ -4694,7 +4956,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/milestone.py",
       "name": "cancel_job",
-      "line": 639,
+      "line": 643,
       "arguments": [
         "req",
         "ctx"
@@ -4705,7 +4967,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/milestone.py",
       "name": "create_review",
-      "line": 730,
+      "line": 734,
       "arguments": [
         "req"
       ],
@@ -4715,7 +4977,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/milestone.py",
       "name": "get_notifications",
-      "line": 792,
+      "line": 796,
       "arguments": [
         "user_id",
         "limit"
@@ -4726,7 +4988,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/milestone.py",
       "name": "mark_notifications_read",
-      "line": 813,
+      "line": 817,
       "arguments": [
         "req"
       ],
@@ -4736,7 +4998,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/milestone.py",
       "name": "get_milestone_updates",
-      "line": 831,
+      "line": 835,
       "arguments": [
         "quote_token"
       ],
@@ -4746,7 +5008,7 @@
       "language": "Python",
       "file": "apps/scope/product/backend/routes/milestone.py",
       "name": "get_variation_orders",
-      "line": 847,
+      "line": 851,
       "arguments": [
         "quote_token"
       ],
@@ -8047,7 +8309,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/hooks/useChat.ts",
       "name": "sessionKey",
-      "line": 57,
+      "line": 59,
       "arguments": [
         "mode",
         "audience",
@@ -8059,7 +8321,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/hooks/useChat.ts",
       "name": "loadSession",
-      "line": 63,
+      "line": 65,
       "arguments": [
         "mode",
         "audience",
@@ -8071,7 +8333,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/hooks/useChat.ts",
       "name": "stripHeavyFields",
-      "line": 81,
+      "line": 83,
       "arguments": [
         "msgs"
       ],
@@ -8081,7 +8343,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/hooks/useChat.ts",
       "name": "saveSession",
-      "line": 88,
+      "line": 90,
       "arguments": [
         "mode",
         "audience",
@@ -8094,7 +8356,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/hooks/useChat.ts",
       "name": "briefToUiStatus",
-      "line": 107,
+      "line": 109,
       "arguments": [
         "b"
       ],
@@ -8104,7 +8366,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/hooks/useChat.ts",
       "name": "scopeToUiStatus",
-      "line": 114,
+      "line": 116,
       "arguments": [
         "s"
       ],
@@ -8114,7 +8376,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/hooks/useChat.ts",
       "name": "scopeHasPreviewBody",
-      "line": 123,
+      "line": 125,
       "arguments": [
         "scope"
       ],
@@ -8124,7 +8386,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/hooks/useChat.ts",
       "name": "messagesToApiHistory",
-      "line": 136,
+      "line": 138,
       "arguments": [
         "messages"
       ],
@@ -8134,7 +8396,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/hooks/useChat.ts",
       "name": "isDocFile",
-      "line": 161,
+      "line": 163,
       "arguments": [
         "f"
       ],
@@ -8144,7 +8406,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/hooks/useChat.ts",
       "name": "extractDocs",
-      "line": 167,
+      "line": 169,
       "arguments": [
         "files"
       ],
@@ -8154,7 +8416,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/hooks/useChat.ts",
       "name": "userLanguageHint",
-      "line": 180,
+      "line": 182,
       "arguments": [
         "lastUserText"
       ],
@@ -8164,7 +8426,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/hooks/useChat.ts",
       "name": "useChat",
-      "line": 240,
+      "line": 242,
       "arguments": [
         "options"
       ],
@@ -8174,7 +8436,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/hooks/useChat.ts",
       "name": "fire",
-      "line": 277,
+      "line": 279,
       "arguments": [],
       "description": ""
     },
@@ -8224,7 +8486,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "log",
-      "line": 34,
+      "line": 35,
       "arguments": [
         "msg",
         "data"
@@ -8235,7 +8497,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "logError",
-      "line": 41,
+      "line": 42,
       "arguments": [
         "msg",
         "err"
@@ -8246,7 +8508,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "setAuthTokenGetter",
-      "line": 60,
+      "line": 61,
       "arguments": [
         "fn"
       ],
@@ -8256,7 +8518,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "_sandboxHeaders",
-      "line": 72,
+      "line": 73,
       "arguments": [],
       "description": "Returns X-Sandbox header when sandbox mode is active. Uses the shared isSandbox() helper from utils to avoid key drift."
     },
@@ -8264,7 +8526,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "jsonRequest",
-      "line": 94,
+      "line": 95,
       "arguments": [
         "url",
         "init"
@@ -8275,7 +8537,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "apiFetch",
-      "line": 106,
+      "line": 107,
       "arguments": [
         "url",
         "init"
@@ -8286,7 +8548,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "sendChatMessage",
-      "line": 188,
+      "line": 189,
       "arguments": [
         "params"
       ],
@@ -8296,7 +8558,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "transcribeAudio",
-      "line": 231,
+      "line": 232,
       "arguments": [
         "blob",
         "opts"
@@ -8307,7 +8569,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "uploadPhotos",
-      "line": 258,
+      "line": 259,
       "arguments": [
         "leadId",
         "photos"
@@ -8318,7 +8580,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "importProfile",
-      "line": 293,
+      "line": 294,
       "arguments": [
         "url",
         "contractorId"
@@ -8329,7 +8591,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "signalComposing",
-      "line": 367,
+      "line": 368,
       "arguments": [
         "userId",
         "composing",
@@ -8341,7 +8603,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "extractDocument",
-      "line": 379,
+      "line": 380,
       "arguments": [
         "file"
       ],
@@ -8351,7 +8613,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "fetchInbox",
-      "line": 437,
+      "line": 438,
       "arguments": [
         "token"
       ],
@@ -8361,7 +8623,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "approveOutreach",
-      "line": 465,
+      "line": 466,
       "arguments": [
         "token"
       ],
@@ -8371,7 +8633,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "fetchCanvas",
-      "line": 511,
+      "line": 512,
       "arguments": [
         "token"
       ],
@@ -8381,7 +8643,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "finalizeScope",
-      "line": 538,
+      "line": 539,
       "arguments": [
         "contractorId",
         "scopeData",
@@ -8393,7 +8655,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "claimProfile",
-      "line": 567,
+      "line": 568,
       "arguments": [
         "canvasToken",
         "accessToken"
@@ -8404,7 +8666,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "createStripeAccount",
-      "line": 603,
+      "line": 604,
       "arguments": [
         "contractorId",
         "opts"
@@ -8415,7 +8677,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "getStripeAccountLink",
-      "line": 620,
+      "line": 621,
       "arguments": [
         "contractorId"
       ],
@@ -8425,7 +8687,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "getStripeAccountStatus",
-      "line": 640,
+      "line": 641,
       "arguments": [
         "contractorId"
       ],
@@ -8435,7 +8697,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "fetchContractorScopes",
-      "line": 675,
+      "line": 676,
       "arguments": [
         "contractorId"
       ],
@@ -8445,7 +8707,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "updateScope",
-      "line": 698,
+      "line": 699,
       "arguments": [
         "token",
         "scopeData",
@@ -8457,7 +8719,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/api.ts",
       "name": "fetchOps",
-      "line": 763,
+      "line": 764,
       "arguments": [
         "token"
       ],
@@ -8473,9 +8735,43 @@
     },
     {
       "language": "TypeScript",
+      "file": "apps/scope/product/web/src/lib/localAuth.ts",
+      "name": "session",
+      "line": 4,
+      "arguments": [],
+      "description": ""
+    },
+    {
+      "language": "TypeScript",
+      "file": "apps/scope/product/web/src/lib/localAuth.ts",
+      "name": "configured",
+      "line": 10,
+      "arguments": [],
+      "description": ""
+    },
+    {
+      "language": "TypeScript",
+      "file": "apps/scope/product/web/src/lib/localAuth.ts",
+      "name": "unsubscribe",
+      "line": 15,
+      "arguments": [],
+      "description": ""
+    },
+    {
+      "language": "TypeScript",
+      "file": "apps/scope/product/web/src/lib/runtime.ts",
+      "name": "appPath",
+      "line": 4,
+      "arguments": [
+        "path"
+      ],
+      "description": ""
+    },
+    {
+      "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/supabase.ts",
       "name": "signInWithGoogleForClaim",
-      "line": 24,
+      "line": 26,
       "arguments": [
         "claimToken"
       ],
@@ -8485,7 +8781,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/supabase.ts",
       "name": "setLanguagePreference",
-      "line": 39,
+      "line": 41,
       "arguments": [
         "lang"
       ],
@@ -8495,7 +8791,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/tracking.ts",
       "name": "initTracking",
-      "line": 42,
+      "line": 43,
       "arguments": [],
       "description": "Initialise PostHog. Call this once after cookie consent is granted. Safe to call multiple times \u2014 only initialises on first call."
     },
@@ -8503,7 +8799,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/tracking.ts",
       "name": "identify",
-      "line": 75,
+      "line": 77,
       "arguments": [
         "userId",
         "traits"
@@ -8514,7 +8810,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/tracking.ts",
       "name": "track",
-      "line": 98,
+      "line": 101,
       "arguments": [
         "event",
         "properties"
@@ -8525,7 +8821,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/lib/tracking.ts",
       "name": "_sendToBackend",
-      "line": 123,
+      "line": 126,
       "arguments": [
         "event",
         "properties"
@@ -8788,7 +9084,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/pages/FirstQuote.tsx",
       "name": "generateChangeSummary",
-      "line": 62,
+      "line": 65,
       "arguments": [
         "before",
         "after",
@@ -8800,7 +9096,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/pages/FirstQuote.tsx",
       "name": "EditModeWrapper",
-      "line": 143,
+      "line": 146,
       "arguments": [
         "{\n  scope,\n  lang,\n  isEditMode,\n  isThinking,\n  onEnterEdit,\n  onSaveEdits,\n  onCancelEdit,\n  onChange,\n}"
       ],
@@ -8810,7 +9106,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/pages/FirstQuote.tsx",
       "name": "ChatMode",
-      "line": 210,
+      "line": 213,
       "arguments": [
         "{\n  contractorId,\n  contractorName,\n  lang,\n  location,\n  editToken,\n  initialScope,\n  isFirstQuote,\n  onLangChange,\n  onScopeReady,\n  onStartFresh,\n  onGoToDashboard,\n}"
       ],
@@ -8820,7 +9116,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/pages/FirstQuote.tsx",
       "name": "FirstQuote",
-      "line": 521,
+      "line": 531,
       "arguments": [],
       "description": ""
     },
@@ -8828,7 +9124,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/pages/FirstQuote.tsx",
       "name": "handleScopeReady",
-      "line": 551,
+      "line": 561,
       "arguments": [
         "scope"
       ],
@@ -8838,7 +9134,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/pages/FirstQuote.tsx",
       "name": "handleAfterChatLocationConfirm",
-      "line": 573,
+      "line": 583,
       "arguments": [
         "label"
       ],
@@ -8848,7 +9144,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/pages/FirstQuote.tsx",
       "name": "handleConnectBank",
-      "line": 579,
+      "line": 589,
       "arguments": [
         "quoteToken"
       ],
@@ -8905,7 +9201,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/pages/JobChat.tsx",
       "name": "useSenderInfo",
-      "line": 43,
+      "line": 44,
       "arguments": [],
       "description": ""
     },
@@ -8913,7 +9209,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/pages/JobChat.tsx",
       "name": "formatGroupTime",
-      "line": 51,
+      "line": 52,
       "arguments": [
         "isoString"
       ],
@@ -8923,7 +9219,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/pages/JobChat.tsx",
       "name": "isSameGroup",
-      "line": 66,
+      "line": 67,
       "arguments": [
         "a",
         "b"
@@ -8934,7 +9230,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/pages/JobChat.tsx",
       "name": "MessageBubble",
-      "line": 72,
+      "line": 73,
       "arguments": [
         "{\n  message,\n  myRole,\n  showTimestamp,\n}"
       ],
@@ -8944,7 +9240,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/pages/JobChat.tsx",
       "name": "ChatSkeleton",
-      "line": 121,
+      "line": 122,
       "arguments": [],
       "description": "Skeleton loading state \u2014 alternating bubble placeholders"
     },
@@ -8952,7 +9248,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/pages/JobChat.tsx",
       "name": "JobChat",
-      "line": 136,
+      "line": 137,
       "arguments": [],
       "description": ""
     },
@@ -9620,7 +9916,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/reel/flag.ts",
       "name": "isReelFlowId",
-      "line": 28,
+      "line": 30,
       "arguments": [
         "v"
       ],
@@ -9630,7 +9926,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/reel/flag.ts",
       "name": "reelFlowId",
-      "line": 37,
+      "line": 39,
       "arguments": [],
       "description": "Resolve the active reel flow, or null when reel mode is off. Order: `?reel=<id>` query param (sticks it to localStorage) -> localStorage. `?reel=off` / `?reel=0` clears it. Invalid ids are ignored (treated as off)."
     },
@@ -9638,7 +9934,7 @@
       "language": "TypeScript",
       "file": "apps/scope/product/web/src/reel/flag.ts",
       "name": "isReel",
-      "line": 60,
+      "line": 63,
       "arguments": [],
       "description": "True when the app is running as a portfolio reel (any flow)."
     },
@@ -11016,8 +11312,18 @@
     {
       "language": "Python",
       "file": "packages/core/src/core/http.py",
+      "name": "local_http_transport",
+      "line": 46,
+      "arguments": [
+        "transport"
+      ],
+      "description": "Bind a recipient-owned REST transport for only the current request."
+    },
+    {
+      "language": "Python",
+      "file": "packages/core/src/core/http.py",
       "name": "http_client",
-      "line": 51,
+      "line": 66,
       "arguments": [
         "timeout"
       ],
@@ -11027,7 +11333,7 @@
       "language": "Python",
       "file": "packages/core/src/core/http.py",
       "name": "sb_request",
-      "line": 69,
+      "line": 87,
       "arguments": [
         "timeout"
       ],
@@ -11037,7 +11343,7 @@
       "language": "Python",
       "file": "packages/core/src/core/http.py",
       "name": "http_client_sync",
-      "line": 89,
+      "line": 107,
       "arguments": [
         "timeout"
       ],
@@ -16213,6 +16519,41 @@
   "routes": [
     {
       "method": "GET",
+      "path": "/api/local/session",
+      "function": "session",
+      "file": "apps/scope/product/backend/local_mode/server.py",
+      "line": 131
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/local/session",
+      "function": "language",
+      "file": "apps/scope/product/backend/local_mode/server.py",
+      "line": 135
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/local/session",
+      "function": "logout",
+      "file": "apps/scope/product/backend/local_mode/server.py",
+      "line": 142
+    },
+    {
+      "method": "GET",
+      "path": "/healthz",
+      "function": "health",
+      "file": "apps/scope/product/backend/local_mode/server.py",
+      "line": 149
+    },
+    {
+      "method": "GET",
+      "path": "/{path:path}",
+      "function": "page",
+      "file": "apps/scope/product/backend/local_mode/server.py",
+      "line": 160
+    },
+    {
+      "method": "GET",
       "path": "/health",
       "function": "health_check",
       "file": "apps/scope/product/backend/main.py",
@@ -16258,56 +16599,56 @@
       "path": "/canvas/{token}",
       "function": "api_get_canvas",
       "file": "apps/scope/product/backend/routes/canvas.py",
-      "line": 91
+      "line": 92
     },
     {
       "method": "POST",
       "path": "/quote/finalize",
       "function": "api_finalize_quote",
       "file": "apps/scope/product/backend/routes/canvas.py",
-      "line": 167
+      "line": 170
     },
     {
       "method": "GET",
       "path": "/quotes",
       "function": "api_list_quotes",
       "file": "apps/scope/product/backend/routes/canvas.py",
-      "line": 249
+      "line": 257
     },
     {
       "method": "POST",
       "path": "/quote/update",
       "function": "api_update_quote",
       "file": "apps/scope/product/backend/routes/canvas.py",
-      "line": 320
+      "line": 329
     },
     {
       "method": "POST",
       "path": "/claim-profile",
       "function": "api_claim_profile",
       "file": "apps/scope/product/backend/routes/canvas.py",
-      "line": 357
+      "line": 373
     },
     {
       "method": "GET",
       "path": "/contractor/by-auth-user/{auth_user_id}",
       "function": "get_contractor_by_auth_user",
       "file": "apps/scope/product/backend/routes/canvas.py",
-      "line": 414
+      "line": 430
     },
     {
       "method": "POST",
       "path": "/contractor/set-phone",
       "function": "api_set_phone",
       "file": "apps/scope/product/backend/routes/canvas.py",
-      "line": 470
+      "line": 486
     },
     {
       "method": "GET",
       "path": "/homeowner/quotes",
       "function": "get_homeowner_quotes",
       "file": "apps/scope/product/backend/routes/canvas.py",
-      "line": 499
+      "line": 515
     },
     {
       "method": "POST",
@@ -16594,70 +16935,70 @@
       "path": "/payment/release-milestone",
       "function": "release_milestone",
       "file": "apps/scope/product/backend/routes/milestone.py",
-      "line": 269
+      "line": 273
     },
     {
       "method": "POST",
       "path": "/variation/create",
       "function": "create_variation",
       "file": "apps/scope/product/backend/routes/milestone.py",
-      "line": 441
+      "line": 445
     },
     {
       "method": "POST",
       "path": "/variation/approve",
       "function": "approve_variation",
       "file": "apps/scope/product/backend/routes/milestone.py",
-      "line": 497
+      "line": 501
     },
     {
       "method": "POST",
       "path": "/variation/decline",
       "function": "decline_variation",
       "file": "apps/scope/product/backend/routes/milestone.py",
-      "line": 575
+      "line": 579
     },
     {
       "method": "POST",
       "path": "/job/cancel",
       "function": "cancel_job",
       "file": "apps/scope/product/backend/routes/milestone.py",
-      "line": 639
+      "line": 643
     },
     {
       "method": "POST",
       "path": "/reviews/create",
       "function": "create_review",
       "file": "apps/scope/product/backend/routes/milestone.py",
-      "line": 730
+      "line": 734
     },
     {
       "method": "GET",
       "path": "/notifications",
       "function": "get_notifications",
       "file": "apps/scope/product/backend/routes/milestone.py",
-      "line": 792
+      "line": 796
     },
     {
       "method": "POST",
       "path": "/notifications/mark-read",
       "function": "mark_notifications_read",
       "file": "apps/scope/product/backend/routes/milestone.py",
-      "line": 813
+      "line": 817
     },
     {
       "method": "GET",
       "path": "/milestone-updates/{quote_token}",
       "function": "get_milestone_updates",
       "file": "apps/scope/product/backend/routes/milestone.py",
-      "line": 831
+      "line": 835
     },
     {
       "method": "GET",
       "path": "/variation-orders/{quote_token}",
       "function": "get_variation_orders",
       "file": "apps/scope/product/backend/routes/milestone.py",
-      "line": 847
+      "line": 851
     },
     {
       "method": "POST",
@@ -16884,6 +17225,7 @@
     "RESEND_WEBHOOK_SECRET",
     "RESEND_WEBHOOK_TOLERANCE_SECONDS",
     "SALES_TRACKER_TOKEN",
+    "SCOPE_WEB_BASE_PATH",
     "STRIPE_PUBLISHABLE_KEY",
     "STRIPE_SECRET_KEY",
     "STRIPE_SECRET_KEY_TEST",
@@ -16901,6 +17243,7 @@
     "TWILIO_AUTH_TOKEN",
     "TWILIO_TWIML_APP_SID",
     "VITE_API_URL",
+    "VITE_LOCAL_MODE",
     "VITE_MAPBOX_ACCESS_TOKEN",
     "VITE_POSTHOG_KEY",
     "VITE_SUPABASE_ANON_KEY",

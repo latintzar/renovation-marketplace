@@ -1,0 +1,29 @@
+[Unit]
+Description=Atelier Leo.casa renovation marketplace
+After=network.target
+
+[Service]
+Type=simple
+User=atelier-renovation
+Group=atelier-renovation
+WorkingDirectory=/opt/atelier/renovation-marketplace/current
+Environment=PATH=/usr/bin:/bin
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/opt/atelier/renovation-marketplace/current/.venv/bin/python tools/native.py start --state /var/lib/atelier-renovation-marketplace --base-path /apps/renovation-marketplace --port 18790 --public-origin https://preview.atelierneyra.com
+StateDirectory=atelier-renovation-marketplace
+StateDirectoryMode=0700
+UMask=0077
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/lib/atelier-renovation-marketplace
+IPAddressDeny=0.0.0.0/0
+IPAddressDeny=::/0
+IPAddressAllow=127.0.0.0/8
+IPAddressAllow=::1
+
+[Install]
+WantedBy=multi-user.target

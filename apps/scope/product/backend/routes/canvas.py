@@ -17,13 +17,14 @@ Endpoints:
 from __future__ import annotations
 
 import logging
+import os
 from datetime import datetime, timezone
 from typing import Any, Dict, Optional
 
 from fastapi import APIRouter, Depends, HTTPException
-from pydantic import BaseModel
+from pydantic import BaseModel, Field, AliasChoices
 
-from core import sb_url, sb_key, sb_headers
+from core import sb_url, sb_key, sb_headers, CurrentUser, require_contractor
 from core import api_error  # noqa: F401 — ensures shared/errors.py is reachable
 from payments import SandboxContext, resolve_sandbox
 from payments.finance import compute_quote_financials
@@ -107,7 +108,9 @@ async def api_get_canvas(token: str):
                 "canvas_type": "quote",
                 "quote": quote_data,
                 "quote_data": quote_data,
-                "milestones": quote_row.get("milestones") or [],
+                "scope": quote_data,
+                "scope_data": quote_data,
+                "milestones": [{**m, "title": m.get("title") or m.get("description", "")} for m in quote_row.get("milestones") or []],
                 "contractor_id": contractor_id,
                 "contractor_name": contractor_name,
                 "contractor_trade": contractor_trade,
@@ -159,7 +162,7 @@ async def api_get_canvas(token: str):
 
 class QuoteFinalizeRequest(BaseModel):
     contractor_id: str
-    quote_data: Dict[str, Any]
+    quote_data: Dict[str, Any] = Field(validation_alias=AliasChoices("quote_data", "scope_data"))
     auth_user_id: Optional[str] = None
 
 
@@ -167,6 +170,7 @@ class QuoteFinalizeRequest(BaseModel):
 async def api_finalize_quote(
     req: QuoteFinalizeRequest,
     ctx: SandboxContext = Depends(resolve_sandbox),
+    caller: CurrentUser = Depends(require_contractor),
 ):
     """Persist a finalized quote to Supabase and return a shareable URL.
 
@@ -179,6 +183,10 @@ async def api_finalize_quote(
     When X-Sandbox: true, is_sandbox is set on the quote row so the
     homeowner's browser can auto-enable sandbox mode when they open the link.
     """
+    if req.contractor_id != caller.contractor_id:
+        raise HTTPException(status_code=403, detail="Use your assigned contractor identity")
+    if req.auth_user_id and req.auth_user_id != caller.id:
+        raise HTTPException(status_code=403, detail="Use your authenticated user identity")
     sandbox = ctx.is_sandbox
     _url = sb_url()
     _key = sb_key()
@@ -205,7 +213,7 @@ async def api_finalize_quote(
 
     row = {
         "contractor_id": req.contractor_id,
-        "auth_user_id": req.auth_user_id,
+        "auth_user_id": caller.id,
         "token": token,
         "quote_data": quote_data,
         "status": "finalized",
@@ -238,7 +246,7 @@ async def api_finalize_quote(
     return {
         "ok": True,
         "token": token,
-        "canvas_url": f"/app/canvas/{token}",
+        "canvas_url": f"{os.getenv('SCOPE_WEB_BASE_PATH', '/app')}/canvas/{token}",
         "amount_total_cents": fin.amount_total_cents,
     }
 
@@ -297,6 +305,7 @@ async def api_list_quotes(contractor_id: str):
             "materials_upfront_cents": row.get("materials_upfront_cents", 0),
             "status": row.get("status", "draft"),
             "payment_status": row.get("payment_status", "unpaid"),
+            "milestones": [{**m, "title": m.get("title") or m.get("description", "")} for m in milestones],
             "milestones_total": milestones_total,
             "milestones_released": milestones_released,
             "created_at": row.get("created_at", ""),
@@ -305,25 +314,27 @@ async def api_list_quotes(contractor_id: str):
         })
 
     logger.info("Quotes listed | contractor=%s count=%d", contractor_id[:12], len(quotes_list))
-    return {"quotes": quotes_list}
+    return {"quotes": quotes_list, "scopes": quotes_list}
 
 
 # ── POST /api/quote/update ────────────────────────────────────────────
 
 class QuoteUpdateRequest(BaseModel):
     token: str
-    quote_data: Dict[str, Any]
+    quote_data: Dict[str, Any] = Field(validation_alias=AliasChoices("quote_data", "scope_data"))
     contractor_id: str
 
 
 @router.post("/quote/update")
-async def api_update_quote(req: QuoteUpdateRequest):
+async def api_update_quote(req: QuoteUpdateRequest, caller: CurrentUser = Depends(require_contractor)):
     """Update an existing quote row by token.
 
     Called from FirstQuote in edit mode (editToken URL param).
     Validates that the requesting contractor owns the quote.
     The share link (token) stays the same — homeowners keep the same URL.
     """
+    if req.contractor_id != caller.contractor_id:
+        raise HTTPException(status_code=403, detail="Use your assigned contractor identity")
     quote_row = await _get_quote_by_token(req.token)
     if not quote_row:
         raise HTTPException(status_code=404, detail="Quote not found")
@@ -331,11 +342,16 @@ async def api_update_quote(req: QuoteUpdateRequest):
     if quote_row.get("contractor_id", "") != req.contractor_id:
         raise HTTPException(status_code=403, detail="Not your quote")
 
+    if quote_row.get("payment_status") == "paid":
+        raise HTTPException(status_code=409, detail="Use a variation for a paid project")
+    fin = compute_quote_financials(dict(req.quote_data))
     async with http_client(timeout=15) as client:
         resp = await client.patch(
             f"{sb_url()}/quotes",
             params={"token": f"eq.{req.token}"},
-            json={"quote_data": dict(req.quote_data)},
+            json={"quote_data": dict(req.quote_data), "amount_total_cents": fin.amount_total_cents,
+                  "materials_upfront_cents": fin.materials_upfront_cents, "stripe_fee_cents": fin.fee_cents,
+                  "iva_rate": fin.iva_rate, "milestones": fin.milestones},
             headers=sb_headers(),
         )
         if resp.status_code not in (200, 201, 204):
@@ -343,7 +359,7 @@ async def api_update_quote(req: QuoteUpdateRequest):
             raise HTTPException(status_code=500, detail="Failed to update quote")
 
     logger.info("Quote updated | contractor=%s token=%s", req.contractor_id[:12], req.token[:8])
-    return {"ok": True, "token": req.token, "canvas_url": f"/app/canvas/{req.token}"}
+    return {"ok": True, "token": req.token, "canvas_url": f"{os.getenv('SCOPE_WEB_BASE_PATH', '/app')}/canvas/{req.token}"}
 
 
 # ── POST /api/claim-profile ───────────────────────────────────────────
@@ -540,6 +556,7 @@ async def get_homeowner_quotes(email: str, limit: int = 50):
         contractor_info = contractor_cache.get(contractor_id, {})
         enriched.append({
             **quote,
+            "scope_data": quote.get("quote_data") or {},
             "contractor_name": contractor_info.get("name", ""),
             "contractor_trade": contractor_info.get("trade", ""),
             "contractor_photo_url": contractor_info.get("photo_url", ""),

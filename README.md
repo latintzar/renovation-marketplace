@@ -1,4 +1,4 @@
-# Leo.casa
+# Leo.casa — renovation quotes and milestones
 
 Leo.casa is a renovation marketplace for homeowners and contractors, with quotes, project chat and milestone payments.
 
@@ -6,7 +6,7 @@ Leo.casa is a renovation marketplace for homeowners and contractors, with quotes
 
 ![The original quote conversation and document](docs/images/quote.png)
 
-## Run the product walkthrough
+## Run locally
 
 Use Node 22.12+ and Python 3.12+:
 
@@ -19,7 +19,7 @@ make build
 make dev
 ```
 
-Open [the local quote](http://127.0.0.1:18260/app/quote/first?reel=set-milestones). The existing product components run with authored sample data. This first result uses the scripted UI, independently of accounts or paid services.
+Open [the local app](http://127.0.0.1:18260/app/). Edit a saved quote, send project messages, submit phase proof and inspect the homeowner review. The original React pages and FastAPI functions use your own private SQLite workspace. [Native workspace guide](docs/native-workspace.md).
 
 [Getting started](docs/get-started.md) · [Setup and credentials](docs/setup.md) · [Workflows](docs/workflows.md) · [Design decisions](docs/design.md) · [Architecture](docs/architecture.md) · [Source reference](docs/reference.md)
 
@@ -27,15 +27,16 @@ Open [the local quote](http://127.0.0.1:18260/app/quote/first?reel=set-milestone
 
 | Layer | Included work | Verification |
 | --- | --- | --- |
-| Product UI | Onboarding, chat, quote editor, original quote document, project phases, proof and release review | Fresh TypeScript/Vite build; actual desktop/phone walkthroughs |
+| Product UI | Onboarding, chat, quote editor, original quote document, project phases, proof and release review | TypeScript/Vite build; actual backend edits, messages and phase proof |
 | Payment domain | Financial arithmetic, Checkout, Connect, transfers, refunds, disputes, variations and event handling | Fake provider/repository tests |
 | Backend source | Auth, records, quotes, project chat, milestone release, notifications, provider adapters and documents | Selected domain/security tests; live integrations are separate commissioning work |
-| Developer database | Five core tables, party-scoped reads and server-owned writes | New, explicitly reconstructed baseline; isolated PG/RLS/restart proof |
+| Local workspace | Visitor-scoped SQLite, private cookie identity and original API/domain functions | Persisted edits, project chat, phase proof, restart, isolation and request/service guards |
+| Supabase developer database | Five core tables, party-scoped reads and server-owned writes | Explicitly reconstructed baseline; isolated PG/RLS/restart proof |
 | Shared packages | Core, LLM, storage, messaging, voice, full-text, scraping, payments, brand, UI and TypeScript configuration | Source closure and navigation; optional provider requirements retain their own setup |
 
 The original hosted database schema could not be exported from its inactive project. The new developer baseline covers the core quote/project/milestone path and is distinct from that historical schema. [Database guide](docs/database.md) identifies its tables, auth model, tested scope and the extension work still ahead.
 
-The original full backend also expects a compatible Hermes runtime. Its historical vendor checkout was outside the retained tracked tree; this release identifies that dependency explicitly. The scripted first result runs from the included source. [Status and dependencies](docs/status.md).
+The original full backend also expects a compatible Hermes runtime. Its historical vendor checkout was outside the retained tracked tree; this release identifies that dependency explicitly. The local first result uses the included original route/domain functions and a recipient-owned storage/auth adapter. [Status and dependencies](docs/status.md).
 
 ## Continue the work
 

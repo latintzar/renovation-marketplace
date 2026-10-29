@@ -8,20 +8,25 @@ This index is generated from the released source. File links preserve the contai
 
 | Method | Path | Source |
 | --- | --- | --- |
+| GET | `/api/local/session` | [session](../apps/scope/product/backend/local_mode/server.py#L131) |
+| PATCH | `/api/local/session` | [language](../apps/scope/product/backend/local_mode/server.py#L135) |
+| DELETE | `/api/local/session` | [logout](../apps/scope/product/backend/local_mode/server.py#L142) |
+| GET | `/healthz` | [health](../apps/scope/product/backend/local_mode/server.py#L149) |
+| GET | `/{path:path}` | [page](../apps/scope/product/backend/local_mode/server.py#L160) |
 | GET | `/health` | [health_check](../apps/scope/product/backend/main.py#L354) |
 | GET | `/` | [root](../apps/scope/product/backend/main.py#L364) |
 | POST | `/api/admin/api-keys` | [create_api_key](../apps/scope/product/backend/routes/admin.py#L44) |
 | GET | `/api/admin/api-keys` | [list_api_keys](../apps/scope/product/backend/routes/admin.py#L78) |
 | DELETE | `/api/admin/api-keys/{key_id}` | [deactivate_api_key](../apps/scope/product/backend/routes/admin.py#L96) |
 | GET | `/api/admin/customer/{phone}` | [get_customer_360](../apps/scope/product/backend/routes/admin.py#L116) |
-| GET | `/canvas/{token}` | [api_get_canvas](../apps/scope/product/backend/routes/canvas.py#L91) |
-| POST | `/quote/finalize` | [api_finalize_quote](../apps/scope/product/backend/routes/canvas.py#L167) |
-| GET | `/quotes` | [api_list_quotes](../apps/scope/product/backend/routes/canvas.py#L249) |
-| POST | `/quote/update` | [api_update_quote](../apps/scope/product/backend/routes/canvas.py#L320) |
-| POST | `/claim-profile` | [api_claim_profile](../apps/scope/product/backend/routes/canvas.py#L357) |
-| GET | `/contractor/by-auth-user/{auth_user_id}` | [get_contractor_by_auth_user](../apps/scope/product/backend/routes/canvas.py#L414) |
-| POST | `/contractor/set-phone` | [api_set_phone](../apps/scope/product/backend/routes/canvas.py#L470) |
-| GET | `/homeowner/quotes` | [get_homeowner_quotes](../apps/scope/product/backend/routes/canvas.py#L499) |
+| GET | `/canvas/{token}` | [api_get_canvas](../apps/scope/product/backend/routes/canvas.py#L92) |
+| POST | `/quote/finalize` | [api_finalize_quote](../apps/scope/product/backend/routes/canvas.py#L170) |
+| GET | `/quotes` | [api_list_quotes](../apps/scope/product/backend/routes/canvas.py#L257) |
+| POST | `/quote/update` | [api_update_quote](../apps/scope/product/backend/routes/canvas.py#L329) |
+| POST | `/claim-profile` | [api_claim_profile](../apps/scope/product/backend/routes/canvas.py#L373) |
+| GET | `/contractor/by-auth-user/{auth_user_id}` | [get_contractor_by_auth_user](../apps/scope/product/backend/routes/canvas.py#L430) |
+| POST | `/contractor/set-phone` | [api_set_phone](../apps/scope/product/backend/routes/canvas.py#L486) |
+| GET | `/homeowner/quotes` | [get_homeowner_quotes](../apps/scope/product/backend/routes/canvas.py#L515) |
 | POST | `/chat` | [chat](../apps/scope/product/backend/routes/chat.py#L35) |
 | POST | `/cs-chat` | [chat](../apps/scope/product/backend/routes/chat.py#L35) |
 | POST | `/api/webhooks/chatwoot-outbound` | [chatwoot_outbound_webhook](../apps/scope/product/backend/routes/chatwoot.py#L184) |
@@ -62,16 +67,16 @@ This index is generated from the released source. File links preserve the contai
 | POST | `/api/copilot/upload-voice` | [upload_voice](../apps/scope/product/backend/routes/meta_whatsapp.py#L1602) |
 | POST | `/api/copilot/upload-media` | [upload_media](../apps/scope/product/backend/routes/meta_whatsapp.py#L1731) |
 | POST | `/milestone/submit-proof` | [submit_proof](../apps/scope/product/backend/routes/milestone.py#L178) |
-| POST | `/payment/release-milestone` | [release_milestone](../apps/scope/product/backend/routes/milestone.py#L269) |
-| POST | `/variation/create` | [create_variation](../apps/scope/product/backend/routes/milestone.py#L441) |
-| POST | `/variation/approve` | [approve_variation](../apps/scope/product/backend/routes/milestone.py#L497) |
-| POST | `/variation/decline` | [decline_variation](../apps/scope/product/backend/routes/milestone.py#L575) |
-| POST | `/job/cancel` | [cancel_job](../apps/scope/product/backend/routes/milestone.py#L639) |
-| POST | `/reviews/create` | [create_review](../apps/scope/product/backend/routes/milestone.py#L730) |
-| GET | `/notifications` | [get_notifications](../apps/scope/product/backend/routes/milestone.py#L792) |
-| POST | `/notifications/mark-read` | [mark_notifications_read](../apps/scope/product/backend/routes/milestone.py#L813) |
-| GET | `/milestone-updates/{quote_token}` | [get_milestone_updates](../apps/scope/product/backend/routes/milestone.py#L831) |
-| GET | `/variation-orders/{quote_token}` | [get_variation_orders](../apps/scope/product/backend/routes/milestone.py#L847) |
+| POST | `/payment/release-milestone` | [release_milestone](../apps/scope/product/backend/routes/milestone.py#L273) |
+| POST | `/variation/create` | [create_variation](../apps/scope/product/backend/routes/milestone.py#L445) |
+| POST | `/variation/approve` | [approve_variation](../apps/scope/product/backend/routes/milestone.py#L501) |
+| POST | `/variation/decline` | [decline_variation](../apps/scope/product/backend/routes/milestone.py#L579) |
+| POST | `/job/cancel` | [cancel_job](../apps/scope/product/backend/routes/milestone.py#L643) |
+| POST | `/reviews/create` | [create_review](../apps/scope/product/backend/routes/milestone.py#L734) |
+| GET | `/notifications` | [get_notifications](../apps/scope/product/backend/routes/milestone.py#L796) |
+| POST | `/notifications/mark-read` | [mark_notifications_read](../apps/scope/product/backend/routes/milestone.py#L817) |
+| GET | `/milestone-updates/{quote_token}` | [get_milestone_updates](../apps/scope/product/backend/routes/milestone.py#L835) |
+| GET | `/variation-orders/{quote_token}` | [get_variation_orders](../apps/scope/product/backend/routes/milestone.py#L851) |
 | POST | `/projects/{token}/milestones/{idx}/proof` | [submit_proof](../apps/scope/product/backend/routes/milestones.py#L53) |
 | POST | `/projects/{token}/milestones/{idx}/release` | [release_milestone](../apps/scope/product/backend/routes/milestones.py#L143) |
 | GET | `/notifications` | [get_notifications](../apps/scope/product/backend/routes/notifications.py#L100) |
@@ -100,7 +105,7 @@ This index is generated from the released source. File links preserve the contai
 
 Values stay in the recipient’s private runtime file. [Setup](setup.md) groups the load-bearing credentials by feature.
 
-`APP_BASE_URL`, `AWS_REGION`, `BASE_URL`, `BEDROCK_CLAUDE_HAIKU`, `BEDROCK_CLAUDE_SONNET`, `BEDROCK_REGION`, `BRIGHT_DATA_API_KEY`, `CHATWOOT_ACCOUNT_ID`, `CHATWOOT_API_TOKEN`, `CHATWOOT_INBOX_ID`, `CHATWOOT_URL`, `DATABASE_URL`, `DEEPGRAM_API_KEY`, `DEEPGRAM_MODEL`, `DEV`, `DOCUSEAL_API_KEY`, `DOCUSEAL_TEMPLATE_AGREEMENT`, `ELEVENLABS_API_KEY`, `GROQ_API_KEY`, `GROQ_WHISPER_MODEL`, `HABITISSIMO_EMAIL`, `HABITISSIMO_PASSWORD`, `HERMES_HOME`, `HERMES_VENDOR_PATH`, `HF_TOKEN`, `HF_WHISPER_MODEL`, `HOGAMI_API_KEY`, `HUGGINGFACE_HUB_TOKEN`, `LEO_AWS_ACCOUNT`, `LEO_CS_MAX_TOKENS`, `LEO_DISABLE_JWT_CACHE`, `LEO_ENV`, `LEO_FALLBACK_MODEL`, `LEO_JWT_CACHE_SIZE`, `LEO_JWT_CACHE_TTL`, `LEO_MAX_ITERATIONS`, `LEO_PRIMARY_MODEL`, `LEO_PROJECT_EMAIL_DOMAIN`, `LEXAPI_KEY`, `LITELLM_API_KEY`, `LITELLM_BASE_URL`, `LITELLM_PORT`, `MARKETPLACE_TOKEN`, `MEM0_API_KEY`, `META_API_VERSION`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `NEXT_PUBLIC_SUPABASE_URL`, `OPENROUTER_API_KEY`, `OPS_MONITOR_TOKEN`, `OUTREACH_FOLLOWUP_1_HOURS`, `OUTREACH_FOLLOWUP_2_HOURS`, `OUTREACH_FOUNDER_PHONE`, `OUTREACH_MAX_DAILY`, `OUTREACH_STAGGER_SECONDS`, `OUTREACH_TARGET_PER_JOB`, `PETER_WHATSAPP`, `POLISH_API_STYLE`, `PROFILE_STRUCTURE_MODEL`, `RESEND_API_KEY`, `RESEND_WEBHOOK_SECRET`, `RESEND_WEBHOOK_TOLERANCE_SECONDS`, `SALES_TRACKER_TOKEN`, `STRIPE_PUBLISHABLE_KEY`, `STRIPE_SECRET_KEY`, `STRIPE_SECRET_KEY_TEST`, `STRIPE_WEBHOOK_SECRET`, `STRIPE_WEBHOOK_SECRET_TEST`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `SUPABASE_URL`, `TRANSCRIPT_POLISH_ENABLED`, `TRANSCRIPT_POLISH_MODEL`, `TWILIO_ACCOUNT_SID`, `TWILIO_API_KEY_SECRET`, `TWILIO_API_KEY_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_TWIML_APP_SID`, `VITE_API_URL`, `VITE_MAPBOX_ACCESS_TOKEN`, `VITE_POSTHOG_KEY`, `VITE_SUPABASE_ANON_KEY`, `VITE_SUPABASE_URL`, `VOICE_CONCURRENCY`, `VOICE_LOG_CONTENT`, `WHATSAPP_PHONE_NUMBER_ID`, `WHATSAPP_TEMPLATE_HOMEOWNER`, `WHATSAPP_TEMPLATE_PROFESSIONAL`, `WHATSAPP_TEMPLATE_RECEIVED`, `WHATSAPP_TOKEN`, `WHATSAPP_VERIFY_TOKEN`, `WHISPER_BEAM_SIZE`, `WHISPER_COMPUTE_TYPE`, `WHISPER_CPU_THREADS`, `WHISPER_DEVICE`, `WHISPER_MODEL`
+`APP_BASE_URL`, `AWS_REGION`, `BASE_URL`, `BEDROCK_CLAUDE_HAIKU`, `BEDROCK_CLAUDE_SONNET`, `BEDROCK_REGION`, `BRIGHT_DATA_API_KEY`, `CHATWOOT_ACCOUNT_ID`, `CHATWOOT_API_TOKEN`, `CHATWOOT_INBOX_ID`, `CHATWOOT_URL`, `DATABASE_URL`, `DEEPGRAM_API_KEY`, `DEEPGRAM_MODEL`, `DEV`, `DOCUSEAL_API_KEY`, `DOCUSEAL_TEMPLATE_AGREEMENT`, `ELEVENLABS_API_KEY`, `GROQ_API_KEY`, `GROQ_WHISPER_MODEL`, `HABITISSIMO_EMAIL`, `HABITISSIMO_PASSWORD`, `HERMES_HOME`, `HERMES_VENDOR_PATH`, `HF_TOKEN`, `HF_WHISPER_MODEL`, `HOGAMI_API_KEY`, `HUGGINGFACE_HUB_TOKEN`, `LEO_AWS_ACCOUNT`, `LEO_CS_MAX_TOKENS`, `LEO_DISABLE_JWT_CACHE`, `LEO_ENV`, `LEO_FALLBACK_MODEL`, `LEO_JWT_CACHE_SIZE`, `LEO_JWT_CACHE_TTL`, `LEO_MAX_ITERATIONS`, `LEO_PRIMARY_MODEL`, `LEO_PROJECT_EMAIL_DOMAIN`, `LEXAPI_KEY`, `LITELLM_API_KEY`, `LITELLM_BASE_URL`, `LITELLM_PORT`, `MARKETPLACE_TOKEN`, `MEM0_API_KEY`, `META_API_VERSION`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `NEXT_PUBLIC_SUPABASE_URL`, `OPENROUTER_API_KEY`, `OPS_MONITOR_TOKEN`, `OUTREACH_FOLLOWUP_1_HOURS`, `OUTREACH_FOLLOWUP_2_HOURS`, `OUTREACH_FOUNDER_PHONE`, `OUTREACH_MAX_DAILY`, `OUTREACH_STAGGER_SECONDS`, `OUTREACH_TARGET_PER_JOB`, `PETER_WHATSAPP`, `POLISH_API_STYLE`, `PROFILE_STRUCTURE_MODEL`, `RESEND_API_KEY`, `RESEND_WEBHOOK_SECRET`, `RESEND_WEBHOOK_TOLERANCE_SECONDS`, `SALES_TRACKER_TOKEN`, `SCOPE_WEB_BASE_PATH`, `STRIPE_PUBLISHABLE_KEY`, `STRIPE_SECRET_KEY`, `STRIPE_SECRET_KEY_TEST`, `STRIPE_WEBHOOK_SECRET`, `STRIPE_WEBHOOK_SECRET_TEST`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `SUPABASE_URL`, `TRANSCRIPT_POLISH_ENABLED`, `TRANSCRIPT_POLISH_MODEL`, `TWILIO_ACCOUNT_SID`, `TWILIO_API_KEY_SECRET`, `TWILIO_API_KEY_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_TWIML_APP_SID`, `VITE_API_URL`, `VITE_LOCAL_MODE`, `VITE_MAPBOX_ACCESS_TOKEN`, `VITE_POSTHOG_KEY`, `VITE_SUPABASE_ANON_KEY`, `VITE_SUPABASE_URL`, `VOICE_CONCURRENCY`, `VOICE_LOG_CONTENT`, `WHATSAPP_PHONE_NUMBER_ID`, `WHATSAPP_TEMPLATE_HOMEOWNER`, `WHATSAPP_TEMPLATE_PROFESSIONAL`, `WHATSAPP_TEMPLATE_RECEIVED`, `WHATSAPP_TOKEN`, `WHATSAPP_VERIFY_TOKEN`, `WHISPER_BEAM_SIZE`, `WHISPER_COMPUTE_TYPE`, `WHISPER_CPU_THREADS`, `WHISPER_DEVICE`, `WHISPER_MODEL`
 
 ## Functions
 
@@ -425,6 +430,47 @@ Values stay in the recipient’s private runtime file. [Setup](setup.md) groups 
 | [content_hash](../apps/scope/product/backend/documents/variations.py#L44) | self |  |
 | [filename](../apps/scope/product/backend/documents/variations.py#L49) | self |  |
 
+### apps/scope/product/backend/local_mode/seed.py
+
+| Function | Arguments | Purpose |
+| --- | --- | --- |
+| [starter](../apps/scope/product/backend/local_mode/seed.py#L6) | identity |  |
+
+### apps/scope/product/backend/local_mode/server.py
+
+| Function | Arguments | Purpose |
+| --- | --- | --- |
+| [create_app](../apps/scope/product/backend/local_mode/server.py#L18) | state |  |
+| [identity](../apps/scope/product/backend/local_mode/server.py#L34) |  |  |
+| [current_user](../apps/scope/product/backend/local_mode/server.py#L40) |  |  |
+| [contractor](../apps/scope/product/backend/local_mode/server.py#L45) |  |  |
+| [homeowner](../apps/scope/product/backend/local_mode/server.py#L51) |  |  |
+| [no_external_sandbox](../apps/scope/product/backend/local_mode/server.py#L57) |  |  |
+| [domain_error](../apps/scope/product/backend/local_mode/server.py#L62) | _request, error |  |
+| [workspace](../apps/scope/product/backend/local_mode/server.py#L66) | request, call_next |  |
+| [session](../apps/scope/product/backend/local_mode/server.py#L131) |  |  |
+| [language](../apps/scope/product/backend/local_mode/server.py#L135) | request |  |
+| [logout](../apps/scope/product/backend/local_mode/server.py#L142) |  |  |
+| [health](../apps/scope/product/backend/local_mode/server.py#L149) |  |  |
+| [page](../apps/scope/product/backend/local_mode/server.py#L160) | path |  |
+
+### apps/scope/product/backend/local_mode/store.py
+
+| Function | Arguments | Purpose |
+| --- | --- | --- |
+| [now](../apps/scope/product/backend/local_mode/store.py#L16) |  |  |
+| [__init__](../apps/scope/product/backend/local_mode/store.py#L21) | self, state |  |
+| [connect](../apps/scope/product/backend/local_mode/store.py#L30) | self |  |
+| [admit](../apps/scope/product/backend/local_mode/store.py#L37) | self, secret, role |  |
+| [user](../apps/scope/product/backend/local_mode/store.py#L65) | self, identity |  |
+| [reset](../apps/scope/product/backend/local_mode/store.py#L69) | self, identity |  |
+| [language](../apps/scope/product/backend/local_mode/store.py#L74) | self, identity, language |  |
+| [rows](../apps/scope/product/backend/local_mode/store.py#L83) | self, db, guest, table |  |
+| [operation](../apps/scope/product/backend/local_mode/store.py#L86) | self, identity, table, method, params, payload |  |
+| [matches](../apps/scope/product/backend/local_mode/store.py#L92) | row |  |
+| [rest_app](../apps/scope/product/backend/local_mode/store.py#L163) | self |  |
+| [records](../apps/scope/product/backend/local_mode/store.py#L167) | table, request |  |
+
 ### apps/scope/product/backend/main.py
 
 | Function | Arguments | Purpose |
@@ -683,17 +729,17 @@ Values stay in the recipient’s private runtime file. [Setup](setup.md) groups 
 
 | Function | Arguments | Purpose |
 | --- | --- | --- |
-| [_get_job_by_token](../apps/scope/product/backend/routes/canvas.py#L39) | token |  |
-| [_get_contractor_display](../apps/scope/product/backend/routes/canvas.py#L52) | contractor_id | Fetch contractor name and trade for display in the tracking page. |
-| [_get_quote_by_token](../apps/scope/product/backend/routes/canvas.py#L75) | token |  |
-| [api_get_canvas](../apps/scope/product/backend/routes/canvas.py#L91) | token | Return canvas data for a shareable URL. |
-| [api_finalize_quote](../apps/scope/product/backend/routes/canvas.py#L167) | req, ctx | Persist a finalized quote to Supabase and return a shareable URL. |
-| [api_list_quotes](../apps/scope/product/backend/routes/canvas.py#L249) | contractor_id | List all quotes for a contractor, most recent first. |
-| [api_update_quote](../apps/scope/product/backend/routes/canvas.py#L320) | req | Update an existing quote row by token. |
-| [api_claim_profile](../apps/scope/product/backend/routes/canvas.py#L357) | req | Link a contractor profile to a Supabase auth user (claim flow). |
-| [get_contractor_by_auth_user](../apps/scope/product/backend/routes/canvas.py#L414) | auth_user_id | Look up a claimed contractor by their Supabase auth user ID. |
-| [api_set_phone](../apps/scope/product/backend/routes/canvas.py#L470) | req | Store phone number on a contractor record and kick off social proof. |
-| [get_homeowner_quotes](../apps/scope/product/backend/routes/canvas.py#L499) | email, limit | Return all quotes for a homeowner email, ordered by created_at DESC. |
+| [_get_job_by_token](../apps/scope/product/backend/routes/canvas.py#L40) | token |  |
+| [_get_contractor_display](../apps/scope/product/backend/routes/canvas.py#L53) | contractor_id | Fetch contractor name and trade for display in the tracking page. |
+| [_get_quote_by_token](../apps/scope/product/backend/routes/canvas.py#L76) | token |  |
+| [api_get_canvas](../apps/scope/product/backend/routes/canvas.py#L92) | token | Return canvas data for a shareable URL. |
+| [api_finalize_quote](../apps/scope/product/backend/routes/canvas.py#L170) | req, ctx, caller | Persist a finalized quote to Supabase and return a shareable URL. |
+| [api_list_quotes](../apps/scope/product/backend/routes/canvas.py#L257) | contractor_id | List all quotes for a contractor, most recent first. |
+| [api_update_quote](../apps/scope/product/backend/routes/canvas.py#L329) | req, caller | Update an existing quote row by token. |
+| [api_claim_profile](../apps/scope/product/backend/routes/canvas.py#L373) | req | Link a contractor profile to a Supabase auth user (claim flow). |
+| [get_contractor_by_auth_user](../apps/scope/product/backend/routes/canvas.py#L430) | auth_user_id | Look up a claimed contractor by their Supabase auth user ID. |
+| [api_set_phone](../apps/scope/product/backend/routes/canvas.py#L486) | req | Store phone number on a contractor record and kick off social proof. |
+| [get_homeowner_quotes](../apps/scope/product/backend/routes/canvas.py#L515) | email, limit | Return all quotes for a homeowner email, ordered by created_at DESC. |
 
 ### apps/scope/product/backend/routes/chat.py
 
@@ -864,16 +910,16 @@ Values stay in the recipient’s private runtime file. [Setup](setup.md) groups 
 | [_app_base_url](../apps/scope/product/backend/routes/milestone.py#L151) |  |  |
 | [_tracking_url](../apps/scope/product/backend/routes/milestone.py#L155) | quote_token, homeowner_email | Build tracking page URL with optional email pre-fill for faster homeowner login. |
 | [submit_proof](../apps/scope/product/backend/routes/milestone.py#L178) | req, ctx | Contractor submits proof photos + note for a milestone. |
-| [release_milestone](../apps/scope/product/backend/routes/milestone.py#L269) | req, ctx | Homeowner approves a milestone and releases funds from escrow. |
-| [create_variation](../apps/scope/product/backend/routes/milestone.py#L441) | req, ctx | Contractor proposes a change order / variation. |
-| [approve_variation](../apps/scope/product/backend/routes/milestone.py#L497) | req, ctx | Homeowner approves a variation — creates new Stripe Checkout for the extra amount. |
-| [decline_variation](../apps/scope/product/backend/routes/milestone.py#L575) | req, ctx | Homeowner declines a variation. |
-| [cancel_job](../apps/scope/product/backend/routes/milestone.py#L639) | req, ctx | Cancel a job and issue full refund via Stripe. |
-| [create_review](../apps/scope/product/backend/routes/milestone.py#L730) | req | Homeowner submits review after job completion. |
-| [get_notifications](../apps/scope/product/backend/routes/milestone.py#L792) | user_id, limit | Returns notifications for a user, newest first. |
-| [mark_notifications_read](../apps/scope/product/backend/routes/milestone.py#L813) | req | Mark notification IDs as read. |
-| [get_milestone_updates](../apps/scope/product/backend/routes/milestone.py#L831) | quote_token | Return all milestone proof submissions for a scope. |
-| [get_variation_orders](../apps/scope/product/backend/routes/milestone.py#L847) | quote_token | Return all variation orders for a scope. |
+| [release_milestone](../apps/scope/product/backend/routes/milestone.py#L273) | req, ctx | Homeowner approves a milestone and releases funds from escrow. |
+| [create_variation](../apps/scope/product/backend/routes/milestone.py#L445) | req, ctx | Contractor proposes a change order / variation. |
+| [approve_variation](../apps/scope/product/backend/routes/milestone.py#L501) | req, ctx | Homeowner approves a variation — creates new Stripe Checkout for the extra amount. |
+| [decline_variation](../apps/scope/product/backend/routes/milestone.py#L579) | req, ctx | Homeowner declines a variation. |
+| [cancel_job](../apps/scope/product/backend/routes/milestone.py#L643) | req, ctx | Cancel a job and issue full refund via Stripe. |
+| [create_review](../apps/scope/product/backend/routes/milestone.py#L734) | req | Homeowner submits review after job completion. |
+| [get_notifications](../apps/scope/product/backend/routes/milestone.py#L796) | user_id, limit | Returns notifications for a user, newest first. |
+| [mark_notifications_read](../apps/scope/product/backend/routes/milestone.py#L817) | req | Mark notification IDs as read. |
+| [get_milestone_updates](../apps/scope/product/backend/routes/milestone.py#L835) | quote_token | Return all milestone proof submissions for a scope. |
+| [get_variation_orders](../apps/scope/product/backend/routes/milestone.py#L851) | quote_token | Return all variation orders for a scope. |
 
 ### apps/scope/product/backend/routes/milestones.py
 
@@ -1654,19 +1700,19 @@ Values stay in the recipient’s private runtime file. [Setup](setup.md) groups 
 
 | Function | Arguments | Purpose |
 | --- | --- | --- |
-| [sessionKey](../apps/scope/product/web/src/hooks/useChat.ts#L57) | mode, audience, contractorId |  |
-| [loadSession](../apps/scope/product/web/src/hooks/useChat.ts#L63) | mode, audience, contractorId |  |
-| [stripHeavyFields](../apps/scope/product/web/src/hooks/useChat.ts#L81) | msgs | Strip base64 images and expired object URLs before persisting — they bloat storage and are invalid after refresh. |
-| [saveSession](../apps/scope/product/web/src/hooks/useChat.ts#L88) | mode, audience, data, contractorId |  |
-| [briefToUiStatus](../apps/scope/product/web/src/hooks/useChat.ts#L107) | b |  |
-| [scopeToUiStatus](../apps/scope/product/web/src/hooks/useChat.ts#L114) | s |  |
-| [scopeHasPreviewBody](../apps/scope/product/web/src/hooks/useChat.ts#L123) | scope | True when the scope preview should show real data (not just empty template). |
-| [messagesToApiHistory](../apps/scope/product/web/src/hooks/useChat.ts#L136) | messages | Build chat history from UI messages (user + assistant turns only). |
-| [isDocFile](../apps/scope/product/web/src/hooks/useChat.ts#L161) | f |  |
-| [extractDocs](../apps/scope/product/web/src/hooks/useChat.ts#L167) | files | Extract text from document files, returning a combined markdown string. |
-| [userLanguageHint](../apps/scope/product/web/src/hooks/useChat.ts#L180) | lastUserText |  |
-| [useChat](../apps/scope/product/web/src/hooks/useChat.ts#L240) | options |  |
-| [fire](../apps/scope/product/web/src/hooks/useChat.ts#L277) |  |  |
+| [sessionKey](../apps/scope/product/web/src/hooks/useChat.ts#L59) | mode, audience, contractorId |  |
+| [loadSession](../apps/scope/product/web/src/hooks/useChat.ts#L65) | mode, audience, contractorId |  |
+| [stripHeavyFields](../apps/scope/product/web/src/hooks/useChat.ts#L83) | msgs | Strip base64 images and expired object URLs before persisting — they bloat storage and are invalid after refresh. |
+| [saveSession](../apps/scope/product/web/src/hooks/useChat.ts#L90) | mode, audience, data, contractorId |  |
+| [briefToUiStatus](../apps/scope/product/web/src/hooks/useChat.ts#L109) | b |  |
+| [scopeToUiStatus](../apps/scope/product/web/src/hooks/useChat.ts#L116) | s |  |
+| [scopeHasPreviewBody](../apps/scope/product/web/src/hooks/useChat.ts#L125) | scope | True when the scope preview should show real data (not just empty template). |
+| [messagesToApiHistory](../apps/scope/product/web/src/hooks/useChat.ts#L138) | messages | Build chat history from UI messages (user + assistant turns only). |
+| [isDocFile](../apps/scope/product/web/src/hooks/useChat.ts#L163) | f |  |
+| [extractDocs](../apps/scope/product/web/src/hooks/useChat.ts#L169) | files | Extract text from document files, returning a combined markdown string. |
+| [userLanguageHint](../apps/scope/product/web/src/hooks/useChat.ts#L182) | lastUserText |  |
+| [useChat](../apps/scope/product/web/src/hooks/useChat.ts#L242) | options |  |
+| [fire](../apps/scope/product/web/src/hooks/useChat.ts#L279) |  |  |
 
 ### apps/scope/product/web/src/hooks/useVoiceRecorder.ts
 
@@ -1687,29 +1733,29 @@ Values stay in the recipient’s private runtime file. [Setup](setup.md) groups 
 
 | Function | Arguments | Purpose |
 | --- | --- | --- |
-| [log](../apps/scope/product/web/src/lib/api.ts#L34) | msg, data |  |
-| [logError](../apps/scope/product/web/src/lib/api.ts#L41) | msg, err |  |
-| [setAuthTokenGetter](../apps/scope/product/web/src/lib/api.ts#L60) | fn | Called once by AuthProvider when it mounts. |
-| [_sandboxHeaders](../apps/scope/product/web/src/lib/api.ts#L72) |  | Returns X-Sandbox header when sandbox mode is active. Uses the shared isSandbox() helper from utils to avoid key drift. |
-| [jsonRequest](../apps/scope/product/web/src/lib/api.ts#L94) | url, init | Performs an apiFetch and parses JSON, returning a typed result. On HTTP error, returns { ok: false, error: message }. On network error, throws — callers should catch if needed. |
-| [apiFetch](../apps/scope/product/web/src/lib/api.ts#L106) | url, init |  |
-| [sendChatMessage](../apps/scope/product/web/src/lib/api.ts#L188) | params |  |
-| [transcribeAudio](../apps/scope/product/web/src/lib/api.ts#L231) | blob, opts |  |
-| [uploadPhotos](../apps/scope/product/web/src/lib/api.ts#L258) | leadId, photos |  |
-| [importProfile](../apps/scope/product/web/src/lib/api.ts#L293) | url, contractorId | SSE stream from POST /api/profile-import — yields parsed event objects. |
-| [signalComposing](../apps/scope/product/web/src/lib/api.ts#L367) | userId, composing, inputType | Fire-and-forget signal: user is composing (typing/recording) or stopped. Lightweight — no response needed. Backend uses this to hold off premature replies. |
-| [extractDocument](../apps/scope/product/web/src/lib/api.ts#L379) | file |  |
-| [fetchInbox](../apps/scope/product/web/src/lib/api.ts#L437) | token |  |
-| [approveOutreach](../apps/scope/product/web/src/lib/api.ts#L465) | token |  |
-| [fetchCanvas](../apps/scope/product/web/src/lib/api.ts#L511) | token |  |
-| [finalizeScope](../apps/scope/product/web/src/lib/api.ts#L538) | contractorId, scopeData, authUserId |  |
-| [claimProfile](../apps/scope/product/web/src/lib/api.ts#L567) | canvasToken, accessToken |  |
-| [createStripeAccount](../apps/scope/product/web/src/lib/api.ts#L603) | contractorId, opts |  |
-| [getStripeAccountLink](../apps/scope/product/web/src/lib/api.ts#L620) | contractorId |  |
-| [getStripeAccountStatus](../apps/scope/product/web/src/lib/api.ts#L640) | contractorId |  |
-| [fetchContractorScopes](../apps/scope/product/web/src/lib/api.ts#L675) | contractorId |  |
-| [updateScope](../apps/scope/product/web/src/lib/api.ts#L698) | token, scopeData, contractorId |  |
-| [fetchOps](../apps/scope/product/web/src/lib/api.ts#L763) | token |  |
+| [log](../apps/scope/product/web/src/lib/api.ts#L35) | msg, data |  |
+| [logError](../apps/scope/product/web/src/lib/api.ts#L42) | msg, err |  |
+| [setAuthTokenGetter](../apps/scope/product/web/src/lib/api.ts#L61) | fn | Called once by AuthProvider when it mounts. |
+| [_sandboxHeaders](../apps/scope/product/web/src/lib/api.ts#L73) |  | Returns X-Sandbox header when sandbox mode is active. Uses the shared isSandbox() helper from utils to avoid key drift. |
+| [jsonRequest](../apps/scope/product/web/src/lib/api.ts#L95) | url, init | Performs an apiFetch and parses JSON, returning a typed result. On HTTP error, returns { ok: false, error: message }. On network error, throws — callers should catch if needed. |
+| [apiFetch](../apps/scope/product/web/src/lib/api.ts#L107) | url, init |  |
+| [sendChatMessage](../apps/scope/product/web/src/lib/api.ts#L189) | params |  |
+| [transcribeAudio](../apps/scope/product/web/src/lib/api.ts#L232) | blob, opts |  |
+| [uploadPhotos](../apps/scope/product/web/src/lib/api.ts#L259) | leadId, photos |  |
+| [importProfile](../apps/scope/product/web/src/lib/api.ts#L294) | url, contractorId | SSE stream from POST /api/profile-import — yields parsed event objects. |
+| [signalComposing](../apps/scope/product/web/src/lib/api.ts#L368) | userId, composing, inputType | Fire-and-forget signal: user is composing (typing/recording) or stopped. Lightweight — no response needed. Backend uses this to hold off premature replies. |
+| [extractDocument](../apps/scope/product/web/src/lib/api.ts#L380) | file |  |
+| [fetchInbox](../apps/scope/product/web/src/lib/api.ts#L438) | token |  |
+| [approveOutreach](../apps/scope/product/web/src/lib/api.ts#L466) | token |  |
+| [fetchCanvas](../apps/scope/product/web/src/lib/api.ts#L512) | token |  |
+| [finalizeScope](../apps/scope/product/web/src/lib/api.ts#L539) | contractorId, scopeData, authUserId |  |
+| [claimProfile](../apps/scope/product/web/src/lib/api.ts#L568) | canvasToken, accessToken |  |
+| [createStripeAccount](../apps/scope/product/web/src/lib/api.ts#L604) | contractorId, opts |  |
+| [getStripeAccountLink](../apps/scope/product/web/src/lib/api.ts#L621) | contractorId |  |
+| [getStripeAccountStatus](../apps/scope/product/web/src/lib/api.ts#L641) | contractorId |  |
+| [fetchContractorScopes](../apps/scope/product/web/src/lib/api.ts#L676) | contractorId |  |
+| [updateScope](../apps/scope/product/web/src/lib/api.ts#L699) | token, scopeData, contractorId |  |
+| [fetchOps](../apps/scope/product/web/src/lib/api.ts#L764) | token |  |
 
 ### apps/scope/product/web/src/lib/handoff.ts
 
@@ -1717,21 +1763,35 @@ Values stay in the recipient’s private runtime file. [Setup](setup.md) groups 
 | --- | --- | --- |
 | [consumeHandoff](../apps/scope/product/web/src/lib/handoff.ts#L30) |  | Read and delete the handoff payload. Returns an empty object if there's nothing (direct navigation, refresh, or already consumed). |
 
+### apps/scope/product/web/src/lib/localAuth.ts
+
+| Function | Arguments | Purpose |
+| --- | --- | --- |
+| [session](../apps/scope/product/web/src/lib/localAuth.ts#L4) |  |  |
+| [configured](../apps/scope/product/web/src/lib/localAuth.ts#L10) |  |  |
+| [unsubscribe](../apps/scope/product/web/src/lib/localAuth.ts#L15) |  |  |
+
+### apps/scope/product/web/src/lib/runtime.ts
+
+| Function | Arguments | Purpose |
+| --- | --- | --- |
+| [appPath](../apps/scope/product/web/src/lib/runtime.ts#L4) | path |  |
+
 ### apps/scope/product/web/src/lib/supabase.ts
 
 | Function | Arguments | Purpose |
 | --- | --- | --- |
-| [signInWithGoogleForClaim](../apps/scope/product/web/src/lib/supabase.ts#L24) | claimToken | Start Google OAuth flow, storing the claim token in the redirect URL. |
-| [setLanguagePreference](../apps/scope/product/web/src/lib/supabase.ts#L39) | lang | Update the user's language preference in Supabase user_metadata. |
+| [signInWithGoogleForClaim](../apps/scope/product/web/src/lib/supabase.ts#L26) | claimToken | Start Google OAuth flow, storing the claim token in the redirect URL. |
+| [setLanguagePreference](../apps/scope/product/web/src/lib/supabase.ts#L41) | lang | Update the user's language preference in Supabase user_metadata. |
 
 ### apps/scope/product/web/src/lib/tracking.ts
 
 | Function | Arguments | Purpose |
 | --- | --- | --- |
-| [initTracking](../apps/scope/product/web/src/lib/tracking.ts#L42) |  | Initialise PostHog. Call this once after cookie consent is granted. Safe to call multiple times — only initialises on first call. |
-| [identify](../apps/scope/product/web/src/lib/tracking.ts#L75) | userId, traits | Associate subsequent events with a user. Call after login / session restore. |
-| [track](../apps/scope/product/web/src/lib/tracking.ts#L98) | event, properties | Fire a named event with optional properties. |
-| [_sendToBackend](../apps/scope/product/web/src/lib/tracking.ts#L123) | event, properties |  |
+| [initTracking](../apps/scope/product/web/src/lib/tracking.ts#L43) |  | Initialise PostHog. Call this once after cookie consent is granted. Safe to call multiple times — only initialises on first call. |
+| [identify](../apps/scope/product/web/src/lib/tracking.ts#L77) | userId, traits | Associate subsequent events with a user. Call after login / session restore. |
+| [track](../apps/scope/product/web/src/lib/tracking.ts#L101) | event, properties | Fire a named event with optional properties. |
+| [_sendToBackend](../apps/scope/product/web/src/lib/tracking.ts#L126) | event, properties |  |
 
 ### apps/scope/product/web/src/lib/utils.ts
 
@@ -1795,8 +1855,8 @@ Values stay in the recipient’s private runtime file. [Setup](setup.md) groups 
 
 | Function | Arguments | Purpose |
 | --- | --- | --- |
-| [generateChangeSummary](../apps/scope/product/web/src/pages/FirstQuote.tsx#L62) | before, after, lang |  |
-| [EditModeWrapper](../apps/scope/product/web/src/pages/FirstQuote.tsx#L143) | {
+| [generateChangeSummary](../apps/scope/product/web/src/pages/FirstQuote.tsx#L65) | before, after, lang |  |
+| [EditModeWrapper](../apps/scope/product/web/src/pages/FirstQuote.tsx#L146) | {
   scope,
   lang,
   isEditMode,
@@ -1806,7 +1866,7 @@ Values stay in the recipient’s private runtime file. [Setup](setup.md) groups 
   onCancelEdit,
   onChange,
 } |  |
-| [ChatMode](../apps/scope/product/web/src/pages/FirstQuote.tsx#L210) | {
+| [ChatMode](../apps/scope/product/web/src/pages/FirstQuote.tsx#L213) | {
   contractorId,
   contractorName,
   lang,
@@ -1819,10 +1879,10 @@ Values stay in the recipient’s private runtime file. [Setup](setup.md) groups 
   onStartFresh,
   onGoToDashboard,
 } |  |
-| [FirstQuote](../apps/scope/product/web/src/pages/FirstQuote.tsx#L521) |  |  |
-| [handleScopeReady](../apps/scope/product/web/src/pages/FirstQuote.tsx#L551) | scope |  |
-| [handleAfterChatLocationConfirm](../apps/scope/product/web/src/pages/FirstQuote.tsx#L573) | label |  |
-| [handleConnectBank](../apps/scope/product/web/src/pages/FirstQuote.tsx#L579) | quoteToken |  |
+| [FirstQuote](../apps/scope/product/web/src/pages/FirstQuote.tsx#L531) |  |  |
+| [handleScopeReady](../apps/scope/product/web/src/pages/FirstQuote.tsx#L561) | scope |  |
+| [handleAfterChatLocationConfirm](../apps/scope/product/web/src/pages/FirstQuote.tsx#L583) | label |  |
+| [handleConnectBank](../apps/scope/product/web/src/pages/FirstQuote.tsx#L589) | quoteToken |  |
 
 ### apps/scope/product/web/src/pages/ImportPro.tsx
 
@@ -1838,16 +1898,16 @@ Values stay in the recipient’s private runtime file. [Setup](setup.md) groups 
 
 | Function | Arguments | Purpose |
 | --- | --- | --- |
-| [useSenderInfo](../apps/scope/product/web/src/pages/JobChat.tsx#L43) |  |  |
-| [formatGroupTime](../apps/scope/product/web/src/pages/JobChat.tsx#L51) | isoString | Format timestamp for display above message groups |
-| [isSameGroup](../apps/scope/product/web/src/pages/JobChat.tsx#L66) | a, b | Returns true if two messages are in the same "group" (same sender, within 5 min) |
-| [MessageBubble](../apps/scope/product/web/src/pages/JobChat.tsx#L72) | {
+| [useSenderInfo](../apps/scope/product/web/src/pages/JobChat.tsx#L44) |  |  |
+| [formatGroupTime](../apps/scope/product/web/src/pages/JobChat.tsx#L52) | isoString | Format timestamp for display above message groups |
+| [isSameGroup](../apps/scope/product/web/src/pages/JobChat.tsx#L67) | a, b | Returns true if two messages are in the same "group" (same sender, within 5 min) |
+| [MessageBubble](../apps/scope/product/web/src/pages/JobChat.tsx#L73) | {
   message,
   myRole,
   showTimestamp,
 } |  |
-| [ChatSkeleton](../apps/scope/product/web/src/pages/JobChat.tsx#L121) |  | Skeleton loading state — alternating bubble placeholders |
-| [JobChat](../apps/scope/product/web/src/pages/JobChat.tsx#L136) |  |  |
+| [ChatSkeleton](../apps/scope/product/web/src/pages/JobChat.tsx#L122) |  | Skeleton loading state — alternating bubble placeholders |
+| [JobChat](../apps/scope/product/web/src/pages/JobChat.tsx#L137) |  |  |
 
 ### apps/scope/product/web/src/pages/JobInbox.tsx
 
@@ -2015,9 +2075,9 @@ Values stay in the recipient’s private runtime file. [Setup](setup.md) groups 
 
 | Function | Arguments | Purpose |
 | --- | --- | --- |
-| [isReelFlowId](../apps/scope/product/web/src/reel/flag.ts#L28) | v |  |
-| [reelFlowId](../apps/scope/product/web/src/reel/flag.ts#L37) |  | Resolve the active reel flow, or null when reel mode is off. Order: `?reel=<id>` query param (sticks it to localStorage) -> localStorage. `?reel=off` / `?reel=0` clears it. Invalid ids are ignored (treated as off). |
-| [isReel](../apps/scope/product/web/src/reel/flag.ts#L60) |  | True when the app is running as a portfolio reel (any flow). |
+| [isReelFlowId](../apps/scope/product/web/src/reel/flag.ts#L30) | v |  |
+| [reelFlowId](../apps/scope/product/web/src/reel/flag.ts#L39) |  | Resolve the active reel flow, or null when reel mode is off. Order: `?reel=<id>` query param (sticks it to localStorage) -> localStorage. `?reel=off` / `?reel=0` clears it. Invalid ids are ignored (treated as off). |
+| [isReel](../apps/scope/product/web/src/reel/flag.ts#L63) |  | True when the app is running as a portfolio reel (any flow). |
 
 ### apps/scope/product/web/src/reel/registry.ts
 
@@ -2322,9 +2382,10 @@ Values stay in the recipient’s private runtime file. [Setup](setup.md) groups 
 
 | Function | Arguments | Purpose |
 | --- | --- | --- |
-| [http_client](../packages/core/src/core/http.py#L51) | timeout | General-purpose async client with Leo's defaults. |
-| [sb_request](../packages/core/src/core/http.py#L69) | timeout | Short-lived Supabase-scoped async client (base_url + auth headers). |
-| [http_client_sync](../packages/core/src/core/http.py#L89) | timeout | Sync counterpart to :func:`http_client`. |
+| [local_http_transport](../packages/core/src/core/http.py#L46) | transport | Bind a recipient-owned REST transport for only the current request. |
+| [http_client](../packages/core/src/core/http.py#L66) | timeout | General-purpose async client with Leo's defaults. |
+| [sb_request](../packages/core/src/core/http.py#L87) | timeout | Short-lived Supabase-scoped async client (base_url + auth headers). |
+| [http_client_sync](../packages/core/src/core/http.py#L107) | timeout | Sync counterpart to :func:`http_client`. |
 
 ### packages/core/src/core/money.py
 

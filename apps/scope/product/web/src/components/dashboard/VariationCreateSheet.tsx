@@ -83,7 +83,7 @@ export function VariationCreateSheet({ open, onClose, quoteToken, contractorId }
                   type="number"
                   step="1"
                   min="1"
-                  {...register('amount_cents', { valueAsNumber: true, setValueAs: (v) => Math.round(Number(v) * 100) })}
+                  {...register('amount_cents', { setValueAs: (v) => Math.round(Number(v) * 100) })}
                   placeholder="200"
                   className="w-full px-4 py-3 rounded-sm border border-border text-sm text-ink bg-white focus:outline-none focus:ring-1 focus:ring-terracotta"
                 />

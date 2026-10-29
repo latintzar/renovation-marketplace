@@ -23,6 +23,8 @@ export type ChatUiStatus = 'needs-info' | 'workable' | 'solid';
 export type PreviewState = 'empty' | 'building' | 'editing' | 'ready';
 
 interface UseChatOptions {
+  /** Existing persisted quote loaded by the normal edit route. */
+  initialScope?: QuoteUpdate | null;
   mode: ChatMode;
   audience: ChatAudience;
   /** Starting locale — can be changed at runtime via setPageLocale() */
@@ -253,7 +255,7 @@ export function useChat(options: UseChatOptions): UseChatResult {
   const chatAbortRef = useRef<AbortController | null>(null);
   const [briefUpdate, setBriefUpdate] = useState<BriefUpdate | null>(prev?.briefUpdate ?? null);
   const [profileUpdate, setProfileUpdate] = useState<ProfileUpdate | null>(prev?.profileUpdate ?? null);
-  const [scopeUpdate, setQuoteUpdate] = useState<QuoteUpdate | null>(prev?.scopeUpdate ?? null);
+  const [scopeUpdate, setQuoteUpdate] = useState<QuoteUpdate | null>(options.initialScope ?? prev?.scopeUpdate ?? null);
   const [drawerState, setDrawerState] = useState<DrawerState | null>(prev?.drawerState ?? null);
   const [lastError, setLastError] = useState<string | null>(null);
   const [leadId, setLeadId] = useState<string | null>(options.leadId ?? null);

@@ -23,6 +23,7 @@ import posthog from 'posthog-js';
 
 import { API_BASE, apiFetch } from './api';
 import { isSandbox } from './utils';
+import {localMode} from './runtime';
 
 // ---------------------------------------------------------------------------
 // Internal state
@@ -40,6 +41,7 @@ let _sandbox = false;
  * Safe to call multiple times — only initialises on first call.
  */
 export function initTracking(): void {
+  if (localMode) return;
   if (_initialized) return;
   _sandbox = isSandbox();
 
@@ -73,6 +75,7 @@ export function initTracking(): void {
  * Call after login / session restore.
  */
 export function identify(userId: string, traits?: Record<string, unknown>): void {
+  if (localMode) return;
   if (!userId) return;
 
   posthog.identify(userId, traits as Record<string, string>);

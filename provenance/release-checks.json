@@ -1,110 +1,182 @@
 {
-  "checked_at": "2026-10-28T15:52:11.271017+00:00",
-  "release_state": "private source candidate for owner review",
-  "history_included": false,
+  "checked_at": "2026-10-29T00:33:02.968662+00:00",
+  "release_state": "native source runtime checked; publication and installed-host proof recorded separately",
   "original_worktree_mutated": false,
-  "fresh_workspace_install": {
-    "node": "v22.23.2",
-    "pnpm": "9.0.0",
-    "lifecycle_scripts": "disabled",
-    "platform_binding": "transitive optional dependency; no Linux-only direct dependency"
-  },
+  "history_included": false,
+  "base_public_commit": "d164defda095892ac93859b57ee264849bbfffac",
+  "runtime": "same original React routes and FastAPI/domain functions over recipient-owned local SQLite",
   "frontend": {
     "typescript": "passed",
     "vite_build": "passed",
-    "vite_version": "8.3.5",
+    "node": "22.23.2",
+    "pnpm": "9.0.0",
     "warning": "inherited main chunk above 500 kB"
   },
-  "selected_python_suites": {
+  "python": {
     "python_network": "loopback-only",
     "suites": [
       {
         "suite": "release-safety",
         "returncode": 0,
-        "seconds": 1.19,
+        "seconds": 1.88,
         "summary": [
-          "12 passed in 0.59s"
+          "22 passed, 1 warning in 1.36s"
         ]
       },
       {
         "suite": "state-machine",
         "returncode": 0,
-        "seconds": 0.81,
+        "seconds": 0.79,
         "summary": [
-          "============================== 29 passed in 0.34s =============================="
+          "============================== 29 passed in 0.33s =============================="
         ]
       },
       {
         "suite": "payment-domain",
         "returncode": 0,
-        "seconds": 1.25,
+        "seconds": 1.13,
         "summary": [
-          "146 passed, 2 warnings in 0.39s"
+          "146 passed, 2 warnings in 0.33s"
         ]
       },
       {
         "suite": "document-payloads",
         "returncode": 0,
-        "seconds": 0.86,
+        "seconds": 0.77,
         "summary": [
-          "============================== 20 passed in 0.06s =============================="
+          "============================== 20 passed in 0.04s =============================="
         ]
       }
     ]
   },
-  "database": {
-    "contract_checks": 12,
-    "all_passed": true,
-    "postgres_version": "16.15",
-    "test_transport": "private Unix socket",
-    "supabase_local_config": "PostgreSQL 17; TOML parsed, full CLI/Docker acceptance separate"
+  "native_browser": {
+    "checks": {
+      "quote_save_reload_1600": true,
+      "proof_persisted_1600": true,
+      "variation_euros_1600": true,
+      "message_reload_1600": true,
+      "cross_visitor_messages_1600": true,
+      "quote_save_reload_390": true,
+      "proof_persisted_390": true,
+      "variation_euros_390": true,
+      "message_reload_390": true,
+      "cross_visitor_messages_390": true
+    },
+    "views": [
+      {
+        "name": "dashboard",
+        "width": 1600
+      },
+      {
+        "name": "quote",
+        "width": 1600
+      },
+      {
+        "name": "quote-edit",
+        "width": 1600
+      },
+      {
+        "name": "submit-proof",
+        "width": 1600
+      },
+      {
+        "name": "project-chat",
+        "width": 1600
+      },
+      {
+        "name": "homeowner-projects",
+        "width": 1600
+      },
+      {
+        "name": "project",
+        "width": 1600
+      },
+      {
+        "name": "milestone-review",
+        "width": 1600
+      },
+      {
+        "name": "agreement",
+        "width": 1600
+      },
+      {
+        "name": "dashboard",
+        "width": 390
+      },
+      {
+        "name": "quote",
+        "width": 390
+      },
+      {
+        "name": "quote-edit",
+        "width": 390
+      },
+      {
+        "name": "submit-proof",
+        "width": 390
+      },
+      {
+        "name": "project-chat",
+        "width": 390
+      },
+      {
+        "name": "homeowner-projects",
+        "width": 390
+      },
+      {
+        "name": "project",
+        "width": 390
+      },
+      {
+        "name": "milestone-review",
+        "width": 390
+      },
+      {
+        "name": "agreement",
+        "width": 390
+      }
+    ],
+    "errors": [],
+    "bad": [],
+    "external": [],
+    "failed": [],
+    "cookie": {
+      "name": "renovation_workspace_session",
+      "path": "/apps/renovation-marketplace/",
+      "httpOnly": true,
+      "sameSite": "Lax",
+      "secure": false
+    }
   },
-  "browser": {
-    "original_entries": 5,
+  "public_browser_check": {
+    "assertions": 18,
     "viewport_widths": [
       1600,
       390
     ],
-    "viewpoints": 10,
-    "all_passed": true,
-    "network": "selected loopback origin only",
-    "provider_calls": 0,
-    "quote_total_eur": 8190,
-    "native_editor_inputs": 36,
-    "mobile_preview_icon_visible": true
+    "page_errors": [],
+    "foreign_requests": []
   },
-  "markdown_boundary": "original component fixture executes benign marker; released component removes handler and retains formatted text",
-  "npm_audit": {
-    "vulnerabilities": {
-      "info": 0,
-      "low": 0,
-      "moderate": 0,
-      "high": 0,
-      "critical": 0
-    },
-    "dependencies": 349,
-    "devDependencies": 0,
-    "optionalDependencies": 0,
-    "totalDependencies": 349
-  },
-  "python_dependency_check": "pip check passed",
-  "agent_skill": "quick_validate.py passed",
+  "state": "owned per-visitor records; private session cookie; restart persistence tested",
+  "paid_providers": "held before route execution; local socket fence allows loopback only",
   "source_reference": {
-    "named_functions": 1614,
-    "http_routes": 87,
-    "configuration_names": 96
-  },
-  "secret_scan": {
-    "tool": "Gitleaks 8.30.1",
-    "distributable_source": "zero findings; exact SHA-256 allowlist restricted to known provenance manifests",
-    "compiled_browser_bundle": "zero findings"
+    "named_functions": 1645,
+    "http_routes": 92,
+    "configuration_names": 98
   },
   "limits": [
-    "Historical full marketplace schema unrecovered; supplied core is new reconstruction.",
-    "Complete backend, Supabase/PostgREST/auth and external Hermes runtime acceptance remain separate.",
-    "Stripe settlements, sender delivery, model calls and other provider effects were not exercised.",
-    "The original scripted example retains mixed language fallbacks, historical public profile data and presentation timing/state limitations.",
-    "Marketing and native scaffolds are retained source; first-result acceptance covers the scripted React product.",
-    "Current install reports an inherited optional AJV peer warning; frontend build and audit pass."
-  ]
+    "Full historical Supabase schema and external Hermes compatibility remain separate acceptance work.",
+    "Stripe payments/settlements, model calls and outbound sender delivery require recipient configuration.",
+    "HTML agreements are exercised; PDF rendering requires the optional renderer.",
+    "The saved paid project is authored product state rather than a provider payment receipt.",
+    "Native source retains mixed English/Spanish labels and inherited bundle-size warnings."
+  ],
+  "historical_checks": "provenance/historical-release-checks.json",
+  "secret_scan": {
+    "tool": "Gitleaks 8.30.1",
+    "source_findings": 0,
+    "browser_bundle_findings": 0,
+    "redacted_reports": "private proof directory",
+    "allowlist": "only known provenance paths and exact SHA-256 content digests"
+  }
 }

@@ -136,7 +136,7 @@ const SAMPLE_CHANGE_ORDER: ChangeOrderUpdate = {
     { description: 'Copper pipe (1.5m)', amount: 52.50 },
     { description: 'Labour (45 min)', amount: 45.00 },
   ],
-  photo_urls: ['/app/sample-attachment.png', '/app/sample-attachment.png'],
+  photo_urls: [`${import.meta.env.BASE_URL}sample-attachment.png`, `${import.meta.env.BASE_URL}sample-attachment.png`],
   market_range_low: 80,
   market_range_high: 130,
   status: 'pending',
@@ -1155,7 +1155,7 @@ export default function ComponentLibrary() {
           <Card label="Approx ring (homeowner brief)" width="320px">
             <div className="p-4">
               <MapAreaCard
-                mapImageSrc="/app/sample-attachment.png"
+                mapImageSrc={`${import.meta.env.BASE_URL}sample-attachment.png`}
                 areaName="El Rosario, Marbella"
                 radiusLabel="~2 km radius · rough area"
                 showApproxRing={true}
@@ -1165,7 +1165,7 @@ export default function ComponentLibrary() {
           <Card label="No ring (pro invite — precise)" width="320px">
             <div className="p-4">
               <MapAreaCard
-                mapImageSrc="/app/sample-attachment.png"
+                mapImageSrc={`${import.meta.env.BASE_URL}sample-attachment.png`}
                 areaName="Calle Girasol 14, Marbella"
                 radiusLabel="Exact address — invited tradesperson only"
                 showApproxRing={false}
@@ -1199,7 +1199,7 @@ export default function ComponentLibrary() {
             <div className="p-4 bg-ink rounded-md">
               <MilestoneList
                 gradientBg
-                gradientSrc="/app/sample-attachment.png"
+                gradientSrc={`${import.meta.env.BASE_URL}sample-attachment.png`}
                 milestones={[
                   { id: '1', label: 'Deposit — work commences', amount: '€295', status: 'done' },
                   { id: '2', label: 'Mid-job milestone', amount: '€395', status: 'done' },

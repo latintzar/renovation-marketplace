@@ -29,6 +29,7 @@ from __future__ import annotations
 
 import logging
 from contextlib import asynccontextmanager, contextmanager
+from contextvars import ContextVar
 from typing import Any, AsyncIterator, Iterator
 
 import httpx
@@ -37,10 +38,24 @@ from core.db import sb_headers, sb_url
 
 logger = logging.getLogger(__name__)
 
+# A recipient local runtime can bind its private database transport per request.
+# The standard provider-configured runtime leaves this context unset.
+_LOCAL_TRANSPORT = ContextVar('leo_local_http_transport', default=None)
+
+@contextmanager
+def local_http_transport(transport):
+    """Bind a recipient-owned REST transport for only the current request."""
+    token = _LOCAL_TRANSPORT.set(transport)
+    try:
+        yield
+    finally:
+        _LOCAL_TRANSPORT.reset(token)
+
 DEFAULT_TIMEOUT = 10
 
 __all__ = [
     "DEFAULT_TIMEOUT",
+    "local_http_transport",
     "http_client",
     "http_client_sync",
     "sb_request",
@@ -57,6 +72,9 @@ async def http_client(
     Connect timeout is capped at 10s (``min(timeout, 10.0)``). Redirects
     are disabled by default; override with ``follow_redirects=True``.
     """
+    if _LOCAL_TRANSPORT.get() is not None:
+        kwargs.setdefault('transport', _LOCAL_TRANSPORT.get())
+        kwargs.setdefault('trust_env', False)
     async with httpx.AsyncClient(
         timeout=httpx.Timeout(timeout, connect=min(timeout, 10.0)),
         follow_redirects=kwargs.pop("follow_redirects", False),

@@ -1,3 +1,5 @@
+import {localMode} from '../lib/runtime';
+
 /**
  * Reel mode — the backend-free, auto-play "portfolio reel" of the Scope product.
  *
@@ -35,6 +37,7 @@ function isReelFlowId(v: string | null): v is ReelFlowId {
  * `?reel=off` / `?reel=0` clears it. Invalid ids are ignored (treated as off).
  */
 export function reelFlowId(): ReelFlowId | null {
+  if (localMode) return null;
   try {
     const qp = new URLSearchParams(window.location.search).get('reel');
     if (qp !== null) {

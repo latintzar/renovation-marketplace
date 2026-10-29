@@ -12,7 +12,7 @@ flowchart LR
   Quote --> Checkout[Stripe Checkout]
 ```
 
-The scripted entry uses the original FirstQuote page, useChat and quote components. Connected generation uses the retained agent/tool boundary; the script supplies authored replies through the same typed API client.
+The native local entry loads the saved quote through the original canvas API. Direct edits persist through its original update route. Connected generation uses the retained agent/tool boundary; the original scripted flow remains a separately selected historical presentation.
 
 Sources: [FirstQuote](../apps/scope/product/web/src/pages/FirstQuote.tsx), [editable canvas](../apps/scope/product/web/src/components/EditableQuoteCanvas.tsx), [original restored document](../packages/ui/src/QuoteCanvas.tsx), [finance](../packages/payments/src/payments/finance.py).
 
@@ -35,9 +35,11 @@ Sources: [milestone API](../apps/scope/product/backend/routes/milestones.py), [s
 
 ![The original milestone review sheet](images/review.png)
 
+The local app records proof and in-app notifications through these original functions. Stripe release remains admitted by the recipient-configured payment runtime.
+
 ## Project chat
 
-Messages remain attached to the paid project. The source derivative resolves the sender from verified identity and checks project membership for reads and writes. The client-supplied legacy identity fields remain accepted for compatibility; the server determines the recorded participant.
+Messages remain attached to the paid project. The source derivative resolves the sender from verified identity and checks project membership for reads and writes. The client-supplied legacy identity fields remain accepted for compatibility; the server determines the recorded participant. Local mode uses cookie authority and HTTP polling; configured mode retains Supabase identity and Realtime.
 
 Sources: [chat API](../apps/scope/product/backend/routes/messages.py), [party matching](../apps/scope/product/backend/project_access.py), [JobChat](../apps/scope/product/web/src/pages/JobChat.tsx).
 

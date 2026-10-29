@@ -41,7 +41,7 @@ export const JOBS: Job[] = [
     createdAt: '2026-03-10',
     scopeText:
       'Remove existing hot water cylinder and replace with Megaflo Eco 170i unvented cylinder. Includes: disconnection of existing system, removal and disposal of old cylinder, installation of new cylinder with all required safety valves (PRV, TV, expansion vessel), connection to existing hot and cold water feeds, testing and commissioning. Excludes: any electrical work, any modifications to existing pipework beyond immediate connections.',
-    photos: ['/app/sample-attachment.png', '/app/sample-attachment.png'],
+    photos: [`${import.meta.env.BASE_URL}sample-attachment.png`, `${import.meta.env.BASE_URL}sample-attachment.png`],
     costBreakdown: [
       { description: 'Megaflo Eco 170i cylinder (supply)', amount: 580 },
       { description: 'Installation labour (1.5 days)', amount: 480 },
@@ -54,7 +54,7 @@ export const JOBS: Job[] = [
         reason:
           'Additional copper pipework replacement \u2014 corroded pipes discovered behind wall during installation',
         amount: 180,
-        photo: '/app/sample-attachment.png',
+        photo: `${import.meta.env.BASE_URL}sample-attachment.png`,
         status: 'pending',
         createdAt: '2026-03-18',
       },

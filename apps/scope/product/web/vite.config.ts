@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/app/',
+  base: process.env.VITE_APP_BASE_PATH || '/app/',
   build: {
     outDir: '../public/app',
     emptyOutDir: true,

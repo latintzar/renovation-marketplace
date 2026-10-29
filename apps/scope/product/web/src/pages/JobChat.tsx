@@ -18,6 +18,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Loader2 } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import { API_BASE, apiFetch, transcribeAudio } from '../lib/api';
+import {localMode} from '../lib/runtime';
 import { track } from '../lib/tracking';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
@@ -176,6 +177,14 @@ export default function JobChat() {
   // Supabase Realtime subscription
   useEffect(() => {
     if (!token) return;
+    if (localMode) {
+      const timer = window.setInterval(() => {
+        apiFetch(`${API_BASE}/v1/messages/${token}`).then(r => r.json()).then(data => {
+          if (Array.isArray(data)) setMessages(data);
+        }).catch(() => {});
+      }, 2500);
+      return () => window.clearInterval(timer);
+    }
     const channel = supabase.channel(`job:${token}`, {
       config: { broadcast: { self: false } },
     });

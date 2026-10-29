@@ -27,7 +27,7 @@ export function InlineLogin({ prefillEmail }: InlineLoginProps) {
     await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
-        redirectTo: `${window.location.origin}/app/auth/callback?return=${encodeURIComponent(returnUrl)}`,
+        redirectTo: `${window.location.origin}${import.meta.env.BASE_URL}auth/callback?return=${encodeURIComponent(returnUrl)}`,
       },
     });
   };

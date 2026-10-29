@@ -1,0 +1,110 @@
+{
+  "checked_at": "2026-10-28T15:52:11.271017+00:00",
+  "release_state": "private source candidate for owner review",
+  "history_included": false,
+  "original_worktree_mutated": false,
+  "fresh_workspace_install": {
+    "node": "v22.23.2",
+    "pnpm": "9.0.0",
+    "lifecycle_scripts": "disabled",
+    "platform_binding": "transitive optional dependency; no Linux-only direct dependency"
+  },
+  "frontend": {
+    "typescript": "passed",
+    "vite_build": "passed",
+    "vite_version": "8.3.5",
+    "warning": "inherited main chunk above 500 kB"
+  },
+  "selected_python_suites": {
+    "python_network": "loopback-only",
+    "suites": [
+      {
+        "suite": "release-safety",
+        "returncode": 0,
+        "seconds": 1.19,
+        "summary": [
+          "12 passed in 0.59s"
+        ]
+      },
+      {
+        "suite": "state-machine",
+        "returncode": 0,
+        "seconds": 0.81,
+        "summary": [
+          "============================== 29 passed in 0.34s =============================="
+        ]
+      },
+      {
+        "suite": "payment-domain",
+        "returncode": 0,
+        "seconds": 1.25,
+        "summary": [
+          "146 passed, 2 warnings in 0.39s"
+        ]
+      },
+      {
+        "suite": "document-payloads",
+        "returncode": 0,
+        "seconds": 0.86,
+        "summary": [
+          "============================== 20 passed in 0.06s =============================="
+        ]
+      }
+    ]
+  },
+  "database": {
+    "contract_checks": 12,
+    "all_passed": true,
+    "postgres_version": "16.15",
+    "test_transport": "private Unix socket",
+    "supabase_local_config": "PostgreSQL 17; TOML parsed, full CLI/Docker acceptance separate"
+  },
+  "browser": {
+    "original_entries": 5,
+    "viewport_widths": [
+      1600,
+      390
+    ],
+    "viewpoints": 10,
+    "all_passed": true,
+    "network": "selected loopback origin only",
+    "provider_calls": 0,
+    "quote_total_eur": 8190,
+    "native_editor_inputs": 36,
+    "mobile_preview_icon_visible": true
+  },
+  "markdown_boundary": "original component fixture executes benign marker; released component removes handler and retains formatted text",
+  "npm_audit": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0
+    },
+    "dependencies": 349,
+    "devDependencies": 0,
+    "optionalDependencies": 0,
+    "totalDependencies": 349
+  },
+  "python_dependency_check": "pip check passed",
+  "agent_skill": "quick_validate.py passed",
+  "source_reference": {
+    "named_functions": 1614,
+    "http_routes": 87,
+    "configuration_names": 96
+  },
+  "secret_scan": {
+    "tool": "Gitleaks 8.30.1",
+    "distributable_source": "zero findings; exact SHA-256 allowlist restricted to known provenance manifests",
+    "compiled_browser_bundle": "zero findings"
+  },
+  "limits": [
+    "Historical full marketplace schema unrecovered; supplied core is new reconstruction.",
+    "Complete backend, Supabase/PostgREST/auth and external Hermes runtime acceptance remain separate.",
+    "Stripe settlements, sender delivery, model calls and other provider effects were not exercised.",
+    "The original scripted example retains mixed language fallbacks, historical public profile data and presentation timing/state limitations.",
+    "Marketing and native scaffolds are retained source; first-result acceptance covers the scripted React product.",
+    "Current install reports an inherited optional AJV peer warning; frontend build and audit pass."
+  ]
+}

@@ -184,7 +184,7 @@ export default function Canvas() {
           <LanguageToggle variant="dark" />
           {isContractor && (
             <a
-              href="/app/dashboard"
+              href={`${import.meta.env.BASE_URL}dashboard`}
               className="text-xs font-medium transition-colors"
               style={{ color: 'rgba(250,248,244,0.55)' }}
             >

@@ -13,6 +13,7 @@ import type {
   QuoteUpdate,
 } from '@scope/ui';
 import { isSandbox } from './utils';
+import {localMode, appBase} from './runtime';
 import { isReel } from '../reel/flag';
 import { reelHandle } from '../reel/engine';
 import { activeScript } from '../reel/registry';
@@ -43,7 +44,7 @@ const logError = (msg: string, err: unknown) => {
   console.error(`[api] ${msg}`, err);
 };
 
-export const API_BASE = import.meta.env.VITE_API_URL?.replace(/\/$/, '') || 'http://127.0.0.1:18261';
+export const API_BASE = localMode ? appBase : import.meta.env.VITE_API_URL?.replace(/\/$/, '') || 'http://127.0.0.1:18261';
 
 // ---------------------------------------------------------------------------
 // Auth token injection — wired up by AuthProvider on mount
@@ -621,8 +622,8 @@ export async function getStripeAccountLink(
   contractorId: string,
 ): Promise<{ ok: boolean; url?: string; error?: string }> {
   const apiUrl = `${API_BASE}/v1/stripe/account-link`;
-  const returnUrl = `${window.location.origin}/app/stripe/complete?contractor=${encodeURIComponent(contractorId)}`;
-  const refreshUrl = `${window.location.origin}/app/stripe/refresh?contractor=${encodeURIComponent(contractorId)}`;
+  const returnUrl = `${window.location.origin}${import.meta.env.BASE_URL}stripe/complete?contractor=${encodeURIComponent(contractorId)}`;
+  const refreshUrl = `${window.location.origin}${import.meta.env.BASE_URL}stripe/refresh?contractor=${encodeURIComponent(contractorId)}`;
   log('POST stripe/account-link', { contractor: contractorId.slice(0, 8) });
   try {
     return await jsonRequest<{ url?: string }>(apiUrl, {

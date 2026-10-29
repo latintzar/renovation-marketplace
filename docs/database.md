@@ -1,5 +1,9 @@
 # Database and auth
 
+## Local app
+
+The default native app uses a new visitor-scoped SQLite adapter. [Its schema and auth contract](native-workspace.md#storage) are independent of the Supabase reconstruction below. Both paths use the original quote, message and milestone route/domain code.
+
 ## Developer core
 
 [`0001_developer_core.sql`](../supabase/migrations/0001_developer_core.sql) is a new developer baseline reconstructed from the retained route contracts. It is separate from the unrecovered historical production schema.

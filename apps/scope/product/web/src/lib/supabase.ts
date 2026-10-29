@@ -4,7 +4,9 @@
  * This client uses the anon key — safe to expose in the frontend.
  */
 
-import { createClient } from '@supabase/supabase-js';
+import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+import {localMode} from './runtime';
+import {localAuthClient} from './localAuth';
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || 'http://127.0.0.1:54321';
 // Anon key is safe to expose (client-side, row-level-security enforced server-side)
@@ -12,7 +14,7 @@ const SUPABASE_ANON_KEY =
   import.meta.env.VITE_SUPABASE_ANON_KEY ||
   'local-reel-only-anon-key';
 
-export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+export const supabase: SupabaseClient = localMode ? localAuthClient as unknown as SupabaseClient : createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
   auth: {
     autoRefreshToken: true,
     persistSession: true,
@@ -22,7 +24,7 @@ export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
 
 /** Start Google OAuth flow, storing the claim token in the redirect URL. */
 export async function signInWithGoogleForClaim(claimToken: string): Promise<{ error?: string }> {
-  const redirectTo = `${window.location.origin}/app/auth/callback?claim=${encodeURIComponent(claimToken)}`;
+  const redirectTo = `${window.location.origin}${import.meta.env.BASE_URL}auth/callback?claim=${encodeURIComponent(claimToken)}`;
   const { error } = await supabase.auth.signInWithOAuth({
     provider: 'google',
     options: { redirectTo },

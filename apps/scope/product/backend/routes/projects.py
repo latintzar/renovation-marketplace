@@ -81,7 +81,7 @@ def app_base_url() -> str:
 
 def tracking_url(quote_token: str, homeowner_email: str = "") -> str:
     """Build the homeowner-facing project tracking URL with optional email pre-fill."""
-    base = f"{app_base_url()}/app/project/{quote_token}"
+    base = f"{app_base_url()}{os.getenv('SCOPE_WEB_BASE_PATH', '/app')}/project/{quote_token}"
     if homeowner_email:
         from urllib.parse import quote as urlquote
         base += f"?email={urlquote(homeowner_email)}"

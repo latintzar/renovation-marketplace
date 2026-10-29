@@ -19,7 +19,10 @@ import { LanguageToggle } from '../components/LanguageToggle';
 import EditableQuoteCanvas from '../components/EditableQuoteCanvas';
 import LocationPickerModal from '../components/LocationPickerModal';
 import { QuoteCanvas , Button } from '@scope/ui';
-import { type QuoteUpdate } from '../lib/api';
+import { type QuoteUpdate, updateScope } from '../lib/api';
+import {localMode} from '../lib/runtime';
+import {toast} from 'sonner';
+import i18n from '../i18n';
 import { useAuth } from '../context/AuthContext';
 import { getLeoAuth, mergeLeoAuth } from '../lib/utils';
 import { useCanvasQuery } from '../hooks/useCanvasQuery';
@@ -248,6 +251,7 @@ function ChatMode({
     pageLocale: lang,
     leadContext,
     contractorId,
+    initialScope,
   });
 
   // Reel mode: auto-play the scripted "build a scope" walkthrough (no-op otherwise).
@@ -326,18 +330,24 @@ function ChatMode({
     setIsEditMode(false);
   }, []);
 
-  const handleSaveEdits = useCallback(() => {
+  const handleSaveEdits = useCallback(async () => {
     const before = preEditSnapshotRef.current;
     const after = localScope ?? chat.scopeUpdate;
+    if (localMode && editToken && after) {
+      try {
+        const saved = await updateScope(editToken, after, contractorId);
+        if (!saved.ok) throw new Error();
+      } catch {toast.error('Save the quote again.');return;}
+    }
     setIsEditMode(false);
     // Close the mobile preview panel so the contractor sees the chat response
     setClosePreviewCount((c) => c + 1);
     if (!before || !after) return;
     const summary = generateChangeSummary(before, after, lang);
-    if (summary) {
+    if (summary && !localMode) {
       void chat.sendTextMessage(summary);
     }
-  }, [localScope, chat.scopeUpdate, lang, chat.sendTextMessage]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [localScope, chat.scopeUpdate, lang, chat.sendTextMessage, editToken, contractorId]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Instant greeting — shown immediately on fresh sessions, no LLM call.
   const greetingFiredRef = useRef(false);
@@ -527,7 +537,7 @@ export default function FirstQuote() {
   const editToken = searchParams.get('editToken') ?? '';
   const isFirstQuote = searchParams.get('first') === 'true';
 
-  const [lang, setLang] = useState<'es' | 'en'>(isReel() ? 'en' : 'es');
+  const [lang, setLang] = useState<'es' | 'en'>(isReel() || i18n.language?.startsWith('en') ? 'en' : 'es');
 
   // Location — confirmed before chat starts.
   // null = picker not yet shown/confirmed; string = confirmed (empty string = skipped).
@@ -563,7 +573,7 @@ export default function FirstQuote() {
     try {
       sessionStorage.removeItem(`leo_chat_scope_professional_${contractorId}`);
     } catch { /* continue */ }
-    window.location.href = `/app/quote/first?contractorId=${encodeURIComponent(contractorId)}`;
+    window.location.href = `${import.meta.env.BASE_URL}quote/first?contractorId=${encodeURIComponent(contractorId)}`;
   }, [contractorId]);
 
   const handleGoToDashboard = useCallback(() => {

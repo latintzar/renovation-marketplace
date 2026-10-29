@@ -122,7 +122,7 @@ export function ScopeActionBar({ token, contractorId, isContractor, isPaid, scop
     );
   }
 
-  const canvasUrlShare = `${window.location.origin}/app/canvas/${token}`;
+  const canvasUrlShare = `${window.location.origin}${import.meta.env.BASE_URL}canvas/${token}`;
 
   const handleNewQuote = () => {
     try {

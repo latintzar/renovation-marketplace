@@ -49,8 +49,8 @@ export function SubmitProofSheet({ open, onClose, quoteToken, contractorId, mile
       timers.push(setTimeout(() => { if (!cancelled) fn(); }, ms));
     setPhotos([]);
     setNote('');
-    at(1100, () => setPhotos([reelAsset('/app/sample-attachment.png')]));
-    at(2000, () => setPhotos([reelAsset('/app/sample-attachment.png'), reelAsset('/app/sample-attachment.png')]));
+    at(1100, () => setPhotos([reelAsset(`${import.meta.env.BASE_URL}sample-attachment.png`)]));
+    at(2000, () => setPhotos([reelAsset(`${import.meta.env.BASE_URL}sample-attachment.png`), reelAsset(`${import.meta.env.BASE_URL}sample-attachment.png`)]));
     at(3000, () => setNote('Phase 2 complete — waterproofed, tiled full-height and grouted.'));
     at(4600, async () => {
       try {

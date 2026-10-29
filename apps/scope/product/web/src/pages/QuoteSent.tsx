@@ -28,7 +28,7 @@ export default function QuoteSent() {
   const { data: canvasData, isLoading: loading } = useCanvasQuery(token);
   const scope = canvasData?.scope ?? null;
 
-  const canvasUrl = `${window.location.origin}/app/canvas/${token}`;
+  const canvasUrl = `${window.location.origin}${import.meta.env.BASE_URL}canvas/${token}`;
 
   const phases = scope?.line_items ?? [];
   const { total } = computeQuoteTotals(scope ?? {});

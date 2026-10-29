@@ -55,7 +55,7 @@ function EnvelopeIllustration() {
       </svg>
       {/* Real Playfair L monogram — cream on terracotta seal */}
       <img
-        src="/brand/leo-L-cream.svg"
+        src={`${import.meta.env.BASE_URL}brand/leo-L-cream.svg`}
         alt=""
         aria-hidden="true"
         className="absolute"
@@ -183,7 +183,7 @@ export default function Login() {
     track(`login.${provider}_started`);
     const { error: err } = await supabase.auth.signInWithOAuth({
       provider,
-      options: { redirectTo: `${window.location.origin}/app/auth/callback` },
+      options: { redirectTo: `${window.location.origin}${import.meta.env.BASE_URL}auth/callback` },
     });
     if (err) { setAuthState('ready'); setError(err.message); }
   };
@@ -195,7 +195,7 @@ export default function Login() {
     track('login.magic_link_started', { email });
     const { error: err } = await supabase.auth.signInWithOtp({
       email,
-      options: { emailRedirectTo: `${window.location.origin}/app/auth/callback`, shouldCreateUser: true },
+      options: { emailRedirectTo: `${window.location.origin}${import.meta.env.BASE_URL}auth/callback`, shouldCreateUser: true },
     });
     if (err) { setError(err.message); setEmailStep('idle'); return; }
     setEmailStep('sent');

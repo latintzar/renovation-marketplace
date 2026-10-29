@@ -193,6 +193,10 @@ async def submit_proof(req: SubmitProofRequest, ctx: SandboxContext = Depends(re
         raise api_error(403, "Not the quote contractor")
 
 
+    milestones = quote.get("milestones") or []
+    if req.milestone_index < 0 or req.milestone_index >= len(milestones):
+        raise api_error(400, "Invalid milestone index")
+
     # Insert milestone_updates row (table uses scope_token column)
     async with http_client(timeout=15) as client:
         ins_resp = await client.post(

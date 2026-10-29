@@ -1,9 +1,13 @@
 # Verification and remaining work
 
+## Native local path
+
+The normal React routes now use original FastAPI functions over an owned SQLite adapter. Quote edits, project messages, phase proof, variations, in-app notifications and agreement HTML use local records. Visitor identity, per-workspace bounds, origin checks and held provider routes are server-enforced. [Module and deployment guide](native-workspace.md).
+
 ## Verified source path
 
 - Fresh Node 22.12+ workspace install and TypeScript/Vite build.
-- Original scripted quote, milestone review and homeowner entries at desktop and phone sizes.
+- Normal quote, project, chat and homeowner entries; original historical walkthroughs remain available separately.
 - Shared payment-domain tests with fake provider/repository transports.
 - Original project/phase state-machine tests and document payload tests.
 - New auth/index regressions and private-configuration separation checks.

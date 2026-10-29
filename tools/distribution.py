@@ -16,7 +16,7 @@ def files():
   yield p
 def main():
  parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--scan-directory',type=Path);parser.add_argument('--archive',type=Path);parser.add_argument('--manifest',type=Path);args=parser.parse_args()
- selected=list(files());record={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in selected if p!=args.manifest}
+ selected=list(files());record={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in selected if args.manifest is None or p.resolve()!=args.manifest.resolve()}
  if args.scan_directory:
   target=args.scan_directory.resolve()
   if target.exists():raise ValueError('Select a new private scan directory.')

@@ -41,7 +41,7 @@
       "name": "Leo",
       "legalName": "Leo Casa Limited",
       "url": "https://leo.casa",
-      "logo": "/sample-attachment.png",
+      "logo": "https://leo.casa/images/scope/hero-og.jpg",
       "description": "Leo turns messy renovation conversations into clear agreements. Voice-to-scope, escrow payments, and trust for homeowners and tradespeople in Spain.",
       "foundingDate": "2025",
       "areaServed": {
@@ -795,7 +795,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
 .el-gradient__svg{position:absolute;inset:0;width:100%;height:100%}
 .el-gradient__canvas{position:absolute;inset:0;width:100%;height:100%}
 .el-gradient__blur{position:absolute;inset:0;backdrop-filter:blur(40px);-webkit-backdrop-filter:blur(40px)}
-.el-gradient__noise{position:absolute;inset:0;background-image:url('/sample-attachment.png');background-size:128px;mix-blend-mode:overlay;opacity:.5;pointer-events:none;image-rendering:pixelated}
+.el-gradient__noise{position:absolute;inset:0;background-image:url('/assets/noise-texture.png');background-size:128px;mix-blend-mode:overlay;opacity:.5;pointer-events:none;image-rendering:pixelated}
 .el-gradient__ring{position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
 .el-gradient__content{position:relative;z-index:2}
 /* ── Hero entrance animations ── */
@@ -811,10 +811,10 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
 </style>
 <link href="css/leo-landing-hero.css" rel="stylesheet"/>
 <!-- Google Analytics 4 -->
-
-
-
-</head>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-QWYPHZPBED"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QWYPHZPBED');</script>
+<script>!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init('phc_xV6UCWTarK5nfy4g9zKWWmet5gwFmNu5wgXXPWebr4Eq',{api_host:'https://eu.i.posthog.com',persistence:'memory',autocapture:true,capture_pageview:true,capture_pageleave:true,disable_session_recording:true})</script>
+<style>.atelier-project-actions{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;position:relative;z-index:2;margin:22px auto 26px}.atelier-project-actions a{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:12px 20px;border:1px solid #ffffffb0;border-radius:7px;text-decoration:none;font:600 14px/1.2 Inter,system-ui,sans-serif;color:#fff;backdrop-filter:blur(10px);background:#ffffff16}.atelier-project-actions a:first-child{background:#fffdf7;color:#27251f;border-color:#fffdf7}.atelier-project-actions img{width:19px;height:19px;object-fit:contain;filter:invert(1)}.atelier-docs{display:inline-flex!important;align-items:center;justify-content:center;min-height:40px;min-width:40px}.atelier-docs img{display:block;width:20px;height:20px}.atelier-credit{text-align:center;font:12px/1.5 Inter,system-ui,sans-serif;padding:22px}.atelier-credit a{color:inherit;text-decoration:none}@media(max-width:420px){.atelier-project-actions{gap:10px}.atelier-project-actions a{font-size:13px;padding:12px 17px}}</style></head>
 <body>
 <!-- ── Header ── -->
 <div class="sticky-header header-dark" id="stickyHeader">
@@ -835,7 +835,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
 <a class="lang-option active" href="/profesionales">🇪🇸 Español</a>
 </div>
 </div>
-</nav>
+<a class="atelier-docs" href="https://docs.atelierneyra.com/renovation-marketplace/overview/" target="_blank" rel="noopener" aria-label="Documentation"><img src="https://atelierneyra.com/assets/icons/lucide/book-open.svg" alt=""></a></nav>
 </div>
 </div>
 <div class="header-spacer"></div>
@@ -844,8 +844,8 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
 <canvas aria-hidden="true" class="el-gradient__canvas" data-leo-fluid="v7" data-leo-fluid-fps="24" id="heroGradientCanvas" style="position:absolute;inset:0;width:100%;height:100%;z-index:0"></canvas>
 <div aria-hidden="true" class="leo-hero-darken"></div>
 <div aria-hidden="true" class="leo-hero-noise"></div>
-<h1>Sin morosidad.<br/>Sin coste por contacto.<br/><em>Hecho para profesionales.</em></h1>
-<p class="hero-sub"><span style="display:block;font-size:.95em;opacity:.7;margin-bottom:.35em">Una plataforma hecha para profesionales.</span>El cliente paga por adelantado en depósito de garantía — el dinero ya está antes de que saques la primera herramienta. Responde gratis. Cobra fase a fase. Solo ganamos cuando tú ganas.</p>
+<h1>Presupuestos, chat y pagos por hitos para reformas</h1>
+<p class="hero-sub"><span style="display:block;font-size:.95em;opacity:.7;margin-bottom:.35em">Una plataforma hecha para profesionales.</span>El cliente paga por adelantado en depósito de garantía — el dinero ya está antes de que saques la primera herramienta. Responde gratis. Cobra fase a fase. Solo ganamos cuando tú ganas.</p><div class="atelier-project-actions"><a href="https://preview.atelierneyra.com/apps/renovation-marketplace/?local_role=contractor" target="_blank" rel="noopener">Abrir demo</a><a href="https://github.com/latintzar/renovation-marketplace" target="_blank" rel="noopener"><img src="https://atelierneyra.com/assets/icons/github.webp" alt="">GitHub</a></div>
 <div class="pro-hero-phone-wrap">
 <div class="pro-hero-phone-shell">
 <div aria-hidden="true" class="pro-hero-phone-icon">
@@ -888,7 +888,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
 </div>
 </div>
 <a class="hero-switch" href="/">¿Eres propietario?<svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a>
-<a class="hero-contractor-inner" href="https://wa.me/?text=Hi%20Peter%2C%20I%20already%20have%20a%20client%20and%20want%20to%20send%20them%20a%20scope%20%F0%9F%91%8B" rel="noopener" target="_blank">¿Ya tienes un cliente?<svg fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="12"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a>
+<a class="hero-contractor-inner" href="https://wa.me/34627506263?text=Hi%20Peter%2C%20I%20already%20have%20a%20client%20and%20want%20to%20send%20them%20a%20scope%20%F0%9F%91%8B" rel="noopener" target="_blank">¿Ya tienes un cliente?<svg fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="12"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a>
 </div>
 <!-- ═══════════════════ TRADESPEOPLE TAB ═══════════════════ -->
 <div class="tab-area tab-area-trade" style="padding:16px 16px 0">
@@ -902,9 +902,9 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
 <!-- V7 procedural gradient (terra-charcoal), static export -->
 <div style="max-width:340px;border-radius:var(--r);padding:20px 20px 0;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.25);isolation:isolate">
 <!-- V7 gradient (static frame) -->
-<img alt="" src="/sample-attachment.png" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2"/>
+<img alt="" src="v7-terra-charcoal.webp" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2"/>
 <!-- Noise overlay -->
-<div style="position:absolute;inset:0;z-index:-1;mix-blend-mode:overlay;opacity:.5;background-image:url('/sample-attachment.png');background-size:128px;image-rendering:pixelated"></div>
+<div style="position:absolute;inset:0;z-index:-1;mix-blend-mode:overlay;opacity:.5;background-image:url('/assets/noise-texture.png');background-size:128px;image-rendering:pixelated"></div>
 <!-- Inset ring -->
 <div style="position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);pointer-events:none"></div>
 <!-- Header -->
@@ -971,7 +971,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
 <!-- Leo branded Mastercard — 380×240px = correct 1.586 credit card ratio -->
 <div style="width:100%;height:240px;border-radius:var(--r-lg);padding:22px 26px;background:var(--cream-fixed);box-shadow:0 2px 0 rgba(0,0,0,.06),0 10px 36px rgba(0,0,0,.24),inset 0 0 0 1px rgba(0,0,0,.07);position:relative;overflow:hidden;isolation:isolate;display:flex;flex-direction:column;justify-content:space-between;box-sizing:border-box">
 <!-- Warm grain texture -->
-<div style="position:absolute;inset:0;z-index:0;opacity:.022;background-image:url('/sample-attachment.png');background-size:128px;pointer-events:none"></div>
+<div style="position:absolute;inset:0;z-index:0;opacity:.022;background-image:url('/assets/noise-texture.png');background-size:128px;pointer-events:none"></div>
 <!-- Soft terra highlight top-left -->
 <div style="position:absolute;top:-60px;left:-50px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(218,101,77,.08) 0%,transparent 70%);z-index:0;pointer-events:none"></div>
 <!-- TOP: Leo wordmark + correct EMV contactless symbol (4 arcs, no dot) -->
@@ -1119,7 +1119,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
 <div style="max-width:380px;display:flex;flex-direction:column;gap:10px">
 <!-- Compact job card (light mode) -->
 <div style="background:#fff;border:1px solid rgba(0,0,0,.1);border-radius:var(--r);padding:12px 14px;display:flex;align-items:center;gap:10px">
-<div style="width:40px;height:40px;border-radius:var(--r);overflow:hidden;flex-shrink:0"><img alt="" src="/sample-attachment.png" style="width:100%;height:100%;object-fit:cover"/></div>
+<div style="width:40px;height:40px;border-radius:var(--r);overflow:hidden;flex-shrink:0"><img alt="" src="brief-bath-old-1.jpg" style="width:100%;height:100%;object-fit:cover"/></div>
 <div style="flex:1;min-width:0">
 <div style="font-size:13px;font-weight:600;color:var(--ink-fixed)">Replomado del baño de arriba</div>
 <div style="font-size:11px;color:var(--muted);display:flex;align-items:center;gap:3px"><svg height="9" style="stroke:var(--muted);fill:none;stroke-width:2" viewbox="0 0 24 24" width="9"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>El Rosario · Fontanería</div>
@@ -1152,7 +1152,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
 <div class="chat-stagger map-section-trigger" data-delay="920" style="border-radius:var(--r);overflow:visible;position:relative;border:1px solid rgba(0,0,0,.1)">
 <div style="height:140px;position:relative;border-radius:var(--r) var(--r) 0 0;overflow:visible">
 <div style="position:absolute;inset:0;border-radius:inherit;overflow:hidden">
-<img alt="" src="/sample-attachment.png" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" src="map-el-rosario.png" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="map-pin-animate" style="position:absolute;left:50%;top:50%;pointer-events:none;z-index:2">
 <div style="display:flex;flex-direction:column;align-items:center">
@@ -1201,13 +1201,13 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
 <div class="pro-brief-light" style="padding:14px 16px 14px">
 <p style="font-size:13px;line-height:1.6;margin-bottom:12px">El baño de arriba necesita replomado.<strong class="pro-brief-strong">El agua caliente apenas llega a los grifos.</strong>Casa construida en<strong class="pro-brief-strong">1985</strong>con<strong class="pro-brief-strong">tubería de cobre original</strong>, nunca sustituida. La caldera es una<strong class="pro-brief-strong">Vaillant ecoTEC</strong>en la cocina de abajo. El baño incluye<strong class="pro-brief-strong">lavabo, ducha y váter</strong>. Chalet independiente.</p>
 <div style="display:flex;gap:6px;margin-bottom:14px">
-<div class="pro-brief-thumb" style="width:72px;height:72px;border-radius:var(--r);overflow:hidden"><img alt="" src="/sample-attachment.png" style="width:100%;height:100%;object-fit:cover"/></div>
-<div class="pro-brief-thumb" style="width:72px;height:72px;border-radius:var(--r);overflow:hidden"><img alt="" src="/sample-attachment.png" style="width:100%;height:100%;object-fit:cover"/></div>
-<div class="pro-brief-thumb" style="width:72px;height:72px;border-radius:var(--r);overflow:hidden"><img alt="" src="/sample-attachment.png" style="width:100%;height:100%;object-fit:cover"/></div>
+<div class="pro-brief-thumb" style="width:72px;height:72px;border-radius:var(--r);overflow:hidden"><img alt="" src="brief-bath-old-1.jpg" style="width:100%;height:100%;object-fit:cover"/></div>
+<div class="pro-brief-thumb" style="width:72px;height:72px;border-radius:var(--r);overflow:hidden"><img alt="" src="brief-bath-old-2.jpg" style="width:100%;height:100%;object-fit:cover"/></div>
+<div class="pro-brief-thumb" style="width:72px;height:72px;border-radius:var(--r);overflow:hidden"><img alt="" src="brief-bath-old-3.jpg" style="width:100%;height:100%;object-fit:cover"/></div>
 <div class="pro-brief-plus" style="width:72px;height:72px;border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">+2</div>
 </div>
 <div class="pro-brief-map-wrap" style="border-radius:var(--r);overflow:hidden;height:110px;position:relative">
-<img alt="" src="/sample-attachment.png" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" src="map-el-rosario.png" style="width:100%;height:100%;object-fit:cover"/>
 <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:80px;height:80px;border-radius:50%;background:rgba(218,101,77,.22);box-shadow:0 0 0 2px rgba(218,101,77,.55);pointer-events:none;z-index:2"></div>
 <div style="position:absolute;bottom:6px;left:8px;font-size:9px;font-weight:600;color:#44403C;background:rgba(255,255,255,.9);padding:2px 6px;border-radius:var(--r-xs)">El Rosario, Marbella</div>
 <div style="position:absolute;bottom:6px;right:8px;font-size:9px;color:#78716C;background:rgba(255,255,255,.9);padding:2px 6px;border-radius:var(--r-xs)">~2 km de radio</div>
@@ -1257,13 +1257,13 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
 <div class="glass-frame-body" style="background:#fff">
 <!-- Portfolio strip -->
 <div style="display:flex;gap:2px;height:80px">
-<div style="flex:1;background:url('/sample-attachment.png') center/cover"></div>
-<div style="flex:1;background:url('/sample-attachment.png') center/cover"></div>
-<div style="flex:1;background:url('/sample-attachment.png') center/cover"></div>
+<div style="flex:1;background:url('portfolio-bath-a.jpg') center/cover"></div>
+<div style="flex:1;background:url('portfolio-bath-b.jpg') center/cover"></div>
+<div style="flex:1;background:url('portfolio-bath-c.jpg') center/cover"></div>
 </div>
 <!-- Profile header -->
 <div style="padding:14px 16px 10px;display:flex;align-items:center;gap:12px;border-bottom:1px solid rgba(0,0,0,.06)">
-<img alt="Carlos Díaz" src="/sample-attachment.png" style="width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid rgba(0,0,0,.06)"/>
+<img alt="Carlos Díaz" src="avatar-carlos.jpg" style="width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid rgba(0,0,0,.06)"/>
 <div style="min-width:0;flex:1">
 <h3 class="card-title" style="font-size:16px;margin:0;color:var(--ink-fixed)">Fontanería Díaz</h3>
 <div style="font-size:11px;color:#78716C">Carlos Díaz · Fontanero · Marbella</div>
@@ -1304,11 +1304,11 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
 <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#78716C;margin-bottom:8px">Proyectos</div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
 <div style="border:1px solid rgba(0,0,0,.06);border-radius:var(--r);overflow:hidden">
-<img alt="" src="/sample-attachment.png" style="width:100%;aspect-ratio:4/3;object-fit:cover"/>
+<img alt="" src="portfolio-bath-a.jpg" style="width:100%;aspect-ratio:4/3;object-fit:cover"/>
 <div style="padding:6px 8px;font-size:11px;font-weight:600;color:var(--ink-fixed)">Reforma de baño</div>
 </div>
 <div style="border:1px solid rgba(0,0,0,.06);border-radius:var(--r);overflow:hidden">
-<img alt="" src="/sample-attachment.png" style="width:100%;aspect-ratio:4/3;object-fit:cover"/>
+<img alt="" src="portfolio-bath-b.jpg" style="width:100%;aspect-ratio:4/3;object-fit:cover"/>
 <div style="padding:6px 8px;font-size:11px;font-weight:600;color:var(--ink-fixed)">Cambio de calentador</div>
 </div>
 </div>
@@ -1404,8 +1404,8 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
 <h3 class="pro-var-addon-title card-title-sm">Tubería de cobre adicional</h3>
 <p style="font-size:12px;line-height:1.4;margin-bottom:8px">Tubería corroída detrás de la pared — se sustituye por seguridad.</p>
 <div style="display:flex;gap:6px;margin-bottom:10px;align-items:flex-start">
-<div class="glass-inset glass-inset--var-thumb" style="width:56px;height:56px;flex-shrink:0;border-radius:var(--r);overflow:hidden;padding:3px;background:rgba(0,0,0,.04);border:1px solid rgba(0,0,0,.1);box-sizing:border-box"><div style="width:100%;height:100%;border-radius:var(--r-xs);overflow:hidden"><img alt="" src="/sample-attachment.png" style="width:100%;height:100%;object-fit:cover;display:block"/></div></div>
-<div class="glass-inset glass-inset--var-wide" style="flex:1;min-width:0;height:56px;border-radius:var(--r);overflow:hidden;padding:3px;background:rgba(0,0,0,.04);border:1px solid rgba(0,0,0,.1);box-sizing:border-box"><div style="width:100%;height:100%;border-radius:var(--r-xs);overflow:hidden"><img alt="" src="/sample-attachment.png" style="width:100%;height:100%;object-fit:cover;display:block"/></div></div>
+<div class="glass-inset glass-inset--var-thumb" style="width:56px;height:56px;flex-shrink:0;border-radius:var(--r);overflow:hidden;padding:3px;background:rgba(0,0,0,.04);border:1px solid rgba(0,0,0,.1);box-sizing:border-box"><div style="width:100%;height:100%;border-radius:var(--r-xs);overflow:hidden"><img alt="" src="brief-bath-old-2.jpg" style="width:100%;height:100%;object-fit:cover;display:block"/></div></div>
+<div class="glass-inset glass-inset--var-wide" style="flex:1;min-width:0;height:56px;border-radius:var(--r);overflow:hidden;padding:3px;background:rgba(0,0,0,.04);border:1px solid rgba(0,0,0,.1);box-sizing:border-box"><div style="width:100%;height:100%;border-radius:var(--r-xs);overflow:hidden"><img alt="" src="brief-bath-old-1.jpg" style="width:100%;height:100%;object-fit:cover;display:block"/></div></div>
 </div>
 <div style="font-size:11px">
 <div class="pro-var-addon-row" style="display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid rgba(0,0,0,.06)"><span>Tubería de cobre (1,5 m)</span><span style="font-weight:600">€52.50</span></div>
@@ -1528,7 +1528,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
 <svg class="signin-arrow" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
 </div>
 <a class="hero-switch" href="/">¿Eres propietario?<svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a>
-<a class="hero-contractor-inner" href="https://wa.me/?text=Hi%20Peter%2C%20I%20already%20have%20a%20client%20and%20want%20to%20send%20them%20a%20scope%20%F0%9F%91%8B" rel="noopener" target="_blank">¿Ya tienes un cliente?<svg fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="12"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a>
+<a class="hero-contractor-inner" href="https://wa.me/34627506263?text=Hi%20Peter%2C%20I%20already%20have%20a%20client%20and%20want%20to%20send%20them%20a%20scope%20%F0%9F%91%8B" rel="noopener" target="_blank">¿Ya tienes un cliente?<svg fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="12"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a>
 <!-- ── Footer ── -->
 <footer class="site-footer" style="margin-top:0;padding-top:48px">
 <div class="footer-inner">
@@ -1538,8 +1538,8 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
 </div>
 <div class="footer-col">
 <h4>Contacto</h4>
-<a href="https://wa.me/?text=Hi%20Leo!%20%F0%9F%91%8B" rel="noopener" target="_blank">WhatsApp</a>
-<a href="mailto:hello@example.invalid">operator@example.invalid</a>
+<a href="https://wa.me/34627506263?text=Hi%20Leo!%20%F0%9F%91%8B" rel="noopener" target="_blank">WhatsApp</a>
+<a href="mailto:peter@leo.casa">peter@leo.casa</a>
 </div>
 <div class="footer-col">
 <h4>Legal</h4>
@@ -1554,7 +1554,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
 </div>
 </div>
 <p class="footer-bottom">© 2026 Leo Casa Limited · Número de empresa 16259714</p>
-</footer>
+<div class="atelier-credit"><a href="https://atelierneyra.com" target="_blank" rel="noopener">made by atelier neyra</a></div></footer>
 <!-- Location gate (homeowner hero only): pick area → map with rough radius → lead modal -->
 <div class="lead-modal-overlay" id="leadLocModal" style="z-index:10000">
 <div class="lead-modal" id="leadLocModalInner">
@@ -1939,7 +1939,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
 (function(){
   var API = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname === '46.224.144.27')
     ? 'http://' + window.location.hostname + ':8000'
-    : 'http://127.0.0.1:18261';
+    : 'https://api.leo.casa';
   var leadId = null;
   window.getLeoLeadId = function() { return leadId; };
   var recordedWaveHeights = [];
@@ -2586,7 +2586,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
     modalStep1.style.display = 'none';
     modalStep2.style.display = '';
     var msg = encodeURIComponent("Hi! I just signed up on leo.casa. Here's more about my job:");
-    modalWaLink.href = 'https://wa.me/?text=' + msg;
+    modalWaLink.href = 'https://wa.me/34627506263?text=' + msg;
   }
 
   function closeModal() {
@@ -3399,7 +3399,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;b
     var h = window.location.hostname;
     if (h === 'localhost' || h === '127.0.0.1') return 'http://' + h + ':8000';
     if (/^\d{1,3}(\.\d{1,3}){3}$/.test(h)) return 'http://' + h + ':8000';
-    return 'http://127.0.0.1:18261';
+    return 'https://api.leo.casa';
   }
   var API = apiBaseUrl();
 

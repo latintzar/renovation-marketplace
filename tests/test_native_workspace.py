@@ -137,3 +137,19 @@ def test_original_connected_quote_writes_require_contractor_authority():
     with TestClient(connected) as client:
         assert client.post('/quote/update', json=body).status_code == 403
         assert client.post('/quote/finalize', json=body).status_code == 403
+
+
+def test_explicit_guest_role_switch_on_quote_and_canvas(app):
+    with TestClient(app) as client:
+        client.get('/app/my-projects?local_role=homeowner')
+        assert session(client)['role'] == 'homeowner'
+        for entry in ('/app/quote/first?editToken=sample-quote&local_role=contractor',
+                      '/app/canvas/sample-quote?local_role=contractor'):
+            client.get(entry)
+            assert session(client)['role'] == 'contractor'
+            assert info(client)['contractor_id']
+            assert quote(client)['scope']
+            client.get('/app/my-projects?local_role=homeowner')
+            assert session(client)['role'] == 'homeowner'
+        client.get('/app/v1/canvas/sample-quote?local_role=contractor')
+        assert session(client)['role'] == 'homeowner'

@@ -99,7 +99,7 @@ def create_app(state, *, prefix='', public_origin='', build=None):
                 request._body = bytes(body)
         if path == '/healthz':
             return await call_next(request)
-        role = request.query_params.get('local_role') if not api and (path in {'/', '/dashboard', '/my-projects'} or path.startswith('/project/')) else None
+        role = request.query_params.get('local_role') if not api and (path in {'/', '/dashboard', '/my-projects'} or path.startswith('/project/') or re.fullmatch(r'/(?:quote|canvas)/[^/]+', path)) else None
         secret, actor, fresh = store.admit(request.cookies.get(COOKIE), role=role)
         token = VISITOR.set(actor)
         try:

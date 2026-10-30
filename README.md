@@ -1,10 +1,12 @@
-# Leo.casa — renovation quotes and milestones
+# Leo.casa
+
+Renovation quotes, project chat and milestone payments
 
 Leo.casa is a renovation marketplace for homeowners and contractors, with quotes, project chat and milestone payments.
 
 [Website](https://leo.casa) · [Open app](https://preview.atelierneyra.com/apps/renovation-marketplace/?local_role=contractor) · [Documentation](https://docs.atelierneyra.com/renovation-marketplace/overview/)
 
-![Native renovation quote with phases, materials and total](docs/assets/readme-hero.png)
+![Leo.casa](https://atelierneyra.com/assets/product-shots-20261030/renovation-marketplace.jpg)
 
 ## How it works
 

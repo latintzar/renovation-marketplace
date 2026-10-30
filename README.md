@@ -6,7 +6,7 @@ Leo.casa is a renovation marketplace for homeowners and contractors, with quotes
 
 [Website](https://leo.casa) · [Open app](https://preview.atelierneyra.com/apps/renovation-marketplace/?local_role=contractor) · [Documentation](https://docs.atelierneyra.com/renovation-marketplace/overview/)
 
-![Leo.casa](https://atelierneyra.com/assets/product-motion-v3/renovation-marketplace.jpg)
+![Leo.casa](https://atelierneyra.com/assets/product-motion-v4/renovation-marketplace.jpg)
 
 ## How it works
 

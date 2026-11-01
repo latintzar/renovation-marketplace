@@ -113,3 +113,9 @@ The backend tests exercise persisted edits, canonical/legacy field aliases, orig
 ## Atelier navigation
 
 The bundled MIT Atelier navigation and ISC-licensed Lucide icons link the hosted app to the other previews. The root viewport starts beneath the 56px bar. Remove the script and root inset from the web entry when adapting the workspace for another deployment.
+
+## Quote presentation assets
+
+The web build carries the complete Leo `brand-effects.css` stylesheet at the app’s configured base path. Its vellum uses the original 7 px blur and 12% cream film while the quote is forming. The source stylesheet and public build copy are checked together by the release suite. The quote document keeps its own scroll area, uses the selected English/Spanish display language, and formats dates and euro amounts for that language.
+
+The historical `set-milestones` walkthrough demonstrates the actual chat and quote components with authored example replies: one phase, three priced phases, then materials and VAT. It runs separately from the native local workspace, whose provider jobs remain held until connected by its owner.

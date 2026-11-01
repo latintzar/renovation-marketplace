@@ -286,5 +286,18 @@
   "myprojects_filter_all": "Todos",
   "myprojects_filter_cancelled": "Cancelados",
   "myprojects_filter_complete": "Completados",
-  "myprojects_filter_pending_payment": "Pendientes de pago"
+  "myprojects_filter_pending_payment": "Pendientes de pago",
+  "scope_description": "Descripción",
+  "scope_phases": "Fases del trabajo",
+  "scope_materials_upfront_label": "Materiales y compras",
+  "scope_materials_upfront_trigger": "Pago inicial · antes de empezar",
+  "scope_labour": "Mano de obra",
+  "scope_materials_short": "Materiales",
+  "scope_service_fee_label": "Comisión Leo",
+  "scope_service_fee_note": "Gestión de pago · cobrada al inicio",
+  "scope_escrow_note": "El dinero se libera fase a fase cuando confirmas el trabajo terminado.",
+  "scope_contract_link": "Ver contrato de construcción Leo →",
+  "scope_status_ready": "Listo",
+  "scope_tax_label": "IVA",
+  "scope_total_tax_included": "IVA incluido"
 }

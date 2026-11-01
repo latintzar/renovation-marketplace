@@ -286,5 +286,18 @@
   "auth_callback_opening_builder": "Opening your scope builder…",
   "auth_callback_error_title": "Something went wrong",
   "auth_callback_go_back": "Go back",
-  "auth_callback_error_default": "Authentication failed — please try again"
+  "auth_callback_error_default": "Authentication failed — please try again",
+  "scope_description": "Description",
+  "scope_phases": "Work phases",
+  "scope_materials_upfront_label": "Materials and purchases",
+  "scope_materials_upfront_trigger": "Initial payment · before work starts",
+  "scope_labour": "Labour",
+  "scope_materials_short": "Materials",
+  "scope_service_fee_label": "Leo fee",
+  "scope_service_fee_note": "Payment management · collected at the start",
+  "scope_escrow_note": "Payments are released phase by phase when you confirm the completed work.",
+  "scope_contract_link": "View the Leo construction agreement →",
+  "scope_status_ready": "Ready",
+  "scope_tax_label": "VAT",
+  "scope_total_tax_included": "VAT included"
 }

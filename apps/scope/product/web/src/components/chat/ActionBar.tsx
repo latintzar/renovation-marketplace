@@ -23,6 +23,8 @@ const ActionBar = ({
   status,
   previewOpen,
   onTogglePreview,
+  previewLabelOpen,
+  previewLabelClosed,
   confirmLabel,
   onConfirm,
   confirmDisabled,
@@ -81,12 +83,12 @@ const ActionBar = ({
           type="button"
           onClick={onTogglePreview}
           className={clsx(
-            'shrink-0 w-8 h-8 flex items-center justify-center rounded-sm transition-colors',
+            'shrink-0 w-11 h-11 flex items-center justify-center rounded-sm transition-colors',
             previewOpen
               ? 'text-terracotta bg-terracotta-light hover:bg-terracotta-light/80'
               : 'text-stone hover:text-ink hover:bg-border/50',
           )}
-          aria-label={previewOpen ? t('aria_close_preview') : t('aria_preview_brief')}
+          aria-label={previewOpen ? previewLabelOpen : previewLabelClosed}
           aria-expanded={previewOpen}
         >
           {previewOpen ? <Eye size={18} /> : <EyeOff size={18} />}
@@ -98,7 +100,7 @@ const ActionBar = ({
             disabled={!dynamicActionLabel && confirmDisabled}
             onClick={handleActionClick}
             className={clsx(
-              'shrink-0 px-3 py-1.5 rounded-sm text-sm font-semibold transition-all duration-150 inline-flex items-center gap-1',
+              'shrink-0 min-h-11 px-3 py-1.5 rounded-sm text-sm font-semibold transition-all duration-150 inline-flex items-center gap-1',
               'active:scale-95',
               !dynamicActionLabel && confirmDisabled
                 ? 'bg-border text-muted cursor-not-allowed'

@@ -7,7 +7,7 @@
      - Any landing page or app that needs brand effects
 
    DO NOT copy these rules elsewhere. Import this file.
-   
+
    AUTOMATIC COLOR MODES:
      - Glass frames auto-detect background context (see leo-glass-frame.css)
      - Content inside glass frames never coupled to frame mode
@@ -274,5 +274,3 @@
   border-radius: var(--r-sm, 6px) 6px 2px 6px;
   color: #fff;
 }
-
-

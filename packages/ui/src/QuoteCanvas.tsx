@@ -19,7 +19,8 @@ import { ChangeOrderCanvas } from './ChangeOrderCanvas';
  */
 export default function QuoteCanvas({ scope: rawScope }: { scope: Record<string, unknown> | null }) {
   const scope = rawScope as QuoteUpdate | null;
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const locale = i18n.resolvedLanguage?.startsWith('es') ? 'es-ES' : 'en-GB';
 
   if (!scope || (!scope.title && !scope.description)) {
     return (
@@ -44,7 +45,7 @@ export default function QuoteCanvas({ scope: rawScope }: { scope: Record<string,
   const grandTotal = workTotal + feeAmount + ivaAmount;
 
   const fmtEur = (n: number) =>
-    new Intl.NumberFormat('es-ES', {
+    new Intl.NumberFormat(locale, {
       style: 'currency',
       currency: 'EUR',
       minimumFractionDigits: n % 1 === 0 ? 0 : 2,
@@ -61,10 +62,16 @@ export default function QuoteCanvas({ scope: rawScope }: { scope: Record<string,
 
   const statusLabel: Record<string, string> = {
     draft: t('scope_status_draft'),
+    ready: t('scope_status_ready'),
     sent: t('scope_status_sent'),
     approved: t('scope_status_approved'),
     complete: t('scope_status_complete'),
   };
+
+  const createdDate = scope.created_at ? new Date(scope.created_at) : null;
+  const dateLabel = createdDate && !Number.isNaN(createdDate.getTime())
+    ? new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'short', year: 'numeric' }).format(createdDate)
+    : '';
 
   // Contingency drafts by phase index
   const drafts: QuoteContingencyDraft[] = scope.contingency_drafts ?? [];
@@ -95,7 +102,7 @@ export default function QuoteCanvas({ scope: rawScope }: { scope: Record<string,
   }
 
   return (
-    <div className="flex flex-col overflow-y-auto">
+    <div className="flex flex-col h-full min-h-0 overflow-y-auto">
 
       {/* ── Dark header ──────────────────────────────────────────── */}
       <div className="px-4 pt-4 pb-3.5" style={{ background: '#1C1917' }}>
@@ -108,7 +115,7 @@ export default function QuoteCanvas({ scope: rawScope }: { scope: Record<string,
         <div style={{ color: 'rgba(255,255,255,.45)', fontSize: 11 }}>
           {statusLabel[scope.status] || scope.status}
           {scope.location ? ` · ${scope.location}` : ''}
-          {scope.created_at ? ` · ${scope.created_at}` : ''}
+          {dateLabel ? ` · ${dateLabel}` : ''}
         </div>
       </div>
 
@@ -286,7 +293,7 @@ export default function QuoteCanvas({ scope: rawScope }: { scope: Record<string,
               {ivaRate && ivaAmount > 0 && (
                 <div className="flex justify-between items-center">
                   <span style={{ color: '#78716C', fontSize: 12 }}>
-                    IVA ({ivaRate}%)
+                    {t('scope_tax_label')} ({ivaRate}%)
                   </span>
                   <span style={{ color: '#57534E', fontSize: 12 }}>
                     {fmtEur(ivaAmount)}
@@ -324,7 +331,7 @@ export default function QuoteCanvas({ scope: rawScope }: { scope: Record<string,
                 className="font-semibold"
                 style={{ color: '#FAF8F4', fontSize: 14 }}
               >
-                Total{ivaRate ? ` (IVA inc.)` : ''}
+                Total{ivaRate ? ` (${t('scope_total_tax_included')})` : ''}
               </span>
               <span
                 className="font-bold"

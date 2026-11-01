@@ -1,5 +1,5 @@
 -r requirements-native.txt
 pydantic-settings==2.7.1
 pytest==9.2.0
-pytest-asyncio==0.24.0
+pytest-asyncio==1.4.1.post1
 respx==0.22.0

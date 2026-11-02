@@ -1,6 +1,6 @@
 # Work on Leo.casa
 
-Read README, docs/native-workspace.md and docs/status.md. The default first result is the original React/FastAPI app with visitor-scoped local storage. Use make install, make doctor, make build, make dev and make test. The full configured backend retains its separate schema/Hermes/provider acceptance path.
+Read the [product tour](docs/product-tour.md), [README](README.md), [native workspace](docs/native-workspace.md) and [status](docs/status.md). The tour maps the contractor/homeowner experience to source; the README and native guide provide the runnable local path. The default first result is the original React/FastAPI app with visitor-scoped local storage. Use make install, make doctor, make build, make dev and make test. The full configured backend retains its separate schema/Hermes/provider acceptance path.
 
 Preserve the actual components, route functions, financial/state-machine code and project-party checks. Local mode uses its owned SQLite/auth transport; browser response stubs and new lookalike screens do not establish native acceptance. Keep the ordinary configured transport available.
 
